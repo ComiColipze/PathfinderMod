@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>NamerPersonGoblin</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[GoblinList5][GoblinList2][GoblinList7][GoblinList8]</li>
+				<li>name->[GoblinList5][GoblinList2][GoblinList6][GoblinList2][GoblinList7][GoblinList8]</li>
+				<li>name->[GoblinList5][GoblinList2][GoblinList4]</li>
+				<li>name->[GoblinList1][GoblinList2][GoblinList3][GoblinList2][GoblinList4]</li>
+				<li>name->[GoblinList5][GoblinList2][GoblinList7][GoblinList8] [GoblinList9][GoblinList10]</li>
+				<li>name->[GoblinList5][GoblinList2][GoblinList6][GoblinList2][GoblinList7][GoblinList8] [GoblinList9][GoblinList10]</li>
+				<li>name->[GoblinList5][GoblinList2][GoblinList4] [GoblinList9][GoblinList10]</li>
+				<li>name->[GoblinList1][GoblinList2][GoblinList3][GoblinList2][GoblinList4] [GoblinList9][GoblinList10]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>GoblinList1</keyword>
+					<path>GoblinNames/Goblin1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList2</keyword>
+					<path>GoblinNames/Goblin2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList3</keyword>
+					<path>GoblinNames/Goblin3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList4</keyword>
+					<path>GoblinNames/Goblin4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList5</keyword>
+					<path>GoblinNames/Goblin5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList6</keyword>
+					<path>GoblinNames/Goblin6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList7</keyword>
+					<path>GoblinNames/Goblin7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList8</keyword>
+					<path>GoblinNames/Goblin8</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList9</keyword>
+					<path>GoblinNames/Goblin9</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList10</keyword>
+					<path>GoblinNames/Goblin10</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

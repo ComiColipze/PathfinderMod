@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_GnomePlayerColony</defName>
+		<label>Gnome Colony</label>
+		<description>Your own community composed of gnomes.</description>
+		<basicMemberKind>PF2_GnomeColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_GnomePlayerTribe</defName>
+		<label>Gnome Tribe</label>
+		<description>A small tribe composed of gnomes.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_GnomeTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>PF2Goblin</defName>
+    <label>Goblin</label>
+    <description>Goblins have a reputation as simple creatures who love songs, fire, and eating disgusting things and who hate reading, dogs, and horses—and there are a great many for whom this description fits perfectly. However, great changes have come to goblinkind, and more and more goblins resist conformity to these stereotypes. Even among goblins that are more worldly, many still exemplify their old ways in some small manner, just to a more sensible degree.</description>
+    <alienRace>
+        <generalSettings>
+			<maleGenderProbability>0.5</maleGenderProbability>
+			<immuneToAge>false</immuneToAge>
+			<humanRecipeImport>true</humanRecipeImport>
+			<immuneToXenophobia>false</immuneToXenophobia>
+			<disallowedTraits>
+                <li>
+                    <defName>Undergrounder</defName>
+				</li>
+                <li>
+                    <defName>Cannibal</defName>
+				</li>
+                <li>
+                    <defName>Psychopath</defName>
+				</li>
+				<li>
+					<defName>Immunity</defName>
+					<degree>-1</degree>
+				</li>
+				<li>
+					<defName>Beauty</defName>
+					<degree>1</degree>
+				</li>
+				<li>
+					<defName>Beauty</defName>
+					<degree>2</degree>
+				</li>
+            </disallowedTraits>
+			<forcedRaceTraitEntries>
+				<li>
+					<defName>Pyromaniac</defName>
+					<chance>25</chance>
+				</li>
+			</forcedRaceTraitEntries>
+			<alienPartGenerator>
+				<useGenderedHeads>false</useGenderedHeads>
+				<aliencrowntypes>
+					<li>Average_Normal</li>
+				</aliencrowntypes>
+				<alienbodytypes>
+					<li>Thin</li>
+					<li>Male</li>
+					<li>Female</li>
+				</alienbodytypes>
+				<customDrawSize>(0.75, 0.75)</customDrawSize>
+				<customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>
+				<customPortraitHeadDrawSize>(1.22, 1.22)</customPortraitHeadDrawSize>
+				<headOffset>(0.0, -0.08)</headOffset>
+				<getsGreyAt>40</getsGreyAt>		
+				<colorChannels>	                    
+					<li>
+						<name>skin</name>
+						<first Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>15</weight>
+									<only>(128, 128, 0)</only>
+								</li>
+								<li>
+									<weight>20</weight>
+									<only>(154, 205, 50)</only>
+								</li>
+								<li>
+									<weight>10</weight>
+									<only>(107, 142, 35)</only>
+								</li>
+								<li>
+									<weight>20</weight>
+									<only>(143, 188, 143)</only>
+								</li>
+								<li>
+									<weight>20</weight>
+									<only>(175, 224, 230)</only>
+								</li>
+								<li>
+									<weight>20</weight>
+									<only>(95, 158, 170)</only>
+								</li>
+								<li>
+									<weight>10</weight>
+									<only>(112, 128, 144)</only>
+								</li>
+								<li>
+									<weight>10</weight>
+									<only>(119, 136, 153)</only>
+								</li>
+								<li>
+									<weight>10</weight>
+									<only>(176, 196, 222)</only>
+								</li>
+							</options>
+						</first>
+					</li>
+				</colorChannels>
+			</alienPartGenerator>
+        </generalSettings>
+        <graphicPaths>
+			<li>
+				<head>Pawn/Goblin/</head>
+			</li>
+        </graphicPaths>
+        <styleSettings>
+			<li>
+				<key>HairDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+			<li>
+				<key>BeardDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+        </styleSettings>
+        <thoughtSettings>
+			<cannotReceiveThoughts>
+				<li>ObservedLayingCorpse</li>
+				<li>EnvironmentDark</li>
+				<li>NeedOutdoors</li>
+				<li>DeadMansApparel</li>
+				<li>KnowGuestExecuted</li>
+				<li>KnowPrisonerDiedInnocent</li>
+				<li>AteRawFood</li>
+				<li>AteKibble</li>
+				<li>AteCorpse</li>
+				<li>AteHumanlikeMeatDirect</li>
+				<li>AteHumanlikeMeatAsIngredient</li>
+				<li>AteHumanlikeMeatAsIngredientCannibal</li>
+				<li>AteInsectMeatDirect</li>
+				<li>AteInsectMeatAsIngredient</li>
+				<li>AteWithoutTable</li>
+				<li>SleptOnGround</li>
+				<li>KnowPrisonerSold</li>
+				<li>KnowGuestOrganHarvested</li>
+				<li>KnowColonistOrganHarvested</li>
+				<li>SoakingWet</li>
+				<li>KnowButcheredHumanlikeCorpse</li>
+				<li>ButcheredHumanlikeCorpse</li>
+				<li>WitnessedDeathNonAlly</li>
+				<li>ColonistBanished</li>
+				<li>ColonistBanishedToDie</li>
+				<li>PrisonerBanishedToDie</li>
+				<li>SharedBed</li>
+				<li>ButcheredHumanlikeCorpseOpinion</li>
+			</cannotReceiveThoughts>
+        </thoughtSettings>
+        <compatibility>
+			<isFlesh>True</isFlesh>
+			<isSentient>True</isSentient>
+			<hasBlood>True</hasBlood>
+        </compatibility>
+    </alienRace>	
+	<statBases>
+		<Mass>35</Mass>
+		<MarketValue>1550</MarketValue>
+		<MoveSpeed>4.6</MoveSpeed>
+		<Flammability>0.3</Flammability>
+		<ComfyTemperatureMin>10</ComfyTemperatureMin>
+		<ComfyTemperatureMax>34</ComfyTemperatureMax>
+		<LeatherAmount>35</LeatherAmount>
+		<RoyalFavorValue>3</RoyalFavorValue>
+		<HungerRateMultiplier>0.85</HungerRateMultiplier>
+		<HuntingStealth>1.2</HuntingStealth>
+		<EatingSpeed>1.2</EatingSpeed>
+	</statBases>
+	<tools>
+		<li>
+			<label>left fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>7.4</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>right fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>7.4</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>teeth</label>
+			<capacities>
+				<li>Bite</li>
+			</capacities>
+			<power>9.8</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<chanceFactor>0.07</chanceFactor>
+		</li>
+		<li>
+			<label>head</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>4.2</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.2</chanceFactor>
+		</li>
+	</tools>
+	<race>
+		<thinkTreeMain>Humanlike</thinkTreeMain>
+		<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+		<intelligence>Humanlike</intelligence>
+		<makesFootprints>true</makesFootprints>
+		<lifeExpectancy>50</lifeExpectancy>
+		<leatherDef>Leather_Goblin</leatherDef>
+		<nameGenerator>NamerPersonGoblin</nameGenerator>
+		<useMeatFrom>Human</useMeatFrom>
+		<body>Human</body>
+		<baseBodySize>0.75</baseBodySize>
+		<baseHealthScale>0.95</baseHealthScale>
+		<foodType>OmnivoreHuman</foodType>
+		<gestationPeriodDays>45</gestationPeriodDays>
+		<meatMarketValue>0.8</meatMarketValue>
+		<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+		<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+		<litterSizeCurve>
+			<points>
+				<li>(0.5, 0)</li>
+				<li>(1, 1)</li>
+				<li>(1.01, 0.02)</li>
+				<li>(3.5, 0)</li>
+			</points>
+		</litterSizeCurve>
+		<lifeStageAges Inherit="False">
+			<li>
+				<def>HumanlikeBaby</def>
+				<minAge>0</minAge>
+			</li>
+			<li>
+				<def>HumanlikeToddler</def>
+				<minAge>0.5</minAge>
+			</li>
+			<li>
+				<def>HumanlikeChild</def>
+				<minAge>1.5</minAge>
+			</li>
+			<li>
+				<def>HumanlikeTeenager</def>
+				<minAge>3</minAge>
+			</li>
+			<li>
+				<def>HumanlikeAdult</def>
+				<minAge>5</minAge>
+			</li>
+		</lifeStageAges>
+		<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+		<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+		<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+		<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+		<specialShadowData>
+			<volume>(0.3, 0.8, 0.4)</volume>
+			<offset>(0,0,-0.3)</offset>
+		</specialShadowData>
+		<ageGenerationCurve>
+			<points>
+				<li>(3,0)</li>
+				<li>(5,100)</li>
+				<li>(15,100)</li>
+				<li>(20,30)</li>
+				<li>(35,18)</li>
+				<li>(40,10)</li>
+				<li>(50,3)</li>
+				<li>(55,0)</li>
+			</points>
+		</ageGenerationCurve>
+		<hediffGiverSets>
+			<li>OrganicStandard</li>
+			<li>Human</li>
+		</hediffGiverSets>
+		</race>
+		<recipes>
+			<li>ExciseCarcinoma</li>
+			<li>AdministerMechSerumHealer</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+			<li>CureScaria</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+		</recipes>
+</AlienRace.ThingDef_AlienRace>
+
+</Defs>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>NamerPersonGnomeMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[GnomeList1][GnomeList2] [GnomeList4]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>GnomeList1</keyword>
+					<path>GnomeNames/Gnome1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeList2</keyword>
+					<path>GnomeNames/Gnome2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeList3</keyword>
+					<path>GnomeNames/Gnome3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeList4</keyword>
+					<path>GnomeNames/Gnome4</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerPersonGnomeFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[GnomeList3] [GnomeList4]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>GnomeList1</keyword>
+					<path>GnomeNames/Gnome1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeList2</keyword>
+					<path>GnomeNames/Gnome2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeList3</keyword>
+					<path>GnomeNames/Gnome3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeList4</keyword>
+					<path>GnomeNames/Gnome4</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

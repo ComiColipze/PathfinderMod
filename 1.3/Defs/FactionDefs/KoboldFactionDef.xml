@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_KoboldPlayerColony</defName>
+		<label>Kobold Colony</label>
+		<description>Your own community composed of kobolds.</description>
+		<basicMemberKind>PF2_KoboldColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_KoboldPlayerTribe</defName>
+		<label>Kobold Tribe</label>
+		<description>A small tribe composed of kobolds.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_KoboldTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

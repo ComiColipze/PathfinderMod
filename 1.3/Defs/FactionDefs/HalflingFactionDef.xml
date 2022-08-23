@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_HalflingPlayerColony</defName>
+		<label>Halfling Colony</label>
+		<description>Your own community composed of halflings.</description>
+		<basicMemberKind>PF2_HalflingColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_HalflingPlayerTribe</defName>
+		<label>Halfling Tribe</label>
+		<description>A small tribe composed of halflings.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_HalflingTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_DwarfPlayerColony</defName>
+		<label>Dwarf Colony</label>
+		<description>Your own community composed of dwarves.</description>
+		<basicMemberKind>PF2_DwarfColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_DwarfPlayerTribe</defName>
+		<label>Dwarf Tribe</label>
+		<description>A small tribe composed of dwarves.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_DwarfTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

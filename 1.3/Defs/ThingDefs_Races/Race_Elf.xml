@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>PF2Elf</defName>
+    <label>Elf</label>
+    <description>Elves combine otherworldly grace, sharp intellect, and mysterious charm in a way that is practically magnetic to members of other ancestries. They are often voraciously intellectual, though their studies delve into a level of detail that most shorter-lived peoples find excessive or inefficient. Valuing kindness and beauty, elves ever strive to improve their manners, appearance, and culture.</description>
+    <alienRace>
+        <generalSettings>
+			<maleGenderProbability>0.5</maleGenderProbability>
+			<immuneToAge>false</immuneToAge>
+			<humanRecipeImport>true</humanRecipeImport>
+			<immuneToXenophobia>false</immuneToXenophobia>
+			<disallowedTraits>
+                <li>
+                    <defName>Undergrounder</defName>
+				</li>
+                <li>
+                    <defName>Tough</defName>
+				</li>
+				<li>
+					<defName>SpeedOffset</defName>
+					<degree>-1</degree>
+				</li>
+				<li>
+					<defName>Beauty</defName>
+					<degree>-1</degree>
+				</li>
+				<li>
+					<defName>Beauty</defName>
+					<degree>-2</degree>
+				</li>
+            </disallowedTraits>
+			<alienPartGenerator>
+				<aliencrowntypes>
+					<li>Head_Normal_Blue</li>
+					<li>Head_Normal_White</li>
+				</aliencrowntypes>
+				<alienbodytypes>
+					<li>Thin</li>
+					<li>Male</li>
+					<li>Female</li>
+				</alienbodytypes>
+				<customDrawSize>(1.15, 1.15)</customDrawSize>
+				<customHeadDrawSize>(1.15, 1.15)</customHeadDrawSize>
+				<headOffset>(0.0, 0.08)</headOffset>
+				<getsGreyAt>590</getsGreyAt>
+				<colorChannels>
+                    <li>
+					<name>skin</name>
+					<first Class="ColorGenerator_Options">
+						<options>
+                            <li>
+								<weight>15</weight>
+                                <only>(222, 176, 130)</only>
+                            </li>
+                            <li>
+                                <weight>20</weight>
+                                <only>(216, 164, 111)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(212, 152, 91)</only>
+                            </li>
+                            <li>
+								<weight>20</weight>
+								<only>(252, 217, 196)</only>
+                            </li>
+							<li>
+								<weight>20</weight>
+								<only>(240, 219, 201)</only>
+                            </li>
+                            <li>
+                                <weight>20</weight>
+                                <only>(238, 197, 174)</only>
+                            </li>
+							<li>
+                                <weight>10</weight>
+                                <only>(218, 161, 101)</only>
+                            </li>
+							<li>
+                                <weight>10</weight>
+								<only>(193, 110, 89)</only>
+							</li>
+							<li>
+                                <weight>10</weight>
+                                <only>(250, 187, 108)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(168, 84, 51)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(177, 152, 118)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(193, 173, 143)</only>
+                            </li>
+							<li>
+                                <weight>10</weight>
+                                <only>(223, 217, 162)</only>
+                            </li>
+						</options>
+					</first>
+					</li>
+					<li>
+                        <second Class="ColorGenerator_Options"> <!--Eye colours-->
+                            <options>
+								<!--Black&White-->
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(40, 40, 40)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(80, 80, 80)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(135, 135, 135)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(200, 200, 200)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(255, 255, 255)</only>
+                                </li>
+								<!--Red&Orange-->
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(153, 0, 0)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(255, 51, 51)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(255, 128, 0)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(255, 178, 102)</only>
+                                </li>
+								<!--Yellow&Green-->
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(255, 255, 0)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(255, 255, 153)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(153, 255, 51)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(0, 204, 0)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(0, 255, 128)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(102, 255, 178)</only>
+                                </li>
+								<!--Blues-->
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(102, 255, 255)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(204, 255, 255)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(0, 76, 153)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(0, 128, 255)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(0, 0, 153)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(102, 102, 255)</only>
+                                </li>
+								<!--Purple&Pink-->
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(76, 0, 153)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(153, 51, 255)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(153, 0, 153)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(255, 153, 255)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(153, 0, 76)</only>
+                                </li>
+                                <li>
+                                    <weight>10</weight>
+                                    <only>(255, 0, 107)</only>
+                                </li>
+                            </options>
+						</second>
+					</li>
+					<li>
+					<name>hair</name>
+					<first Class="ColorGenerator_Options">
+						<options>
+							<!--Black&White-->
+                            <li>
+                                <weight>10</weight>
+                                <only>(40, 40, 40)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(80, 80, 80)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+                                <only>(135, 135, 135)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+								<only>(200, 200, 200)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+								<only>(255, 255, 255)</only>
+                            </li>
+							<!--Red&Orange-->
+                            <li>
+								<weight>10</weight>
+                                <only>(51, 0, 0)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(102, 51, 51)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+								<only>(153, 76, 0)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(255, 128, 0)</only>
+                            </li>
+							<!--Yellow&Green-->
+                            <li>
+								<weight>10</weight>
+                                <only>(255, 204, 51)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(255, 225, 73)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(238, 119, 0)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(255, 149, 41)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(115, 58, 0)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(50, 35, 0)</only>
+                            </li>
+						</options>
+					</first>
+                    </li>
+                </colorChannels>
+			</alienPartGenerator>
+		</generalSettings>
+		<graphicPaths>
+			<li>
+				<head>Pawn/Elf/</head>
+			</li>
+        </graphicPaths>
+        <styleSettings>
+			<li>
+				<key>HairDef</key>
+				<value>
+					<hasStyle>true</hasStyle>
+					<styleTags>
+						<li>Urban</li>
+						<li>Tribal</li>
+					</styleTags>
+				</value>
+			</li>
+			<li>
+				<key>BeardDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+        </styleSettings>
+        <thoughtSettings>
+			<cannotReceiveThoughts>
+				<li>EnvironmentDark</li>
+			</cannotReceiveThoughts>
+        </thoughtSettings>
+        <compatibility>
+			<isFlesh>True</isFlesh>
+			<isSentient>True</isSentient>
+			<hasBlood>True</hasBlood>
+        </compatibility>
+    </alienRace>
+	<statBases>
+		<MarketValue>2575</MarketValue>
+		<MoveSpeed>5.2</MoveSpeed>
+		<Flammability>0.3</Flammability>
+		<ComfyTemperatureMin>8</ComfyTemperatureMin>
+		<ComfyTemperatureMax>28</ComfyTemperatureMax>
+		<LeatherAmount>55</LeatherAmount>
+		<PsychicSensitivity>1.15</PsychicSensitivity>
+		<MiningSpeed>0.8</MiningSpeed>
+		<GlobalLearningFactor>1.2</GlobalLearningFactor>
+		<NegotiationAbility>1.2</NegotiationAbility>
+		<TradePriceImprovement>1.2</TradePriceImprovement>
+	</statBases>
+	<tools>
+		<li>
+			<label>left fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>8.2</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>right fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>8.2</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>teeth</label>
+			<capacities>
+				<li>Bite</li>
+			</capacities>
+			<power>8.2</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<chanceFactor>0.07</chanceFactor>
+		</li>
+		<li>
+			<label>head</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>5</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.2</chanceFactor>
+		</li>
+	</tools>
+	<race>
+		<leatherDef>Leather_Human</leatherDef>
+		<thinkTreeMain>Humanlike</thinkTreeMain>
+		<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+		<intelligence>Humanlike</intelligence>
+		<makesFootprints>true</makesFootprints>
+		<lifeExpectancy>600</lifeExpectancy>
+		<nameGenerator>NamerPersonElfMale</nameGenerator>
+		<nameGeneratorFemale>NamerPersonElfFemale</nameGeneratorFemale>
+		<useMeatFrom>Human</useMeatFrom>
+		<body>Human</body>
+		<baseBodySize>1.1</baseBodySize>
+		<baseHealthScale>0.9</baseHealthScale>
+		<foodType>OmnivoreHuman</foodType>
+		<gestationPeriodDays>45</gestationPeriodDays>
+		<meatMarketValue>1.2</meatMarketValue>
+		<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+		<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+		<litterSizeCurve>
+			<points>
+				<li>(0.5, 0)</li>
+				<li>(1, 1)</li>
+				<li>(1.01, 0.02)</li>
+				<li>(3.5, 0)</li>
+			</points>
+		</litterSizeCurve>
+		<lifeStageAges>
+			<li>
+				<def>HumanlikeBaby</def>
+				<minAge>0</minAge>
+			</li>
+			<li>
+				<def>HumanlikeToddler</def>
+				<minAge>3.5</minAge>
+			</li>
+			<li>
+				<def>HumanlikeChild</def>
+				<minAge>7.5</minAge>
+			</li>
+			<li>
+				<def>HumanlikeTeenager</def>
+				<minAge>15</minAge>
+			</li>
+			<li>
+				<def>HumanlikeAdult</def>
+				<minAge>20</minAge>
+			</li>
+		</lifeStageAges>
+		<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+		<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+		<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+		<specialShadowData>
+			<volume>(0.3, 0.8, 0.4)</volume>
+			<offset>(0,0,-0.3)</offset>
+		</specialShadowData>
+		<ageGenerationCurve>
+			<points>
+				<li>(14,0)</li>
+				<li>(18,100)</li>
+				<li>(150,100)</li>
+				<li>(200,30)</li>
+				<li>(350,18)</li>
+				<li>(500,10)</li>
+				<li>(600,3)</li>
+				<li>(650,0)</li>
+			</points>
+		</ageGenerationCurve>
+		<hediffGiverSets>
+			<li>OrganicStandard</li>
+			<li>Human</li>
+		</hediffGiverSets>
+	</race>
+		<recipes>
+			<li>ExciseCarcinoma</li>
+			<li>AdministerMechSerumHealer</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+			<li>CureScaria</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+		</recipes>
+</AlienRace.ThingDef_AlienRace>
+
+</Defs>

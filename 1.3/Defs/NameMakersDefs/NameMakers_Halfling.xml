@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>NamerPersonHalflingMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[HalflingList1] [HalflingList3][HalflingList6]</li>
+				<li>name->[HalflingList1] [HalflingList3][HalflingList4]</li>
+				<li>name->[HalflingList1] [HalflingList5][HalflingList6]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>HalflingList1</keyword>
+					<path>HalflingNames/Halfling1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HalflingList2</keyword>
+					<path>HalflingNames/Halfling2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HalflingList3</keyword>
+					<path>HalflingNames/Halfling3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HalflingList4</keyword>
+					<path>HalflingNames/Halfling4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HalflingList5</keyword>
+					<path>HalflingNames/Halfling5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HalflingList6</keyword>
+					<path>HalflingNames/Halfling6</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerPersonHalflingFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[HalflingList2] [HalflingList3][HalflingList6]</li>
+				<li>name->[HalflingList2] [HalflingList3][HalflingList4]</li>
+				<li>name->[HalflingList2] [HalflingList5][HalflingList6]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>HalflingList1</keyword>
+					<path>HalflingNames/Halfling1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HalflingList2</keyword>
+					<path>HalflingNames/Halfling2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HalflingList3</keyword>
+					<path>HalflingNames/Halfling3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HalflingList4</keyword>
+					<path>HalflingNames/Halfling4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HalflingList5</keyword>
+					<path>HalflingNames/Halfling5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HalflingList6</keyword>
+					<path>HalflingNames/Halfling6</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

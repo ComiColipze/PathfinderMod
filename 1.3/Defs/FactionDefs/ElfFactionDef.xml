@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_ElfPlayerColony</defName>
+		<label>Elvish Colony</label>
+		<description>Your own community composed of elves.</description>
+		<basicMemberKind>PF2_ElfColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_ElfPlayerTribe</defName>
+		<label>Elvish Tribe</label>
+		<description>A small tribe composed of elves.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_ElfTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>
