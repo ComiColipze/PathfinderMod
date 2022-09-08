@@ -22,6 +22,7 @@ grend
 gryth
 il
 ilnis
+istan
 kug
 lae
 leg
@@ -48,6 +49,7 @@ rolis
 ron
 ryg
 srial
+stan
 umborg
 un
 und

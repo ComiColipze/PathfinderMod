@@ -12,6 +12,7 @@ Fig
 Fir
 Fob
 Foz
+Gixx
 Giz
 Glad
 Glaineg
@@ -59,3 +60,5 @@ Tis
 Vlendun
 Vlurb
 Vofflen
+Zuzar
+Zuzari

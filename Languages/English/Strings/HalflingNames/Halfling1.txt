@@ -92,6 +92,9 @@ Ceelunt
 Ces
 Cescard
 Chaig
+Chaladir
+Chaldir
+Chaltir
 Chan
 Chertus
 Chied
@@ -555,6 +558,7 @@ Tar
 Tarul
 Taulf
 Tes
+Thamir
 Thar
 Thard
 Theodob

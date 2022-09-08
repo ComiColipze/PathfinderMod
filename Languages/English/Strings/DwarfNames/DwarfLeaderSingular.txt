@@ -1,0 +1,6 @@
+King
+Smith
+Chief
+Councilor
+Leader
+Forge

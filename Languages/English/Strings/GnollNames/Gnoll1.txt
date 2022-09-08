@@ -1,0 +1,16 @@
+﻿Red
+Blue
+Yellow
+Green
+Purple
+Black
+White
+Gray
+Orange
+Onyx
+Iron
+Gold
+Silver
+Steel
+Bronze
+Copper

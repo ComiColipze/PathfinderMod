@@ -79,7 +79,10 @@ Calaedra
 Calaldlara
 Calara
 Caleal
+Calistri
+Calistria
 Calmilara
+Calystrya
 Camara
 Camelda
 Camiel
@@ -152,6 +155,7 @@ Fayantariel
 Fayelanda
 Fayelaral
 Fayerunlara
+Findeladlara
 Fulsaocnu
 Gagiel
 Galgaliel
@@ -187,6 +191,7 @@ Irdli
 Irredmae
 Ithuriel
 Ithuslara
+Iuelral
 Izlara
 Jahabiel
 Jahanlara
@@ -435,6 +440,7 @@ Yememolviel
 Yicus
 Yiemullol
 Yoluhro
+Yuelral
 Yuhhilvonhol
 Yulandral
 Yulera
