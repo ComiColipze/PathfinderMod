@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+
+	<match Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+
+		<value>
+			<li>PF2_AmurrunPlayerColony</li>
+			<li>PF2_DwarfPlayerColony</li>
+			<li>PF2_ElfPlayerColony</li>
+			<li>PF2_GnollPlayerColony</li>
+			<li>PF2_GnomePlayerColony</li>
+			<li>PF2_GoblinPlayerColony</li>
+			<li>PF2_GolomaPlayerColony</li>
+			<li>PF2_HalflingPlayerColony</li>
+			<li>PF2_HobgoblinPlayerColony</li>
+			<li>PF2_IruxiPlayerColony</li>
+			<li>PF2_KoboldPlayerColony</li>
+			<li>PF2_OrcPlayerColony</li>
+			<li>PF2_TenguPlayerColony</li>
+			<li>PF2_YsokiPlayerColony</li>
+			<li>PF2_AmurrunPlayerTribe</li>
+			<li>PF2_DwarfPlayerTribe</li>
+			<li>PF2_ElfPlayerTribe</li>
+			<li>PF2_GnollPlayerTribe</li>
+			<li>PF2_GnomePlayerTribe</li>
+			<li>PF2_GoblinPlayerTribe</li>
+			<li>PF2_GolomaPlayerTribe</li>
+			<li>PF2_HalflingPlayerTribe</li>
+			<li>PF2_HobgoblinPlayerTribe</li>
+			<li>PF2_IruxiPlayerTribe</li>
+			<li>PF2_KoboldPlayerTribe</li>
+			<li>PF2_OrcPlayerTribe</li>
+			<li>PF2_TenguPlayerTribe</li>
+			<li>PF2_YsokiPlayerTribe</li>
+			<li>PF2_DwarfPlayerFaction</li>
+			<li>PF2_ElfPlayerFaction</li>
+		</value>
+	</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>NamerPersonGnoll</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[GnollList2]</li>
+				<li>name->[GnollList4][Space][GnollList2]</li>
+				<li>name->[GnollList1][Space][GnollList2]</li>
+				<li>name->[GnollList2] [In][Space][GnollList3]</li>
+				<li>name->[GnollList4][Space][GnollList2] [In][Space][GnollList3]</li>
+				<li>name->[GnollList1][Space][GnollList2] [In][Space][GnollList3]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>GnollList1</keyword>
+					<path>GnollNames/Gnoll1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnollList2</keyword>
+					<path>GnollNames/Gnoll2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnollList3</keyword>
+					<path>GnollNames/Gnoll3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnollList4</keyword>
+					<path>GnollNames/Gnoll4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>In</keyword>
+					<path>GnollNames/In</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Space</keyword>
+					<path>GnollNames/Space</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

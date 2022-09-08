@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>NamerPersonIruxi</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[IruxiList1]</li>
+				<li>name->[IruxiList1][IruxiList2]</li>
+				<li>name->[IruxiList1][IruxiList2][IruxiList3]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>IruxiList1</keyword>
+					<path>IruxiNames/Iruxi1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>IruxiList2</keyword>
+					<path>IruxiNames/Iruxi2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>IruxiList3</keyword>
+					<path>IruxiNames/Iruxi3</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

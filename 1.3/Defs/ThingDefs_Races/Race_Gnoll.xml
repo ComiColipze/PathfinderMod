@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.RaceSettings>
+		<defName>Gnoll_Settings</defName>
+		<pawnKindSettings>
+            <alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>PF2_GnollColonist</li>
+					</kindDefs>
+					<chance>2.0</chance>
+				</li>
+            </alienslavekinds>
+            <alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>PF2_GnollColonist</li>
+					</kindDefs>
+					<chance>2.0</chance>
+				</li>
+            </alienrefugeekinds>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_GnollColonist</li>
+							</kindDefs>
+							<chance>2.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_GnollPlayerColony</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_GnollTribal</li>
+							</kindDefs>
+							<chance>2.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_GnollPlayerTribe</li>
+					</factionDefs>
+				</li>
+			</startingColonists>
+            <alienwandererkinds>
+                <li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_GnollColonist</li>
+							</kindDefs>
+							<chance>2.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_GnollPlayerColony</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_GnollTribal</li>
+							</kindDefs>
+							<chance>2.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_GnollPlayerTribe</li> 
+					</factionDefs>
+				</li>
+            </alienwandererkinds>
+        </pawnKindSettings>
+	</AlienRace.RaceSettings>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>PF2Gnoll</defName>
+    <label>Gnoll</label>
+    <description>Gnolls, also known to themselves as “kholo” in the Mwangi Expanse, are eminently practical and pragmatic hunters and raiders. To gnolls, honor is just another word for pointless risk. Any loss of a gnoll affects not just the individual, but their packmates and kin as well. Wasting time on anything but victory, whether it's mercy or cruelty, is seen as little shy of immoral. Gnolls see effectiveness as a cardinal virtue and believe that the best fight is one that never gives the opponent a chance to strike back. Mwangi gnolls are masters of ambushes, tactical feints, and psychological warfare—none of which endears them to their neighbors.</description>
+    <alienRace>
+        <generalSettings>
+			<maleGenderProbability>0.5</maleGenderProbability>
+			<immuneToAge>false</immuneToAge>
+			<humanRecipeImport>true</humanRecipeImport>
+			<immuneToXenophobia>false</immuneToXenophobia>
+			<minAgeForAdulthood>17</minAgeForAdulthood>
+			<disallowedTraits>
+                <li>
+                    <defName>Undergrounder</defName>
+				</li>
+				<li>
+					<defName>Psychopath</defName>
+				</li>
+				<li>
+					<defName>Beauty</defName>
+					<degree>2</degree>
+				</li>
+				<li>
+					<defName>Cannibal</defName>
+				</li>
+				<li>
+					<defName>Wimp</defName>
+				</li>
+				<li>
+					<defName>Tough</defName>
+				</li>
+			</disallowedTraits>
+			<alienPartGenerator>
+                <aliencrowntypes>
+                    <li>Average_Normal</li>
+                </aliencrowntypes>
+				<alienbodytypes>
+					<li>Male</li>
+					<li>Female</li>
+					<li>Hulk</li>
+				</alienbodytypes>
+				<customDrawSize>(0.95, 0.85)</customDrawSize>
+				<customHeadDrawSize>(0.85, 0.75)</customHeadDrawSize>
+				<headOffset>(0.0, -0.06)</headOffset>
+				<getsGreyAt>40</getsGreyAt>
+				<colorChannels>
+                    <li>
+					<name>skin</name>
+					<first Class="ColorGenerator_Options">
+						<options>
+                            <li>
+								<weight>15</weight>
+                                <only>(184, 134, 11)</only>
+                            </li>
+                            <li>
+                                <weight>20</weight>
+                                <only>(218, 165, 32)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(145, 75, 25)</only>
+                            </li>
+                            <li>
+								<weight>15</weight>
+                                <only>(160, 85, 45)</only>
+                            </li>
+						</options>
+					</first>
+					</li>
+                </colorChannels>
+				<bodyAddons>
+					<li>
+						<bodyPart>left ear</bodyPart>
+						<path>Things/Pawn/Gnoll/Ears/Left_Ears</path>
+						<colorChannel>skin</colorChannel>
+						<drawSize>(1.0,1.0)</drawSize>
+						<drawSizePortrait>(1.0,1.0)</drawSizePortrait>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<inFrontOfBody>true</inFrontOfBody>
+						<alignWithHead>true</alignWithHead>
+						<drawnDesiccated>false</drawnDesiccated>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+					<li>
+						<bodyPart>right ear</bodyPart>
+						<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+						<path>Things/Pawn/Gnoll/Ears/Right_Ears</path>
+						<colorChannel>skin</colorChannel>
+						<drawSize>(1.0,1.0)</drawSize>
+						<drawSizePortrait>(1.0,1.0)</drawSizePortrait>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<inFrontOfBody>true</inFrontOfBody>
+						<alignWithHead>true</alignWithHead>
+						<drawnDesiccated>false</drawnDesiccated>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+				</bodyAddons>
+			</alienPartGenerator>
+        </generalSettings>
+        <graphicPaths>
+			<li>
+				<head>Things/Pawn/Gnoll/Head/</head>
+				<body>Things/Pawn/Gnoll/Bodies/</body>
+			</li>
+        </graphicPaths>
+        <styleSettings>
+			<li>
+				<key>BeardDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+        </styleSettings>
+        <thoughtSettings>
+			<cannotReceiveThoughts>
+				<li>ObservedLayingCorpse</li>
+				<li>EnvironmentDark</li>
+				<li>NeedOutdoors</li>
+				<li>DeadMansApparel</li>
+				<li>KnowGuestExecuted</li>
+				<li>KnowPrisonerDiedInnocent</li>
+				<li>AteRawFood</li>
+				<li>AteKibble</li>
+				<li>AteCorpse</li>
+				<li>AteHumanlikeMeatDirect</li>
+				<li>AteHumanlikeMeatAsIngredient</li>
+				<li>AteHumanlikeMeatAsIngredientCannibal</li>
+				<li>AteInsectMeatDirect</li>
+				<li>AteInsectMeatAsIngredient</li>
+				<li>AteWithoutTable</li>
+				<li>SleptOnGround</li>
+				<li>SoakingWet</li>
+				<li>KnowPrisonerSold</li>
+				<li>KnowGuestOrganHarvested</li>
+				<li>KnowColonistOrganHarvested</li>
+				<li>KnowButcheredHumanlikeCorpse</li>
+				<li>ButcheredHumanlikeCorpse</li>
+				<li>WitnessedDeathNonAlly</li>
+				<li>ColonistBanished</li>
+				<li>ColonistBanishedToDie</li>
+				<li>PrisonerBanishedToDie</li>
+				<li>ButcheredHumanlikeCorpseOpinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Know_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Abhorrent_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Horrible_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Know_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Disapproved_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_Preferred</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_RequiredStrong</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_RequiredRavenous</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteMeat_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteMeat_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteMeat_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteMeat_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteMeat_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">AteMeat_Know_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ExecutedGuest_Know_Abhorrent_Mood</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ObservedGibbetCage</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ObservedSkullspike</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">BlindingCeremony_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Horrible_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Disapproved_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">KilledInnocentAnimal_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">KilledInnocentAnimal_Know_Abhorrent_Mood</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">KilledInnocentAnimal_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">KilledInnocentAnimal_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">KilledInnocentAnimal_Know_Horrible_Mood</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">KilledInnocentAnimal_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">KilledInnocentAnimal_Know_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">KilledInnocentAnimal_Know_Disapproved_Mood</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HarvestedOrgan_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HarvestedOrgan_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HarvestedOrgan_Know_Abhorrent_Mood</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HarvestedOrgan_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HarvestedOrgan_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HarvestedOrgan_Know_Horrible_Mood</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ExecutedGuest_Know_Abhorrent_Mood</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ExecutedColonist_Know_Abhorrent_Mood</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ExecutedPrisoner_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InnocentPrisonerDied_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InnocentPrisonerDied_Know_Abhorrent_Mood</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InnocentPrisonerDied_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ExecutedPrisoner_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InnocentPrisonerDied_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ExecutedPrisoner_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InnocentPrisonerDied_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ExecutedPrisonerInnocent_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ExecutedPrisonerInnocent_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ScarificationCeremony_Know_Horrible</li>
+			</cannotReceiveThoughts>
+        </thoughtSettings>
+        <compatibility>
+			<isFlesh>True</isFlesh>
+			<isSentient>True</isSentient>
+			<hasBlood>True</hasBlood>
+        </compatibility>
+    </alienRace>
+	<statBases>
+		<Mass>80</Mass>
+		<MarketValue>1750</MarketValue>
+		<MoveSpeed>4.6</MoveSpeed>
+		<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		<ComfyTemperatureMax>30</ComfyTemperatureMax>
+		<LeatherAmount>90</LeatherAmount>
+		<RoyalFavorValue>3</RoyalFavorValue>
+		<CarryingCapacity>90</CarryingCapacity>
+		<PlantHarvestYield>0.75</PlantHarvestYield>
+		<AnimalGatherYield>1.10</AnimalGatherYield>
+        <IncomingDamageFactor>0.5</IncomingDamageFactor>
+		<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+	</statBases>
+	<tools>
+		<li>
+			<label>left fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>7.7</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>right fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>7.7</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>teeth</label>
+			<capacities>
+				<li>Bite</li>
+			</capacities>
+			<power>16.2</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<chanceFactor>0.07</chanceFactor>
+		</li>
+		<li>
+			<label>head</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>6.4</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.2</chanceFactor>
+		</li>
+	</tools>
+	<race>
+		<thinkTreeMain>Humanlike</thinkTreeMain>
+		<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+		<intelligence>Humanlike</intelligence>
+		<makesFootprints>true</makesFootprints>
+		<lifeExpectancy>60</lifeExpectancy>
+		<leatherDef>Leather_Wolf</leatherDef>
+		<nameGenerator>NamerPersonGnoll</nameGenerator>
+		<useMeatFrom>Human</useMeatFrom>
+		<body>Human</body>
+		<baseBodySize>1.12</baseBodySize>
+		<baseHealthScale>1.15</baseHealthScale>
+		<foodType>CarnivoreAnimal, OvivoreAnimal, AnimalProduct</foodType>
+		<gestationPeriodDays>20</gestationPeriodDays>
+		<meatMarketValue>0.8</meatMarketValue>
+		<nuzzleMtbHours>12</nuzzleMtbHours>
+		<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+		<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
+		<litterSizeCurve>
+			<points>
+				<li>(0.5, 0)</li>
+				<li>(1, 1)</li>
+				<li>(1.01, 0.02)</li>
+				<li>(3.5, 0)</li>
+			</points>
+		</litterSizeCurve>
+		<lifeStageAges>
+			<li>
+				<def>HumanlikeBaby</def>
+				<minAge>0</minAge>
+			</li>
+			<li>
+				<def>HumanlikeToddler</def>
+				<minAge>1</minAge>
+			</li>
+			<li>
+				<def>HumanlikeChild</def>
+				<minAge>5</minAge>
+			</li>
+			<li>
+				<def>HumanlikeTeenager</def>
+				<minAge>13</minAge>
+			</li>
+			<li>
+				<def>HumanlikeAdult</def>
+				<minAge>15</minAge>
+			</li>
+		</lifeStageAges>
+		<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+		<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+		<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+		<specialShadowData>
+			<volume>(0.3, 0.8, 0.4)</volume>
+			<offset>(0,0,-0.3)</offset>
+		</specialShadowData>
+		<ageGenerationCurve>
+			<points>
+				<li>(8,0)</li>
+				<li>(12,100)</li>
+				<li>(25,100)</li>
+				<li>(30,30)</li>
+				<li>(40,18)</li>
+				<li>(50,10)</li>
+				<li>(60,3)</li>
+				<li>(65,0)</li>
+			</points>
+		</ageGenerationCurve>
+		<hediffGiverSets>
+			<li>OrganicStandard</li>
+            <li>Human</li>
+		</hediffGiverSets>
+	</race>
+	<recipes>
+		<li>ExciseCarcinoma</li>
+		<li>AdministerMechSerumHealer</li>
+		<li>RemoveBodyPart</li>
+		<li>Euthanize</li>
+		<li>Anesthetize</li>
+		<li>CureScaria</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+		<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+	</recipes>
+</AlienRace.ThingDef_AlienRace>
+
+</Defs>

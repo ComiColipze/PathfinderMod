@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Ideology Expanded - Memes and Structures</li>
+		</mods>
+
+	<match Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="PF2_GoblinPlayerFaction"]/requiredMemes</xpath>
+
+		<value>
+			<li>VME_FireWorship</li>
+		</value>
+	</match>
+	</Operation>
+
+</Patch>

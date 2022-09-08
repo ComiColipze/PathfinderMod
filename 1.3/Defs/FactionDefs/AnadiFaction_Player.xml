@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_AnadiPlayerColony</defName>
+		<label>Anadi Arrivals</label>
+		<description>Your own community composed of anadi.</description>
+		<basicMemberKind>PF2_AnadiColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_AnadiPlayerTribe</defName>
+		<label>Anadi Tribe</label>
+		<description>A small tribe composed of anadi.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_AnadiTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

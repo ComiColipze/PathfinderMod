@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_YsokiPlayerColony</defName>
+		<label>Ysoki Arrivals</label>
+		<description>Your own community composed of ysoki.</description>
+		<basicMemberKind>PF2_YsokiColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_YsokiPlayerTribe</defName>
+		<label>Ysoki Tribe</label>
+		<description>A small tribe composed of ysoki.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_YsokiTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

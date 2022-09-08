@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<CultureDef>
+		<defName>Toraghdan</defName>
+		<label>toraghdan</label>
+		<description>A close-knit society based around dwarven history and culture.</description>
+		<pawnNameMaker>NamerPersonDwarfMale</pawnNameMaker>
+		<pawnNameMakerFemale>NamerPersonDwarfFemale</pawnNameMakerFemale>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoToraghdan</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityToraghdan</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerToraghdan</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Toraghdan</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginTribal</li>
+		</allowedPlaceTags>
+		<iconPath>World/WorldObjects/Expanding/DwarfFaction2</iconPath>
+        <preferredWeaponClasses>
+			<noble>MeleeBlunt</noble>
+            <despised>MeleePiercer</despised>
+        </preferredWeaponClasses>
+		<thingStyleCategories>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Totemic</category>
+				<priority>2</priority>
+			</li>
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>Tribal</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Urban</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Rural</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>0</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardRural</tag>
+				<baseWeight>16</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardTribal</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardUrban</tag>
+				<baseWeight>6</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+ 
+	<CultureDef>
+		<defName>Kyonan</defName>
+		<label>Kyonan</label>
+		<description>An insular but vivacious culture adopted by many elves.</description>
+		<pawnNameMaker>NamerPersonElfMale</pawnNameMaker>
+		<pawnNameMakerFemale>NamerPersonElfFemale</pawnNameMakerFemale>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoKyonan</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityKyonan</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerKyonan</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Kyonan</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginTribal</li>
+		</allowedPlaceTags>
+		<iconPath>World/WorldObjects/Expanding/ElfFaction2</iconPath>
+        <preferredWeaponClasses>
+			<noble>Ranged</noble>
+            <despised>Melee</despised>
+        </preferredWeaponClasses>
+		<styleItemTags>
+			<li>
+				<tag>Tribal</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Urban</tag>
+				<baseWeight>0.6</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Punk</tag>
+				<baseWeight>0.4</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Royal</tag>
+				<baseWeight>0.8</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>20</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardTribal</tag>
+				<baseWeight>0</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+ 
+	<CultureDef>
+		<defName>Belkzen</defName>
+		<label>Belkzen</label>
+		<description>a brutal culture based on orcs' vision of honor and war.</description>
+		<pawnNameMaker>NamerPersonOrcMale</pawnNameMaker>
+		<pawnNameMakerFemale>NamerPersonOrcFemale</pawnNameMakerFemale>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoBelkzen</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityBelkzen</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerBelkzen</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Belkzen</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginTribal</li>
+		</allowedPlaceTags>
+		<iconPath>World/WorldObjects/Expanding/OrcFaction2</iconPath>
+        <preferredWeaponClasses>
+			<noble>Melee</noble>
+            <despised>Ranged</despised>
+        </preferredWeaponClasses>
+		<thingStyleCategories>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Morbid</category>
+				<priority>2</priority>
+			</li>
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>Tribal</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardTribal</tag>
+				<baseWeight>0.3</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooFaceTribal</tag>
+				<baseWeight>0.8</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooBodyTribal</tag>
+				<baseWeight>0.8</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+ 
+	<CultureDef>
+		<defName>Goblin</defName>
+		<label>Goblin</label>
+		<description>a mish-mash of savage visions adopted by goblin tribes.</description>
+		<pawnNameMaker>NamerPersonGoblinMale</pawnNameMaker>
+		<pawnNameMakerFemale>NamerPersonGoblinFemale</pawnNameMakerFemale>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoGoblin</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityGoblin</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerGoblin</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Goblin</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginTribal</li>
+		</allowedPlaceTags>
+		<iconPath>World/WorldObjects/Expanding/GoblinFaction2</iconPath>
+        <preferredWeaponClasses>
+			<noble>RangedHeavy</noble>
+            <despised>RangedLight</despised>
+        </preferredWeaponClasses>
+		<thingStyleCategories>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Spikecore</category>
+				<priority>2</priority>
+			</li>
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>Tribal</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardTribal</tag>
+				<baseWeight>0.3</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooFaceTribal</tag>
+				<baseWeight>0.8</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooBodyTribal</tag>
+				<baseWeight>0.8</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+	
+</Defs>

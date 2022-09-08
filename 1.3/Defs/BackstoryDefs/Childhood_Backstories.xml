@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<AlienRace.BackstoryDef>
+		<defName>PF2Forlorn</defName>
+		<title>forlorn</title>
+		<baseDescription>[PAWN_nameDef] grew up in a community populated by short-lived races. While being more compassionate and open to change than their isolationist brethren,  {PAWN_gender ? him : she} is more melancholic due to outliving most of their companions.</baseDescription>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Elven</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Artistic</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-2</amount>
+			</li>
+		</skillGains>
+		<forcedTraits>
+			<li>
+				<defName>NaturalMood</defName>
+				<degree>-1</degree>
+				<chance>50</chance>
+			</li>
+			<li>
+				<defName>NaturalMood</defName>
+				<degree>-2</degree>
+				<chance>25</chance>
+			</li>
+			<li>
+				<defName>Nerves</defName>
+				<degree>1</degree>
+				<chance>35</chance>
+			</li>
+			<li>
+				<defName>Xenophobia</defName>
+				<degree>-1</degree>
+				<chance>45</chance>
+			</li>
+		</forcedTraits>
+		<disallowedTraits>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+			<li>
+				<defName>Nerves</defName>
+				<degree>-2</degree>
+			</li>
+			<li>
+				<defName>Xenophobia</defName>
+				<degree>1</degree>
+			</li>
+    </disallowedTraits>
+	</AlienRace.BackstoryDef>
+	
+</Defs>

@@ -2,35 +2,18 @@
 
 <Defs>
 
-  <BodyPartGroupDef>
-    <defName>KoboldLeftHorn</defName>
-    <label>left horn</label>
-  </BodyPartGroupDef>
+	<BodyPartGroupDef>
+		<defName>KoboldHorn</defName>
+		<label>left horn</label>
+	</BodyPartGroupDef>
 
-  <BodyPartGroupDef>
-    <defName>KoboldRightHorn</defName>
-    <label>right horn</label>
-  </BodyPartGroupDef>
-
-  <BodyPartDef ParentName="KoboldHorn">
-    <defName>KoboldRightHorn</defName>
-    <label>right horn</label>
-    <labelShort>horn</labelShort>
-  </BodyPartDef>
-
-  <BodyPartDef ParentName="KoboldHorn">
-    <defName>KoboldLeftHorn</defName>
-    <label>left horn</label>
-    <labelShort>horn</labelShort>
-  </BodyPartDef>
-
-  <BodyPartDef Name="KoboldHorn">
-    <defName>KoboldHorn</defName>
-    <label>horn</label>
-    <hitPoints>20</hitPoints>
-    <frostbiteVulnerability>0.0</frostbiteVulnerability>
-    <permanentInjuryChanceFactor>0.05</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-  </BodyPartDef>
+	<BodyPartDef Name="KoboldHorn">
+		<defName>KoboldHorn</defName>
+		<label>horn</label>
+		<hitPoints>20</hitPoints>
+		<frostbiteVulnerability>0.0</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0.05</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+	</BodyPartDef>
 
 </Defs>

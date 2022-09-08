@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>NamerPersonKoboldMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[KoboldList1][KoboldList2]</li>
+				<li>name->[KoboldList1][KoboldList2][KoboldList3]</li>
+				<li>name->[KoboldList1][KoboldList3]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>KoboldList1</keyword>
+					<path>KoboldNames/Kobold1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KoboldList2</keyword>
+					<path>KoboldNames/Kobold2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KoboldList3</keyword>
+					<path>KoboldNames/Kobold3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KoboldList4</keyword>
+					<path>KoboldNames/Kobold4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KoboldList5</keyword>
+					<path>KoboldNames/Kobold5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KoboldList6</keyword>
+					<path>KoboldNames/Kobold6</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerPersonKoboldFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[KoboldList4][KoboldList5]</li>
+				<li>name->[KoboldList4][KoboldList5][KoboldList6]</li>
+				<li>name->[KoboldList4][KoboldList6]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>KoboldList1</keyword>
+					<path>KoboldNames/Kobold1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KoboldList2</keyword>
+					<path>KoboldNames/Kobold2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KoboldList3</keyword>
+					<path>KoboldNames/Kobold3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KoboldList4</keyword>
+					<path>KoboldNames/Kobold4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KoboldList5</keyword>
+					<path>KoboldNames/Kobold5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KoboldList6</keyword>
+					<path>KoboldNames/Kobold6</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

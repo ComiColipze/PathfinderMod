@@ -1,6 +1,84 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<AlienRace.RaceSettings>
+		<defName>Halfling_Settings</defName>
+		<pawnKindSettings>
+            <alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>PF2_HalflingColonist</li>
+					</kindDefs>
+					<chance>2.0</chance>
+				</li>
+            </alienslavekinds>
+            <alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>PF2_HalflingColonist</li>
+					</kindDefs>
+					<chance>2.0</chance>
+				</li>
+            </alienrefugeekinds>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_HalflingColonist</li>
+							</kindDefs>
+							<chance>2.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_HalflingPlayerColony</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_HalflingTribal</li>
+							</kindDefs>
+							<chance>2.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_HalflingPlayerTribe</li>
+					</factionDefs>
+				</li>
+			</startingColonists>
+            <alienwandererkinds>
+                <li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_HalflingColonist</li>
+							</kindDefs>
+							<chance>2.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_HalflingPlayerColony</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_HalflingTribal</li>
+							</kindDefs>
+							<chance>2.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_HalflingPlayerTribe</li> 
+					</factionDefs>
+				</li>
+            </alienwandererkinds>
+        </pawnKindSettings>
+	</AlienRace.RaceSettings>
+
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>PF2Halfling</defName>
     <label>Halfling</label>
@@ -11,6 +89,7 @@
 			<immuneToAge>false</immuneToAge>
 			<humanRecipeImport>true</humanRecipeImport>
 			<immuneToXenophobia>false</immuneToXenophobia>
+			<minAgeForAdulthood>20</minAgeForAdulthood>
 			<disallowedTraits>
                 <li>
                     <defName>Nimble</defName>
@@ -29,7 +108,7 @@
 				</alienbodytypes>
 				<customDrawSize>(0.75, 0.75)</customDrawSize>
 				<customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>
-				<customPortraitHeadDrawSize>(1.15, 1.15)</customPortraitHeadDrawSize>
+				<customPortraitHeadDrawSize>(1.18, 1.18)</customPortraitHeadDrawSize>
 				<headOffset>(0.0, -0.08)</headOffset>
 			</alienPartGenerator>
         </generalSettings>
@@ -40,15 +119,16 @@
         </compatibility>
     </alienRace>	
 	<statBases>
-			<MarketValue>1750</MarketValue>
-			<MoveSpeed>4.2</MoveSpeed>
-			<ComfyTemperatureMin>8</ComfyTemperatureMin>
-			<ComfyTemperatureMax>28</ComfyTemperatureMax>
-			<LeatherAmount>35</LeatherAmount>
-			<RoyalFavorValue>3</RoyalFavorValue>
-			<MeleeDodgeChance>15</MeleeDodgeChance>
-			<PawnTrapSpringChance>0.1</PawnTrapSpringChance>
-			<ForagedNutritionPerDay>0.3</ForagedNutritionPerDay>
+		<MarketValue>1750</MarketValue>
+		<MoveSpeed>4.2</MoveSpeed>
+		<ComfyTemperatureMin>16</ComfyTemperatureMin>
+		<ComfyTemperatureMax>26</ComfyTemperatureMax>
+		<LeatherAmount>35</LeatherAmount>
+		<RoyalFavorValue>3</RoyalFavorValue>
+		<HungerRateMultiplier>0.95</HungerRateMultiplier>
+		<MeleeDodgeChance>15</MeleeDodgeChance>
+		<PawnTrapSpringChance>0.1</PawnTrapSpringChance>
+		<ForagedNutritionPerDay>0.3</ForagedNutritionPerDay>
 	</statBases>
 	<tools>
 		<li>
@@ -118,10 +198,10 @@
 		<nameGeneratorFemale>NamerPersonHalflingFemale</nameGeneratorFemale>
 		<useMeatFrom>Human</useMeatFrom>
 		<body>Human</body>
-		<baseBodySize>0.75</baseBodySize>
+		<baseBodySize>0.70</baseBodySize>
 		<baseHealthScale>0.95</baseHealthScale>
 		<foodType>OmnivoreHuman</foodType>
-		<gestationPeriodDays>45</gestationPeriodDays>
+		<gestationPeriodDays>30</gestationPeriodDays>
 		<meatMarketValue>0.8</meatMarketValue>
 		<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
 		<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
@@ -165,14 +245,14 @@
 		</specialShadowData>
 		<ageGenerationCurve>
 			<points>
-				<li>(18,0)</li>
-				<li>(30,100)</li>
-				<li>(70,100)</li>
-				<li>(150,30)</li>
-				<li>(250,18)</li>
-				<li>(350,10)</li>
-				<li>(400,3)</li>
-				<li>(450,0)</li>
+				<li>(15,0)</li>
+				<li>(20,100)</li>
+				<li>(40,100)</li>
+				<li>(60,30)</li>
+				<li>(80,18)</li>
+				<li>(120,10)</li>
+				<li>(150,3)</li>
+				<li>(170,0)</li>
 			</points>
 		</ageGenerationCurve>
 		<hediffGiverSets>

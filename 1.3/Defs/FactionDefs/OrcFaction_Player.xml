@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_OrcPlayerColony</defName>
+		<label>Orc Arrivals</label>
+		<description>Your own community composed of orcs.</description>
+		<basicMemberKind>PF2_OrcColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_OrcPlayerTribe</defName>
+		<label>Orc Tribe</label>
+		<description>A small tribe composed of orcs.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_OrcTribal</basicMemberKind>
+	</FactionDef>
+	
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>PF2_OrcPlayerFaction</defName>
+		<label>New Orc War Band</label>
+		<description>A small war band composed of dwarves.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>raider</pawnSingular>
+		<pawnsPlural>raiders</pawnsPlural>
+		<basicMemberKind>PF2_OrcRaider</basicMemberKind>
+		<techLevel>Medieval</techLevel>
+		<backstoryCategories>
+			<li>Tribal</li>
+		</backstoryCategories>
+		<factionIconPath>World/WorldObjects/Expanding/OrcFaction</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/TribaçSettlement</settlementTexturePath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOrc</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOrc</settlementNameMaker>
+		<allowedCultures><li>Belkzen</li></allowedCultures>
+		<geneticVariance>1</geneticVariance>
+		<startingResearchTags>
+			<li>TribalStart</li>
+			<li>MedievalStart</li>
+		</startingResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+</Defs>

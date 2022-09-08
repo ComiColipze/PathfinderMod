@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>NamerPersonAnadi</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[AnadiList1]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>AnadiList1</keyword>
+					<path>AnadiNames/Anadi1</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

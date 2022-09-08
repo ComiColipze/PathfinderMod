@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ScenarioDef>
+        <defName>PF2_ExiledForHumiliation</defName>
+        <label>Exiled for Humiliation</label>
+        <description>You humiliated yourself in front of the high kings and your brothers and sisters. Lost or broke your clan dagger, slighted your brethren, insulted their gods or even cut the beard of a fellow dwarf are one of the transgressions any dwarf will not forgive. To not face hatred by your own people, you chose exile, followed by four individuals whom too commited same vile acts. Now free from your former home's harsh laws, you can now settle a new kingdom and search for your own quest for sky.\n\nNote:  Since you'll start with few supplies, lack technology, and the dwarven kingdom being your enemy forever, this is a difficult scenario.</description>
+        <scenario>
+            <summary>Five exiled dwarves in search for a new free life. Difficult.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>PF2_DwarfPlayerFaction</factionDef>
+            </playerFaction>
+            <parts>
+
+                <!-- Config pages -->
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+                    <def>ConfigPage_ConfigureStartingPawns</def>
+                    <pawnCount>5</pawnCount>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                </li>
+
+                <!-- Player starting stuff spawn method-->
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>Standing</method>
+                </li>
+
+                <!-- Player pawns modifiers -->
+                <li Class="ScenPart_SetNeedLevel">
+                    <def>SetNeedLevel</def>
+                    <visible>false</visible>
+                    <context>PlayerStarter</context>
+                    <chance>1.0</chance>
+                    <need>Food</need>
+                    <levelRange>
+                        <min>0.5</min>
+                        <max>0.7</max>
+                    </levelRange>
+                </li>
+
+                <!-- Player starting things -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>200</count>
+				</li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Gold</thingDef>
+                    <count>150</count>
+                </li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Pemmican</thingDef>
+					<count>450</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineHerbal</thingDef>
+					<count>10</count>
+				</li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_LongSword</thingDef>
+                    <stuff>Steel</stuff>
+                    <count>1</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_Mace</thingDef>
+                    <stuff>Steel</stuff>
+                    <count>1</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_Knife</thingDef>
+                    <stuff>Steel</stuff>
+                    <count>2</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Apparel_PlateArmor</thingDef>
+                    <stuff>Steel</stuff>
+                    <count>2</count>
+                </li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<count>4</count>
+					<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+				</li>
+
+                <!-- Faction relations -->
+                <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+                    <def>VFEC_ForcedFactionGoodwill</def>
+                    <factionDef>PF2_DwarfFaction</factionDef>
+                    <alwaysHostile>true</alwaysHostile>
+                    <visible>false</visible>
+                </li>
+
+                <!-- Game start dialog -->
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+					<text>After humiliating yourself on your former home, you and five forsaken brethren got exiled and will try to forge a new, better version of the dwarven kingdom. However, by leaving your people, and abandoning your high king, the dwarven kingdom has closed their stone gates for you; you will be unable to befriend them.</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+
+            </parts>
+        </scenario>
+    </ScenarioDef>
+
+</Defs>

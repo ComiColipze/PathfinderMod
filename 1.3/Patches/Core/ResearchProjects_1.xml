@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>/Defs/ResearchProjectDef[defName="Brewing"]/tags</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ResearchProjectDef[defName="Brewing"]</xpath>
+                <value>
+                    <tags/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ResearchProjectDef[defName="Brewing"]/tags</xpath>
+        <value>
+            <li>MedievalStart</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ResearchProjectDef[defName="ComplexFurniture"]/tags</xpath>
+        <value>
+            <li>MedievalStart</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ResearchProjectDef[defName="Stonecutting"]/tags</xpath>
+        <value>
+            <li>MedievalStart</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ResearchProjectDef[defName="ComplexClothing"]/tags</xpath>
+        <value>
+            <li>MedievalStart</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>/Defs/ResearchProjectDef[defName="Smithing"]/tags</xpath>
+                <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ResearchProjectDef[defName="Smithing"]</xpath>
+                <value>
+                    <tags/>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ResearchProjectDef[defName="Smithing"]/tags</xpath>
+        <value>
+            <li>MedievalStart</li>
+        </value>
+    </Operation>
+
+</Patch>

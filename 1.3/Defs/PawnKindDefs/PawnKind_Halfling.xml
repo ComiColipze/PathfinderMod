@@ -25,7 +25,7 @@
 
   	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>PF2_HalflingTribal</defName>
-		<label>tribal Halfling</label>
+		<label>tribal halfling</label>
 		<race>PF2Halfling</race>
 		<defaultFactionType>PF2_HalflingPlayerTribe</defaultFactionType>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>

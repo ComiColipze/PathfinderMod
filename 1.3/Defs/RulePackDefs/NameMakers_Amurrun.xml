@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>NamerPersonAmurrunMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2]</li>
+				<li>name->[AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2][AmurrunList3][AmurrunList2]</li>
+				<li>name->[AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2][AmurrunList3][AmurrunList2][AmurrunList4]</li>
+				<li>name->[AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2][AmurrunList4]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>AmurrunList1</keyword>
+					<path>AmurrunNames/Amurrun1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>AmurrunList2</keyword>
+					<path>AmurrunNames/Amurrun2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>AmurrunList3</keyword>
+					<path>AmurrunNames/Amurrun3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>AmurrunList4</keyword>
+					<path>AmurrunNames/Amurrun4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>AmurrunList5</keyword>
+					<path>AmurrunNames/Amurrun5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>AmurrunList6</keyword>
+					<path>AmurrunNames/Amurrun6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>AmurrunList7</keyword>
+					<path>AmurrunNames/Amurrun7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>AmurrunList8</keyword>
+					<path>AmurrunNames/Amurrun8</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerPersonAmurrunFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6]</li>
+				<li>name->[AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6][AmurrunList7][AmurrunList6]</li>
+				<li>name->[AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6][AmurrunList7][AmurrunList6][AmurrunList8]</li>
+				<li>name->[AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6][AmurrunList8]</li>
+				<li>name->[AmurrunList6][AmurrunList7][AmurrunList6]</li>
+				<li>name->[AmurrunList6][AmurrunList7][AmurrunList6][AmurrunList7][AmurrunList6]</li>
+				<li>name->[AmurrunList6][AmurrunList7][AmurrunList6][AmurrunList7][AmurrunList6][AmurrunList8]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>AmurrunList1</keyword>
+					<path>AmurrunNames/Amurrun1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>AmurrunList2</keyword>
+					<path>AmurrunNames/Amurrun2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>AmurrunList3</keyword>
+					<path>AmurrunNames/Amurrun3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>AmurrunList4</keyword>
+					<path>AmurrunNames/Amurrun4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>AmurrunList5</keyword>
+					<path>AmurrunNames/Amurrun5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>AmurrunList6</keyword>
+					<path>AmurrunNames/Amurrun6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>AmurrunList7</keyword>
+					<path>AmurrunNames/Amurrun7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>AmurrunList8</keyword>
+					<path>AmurrunNames/Amurrun8</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

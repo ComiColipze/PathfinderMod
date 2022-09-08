@@ -42,4 +42,24 @@
 		<initialResistanceRange>9~15</initialResistanceRange>
 	</PawnKindDef>
 
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>PF2_DwarfSubject</defName>
+		<label>dwarf subject</label>
+		<race>PF2Dwarf</race>
+		<defaultFactionType>PF2_DwarfPlayerFaction</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelTags>
+			<li>MedievalBasic</li>
+			<li>Neolithic</li>
+		</apparelTags>
+		<apparelMoney>200~200</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsMoney>500~500</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.02</techHediffsChance>
+		<initialResistanceRange>12~17</initialResistanceRange>
+	 </PawnKindDef>
+
 </Defs>

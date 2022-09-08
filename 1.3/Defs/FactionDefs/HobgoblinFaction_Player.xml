@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_HobgoblinPlayerColony</defName>
+		<label>Hobgoblin Arrivals</label>
+		<description>Your own community composed of hobgoblins.</description>
+		<basicMemberKind>PF2_HobgoblinColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_HobgoblinPlayerTribe</defName>
+		<label>Hobgoblin Tribe</label>
+		<description>A small tribe composed of hobgoblins.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_HobgoblinTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

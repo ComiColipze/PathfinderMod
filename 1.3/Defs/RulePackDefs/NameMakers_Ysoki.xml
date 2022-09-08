@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>NamerPersonYsokiMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[YsokiList1][YsokiList2][YsokiList4] [YsokiList9][YsokiList10]</li>
+				<li>name->[YsokiList1][YsokiList2][YsokiList3][YsokiList2][YsokiList4] [YsokiList9][YsokiList10]</li>
+				<li>name->[YsokiList2][YsokiList3][YsokiList2][YsokiList4] [YsokiList9][YsokiList10]</li>
+				<li>name->[YsokiList1][YsokiList2][YsokiList4] [YsokiList11]</li>
+				<li>name->[YsokiList1][YsokiList2][YsokiList3][YsokiList2][YsokiList4] [YsokiList11]</li>
+				<li>name->[YsokiList2][YsokiList3][YsokiList2][YsokiList4] [YsokiList11]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>YsokiList1</keyword>
+					<path>YsokiNames/Ysoki1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList2</keyword>
+					<path>YsokiNames/Ysoki2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList3</keyword>
+					<path>YsokiNames/Ysoki3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList4</keyword>
+					<path>YsokiNames/Ysoki4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList5</keyword>
+					<path>YsokiNames/Ysoki5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList6</keyword>
+					<path>YsokiNames/Ysoki6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList7</keyword>
+					<path>YsokiNames/Ysoki7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList8</keyword>
+					<path>YsokiNames/Ysoki8</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList9</keyword>
+					<path>YsokiNames/Ysoki9</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList10</keyword>
+					<path>YsokiNames/Ysoki10</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList11</keyword>
+					<path>YsokiNames/Ysoki11</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerPersonYsokiFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[YsokiList5][YsokiList6][YsokiList8] [YsokiList9][YsokiList10]</li>
+				<li>name->[YsokiList5][YsokiList6][YsokiList7][YsokiList6][YsokiList8] [YsokiList9][YsokiList10]</li>
+				<li>name->[YsokiList6][YsokiList7][YsokiList6][YsokiList8] [YsokiList9][YsokiList10]</li>
+				<li>name->[YsokiList5][YsokiList6][YsokiList8] [YsokiList11]</li>
+				<li>name->[YsokiList5][YsokiList6][YsokiList7][YsokiList6][YsokiList8] [YsokiList11]</li>
+				<li>name->[YsokiList6][YsokiList7][YsokiList6][YsokiList8] [YsokiList11]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>YsokiList1</keyword>
+					<path>YsokiNames/Ysoki1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList2</keyword>
+					<path>YsokiNames/Ysoki2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList3</keyword>
+					<path>YsokiNames/Ysoki3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList4</keyword>
+					<path>YsokiNames/Ysoki4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList5</keyword>
+					<path>YsokiNames/Ysoki5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList6</keyword>
+					<path>YsokiNames/Ysoki6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList7</keyword>
+					<path>YsokiNames/Ysoki7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList8</keyword>
+					<path>YsokiNames/Ysoki8</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList9</keyword>
+					<path>YsokiNames/Ysoki9</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList10</keyword>
+					<path>YsokiNames/Ysoki10</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>YsokiList11</keyword>
+					<path>YsokiNames/Ysoki11</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

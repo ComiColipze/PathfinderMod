@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>NamerPersonElfMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[ElfList1] [ElfList3]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>ElfList1</keyword>
+					<path>ElfNames/Elf1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList2</keyword>
+					<path>ElfNames/Elf2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList3</keyword>
+					<path>ElfNames/Elf3</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerPersonElfFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[ElfList2] [ElfList3]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>ElfList1</keyword>
+					<path>ElfNames/Elf1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList2</keyword>
+					<path>ElfNames/Elf2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList3</keyword>
+					<path>ElfNames/Elf3</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+
+	<RulePackDef>
+		<defName>NamerDeityKyonan</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[ElfList1]</li>
+				<li>name->[ElfList2]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>ElfList1</keyword>
+					<path>ElfNames/Elf1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList2</keyword>
+					<path>ElfNames/Elf2</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerIdeoKyonan</defName>
+		<include>
+			<li>NamerIdeoGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>globalAdjective->Millenary</li>
+				<li>globalAdjective->Capricious</li>
+				<li>globalAdjective->Ideal</li>
+				<li>globalAdjective->Mystical</li>
+				<li>globalAdjective->Artistic</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>DeityTypeMakerKyonan</defName>
+		<include>
+			<li>DeityTypeMakerGlobal</li>
+		</include>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>LeaderTitleMaker_Kyonan</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
+
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+				<li>cultureLeaderAdjective->millenarian</li>
+				<li>cultureLeaderAdjective->elder</li>
+				<li>cultureLeaderAdjective->ancient</li>
+
+				<li>cultureLeaderNoun->ruler</li>
+				<li>cultureLeaderNoun->king</li>
+				<li>cultureLeaderNoun->leader</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

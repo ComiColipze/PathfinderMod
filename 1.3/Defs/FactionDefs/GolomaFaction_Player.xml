@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_GolomaPlayerColony</defName>
+		<label>Goloma Arrivals</label>
+		<description>Your own community composed of golomas.</description>
+		<basicMemberKind>PF2_GolomaColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_GolomaPlayerTribe</defName>
+		<label>Goloma Tribe</label>
+		<description>A small tribe composed of golomas.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_GolomaTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

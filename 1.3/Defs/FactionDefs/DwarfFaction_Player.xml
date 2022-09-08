@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_DwarfPlayerColony</defName>
+		<label>Dwarven Arrivals</label>
+		<description>Your own community composed of dwarves.</description>
+		<basicMemberKind>PF2_DwarfColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_DwarfPlayerTribe</defName>
+		<label>Dwarven Tribe</label>
+		<description>A small tribe composed of dwarves.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_DwarfTribal</basicMemberKind>
+	</FactionDef>
+
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>PF2_DwarfPlayerFaction</defName>
+		<label>New Dwarven Kingdom</label>
+		<description>A small kingdom composed of dwarves.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>subject</pawnSingular>
+		<pawnsPlural>subjects</pawnsPlural>
+		<basicMemberKind>PF2_DwarfSubject</basicMemberKind>
+		<techLevel>Medieval</techLevel>
+		<backstoryCategories>
+			<li>Tribal</li>
+		</backstoryCategories>
+		<factionIconPath>World/WorldObjects/Expanding/DwarfFaction</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionDwarven</factionNameMaker>
+		<settlementNameMaker>NamerSettlementDwarven</settlementNameMaker>
+		<allowedCultures><li>Toraghdan</li></allowedCultures>
+		<geneticVariance>1</geneticVariance>
+		<startingResearchTags>
+			<li>TribalStart</li>
+			<li>MedievalStart</li>
+		</startingResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+</Defs>

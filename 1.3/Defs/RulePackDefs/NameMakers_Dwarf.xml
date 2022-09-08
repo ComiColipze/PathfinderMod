@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>NamerPersonDwarfMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[DwarfList1][DwarfList2][DwarfList4] [DwarfList15][DwarfList16]</li>
+				<li>name->[DwarfList2][DwarfList4] [DwarfList15][DwarfList16]</li>
+				<li>name->[DwarfList2][DwarfList3][DwarfList2][DwarfList4] [DwarfList15][DwarfList16]</li>
+				<li>name->[DwarfList1][DwarfList2][DwarfList3][DwarfList2][DwarfList4] [DwarfList15][DwarfList16]</li>
+				<li>name->[DwarfList11][DwarfList12] [DwarfList15][DwarfList16]</li>
+				<li>name->[DwarfList1][DwarfList2][DwarfList4] [DwarfList13][DwarfList14]</li>
+				<li>name->[DwarfList2][DwarfList4] [DwarfList13][DwarfList14]</li>
+				<li>name->[DwarfList2][DwarfList3][DwarfList2][DwarfList4] [DwarfList13][DwarfList14]</li>
+				<li>name->[DwarfList1][DwarfList2][DwarfList3][DwarfList2][DwarfList4] [DwarfList13][DwarfList14]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>DwarfList1</keyword>
+					<path>DwarfNames/Dwarf1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList2</keyword>
+					<path>DwarfNames/Dwarf2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList3</keyword>
+					<path>DwarfNames/Dwarf3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList4</keyword>
+					<path>DwarfNames/Dwarf4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList5</keyword>
+					<path>DwarfNames/Dwarf5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList6</keyword>
+					<path>DwarfNames/Dwarf6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList7</keyword>
+					<path>DwarfNames/Dwarf7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList8</keyword>
+					<path>DwarfNames/Dwarf8</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList9</keyword>
+					<path>DwarfNames/Dwarf9</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList10</keyword>
+					<path>DwarfNames/Dwarf10</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList11</keyword>
+					<path>DwarfNames/Dwarf11</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList12</keyword>
+					<path>DwarfNames/Dwarf12</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList13</keyword>
+					<path>DwarfNames/Dwarf13</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList14</keyword>
+					<path>DwarfNames/Dwarf14</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList15</keyword>
+					<path>DwarfNames/Dwarf15</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList16</keyword>
+					<path>DwarfNames/Dwarf16</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>NamerPersonDwarfFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[DwarfList5][DwarfList6][DwarfList8] [DwarfList13][DwarfList14]</li>
+				<li>name->[DwarfList5][DwarfList6] [DwarfList13][DwarfList14]</li>
+				<li>name->[DwarfList5][DwarfList6][DwarfList7][DwarfList6] [DwarfList13][DwarfList14]</li>
+				<li>name->[DwarfList5][DwarfList6][DwarfList7][DwarfList6][DwarfList8] [DwarfList13][DwarfList14]</li>
+				<li>name->[DwarfList6][DwarfList7][DwarfList6] [DwarfList13][DwarfList14]</li>
+				<li>name->[DwarfList9][DwarfList10] [DwarfList13][DwarfList14]</li>
+				<li>name->[DwarfList5][DwarfList6][DwarfList8] [DwarfList15][DwarfList16]</li>
+				<li>name->[DwarfList5][DwarfList6] [DwarfList15][DwarfList16]</li>
+				<li>name->[DwarfList5][DwarfList6][DwarfList7][DwarfList6] [DwarfList15][DwarfList16]</li>
+				<li>name->[DwarfList5][DwarfList6][DwarfList7][DwarfList6][DwarfList8] [DwarfList15][DwarfList16]</li>
+				<li>name->[DwarfList6][DwarfList7][DwarfList6] [DwarfList15][DwarfList16]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>DwarfList1</keyword>
+					<path>DwarfNames/Dwarf1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList2</keyword>
+					<path>DwarfNames/Dwarf2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList3</keyword>
+					<path>DwarfNames/Dwarf3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList4</keyword>
+					<path>DwarfNames/Dwarf4</path>
+				</li>
+
+				<li Class="Rule_File">
+					<keyword>DwarfList5</keyword>
+					<path>DwarfNames/Dwarf5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList6</keyword>
+					<path>DwarfNames/Dwarf6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList7</keyword>
+					<path>DwarfNames/Dwarf7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList8</keyword>
+					<path>DwarfNames/Dwarf8</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList9</keyword>
+					<path>DwarfNames/Dwarf9</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList10</keyword>
+					<path>DwarfNames/Dwarf10</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList11</keyword>
+					<path>DwarfNames/Dwarf11</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList12</keyword>
+					<path>DwarfNames/Dwarf12</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList13</keyword>
+					<path>DwarfNames/Dwarf13</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList14</keyword>
+					<path>DwarfNames/Dwarf14</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList15</keyword>
+					<path>DwarfNames/Dwarf15</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList16</keyword>
+					<path>DwarfNames/Dwarf16</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerDeityToraghdan</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[DwarfList9][DwarfList10]</li>
+				<li>name->[DwarfList11][DwarfList12]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>DwarfList9</keyword>
+					<path>DwarfNames/Dwarf9</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList10</keyword>
+					<path>DwarfNames/Dwarf10</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList11</keyword>
+					<path>DwarfNames/Dwarf11</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList12</keyword>
+					<path>DwarfNames/Dwarf12</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerIdeoToraghdan</defName>
+		<include>
+			<li>NamerIdeoGlobal</li>
+			</include>
+		<rulePack>
+			<rulesStrings>
+				<li>globalAdjective->Battleforged</li>
+				<li>globalAdjective->Stoic</li>
+				<li>globalAdjective->Honored</li>
+				<li>globalAdjective->Determined</li>
+				<li>globalAdjective->Dwarf</li>
+				<li>globalAdjective->Dwarven</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>DeityTypeMakerToraghdan</defName>
+		<include>
+			<li>DeityTypeMakerGlobal</li>
+		</include>
+	</RulePackDef>
+	
+
+	<RulePackDef>
+		<defName>LeaderTitleMaker_Toraghdan</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
+
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+				<li>cultureLeaderAdjective->great</li>
+				<li>cultureLeaderAdjective->high</li>
+				<li>cultureLeaderAdjective->grand</li>
+
+				<li>cultureLeaderNoun->chief</li>
+				<li>cultureLeaderNoun->king</li>
+				<li>cultureLeaderNoun->smith</li>
+				<li>cultureLeaderNoun->councilor</li>
+				<li>cultureLeaderNoun->leader</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerFactionDwarven</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Color] [DwarfLeaderPlural] [DwarfPlacesPlural]</li>
+				<li>r_name->[Color] [DwarfLeaderSingular] [DwarfPlacesSingular]</li>
+				<li>r_name->[DwarfNumbers] [DwarfLeaderPlural] [DwarfPlacesPlural]</li>
+				<li>r_name->One [DwarfLeaderSingular] [DwarfPlacesSingular]</li>
+				<li>r_name->[Dwarf15][Dwarf16]an</li>
+				<li>r_name->[Dwarf15][Dwarf16]ur</li>
+				<li>r_name->[Dwarf15][Dwarf16]ihr</li>
+				<li>r_name->[Dwarf15][Dwarf16]uhm</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>DwarfLeaderPlural->DwarfNames/DwarfLeaderPlural</li>
+				<li>DwarfLeaderSingular->DwarfNames/DwarfLeaderSingular</li>
+				<li>DwarfPlacesPlural->DwarfNames/DwarfPlacesPlural</li>
+				<li>DwarfPlacesSingular->DwarfNames/DwarfPlacesSingular</li>
+				<li>DwarfNumbers->DwarfNames/DwarfNumbers</li>
+				<li>Dwarf15->DwarfNames/Dwarf15</li>
+				<li>Dwarf16->DwarfNames/Dwarf16</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerSettlementDwarven</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[townname_wordgen]</li>
+
+				<li>townname_wordgen(p=2)->[SylE][SylE]</li>
+				<li>townname_wordgen(p=2)->[SylE][SylE][SylE]</li>
+				<li>townname_wordgen(p=2)->[SylE]ksen</li>
+				<li>townname_wordgen(p=2)->[SylE][SylE]ksen</li>
+				<li>townname_wordgen(p=2)->[Dwarf9]ksen</li>
+				<li>townname_wordgen(p=2)->[Dwarf9][Dwarf10]ksen</li>
+				<li>townname_wordgen(p=2)->[Dwarf11]ksen</li>
+				<li>townname_wordgen(p=2)->[Dwarf11][Dwarf12]ksen</li>
+				<li>townname_wordgen(p=2)->[Dwarf15]ksen</li>
+				<li>townname_wordgen(p=2)->[Dwarf15][Dwarf16]ksen</li>
+				<li>townname_wordgen(p=2)->[Dwarf13Alt][Dwarf14Alt]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Dwarf9->DwarfNames/Dwarf9</li>
+				<li>Dwarf10->DwarfNames/Dwarf10</li>
+				<li>Dwarf11->DwarfNames/Dwarf11</li>
+				<li>Dwarf12->DwarfNames/Dwarf12</li>
+				<li>Dwarf13Alt->DwarfNames/Dwarf13Alt</li>
+				<li>Dwarf14Alt->DwarfNames/Dwarf14Alt</li>
+				<li>Dwarf15->DwarfNames/Dwarf15</li>
+				<li>Dwarf16->DwarfNames/Dwarf16</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

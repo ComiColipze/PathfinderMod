@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_GnollPlayerColony</defName>
+		<label>Gnoll Arrivals</label>
+		<description>Your own community composed of gnolls.</description>
+		<basicMemberKind>PF2_GnollColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_GnollPlayerTribe</defName>
+		<label>Gnoll Tribe</label>
+		<description>A small tribe composed of gnolls.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_GnollTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

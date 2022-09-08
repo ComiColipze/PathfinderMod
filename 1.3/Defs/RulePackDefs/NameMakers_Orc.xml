@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>NamerPersonOrcMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[OrcList1][OrcList3] [OrcList7][OrcList8]</li>
+				<li>name->[OrcList1][OrcList2][OrcList3] [OrcList7][OrcList8]</li>
+				<li>name->[OrcList1][OrcList3]</li>
+				<li>name->[OrcList1][OrcList2][OrcList3]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>OrcList1</keyword>
+					<path>OrcNames/Orc1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList2</keyword>
+					<path>OrcNames/Orc2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList3</keyword>
+					<path>OrcNames/Orc3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList4</keyword>
+					<path>OrcNames/Orc4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList5</keyword>
+					<path>OrcNames/Orc5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList6</keyword>
+					<path>OrcNames/Orc6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList7</keyword>
+					<path>OrcNames/Orc7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList8</keyword>
+					<path>OrcNames/Orc8</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerPersonOrcFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[OrcList4][OrcList6] [OrcList7][OrcList8]</li>
+				<li>name->[OrcList4][OrcList5][OrcList6] [OrcList7][OrcList8]</li>
+				<li>name->[OrcList4][OrcList6]</li>
+				<li>name->[OrcList4][OrcList5][OrcList6]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>OrcList1</keyword>
+					<path>OrcNames/Orc1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList2</keyword>
+					<path>OrcNames/Orc2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList3</keyword>
+					<path>OrcNames/Orc3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList4</keyword>
+					<path>OrcNames/Orc4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList5</keyword>
+					<path>OrcNames/Orc5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList6</keyword>
+					<path>OrcNames/Orc6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList7</keyword>
+					<path>OrcNames/Orc7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList8</keyword>
+					<path>OrcNames/Orc8</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerDeityBelkzen</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[OrcList1][OrcList3]</li>
+				<li>name->[OrcList1][OrcList2][OrcList3]</li>
+				<li>name->[OrcList4][OrcList6]</li>
+				<li>name->[OrcList4][OrcList5][OrcList6]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>OrcList1</keyword>
+					<path>OrcNames/Orc1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList2</keyword>
+					<path>OrcNames/Orc2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList3</keyword>
+					<path>OrcNames/Orc3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList4</keyword>
+					<path>OrcNames/Orc4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList5</keyword>
+					<path>OrcNames/Orc5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList6</keyword>
+					<path>OrcNames/Orc6</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerIdeoBelkzen</defName>
+		<include>
+			<li>NamerIdeoGlobal</li>
+			</include>
+		<rulePack>
+			<rulesStrings>
+				<li>globalAdjective->Battleforged</li>
+				<li>globalAdjective->Savage</li>
+				<li>globalAdjective->Warrior</li>
+				<li>globalAdjective->Tribal</li>
+				<li>globalAdjective->Orc</li>
+				<li>globalAdjective->Orcish</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>DeityTypeMakerBelkzen</defName>
+		<include>
+			<li>DeityTypeMakerGlobal</li>
+		</include>
+	</RulePackDef>
+	
+
+	<RulePackDef>
+		<defName>LeaderTitleMaker_Belkzen</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
+
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+				<li>cultureLeaderAdjective->war</li>
+				<li>cultureLeaderAdjective->great</li>
+				<li>cultureLeaderAdjective->grand</li>
+
+				<li>cultureLeaderNoun->chief</li>
+				<li>cultureLeaderNoun->khan</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerFactionOrc</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[OrcList1][OrcList2][OrcList3]</li>
+				<li>r_name->[OrcList4][OrcList5][OrcList6]</li>
+				<li>r_name->[OrcList1][OrcList2][OrcList3] Union</li>
+				<li>r_name->[OrcList4][OrcList5][OrcList6] Union</li>
+				<li>r_name->[OrcList1][OrcList2][OrcList3] Hold</li>
+				<li>r_name->[OrcList4][OrcList5][OrcList6] Hold</li>
+				<li>r_name->[OrcList1][OrcList2][OrcList3] Alliance</li>
+				<li>r_name->[OrcList4][OrcList5][OrcList6] Alliance</li>
+				<li>r_name->[OrcList1][OrcList2][OrcList3] Alliances</li>
+				<li>r_name->[OrcList4][OrcList5][OrcList6] Alliances</li>
+				<li>r_name->The Union of [OrcList1][OrcList2][OrcList3]</li>
+				<li>r_name->The Union of [OrcList4][OrcList5][OrcList6]</li>
+				<li>r_name->The Hold of [OrcList1][OrcList2][OrcList3]</li>
+				<li>r_name->The Hold of [OrcList4][OrcList5][OrcList6]</li>
+				<li>r_name->The Alliance of [OrcList1][OrcList2][OrcList3]</li>
+				<li>r_name->The Alliance of [OrcList4][OrcList5][OrcList6]</li>
+				<li>r_name->The Alliances of [OrcList1][OrcList2][OrcList3]</li>
+				<li>r_name->The Alliances of [OrcList4][OrcList5][OrcList6]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>OrcList1->OrcNames/Orc1</li>
+				<li>OrcList2->OrcNames/Orc2</li>
+				<li>OrcList3->OrcNames/Orc3</li>
+				<li>OrcList4->OrcNames/Orc4</li>
+				<li>OrcList5->OrcNames/Orc5</li>
+				<li>OrcList6->OrcNames/Orc6</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerSettlementOrc</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[townname_wordgen]</li>
+
+				<li>townname_wordgen(p=2)->[Orc7][Orc8] Tribe</li>
+				<li>townname_wordgen(p=2)->[Orc9] [Orc10] Tribe</li>
+				<li>townname_wordgen(p=2)->[Color] [Orc10] Tribe</li>
+				<li>townname_wordgen(p=2)->[Orc7][Orc8] Kin</li>
+				<li>townname_wordgen(p=2)->[Orc9] [Orc10] Kin</li>
+				<li>townname_wordgen(p=2)->[Color] [Orc10] Kin</li>
+				<li>townname_wordgen(p=2)->[Orc7][Orc8] Children</li>
+				<li>townname_wordgen(p=2)->[Orc9] [Orc10] Children</li>
+				<li>townname_wordgen(p=2)->[Color] [Orc10] Children</li>
+				<li>townname_wordgen(p=2)->[Orc7][Orc8] Clan</li>
+				<li>townname_wordgen(p=2)->[Orc9] [Orc10] Clan</li>
+				<li>townname_wordgen(p=2)->[Color] [Orc10] Clan</li>
+				<li>townname_wordgen(p=2)->[Orc7][Orc8] Caste</li>
+				<li>townname_wordgen(p=2)->[Orc9] [Orc10] Caste</li>
+				<li>townname_wordgen(p=2)->[Color] [Orc10] Caste</li>
+				<li>townname_wordgen(p=2)->[Orc7][Orc8] Horde</li>
+				<li>townname_wordgen(p=2)->[Orc9] [Orc10] Horde</li>
+				<li>townname_wordgen(p=2)->[Color] [Orc10] Horde</li>
+				<li>townname_wordgen(p=2)->[Orc7][Orc8] Warriors</li>
+				<li>townname_wordgen(p=2)->[Orc9] [Orc10] Warriors</li>
+				<li>townname_wordgen(p=2)->[Color] [Orc10] Warriors</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Orc7->OrcNames/Orc7</li>
+				<li>Orc8->OrcNames/Orc8</li>
+				<li>Orc9->OrcNames/Orc9</li>
+				<li>Orc10->OrcNames/Orc10</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

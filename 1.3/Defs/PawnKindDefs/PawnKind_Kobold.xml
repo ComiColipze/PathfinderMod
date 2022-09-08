@@ -3,7 +3,7 @@
 
 	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>PF2_KoboldColonist</defName>
-		<label>Kobold colonist</label>
+		<label>kobold colonist</label>
 		<race>PF2Kobold</race>
 		<defaultFactionType>PF2_KoboldPlayerColony</defaultFactionType>
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
@@ -25,7 +25,7 @@
 
   	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>PF2_KoboldTribal</defName>
-		<label>tribal Kobold</label>
+		<label>tribal kobold</label>
 		<race>PF2Kobold</race>
 		<defaultFactionType>PF2_KoboldPlayerTribe</defaultFactionType>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>

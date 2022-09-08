@@ -1,6 +1,84 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<AlienRace.RaceSettings>
+		<defName>Kobold_Settings</defName>
+		<pawnKindSettings>
+            <alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>PF2_KoboldColonist</li>
+					</kindDefs>
+					<chance>2.0</chance>
+				</li>
+            </alienslavekinds>
+            <alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>PF2_KoboldColonist</li>
+					</kindDefs>
+					<chance>2.0</chance>
+				</li>
+            </alienrefugeekinds>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_KoboldColonist</li>
+							</kindDefs>
+							<chance>2.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_KoboldPlayerColony</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_KoboldTribal</li>
+							</kindDefs>
+							<chance>2.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_KoboldPlayerTribe</li>
+					</factionDefs>
+				</li>
+			</startingColonists>
+            <alienwandererkinds>
+                <li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_KoboldColonist</li>
+							</kindDefs>
+							<chance>2.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_KoboldPlayerColony</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_KoboldTribal</li>
+							</kindDefs>
+							<chance>2.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_KoboldPlayerTribe</li> 
+					</factionDefs>
+				</li>
+            </alienwandererkinds>
+        </pawnKindSettings>
+	</AlienRace.RaceSettings>
+
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>PF2Kobold</defName>
     <label>Kobold</label>
@@ -11,15 +89,10 @@
 			<immuneToAge>false</immuneToAge>
 			<humanRecipeImport>true</humanRecipeImport>
 			<immuneToXenophobia>false</immuneToXenophobia>
+			<minAgeForAdulthood>14</minAgeForAdulthood>
 			<disallowedTraits>
                 <li>
                     <defName>Undergrounder</defName>
-				</li>
-                <li>
-                    <defName>Cannibal</defName>
-				</li>
-                <li>
-                    <defName>Psychopath</defName>
 				</li>
             </disallowedTraits>
 			<alienPartGenerator>
@@ -30,7 +103,6 @@
 				<alienbodytypes>
 					<li>Thin</li>
 					<li>Male</li>
-					<li>Female</li>
 				</alienbodytypes>
 				<customDrawSize>(0.75, 0.75)</customDrawSize>
 				<customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>
@@ -161,25 +233,40 @@
 				</colorChannels>							
 				<bodyAddons>
 					<li>
-						<bodyPart>Head</bodyPart>
-						<path>Pawn/Kobold/Horns/Horns</path>
+						<bodyPart>left horn</bodyPart>
+						<path>Things/Pawn/Kobold/Horns/Horns</path>
 						<inFrontOfBody>true</inFrontOfBody>
 						<drawnInBed>true</drawnInBed>
 						<drawSize>1.0</drawSize>
 						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-                        <colorChannel>skin</colorChannel>
+                        <colorChannel>base</colorChannel>
 						<defaultOffset>Center</defaultOffset>
 						<alignWithHead>true</alignWithHead>	
+						<drawnDesiccated>true</drawnDesiccated>
+					</li>
+					<li>
+						<bodyPart>right horn</bodyPart>
+						<path>Things/Pawn/Kobold/Horns/Horns</path>                
+						<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+						<inFrontOfBody>true</inFrontOfBody>
+						<drawnInBed>true</drawnInBed>
+						<drawSize>1.0</drawSize>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                        <colorChannel>base</colorChannel>
+						<defaultOffset>Center</defaultOffset>
+						<alignWithHead>true</alignWithHead>
+						<drawnDesiccated>true</drawnDesiccated>
 					</li>
 					<li>
 						<bodyPart>tail</bodyPart>
-						<path>Pawn/Kobold/Tails/Tails</path>
+						<path>Things/Pawn/Kobold/Tails/Tails</path>
 						<inFrontOfBody>false</inFrontOfBody>
 						<drawnInBed>false</drawnInBed>
 						<drawSize>1.0</drawSize>
 						<scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
                         <colorChannel>skin</colorChannel>
 						<defaultOffset>Center</defaultOffset>
+						<drawnDesiccated>false</drawnDesiccated>
 						<offsets>
 							<south>
 								<bodyTypes>
@@ -197,9 +284,9 @@
 							</north>
 							<east>
 								<bodyTypes>
-									<Male>(0.260,-0.146)</Male>
-									<Female>(0.260,-0.146)</Female>
-									<Thin>(0.260,-0.146)</Thin>
+									<Male>(0.235,-0.156)</Male>
+									<Female>(0.235,-0.156)</Female>
+									<Thin>(0.232,-0.156)</Thin>
 								</bodyTypes>
 							</east>
 						</offsets>	
@@ -209,7 +296,7 @@
         </generalSettings>
         <graphicPaths>
 			<li>
-				<head>Pawn/Kobold/Head/</head>
+				<head>Things/Pawn/Kobold/Head/</head>
 			</li>
         </graphicPaths>
         <styleSettings>
@@ -228,34 +315,15 @@
         </styleSettings>
         <thoughtSettings>
 			<cannotReceiveThoughts>
-				<li>ObservedLayingCorpse</li>
 				<li>EnvironmentDark</li>
 				<li>NeedOutdoors</li>
-				<li>DeadMansApparel</li>
-				<li>KnowGuestExecuted</li>
-				<li>KnowPrisonerDiedInnocent</li>
 				<li>AteRawFood</li>
 				<li>AteKibble</li>
-				<li>AteCorpse</li>
-				<li>AteHumanlikeMeatDirect</li>
-				<li>AteHumanlikeMeatAsIngredient</li>
-				<li>AteHumanlikeMeatAsIngredientCannibal</li>
 				<li>AteInsectMeatDirect</li>
 				<li>AteInsectMeatAsIngredient</li>
 				<li>AteWithoutTable</li>
 				<li>SleptOnGround</li>
-				<li>KnowPrisonerSold</li>
-				<li>KnowGuestOrganHarvested</li>
-				<li>KnowColonistOrganHarvested</li>
-				<li>SoakingWet</li>
-				<li>KnowButcheredHumanlikeCorpse</li>
-				<li>ButcheredHumanlikeCorpse</li>
-				<li>WitnessedDeathNonAlly</li>
-				<li>ColonistBanished</li>
-				<li>ColonistBanishedToDie</li>
-				<li>PrisonerBanishedToDie</li>
 				<li>SharedBed</li>
-				<li>ButcheredHumanlikeCorpseOpinion</li>
 			</cannotReceiveThoughts>
         </thoughtSettings>
         <compatibility>
@@ -272,11 +340,11 @@
 		<ComfyTemperatureMax>28</ComfyTemperatureMax>
 		<LeatherAmount>35</LeatherAmount>
 		<RoyalFavorValue>3</RoyalFavorValue>
-		<HungerRateMultiplier>0.85</HungerRateMultiplier>
-		<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
-		<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
-		<ArmorRating_Heat>0.15</ArmorRating_Heat>
-		<WorkSpeedGlobal>1.2</WorkSpeedGlobal>
+		<HungerRateMultiplier>0.95</HungerRateMultiplier>
+		<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+		<ArmorRating_Heat>0.05</ArmorRating_Heat>
+		<WorkSpeedGlobal>1.10</WorkSpeedGlobal>
 		<MiningSpeed>1.2</MiningSpeed>
 	</statBases>
 	<tools>
@@ -343,16 +411,17 @@
 		<makesFootprints>true</makesFootprints>
 		<lifeExpectancy>120</lifeExpectancy>
 		<leatherDef>Leather_Lizard</leatherDef>
-		<nameGenerator>NamerPersonGoblin</nameGenerator>
+		<nameGenerator>NamerPersonKoboldMale</nameGenerator>
+		<nameGeneratorFemale>NamerPersonKoboldFemale</nameGeneratorFemale>
 		<useMeatFrom>Human</useMeatFrom>
-		<body>Kobold</body>
+		<body>BodyKobold</body>
 		<baseBodySize>0.7</baseBodySize>
 		<baseHealthScale>0.9</baseHealthScale>
-		<foodType>OmnivoreHuman</foodType>
-		<gestationPeriodDays>45</gestationPeriodDays>
+		<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+		<gestationPeriodDays>25</gestationPeriodDays>
 		<meatMarketValue>0.8</meatMarketValue>
-		<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
-		<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+		<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+		<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
 		<litterSizeCurve>
 			<points>
 				<li>(0.5, 0)</li>

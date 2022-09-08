@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_GoblinPlayerColony</defName>
+		<label>Goblin Arrivals</label>
+		<description>Your own community composed of goblins.</description>
+		<basicMemberKind>PF2_GoblinColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_GoblinPlayerTribe</defName>
+		<label>Goblin Tribe</label>
+		<description>A small tribe composed of goblins.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_GoblinTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

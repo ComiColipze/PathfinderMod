@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_IruxiPlayerColony</defName>
+		<label>Iruxi Arrivals</label>
+		<description>Your own community composed of iruxis.</description>
+		<basicMemberKind>PF2_IruxiColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_IruxiPlayerTribe</defName>
+		<label>Iruxi Tribe</label>
+		<description>A small tribe composed of iruxis.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_IruxiTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>
