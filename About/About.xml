@@ -1,13 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Pathfinder Second Edition - Races</name>
+  <name>Pathfinder - Races for Rimworld</name>
   <author>ComiColipze</author>
-  <packageId>comicolipze.PF2E</packageId>
+  <packageId>comicolipze.PF2Races</packageId>
   <supportedVersions>
     <li>1.3</li>
   </supportedVersions>
-  <description>This mod adds the ancestries/races from the Pathfinder Second Edition for Rimworld.</description>
+  <description>This mod adds some of the ancestries/races from the Pathfinder roleplaying game, and their unique factions and cultures, to Rimworld.</description>
   <modDependencies>
+		<li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013</steamWorkshopUrl>
+		</li>
 		<li>
 			<packageId>erdelf.HumanoidAlienRaces</packageId>
 			<displayName>Humanoid Alien Races 2.0</displayName>
@@ -15,6 +20,7 @@
 		</li>
 	</modDependencies>
 	<loadAfter>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>erdelf.HumanoidAlienRaces</li>
 	</loadAfter>
 </ModMetaData>
