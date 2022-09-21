@@ -7,17 +7,17 @@
             <alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_DwarfColonist</li>
+						<li>PF2_DwarfSlave</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_DwarfColonist</li>
+						<li>PF2_DwarfRefugee</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_DwarfColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_DwarfTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_DwarfColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_DwarfTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -80,8 +80,8 @@
 	</AlienRace.RaceSettings>
 
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>PF2Dwarf</defName>
-    <label>Dwarf</label>
+    <defName>PF2_Dwarf</defName>
+    <label>dwarf</label>
     <description>Dwarves are slow to trust those outside their kin, but this wariness is not without reason. Dwarves have a long history of forced exile from ancestral holds and struggles against the depredations of savage foes, especially giants, goblinoids, orcs, and the horrors that dwell deep below the surface. While trust from a dwarf is hard-won, once gained it is as strong as iron.</description>
     <alienRace>
         <generalSettings>
@@ -136,16 +136,17 @@
         </compatibility>
     </alienRace>
 	<statBases>
-			<MarketValue>1750</MarketValue>
-			<MoveSpeed>4.2</MoveSpeed>
-			<ComfyTemperatureMin>-48</ComfyTemperatureMin>
-			<ComfyTemperatureMax>28</ComfyTemperatureMax>
-			<LeatherAmount>65</LeatherAmount>
-			<RoyalFavorValue>3</RoyalFavorValue>
-			<MiningSpeed>2.0</MiningSpeed>
-			<MiningYield>1.2</MiningYield>
-			<ToxicSensitivity>1.2</ToxicSensitivity>
-            <ImmunityGainSpeed>1.45</ImmunityGainSpeed>
+		<MarketValue>1750</MarketValue>
+		<MoveSpeed>4.2</MoveSpeed>
+		<ComfyTemperatureMin>-48</ComfyTemperatureMin>
+		<ComfyTemperatureMax>28</ComfyTemperatureMax>
+		<LeatherAmount>65</LeatherAmount>
+		<RoyalFavorValue>3</RoyalFavorValue>
+		<CarryingCapacity>90</CarryingCapacity>
+		<MiningSpeed>2.2</MiningSpeed>
+		<MiningYield>1.3</MiningYield>
+		<ToxicSensitivity>1.25</ToxicSensitivity>
+        <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
 	</statBases>
 		<tools>
 			<li>
@@ -211,8 +212,8 @@
 			<makesFootprints>true</makesFootprints>
 			<lifeExpectancy>350</lifeExpectancy>
 			<leatherDef>Leather_Human</leatherDef>
-			<nameGenerator>NamerPersonDwarfMale</nameGenerator>
-			<nameGeneratorFemale>NamerPersonDwarfFemale</nameGeneratorFemale>
+			<nameGenerator>PF2_NamerPersonDwarfMale</nameGenerator>
+			<nameGeneratorFemale>PF2_NamerPersonDwarfFemale</nameGeneratorFemale>
 			<useMeatFrom>Human</useMeatFrom>
 			<body>Human</body>
 			<baseBodySize>0.9</baseBodySize>

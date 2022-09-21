@@ -2,7 +2,7 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>NamerPersonTenguMale</defName>
+		<defName>PF2_NamerPersonTenguMale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[TenguList1] [TenguList7][TenguList8]</li>
@@ -48,7 +48,7 @@
 	</RulePackDef>
 
 	<RulePackDef>
-		<defName>NamerPersonTenguFemale</defName>
+		<defName>PF2_NamerPersonTenguFemale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[TenguList4] [TenguList7][TenguList8]</li>

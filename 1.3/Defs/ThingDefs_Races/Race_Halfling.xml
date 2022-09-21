@@ -7,17 +7,17 @@
             <alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_HalflingColonist</li>
+						<li>PF2_HalflingSlave</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_HalflingColonist</li>
+						<li>PF2_HalflingRefugee</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_HalflingColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_HalflingTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_HalflingColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_HalflingTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -80,8 +80,8 @@
 	</AlienRace.RaceSettings>
 
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>PF2Halfling</defName>
-    <label>Halfling</label>
+    <defName>PF2_Halfling</defName>
+    <label>halfling</label>
     <description>Optimistic and cheerful, blessed with uncanny luck, and driven by powerful wanderlust, halflings make up for their short stature with an abundance of bravado and curiosity. At once excitable and easygoing, they are the best kind of opportunists, and their passions favor joy over violence. Even in the jaws of danger, halflings rarely lose their sense of humor.</description>
     <alienRace>
         <generalSettings>
@@ -125,7 +125,6 @@
 		<ComfyTemperatureMax>26</ComfyTemperatureMax>
 		<LeatherAmount>35</LeatherAmount>
 		<RoyalFavorValue>3</RoyalFavorValue>
-		<HungerRateMultiplier>0.95</HungerRateMultiplier>
 		<MeleeDodgeChance>15</MeleeDodgeChance>
 		<PawnTrapSpringChance>0.1</PawnTrapSpringChance>
 		<ForagedNutritionPerDay>0.3</ForagedNutritionPerDay>
@@ -194,8 +193,8 @@
 		<makesFootprints>true</makesFootprints>
 		<lifeExpectancy>150</lifeExpectancy>
 		<leatherDef>Leather_Human</leatherDef>
-		<nameGenerator>NamerPersonHalflingMale</nameGenerator>
-		<nameGeneratorFemale>NamerPersonHalflingFemale</nameGeneratorFemale>
+		<nameGenerator>PF2_NamerPersonHalflingMale</nameGenerator>
+		<nameGeneratorFemale>PF2_NamerPersonHalflingFemale</nameGeneratorFemale>
 		<useMeatFrom>Human</useMeatFrom>
 		<body>Human</body>
 		<baseBodySize>0.70</baseBodySize>

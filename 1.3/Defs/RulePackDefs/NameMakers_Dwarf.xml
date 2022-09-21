@@ -2,7 +2,7 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>NamerPersonDwarfMale</defName>
+		<defName>PF2_NamerPersonDwarfMale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[DwarfList1][DwarfList2][DwarfList4] [DwarfList15][DwarfList16]</li>
@@ -84,7 +84,7 @@
 		</rulePack>
 	</RulePackDef>
 	<RulePackDef>
-		<defName>NamerPersonDwarfFemale</defName>
+		<defName>PF2_NamerPersonDwarfFemale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[DwarfList5][DwarfList6][DwarfList8] [DwarfList13][DwarfList14]</li>
@@ -170,7 +170,7 @@
 	</RulePackDef>
 
 	<RulePackDef>
-		<defName>NamerDeityToraghdan</defName>
+		<defName>PF2_NamerDeityToraghdan</defName>
 		<include>
 			<li>NamerDeityGlobal</li>
 		</include>
@@ -201,7 +201,7 @@
 	</RulePackDef>
 	
 	<RulePackDef>
-		<defName>NamerIdeoToraghdan</defName>
+		<defName>PF2_NamerIdeoToraghdan</defName>
 		<include>
 			<li>NamerIdeoGlobal</li>
 			</include>
@@ -218,7 +218,7 @@
 	</RulePackDef>
 	
 	<RulePackDef>
-		<defName>DeityTypeMakerToraghdan</defName>
+		<defName>PF2_DeityTypeMakerToraghdan</defName>
 		<include>
 			<li>DeityTypeMakerGlobal</li>
 		</include>
@@ -226,7 +226,7 @@
 	
 
 	<RulePackDef>
-		<defName>LeaderTitleMaker_Toraghdan</defName>
+		<defName>PF2_LeaderTitleMaker_Toraghdan</defName>
 		<include>
 			<li>LeaderTitleMaker_GlobalStructure</li>
 		</include>
@@ -250,7 +250,7 @@
 	</RulePackDef>
 	
 	<RulePackDef>
-		<defName>NamerFactionDwarven</defName>
+		<defName>PF2_NamerFactionDwarven</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>r_name->[Color] [DwarfLeaderPlural] [DwarfPlacesPlural]</li>
@@ -275,21 +275,64 @@
 	</RulePackDef>
 
 	<RulePackDef>
-		<defName>NamerSettlementDwarven</defName>
+		<defName>PF2_NamerSettlementDwarven</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>r_name->[townname_wordgen]</li>
 
 				<li>townname_wordgen(p=2)->[SylE][SylE]</li>
 				<li>townname_wordgen(p=2)->[SylE][SylE][SylE]</li>
-				<li>townname_wordgen(p=2)->[SylE]ksen</li>
-				<li>townname_wordgen(p=2)->[SylE][SylE]ksen</li>
-				<li>townname_wordgen(p=2)->[Dwarf9]ksen</li>
-				<li>townname_wordgen(p=2)->[Dwarf9][Dwarf10]ksen</li>
-				<li>townname_wordgen(p=2)->[Dwarf11]ksen</li>
-				<li>townname_wordgen(p=2)->[Dwarf11][Dwarf12]ksen</li>
-				<li>townname_wordgen(p=2)->[Dwarf15]ksen</li>
-				<li>townname_wordgen(p=2)->[Dwarf15][Dwarf16]ksen</li>
+
+				<li>townname_wordgen(p=2)->[SylE]dan</li>
+				<li>townname_wordgen(p=2)->[SylE][SylE]dan</li>
+				<li>townname_wordgen(p=2)->[Dwarf9]dan</li>
+				<li>townname_wordgen(p=2)->[Dwarf9][Dwarf10]dan</li>
+				<li>townname_wordgen(p=2)->[Dwarf11]dan</li>
+				<li>townname_wordgen(p=2)->[Dwarf11][Dwarf12]dan</li>
+				<li>townname_wordgen(p=2)->[Dwarf15]dan</li>
+				<li>townname_wordgen(p=2)->[Dwarf15][Dwarf16]dan</li>
+
+				<li>townname_wordgen(p=2)->[SylE]hoff</li>
+				<li>townname_wordgen(p=2)->[SylE][SylE]hoff</li>
+				<li>townname_wordgen(p=2)->[Dwarf9]hoff</li>
+				<li>townname_wordgen(p=2)->[Dwarf9][Dwarf10]hoff</li>
+				<li>townname_wordgen(p=2)->[Dwarf11]hoff</li>
+				<li>townname_wordgen(p=2)->[Dwarf11][Dwarf12]hoff</li>
+				<li>townname_wordgen(p=2)->[Dwarf15]hoff</li>
+				<li>townname_wordgen(p=2)->[Dwarf15][Dwarf16]hoff</li>
+
+				<li>townname_wordgen(p=2)->[SylE]kus</li>
+				<li>townname_wordgen(p=2)->[SylE][SylE]kus</li>
+				<li>townname_wordgen(p=2)->[Dwarf9]kus</li>
+				<li>townname_wordgen(p=2)->[Dwarf9][Dwarf10]kus</li>
+				<li>townname_wordgen(p=2)->[Dwarf11]kus</li>
+				<li>townname_wordgen(p=2)->[Dwarf11][Dwarf12]kus</li>
+				<li>townname_wordgen(p=2)->[Dwarf15]kus</li>
+				<li>townname_wordgen(p=2)->[Dwarf15][Dwarf16]kus</li>
+
+				<li>townname_wordgen(p=2)->[SylE]kar</li>
+				<li>townname_wordgen(p=2)->[SylE][SylE]kar</li>
+				<li>townname_wordgen(p=2)->[Dwarf9]kar</li>
+				<li>townname_wordgen(p=2)->[Dwarf9][Dwarf10]kar</li>
+				<li>townname_wordgen(p=2)->[Dwarf11]kar</li>
+				<li>townname_wordgen(p=2)->[Dwarf11][Dwarf12]kar</li>
+				<li>townname_wordgen(p=2)->[Dwarf15]kar</li>
+				<li>townname_wordgen(p=2)->[Dwarf15][Dwarf16]kar</li>
+
+				<li>townname_wordgen(p=2)->[SylE]dun</li>
+				<li>townname_wordgen(p=2)->[SylE][SylE]dun</li>
+				<li>townname_wordgen(p=2)->[Dwarf9]dun</li>
+				<li>townname_wordgen(p=2)->[Dwarf9][Dwarf10]dun</li>
+				<li>townname_wordgen(p=2)->[Dwarf11]dun</li>
+				<li>townname_wordgen(p=2)->[Dwarf11][Dwarf12]dun</li>
+				<li>townname_wordgen(p=2)->[Dwarf15]dun</li>
+				<li>townname_wordgen(p=2)->[Dwarf15][Dwarf16]dun</li>
+
+				<li>townname_wordgen(p=2)->[SylE][SylE] Hold</li>
+				<li>townname_wordgen(p=2)->[Dwarf9][Dwarf10] Hold</li>
+				<li>townname_wordgen(p=2)->[Dwarf11][Dwarf12] Hold</li>
+				<li>townname_wordgen(p=2)->[Dwarf15][Dwarf16] Hold</li>
+				
 				<li>townname_wordgen(p=2)->[Dwarf13Alt][Dwarf14Alt]</li>
 			</rulesStrings>
 			<rulesFiles>

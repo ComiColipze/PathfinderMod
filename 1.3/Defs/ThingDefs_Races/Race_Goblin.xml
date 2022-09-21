@@ -7,17 +7,17 @@
             <alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_GoblinColonist</li>
+						<li>PF2_GoblinSlave</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_GoblinColonist</li>
+						<li>PF2_GoblinRefugee</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_GoblinColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_GoblinTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_GoblinColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_GoblinTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -80,8 +80,8 @@
 	</AlienRace.RaceSettings>
 
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>PF2Goblin</defName>
-    <label>Goblin</label>
+    <defName>PF2_Goblin</defName>
+    <label>goblin</label>
     <description>Goblins have a reputation as simple creatures who love songs, fire, and eating disgusting things and who hate reading, dogs, and horses—and there are a great many for whom this description fits perfectly. However, great changes have come to goblinkind, and more and more goblins resist conformity to these stereotypes. Even among goblins that are more worldly, many still exemplify their old ways in some small manner, just to a more sensible degree.</description>
     <alienRace>
         <generalSettings>
@@ -91,7 +91,7 @@
 			<immuneToXenophobia>false</immuneToXenophobia>
 			<minAgeForAdulthood>7</minAgeForAdulthood>
 			<notXenophobistTowards>
-				<li>PF2Hobgoblin</li>
+				<li>PF2_Hobgoblin</li>
 			</notXenophobistTowards>
 			<disallowedTraits>
                 <li>
@@ -136,7 +136,38 @@
 				<customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>
 				<customPortraitHeadDrawSize>(1.25, 1.25)</customPortraitHeadDrawSize>
 				<headOffset>(0.0, -0.08)</headOffset>
-				<colorChannels>	                    
+				<bodyAddons>
+					<li>
+						<bodyPart>left ear</bodyPart>
+						<path>Things/Pawn/Goblin/Ears/Left_Ears</path>
+						<colorChannel>skin</colorChannel>
+						<drawSize>(1.0,1.0)</drawSize>
+						<drawSizePortrait>(1.0,1.0)</drawSizePortrait>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<inFrontOfBody>true</inFrontOfBody>
+						<alignWithHead>true</alignWithHead>
+						<drawnDesiccated>false</drawnDesiccated>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+					<li>
+						<bodyPart>right ear</bodyPart>
+						<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+						<path>Things/Pawn/Goblin/Ears/Right_Ears</path>
+						<colorChannel>skin</colorChannel>
+						<drawSize>(1.0,1.0)</drawSize>
+						<drawSizePortrait>(1.0,1.0)</drawSizePortrait>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<inFrontOfBody>true</inFrontOfBody>
+						<alignWithHead>true</alignWithHead>
+						<drawnDesiccated>false</drawnDesiccated>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+				</bodyAddons>
+				<colorChannels>               
 					<li>
 						<name>skin</name>
 						<first Class="ColorGenerator_Options">
@@ -185,7 +216,7 @@
         </generalSettings>
         <graphicPaths>
 			<li>
-				<head>Things/Pawn/Goblin/</head>
+				<head>Things/Pawn/Goblin/Head/</head>
 			</li>
         </graphicPaths>
         <styleSettings>
@@ -329,6 +360,7 @@
 		<ComfyTemperatureMax>34</ComfyTemperatureMax>
 		<LeatherAmount>35</LeatherAmount>
 		<RoyalFavorValue>3</RoyalFavorValue>
+		<ResearchSpeed>0.75</ResearchSpeed>
 		<HungerRateMultiplier>0.95</HungerRateMultiplier>
 		<HuntingStealth>1.2</HuntingStealth>
 		<EatingSpeed>1.5</EatingSpeed>
@@ -342,7 +374,7 @@
 				<li>Blunt</li>
 			</capacities>
 			<power>1</power>
-			<cooldownTime>0.2</cooldownTime>
+			<cooldownTime>1.2</cooldownTime>
 			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 		</li>
 		<li>
@@ -351,7 +383,7 @@
 				<li>Blunt</li>
 			</capacities>
 			<power>1</power>
-			<cooldownTime>0.2</cooldownTime>
+			<cooldownTime>1.2</cooldownTime>
 			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 		</li>
 		<li>
@@ -382,9 +414,9 @@
 		<intelligence>Humanlike</intelligence>
 		<makesFootprints>true</makesFootprints>
 		<lifeExpectancy>50</lifeExpectancy>
-		<leatherDef>Leather_Goblin</leatherDef>
-		<nameGenerator>NamerPersonGoblinMale</nameGenerator>
-		<nameGeneratorFemale>NamerPersonGoblinFemale</nameGeneratorFemale>
+		<leatherDef>PF2_Leather_Goblin</leatherDef>
+		<nameGenerator>PF2_NamerPersonGoblinMale</nameGenerator>
+		<nameGeneratorFemale>PF2_NamerPersonGoblinFemale</nameGeneratorFemale>
 		<useMeatFrom>Human</useMeatFrom>
 		<body>Human</body>
 		<baseBodySize>0.75</baseBodySize>

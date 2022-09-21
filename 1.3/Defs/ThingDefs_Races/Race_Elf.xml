@@ -7,17 +7,17 @@
             <alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_ElfColonist</li>
+						<li>PF2_ElfSlave</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_ElfColonist</li>
+						<li>PF2_ElfRefugee</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_ElfColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_ElfTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_ElfColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_ElfTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -80,8 +80,8 @@
 	</AlienRace.RaceSettings>
 
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>PF2Elf</defName>
-    <label>Elf</label>
+    <defName>PF2_Elf</defName>
+    <label>elf</label>
     <description>Elves combine otherworldly grace, sharp intellect, and mysterious charm in a way that is practically magnetic to members of other ancestries. They are often voraciously intellectual, though their studies delve into a level of detail that most shorter-lived peoples find excessive or inefficient. Valuing kindness and beauty, elves ever strive to improve their manners, appearance, and culture.</description>
     <alienRace>
         <generalSettings>
@@ -316,13 +316,15 @@
     </alienRace>
 	<statBases>
 		<MarketValue>2750</MarketValue>
-		<MoveSpeed>5.2</MoveSpeed>
+		<MoveSpeed>5.4</MoveSpeed>
 		<Flammability>1.05</Flammability>
 		<ComfyTemperatureMin>16</ComfyTemperatureMin>
 		<ComfyTemperatureMax>26</ComfyTemperatureMax>
 		<LeatherAmount>55</LeatherAmount>
-		<RoyalFavorValue>3</RoyalFavorValue>
-		<PsychicSensitivity>1.15</PsychicSensitivity>
+		<RoyalFavorValue>5</RoyalFavorValue>
+        <CarryingCapacity>-10</CarryingCapacity>
+        <GeneralLaborSpeed>-0.10</GeneralLaborSpeed>
+		<PsychicSensitivity>1.20</PsychicSensitivity>
 		<MiningSpeed>0.7</MiningSpeed>
 		<ConstructionSpeed>0.7</ConstructionSpeed>
 		<SmoothingSpeed>0.7</SmoothingSpeed>
@@ -395,8 +397,8 @@
 		<intelligence>Humanlike</intelligence>
 		<makesFootprints>true</makesFootprints>
 		<lifeExpectancy>600</lifeExpectancy>
-		<nameGenerator>NamerPersonElfMale</nameGenerator>
-		<nameGeneratorFemale>NamerPersonElfFemale</nameGeneratorFemale>
+		<nameGenerator>PF2_NamerPersonElfMale</nameGenerator>
+		<nameGeneratorFemale>PF2_NamerPersonElfFemale</nameGeneratorFemale>
 		<useMeatFrom>Human</useMeatFrom>
 		<body>Human</body>
 		<baseBodySize>1.05</baseBodySize>

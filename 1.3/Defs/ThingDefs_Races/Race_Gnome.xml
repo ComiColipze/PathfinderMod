@@ -7,17 +7,17 @@
             <alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_GnomeColonist</li>
+						<li>PF2_GnomeSlave</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_GnomeColonist</li>
+						<li>PF2_GnomeRefugee</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_GnomeColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_GnomeTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_GnomeColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_GnomeTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -80,8 +80,8 @@
 	</AlienRace.RaceSettings>
 
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>PF2Gnome</defName>
-    <label>Gnome</label>
+    <defName>PF2_Gnome</defName>
+    <label>gnome</label>
     <description>Expatriates of the strange land of fey, these small folk have a reputation for flighty and eccentric behavior. Many gnomes are whimsical artisans and tinkers, creating strange devices powered by magic, alchemy, and their quirky imagination. Gnomes have an insatiable need for new experiences that often gets them in trouble.</description>
     <alienRace>
         <generalSettings>
@@ -271,6 +271,7 @@
 						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
                         <colorChannel>hair</colorChannel>
 						<defaultOffset>Head</defaultOffset>
+						<drawnDesiccated>false</drawnDesiccated>
 						<hiddenUnderApparelFor>
 							<li>FullHead</li>
 						</hiddenUnderApparelFor>
@@ -321,7 +322,6 @@
 		<ComfyTemperatureMax>28</ComfyTemperatureMax>
 		<LeatherAmount>35</LeatherAmount>
 		<RoyalFavorValue>3</RoyalFavorValue>
-		<HungerRateMultiplier>0.95</HungerRateMultiplier>
 		<ResearchSpeed>1.3</ResearchSpeed>
 		<DrugCookingSpeed>1.2</DrugCookingSpeed>
 		<DrugSynthesisSpeed>1.2</DrugSynthesisSpeed>
@@ -391,8 +391,8 @@
 		<makesFootprints>true</makesFootprints>
 		<lifeExpectancy>400</lifeExpectancy>
 		<leatherDef>Leather_Human</leatherDef>
-		<nameGenerator>NamerPersonGnomeMale</nameGenerator>
-		<nameGeneratorFemale>NamerPersonGnomeFemale</nameGeneratorFemale>
+		<nameGenerator>PF2_NamerPersonGnomeMale</nameGenerator>
+		<nameGeneratorFemale>PF2_NamerPersonGnomeFemale</nameGeneratorFemale>
 		<useMeatFrom>Human</useMeatFrom>
 		<body>Human</body>
 		<baseBodySize>0.6</baseBodySize>

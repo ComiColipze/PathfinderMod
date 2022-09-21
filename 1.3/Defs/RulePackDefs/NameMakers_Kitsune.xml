@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>PF2_NamerPersonKitsuneMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[KitsuneList1][KitsuneList2][KitsuneList3] [KitsuneList1][KitsuneList2][KitsuneList2][KitsuneList3]</li>
+				<li>name->[KitsuneList1][KitsuneList3] [KitsuneList1][KitsuneList2][KitsuneList2][KitsuneList3]</li>
+				<li>name->[KitsuneList1][KitsuneList2][KitsuneList3] '[Male_Random]' [KitsuneList1][KitsuneList2][KitsuneList2][KitsuneList3]</li>
+				<li>name->[KitsuneList1][KitsuneList3] '[Male_Random]' [KitsuneList1][KitsuneList2][KitsuneList2][KitsuneList3]</li>
+				<li>name->[KitsuneList1][KitsuneList2][KitsuneList3] [KitsuneList4][KitsuneList5][KitsuneList5][KitsuneList6]</li>
+				<li>name->[KitsuneList1][KitsuneList3] [KitsuneList4][KitsuneList5][KitsuneList5][KitsuneList6]</li>
+				<li>name->[KitsuneList1][KitsuneList2][KitsuneList3] '[Male_Random]' [KitsuneList4][KitsuneList5][KitsuneList5][KitsuneList6]</li>
+				<li>name->[KitsuneList1][KitsuneList3] '[Male_Random]' [KitsuneList4][KitsuneList5][KitsuneList5][KitsuneList6]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>KitsuneList1</keyword>
+					<path>KitsuneNames/Kitsune1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KitsuneList2</keyword>
+					<path>KitsuneNames/Kitsune2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KitsuneList3</keyword>
+					<path>KitsuneNames/Kitsune3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KitsuneList4</keyword>
+					<path>KitsuneNames/Kitsune4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KitsuneList5</keyword>
+					<path>KitsuneNames/Kitsune5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KitsuneList6</keyword>
+					<path>KitsuneNames/Kitsune6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Male_Random</keyword>
+					<path>KitsuneNames/Male_Random</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Female_Random</keyword>
+					<path>KitsuneNames/Female_Random</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerPersonKitsuneFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[KitsuneList4][KitsuneList5][KitsuneList6] [KitsuneList1][KitsuneList2][KitsuneList2][KitsuneList3]</li>
+				<li>name->[KitsuneList4][KitsuneList6] [KitsuneList1][KitsuneList2][KitsuneList2][KitsuneList3]</li>
+				<li>name->[KitsuneList4][KitsuneList5][KitsuneList6] '[Female_Random]' [KitsuneList1][KitsuneList2][KitsuneList2][KitsuneList3]</li>
+				<li>name->[KitsuneList4][KitsuneList6] '[Female_Random]' [KitsuneList1][KitsuneList2][KitsuneList2][KitsuneList3]</li>
+				<li>name->[KitsuneList4][KitsuneList5][KitsuneList6] [KitsuneList4][KitsuneList5][KitsuneList5][KitsuneList6]</li>
+				<li>name->[KitsuneList4][KitsuneList6] [KitsuneList4][KitsuneList5][KitsuneList5][KitsuneList6]</li>
+				<li>name->[KitsuneList4][KitsuneList5][KitsuneList6] '[Female_Random]' [KitsuneList4][KitsuneList5][KitsuneList5][KitsuneList6]</li>
+				<li>name->[KitsuneList4][KitsuneList6] '[Female_Random]' [KitsuneList4][KitsuneList5][KitsuneList5][KitsuneList6]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>KitsuneList1</keyword>
+					<path>KitsuneNames/Kitsune1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KitsuneList2</keyword>
+					<path>KitsuneNames/Kitsune2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KitsuneList3</keyword>
+					<path>KitsuneNames/Kitsune3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KitsuneList4</keyword>
+					<path>KitsuneNames/Kitsune4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KitsuneList5</keyword>
+					<path>KitsuneNames/Kitsune5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KitsuneList6</keyword>
+					<path>KitsuneNames/Kitsune6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Male_Random</keyword>
+					<path>KitsuneNames/Male_Random</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Female_Random</keyword>
+					<path>KitsuneNames/Female_Random</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

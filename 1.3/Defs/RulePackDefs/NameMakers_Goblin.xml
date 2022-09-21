@@ -2,7 +2,7 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>NamerPersonGoblinMale</defName>
+		<defName>PF2_NamerPersonGoblinMale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[GoblinList1][GoblinList2][GoblinList4]</li>
@@ -59,7 +59,7 @@
 	</RulePackDef>
 	
 	<RulePackDef>
-		<defName>NamerPersonGoblinFemale</defName>
+		<defName>PF2_NamerPersonGoblinFemale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[GoblinList5][GoblinList6][GoblinList8]</li>
@@ -116,7 +116,7 @@
 	</RulePackDef>
 
 	<RulePackDef>
-		<defName>NamerDeityGoblin</defName>
+		<defName>PF2_NamerDeityGoblin</defName>
 		<include>
 			<li>NamerDeityGlobal</li>
 		</include>
@@ -183,7 +183,7 @@
 	</RulePackDef>
 	
 	<RulePackDef>
-		<defName>NamerIdeoGoblin</defName>
+		<defName>PF2_NamerIdeoGoblin</defName>
 		<include>
 			<li>NamerIdeoGlobal</li>
 			</include>
@@ -201,14 +201,14 @@
 	</RulePackDef>
 	
 	<RulePackDef>
-		<defName>DeityTypeMakerGoblin</defName>
+		<defName>PF2_DeityTypeMakerGoblin</defName>
 		<include>
 			<li>DeityTypeMakerGlobal</li>
 		</include>
 	</RulePackDef>
 
 	<RulePackDef>
-		<defName>LeaderTitleMaker_Goblin</defName>
+		<defName>PF2_LeaderTitleMaker_Goblin</defName>
 		<include>
 			<li>LeaderTitleMaker_GlobalStructure</li>
 		</include>
@@ -229,7 +229,7 @@
 	</RulePackDef>
 	
 	<RulePackDef>
-		<defName>NamerFactionGoblin</defName>
+		<defName>PF2_NamerFactionGoblin</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>r_name->[Color] [Goblin1][Goblin2][Goblin4] [PoliticalUnionsMedieval]</li>
@@ -254,7 +254,7 @@
 	</RulePackDef>
 
 	<RulePackDef>
-		<defName>NamerSettlementGoblin</defName>
+		<defName>PF2_NamerSettlementGoblin</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>r_name->[townname_wordgen]</li>

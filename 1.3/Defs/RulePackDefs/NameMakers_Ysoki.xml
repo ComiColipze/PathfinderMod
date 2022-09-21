@@ -2,7 +2,7 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>NamerPersonYsokiMale</defName>
+		<defName>PF2_NamerPersonYsokiMale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[YsokiList1][YsokiList2][YsokiList4] [YsokiList9][YsokiList10]</li>
@@ -62,7 +62,7 @@
 	</RulePackDef>
 
 	<RulePackDef>
-		<defName>NamerPersonYsokiFemale</defName>
+		<defName>PF2_NamerPersonYsokiFemale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[YsokiList5][YsokiList6][YsokiList8] [YsokiList9][YsokiList10]</li>

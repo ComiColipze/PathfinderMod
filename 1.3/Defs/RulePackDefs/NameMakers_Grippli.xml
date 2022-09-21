@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>PF2_NamerPersonGrippli</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[GrippliList1][GrippliList2][GrippliList3][GrippliList2][GrippliList4]</li>
+				<li>name->[GrippliList1][GrippliList2][GrippliList3][GrippliList2][GrippliList3][GrippliList2]</li>
+				<li>name->[GrippliList1][GrippliList2][GrippliList4]</li>
+				<li>name->[GrippliList1][GrippliList2][GrippliList3][GrippliList2]</li>
+				<li>name->[GrippliList2][GrippliList3][GrippliList2][GrippliList4]</li>
+				<li>name->[GrippliList2][GrippliList3][GrippliList2]</li>
+				<li>name->[GrippliList2][GrippliList3][GrippliList2][GrippliList3][GrippliList2]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>GrippliList1</keyword>
+					<path>GrippliNames/Grippli1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GrippliList2</keyword>
+					<path>GrippliNames/Grippli2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GrippliList3</keyword>
+					<path>GrippliNames/Grippli3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GrippliList4</keyword>
+					<path>GrippliNames/Grippli4</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

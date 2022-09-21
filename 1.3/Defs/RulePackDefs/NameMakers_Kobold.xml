@@ -2,12 +2,17 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>NamerPersonKoboldMale</defName>
+		<defName>PF2_NamerPersonKoboldMale</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>name->[KoboldList1][KoboldList2]</li>
-				<li>name->[KoboldList1][KoboldList2][KoboldList3]</li>
-				<li>name->[KoboldList1][KoboldList3]</li>
+				<li>name->[KoboldList1][KoboldList2][KoboldList4]</li>
+				<li>name->[KoboldList1][KoboldList2][KoboldList3][KoboldList2][KoboldList4]</li>
+				<li>name->[KoboldList1][KoboldList2][KoboldList3][KoboldList2]</li>
+				<li>name->[KoboldList1][KoboldList2][KoboldList3][KoboldList2][KoboldList3][KoboldList2][KoboldList4]</li>
+				<li>name->[KoboldList1][KoboldList2][KoboldList3][KoboldList2][KoboldList3][KoboldList2]</li>
+				<li>name->[KoboldList2][KoboldList3][KoboldList2]</li>
+				<li>name->[KoboldList2][KoboldList3][KoboldList2][KoboldList4]</li>
+				<li>name->[KoboldList2][KoboldList3][KoboldList2][KoboldList3][KoboldList2][KoboldList4]</li>
 			</rulesStrings>
 			<rulesRaw>
 				<li Class="Rule_File">
@@ -33,18 +38,31 @@
 				<li Class="Rule_File">
 					<keyword>KoboldList6</keyword>
 					<path>KoboldNames/Kobold6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KoboldList7</keyword>
+					<path>KoboldNames/Kobold7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KoboldList8</keyword>
+					<path>KoboldNames/Kobold8</path>
 				</li>
 			</rulesRaw>
 		</rulePack>
 	</RulePackDef>
 
 	<RulePackDef>
-		<defName>NamerPersonKoboldFemale</defName>
+		<defName>PF2_NamerPersonKoboldFemale</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>name->[KoboldList4][KoboldList5]</li>
-				<li>name->[KoboldList4][KoboldList5][KoboldList6]</li>
-				<li>name->[KoboldList4][KoboldList6]</li>
+				<li>name->[KoboldList5][KoboldList6][KoboldList7][KoboldList8]</li>
+				<li>name->[KoboldList5][KoboldList6][KoboldList7][KoboldList6][KoboldList8]</li>
+				<li>name->[KoboldList5][KoboldList6][KoboldList7][KoboldList6][KoboldList7][KoboldList6][KoboldList8]</li>
+				<li>name->[KoboldList5][KoboldList6][KoboldList7][KoboldList6][KoboldList7][KoboldList6]</li>
+				<li>name->[KoboldList5][KoboldList6][KoboldList7][KoboldList6]</li>
+				<li>name->[KoboldList6][KoboldList7][KoboldList6][KoboldList8]</li>
+				<li>name->[KoboldList6][KoboldList7][KoboldList6]</li>
+				<li>name->[KoboldList6][KoboldList7][KoboldList6][KoboldList7][KoboldList6]</li>
 			</rulesStrings>
 			<rulesRaw>
 				<li Class="Rule_File">
@@ -71,7 +89,152 @@
 					<keyword>KoboldList6</keyword>
 					<path>KoboldNames/Kobold6</path>
 				</li>
+				<li Class="Rule_File">
+					<keyword>KoboldList7</keyword>
+					<path>KoboldNames/Kobold7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KoboldList8</keyword>
+					<path>KoboldNames/Kobold8</path>
+				</li>
 			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerDeityDraconic</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[DragonList1]</li>
+				<li>name->[DragonList2]</li>
+				<li>name->[DragonList3][DragonList4]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>DragonList1</keyword>
+					<path>KoboldNames/Dragon1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DragonList2</keyword>
+					<path>KoboldNames/Dragon2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DragonList3</keyword>
+					<path>KoboldNames/Dragon3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DragonList4</keyword>
+					<path>KoboldNames/Dragon4</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerIdeoDraconic</defName>
+		<include>
+			<li>NamerIdeoGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>globalAdjective->Dragon</li>
+				<li>globalAdjective->Draconic</li>
+				<li>globalAdjective->Supreme</li>
+				<li>globalAdjective->Elemental</li>
+				<li>globalAdjective->Kobold</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_DeityTypeMakerDraconic</defName>
+		<include>
+			<li>DeityTypeMakerGlobal</li>
+		</include>
+	</RulePackDef>
+	
+
+	<RulePackDef>
+		<defName>PF2_LeaderTitleMaker_Draconic</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
+
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+				<li>cultureLeaderAdjective->draconic</li>
+				<li>cultureLeaderAdjective->dragon</li>
+				<li>cultureLeaderAdjective->dank</li>
+
+				<li>cultureLeaderNoun->chief</li>
+				<li>cultureLeaderNoun->chieftain</li>
+				<li>cultureLeaderNoun->master</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerFactionKobold</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Color] [Dragon1] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[Dragon1] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[Color] [PoliticalUnionsMedieval] of [Dragon1]</li>
+				<li>r_name->[PoliticalUnionsMedieval] of [Dragon1]</li>
+				<li>r_name->The [Color] [PoliticalUnionsMedieval] of [Dragon1]</li>
+				<li>r_name->The [PoliticalUnionsMedieval] of [Dragon1]</li>
+				<li>r_name->[Color] [PoliticalUnionsMedieval] of [Dragon2]</li>
+				<li>r_name->[PoliticalUnionsMedieval] of [Dragon2]</li>
+				<li>r_name->The [Color] [PoliticalUnionsMedieval] of [Dragon2]</li>
+				<li>r_name->The [PoliticalUnionsMedieval] of [Dragon2]</li>
+				<li>r_name->[Dragon1]'s Followers</li>
+				<li>r_name->[Dragon1]'s Volunteers</li>
+				<li>r_name->[Dragon1]'s Children</li>
+				<li>r_name->[Dragon1]'s Kin</li>
+				<li>r_name->[Dragon2]'s Followers</li>
+				<li>r_name->[Dragon2]'s Volunteers</li>
+				<li>r_name->[Dragon2]'s Children</li>
+				<li>r_name->[Dragon2]'s Kin</li>
+				<li>r_name->[Dragon3][Dragon4]'s Followers</li>
+				<li>r_name->[Dragon3][Dragon4]'s Volunteers</li>
+				<li>r_name->[Dragon3][Dragon4]'s Children</li>
+				<li>r_name->[Dragon3][Dragon4]'s Kin</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Dragon1->KoboldNames/Dragon1</li>
+				<li>Dragon2->KoboldNames/Dragon2</li>
+				<li>Dragon3->KoboldNames/Dragon3</li>
+				<li>Dragon4->KoboldNames/Dragon4</li>
+				<li>PoliticalUnionsMedieval->PF2Factions/PoliticalUnionsMedieval</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerSettlementKobold</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[townname_wordgen]</li>
+
+				<li>townname_wordgen(p=2)->[Dragon3][Dragon4] tribe</li>
+				<li>townname_wordgen(p=2)->[Dragon3] [Dragon4] tribe</li>
+				<li>townname_wordgen(p=2)->[Color][Dragon4] tribe</li>
+				<li>townname_wordgen(p=2)->[Color] [Dragon4] tribe</li>
+				<li>townname_wordgen(p=2)->[Dragon1]'s [Dragon4] tribe</li>
+				<li>townname_wordgen(p=2)->[Dragon2]'s [Dragon4] tribe</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Dragon1->KoboldNames/Dragon1</li>
+				<li>Dragon2->KoboldNames/Dragon2</li>
+				<li>Dragon3->KoboldNames/Dragon3</li>
+				<li>Dragon4->KoboldNames/Dragon4</li>
+			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
 

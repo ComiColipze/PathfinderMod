@@ -2,7 +2,7 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>NamerPersonGoloma</defName>
+		<defName>PF2_NamerPersonGoloma</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[GolomaList1][GolomaList2]</li>

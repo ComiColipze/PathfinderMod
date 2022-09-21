@@ -7,17 +7,17 @@
             <alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_TenguColonist</li>
+						<li>PF2_TenguSlave</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_TenguColonist</li>
+						<li>PF2_TenguRefugee</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_TenguColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_TenguTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_TenguColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_TenguTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -80,8 +80,8 @@
 	</AlienRace.RaceSettings>
 
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>PF2Tengu</defName>
-    <label>Tengu</label>
+    <defName>PF2_Tengu</defName>
+    <label>tengu</label>
     <description>Tengus are survivalists and conversationalists, equally at home living off the wilderness and finding a niche in dense cities. They accumulate knowledge, tools, and companions, adding them to their collection as they travel.</description>
     <alienRace>
         <generalSettings>
@@ -248,13 +248,13 @@
 		<intelligence>Humanlike</intelligence>
 		<makesFootprints>true</makesFootprints>
 		<lifeExpectancy>70</lifeExpectancy>
-		<nameGenerator>NamerPersonTenguMale</nameGenerator>
-		<nameGeneratorFemale>NamerPersonTenguFemale</nameGeneratorFemale>
+		<nameGenerator>PF2_NamerPersonTenguMale</nameGenerator>
+		<nameGeneratorFemale>PF2_NamerPersonTenguFemale</nameGeneratorFemale>
 		<useMeatFrom>Human</useMeatFrom>
-		<body>Tengu</body>
+		<body>PF2_Tengu</body>
 		<baseBodySize>1.0</baseBodySize>
 		<baseHealthScale>0.95</baseHealthScale>
-		<foodType>VegetarianRoughAnimal, VegetarianAnimal</foodType>
+		<foodType>OmnivoreHuman</foodType>
 		<gestationPeriodDays>30</gestationPeriodDays>
 		<meatMarketValue>1.2</meatMarketValue>
 		<manhunterOnDamageChance>0.50</manhunterOnDamageChance>

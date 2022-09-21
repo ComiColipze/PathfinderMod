@@ -2,7 +2,7 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>NamerPersonIruxi</defName>
+		<defName>PF2_NamerPersonIruxi</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[IruxiList1]</li>

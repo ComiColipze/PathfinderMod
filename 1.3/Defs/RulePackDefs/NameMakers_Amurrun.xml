@@ -2,7 +2,7 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>NamerPersonAmurrunMale</defName>
+		<defName>PF2_NamerPersonAmurrunMale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2]</li>
@@ -48,7 +48,7 @@
 	</RulePackDef>
 
 	<RulePackDef>
-		<defName>NamerPersonAmurrunFemale</defName>
+		<defName>PF2_NamerPersonAmurrunFemale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6]</li>
@@ -93,6 +93,85 @@
 					<path>AmurrunNames/Amurrun8</path>
 				</li>
 			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerFactionAmurrun</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2]seth [PoliticalUnionsMedieval]</li>
+				<li>r_name->[AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2]leth [PoliticalUnionsMedieval]</li>
+				<li>r_name->[AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2]eth [PoliticalUnionsMedieval]</li>
+				<li>r_name->[AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2]claan [PoliticalUnionsMedieval]</li>
+				<li>r_name->[AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2]waan [PoliticalUnionsMedieval]</li>
+				<li>r_name->[AmurrunList1][AmurrunList2][AmurrunList3]eth [PoliticalUnionsMedieval]</li>
+				<li>r_name->[AmurrunList1][AmurrunList2][AmurrunList3]ia [PoliticalUnionsMedieval]</li>
+				<li>r_name->[AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6]seth [PoliticalUnionsMedieval]</li>
+				<li>r_name->[AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6]leth [PoliticalUnionsMedieval]</li>
+				<li>r_name->[AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6]eth [PoliticalUnionsMedieval]</li>
+				<li>r_name->[AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6]claan [PoliticalUnionsMedieval]</li>
+				<li>r_name->[AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6]waan [PoliticalUnionsMedieval]</li>
+				<li>r_name->[AmurrunList5][AmurrunList6][AmurrunList7]eth [PoliticalUnionsMedieval]</li>
+				<li>r_name->[AmurrunList5][AmurrunList6][AmurrunList7]ia [PoliticalUnionsMedieval]</li>
+				<li>r_name->the [PoliticalUnionsMedieval] of [AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2]seth</li>
+				<li>r_name->the [PoliticalUnionsMedieval] of [AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2]leth</li>
+				<li>r_name->the [PoliticalUnionsMedieval] of [AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2]eth</li>
+				<li>r_name->the [PoliticalUnionsMedieval] of [AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2]claan</li>
+				<li>r_name->the [PoliticalUnionsMedieval] of [AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2]waan</li>
+				<li>r_name->the [PoliticalUnionsMedieval] of [AmurrunList1][AmurrunList2][AmurrunList3]eth</li>
+				<li>r_name->the [PoliticalUnionsMedieval] of [AmurrunList1][AmurrunList2][AmurrunList3]ia</li>
+				<li>r_name->the [PoliticalUnionsMedieval] of [AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6]seth</li>
+				<li>r_name->the [PoliticalUnionsMedieval] of [AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6]leth</li>
+				<li>r_name->the [PoliticalUnionsMedieval] of [AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6]eth</li>
+				<li>r_name->the [PoliticalUnionsMedieval] of [AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6]claan</li>
+				<li>r_name->the [PoliticalUnionsMedieval] of [AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6]waan</li>
+				<li>r_name->the [PoliticalUnionsMedieval] of [AmurrunList5][AmurrunList6][AmurrunList7]eth</li>
+				<li>r_name->the [PoliticalUnionsMedieval] of [AmurrunList5][AmurrunList6][AmurrunList7]ia</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>AmurrunList1->AmurrunNames/Amurrun1</li>
+				<li>AmurrunList2->AmurrunNames/Amurrun2</li>
+				<li>AmurrunList3->AmurrunNames/Amurrun3</li>
+				<li>AmurrunList4->AmurrunNames/Amurrun4</li>
+				<li>AmurrunList5->AmurrunNames/Amurrun5</li>
+				<li>AmurrunList6->AmurrunNames/Amurrun6</li>
+				<li>AmurrunList7->AmurrunNames/Amurrun7</li>
+				<li>AmurrunList8->AmurrunNames/Amurrun8</li>
+				<li>PoliticalUnionsMedieval->PF2Factions/PoliticalUnionsMedieval</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerSettlementAmurrun</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[townname_wordgen]</li>
+
+				<li>townname_wordgen(p=2)->[AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2]seth</li>
+				<li>townname_wordgen(p=2)->[AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2]leth</li>
+				<li>townname_wordgen(p=2)->[AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2]eth</li>
+				<li>townname_wordgen(p=2)->[AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2]claan</li>
+				<li>townname_wordgen(p=2)->[AmurrunList1][AmurrunList2][AmurrunList3][AmurrunList2]waan</li>
+				<li>townname_wordgen(p=2)->[AmurrunList1][AmurrunList6][AmurrunList7]eth</li>
+				<li>townname_wordgen(p=2)->[AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6]seth</li>
+				<li>townname_wordgen(p=2)->[AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6]leth</li>
+				<li>townname_wordgen(p=2)->[AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6]eth</li>
+				<li>townname_wordgen(p=2)->[AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6]claan</li>
+				<li>townname_wordgen(p=2)->[AmurrunList5][AmurrunList6][AmurrunList7][AmurrunList6]waan</li>
+				<li>townname_wordgen(p=2)->[AmurrunList5][AmurrunList6][AmurrunList7]eth</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>AmurrunList1->AmurrunNames/Amurrun1</li>
+				<li>AmurrunList2->AmurrunNames/Amurrun2</li>
+				<li>AmurrunList3->AmurrunNames/Amurrun3</li>
+				<li>AmurrunList4->AmurrunNames/Amurrun4</li>
+				<li>AmurrunList5->AmurrunNames/Amurrun5</li>
+				<li>AmurrunList6->AmurrunNames/Amurrun6</li>
+				<li>AmurrunList7->AmurrunNames/Amurrun7</li>
+				<li>AmurrunList8->AmurrunNames/Amurrun8</li>
+			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
 

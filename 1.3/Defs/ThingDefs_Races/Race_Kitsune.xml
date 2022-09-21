@@ -2,12 +2,12 @@
 <Defs>
 
 	<AlienRace.RaceSettings>
-		<defName>Anadi_Settings</defName>
+		<defName>Kitsune_Settings</defName>
 		<pawnKindSettings>
             <alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_AnadiSlave</li>
+						<li>PF2_KitsuneSlave</li>
 					</kindDefs>
 					<chance>10.0</chance>
 				</li>
@@ -15,7 +15,7 @@
             <alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_AnadiRefugee</li>
+						<li>PF2_KitsuneRefugee</li>
 					</kindDefs>
 					<chance>10.0</chance>
 				</li>
@@ -25,26 +25,26 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>PF2_AnadiColonist</li>
+								<li>PF2_KitsuneColonist</li>
 							</kindDefs>
 							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PF2_AnadiPlayerColony</li> 
+						<li>PF2_KitsunePlayerColony</li> 
 					</factionDefs>
 				</li>
 				<li>
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>PF2_AnadiTribal</li>
+								<li>PF2_KitsuneTribal</li>
 							</kindDefs>
 							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PF2_AnadiPlayerTribe</li>
+						<li>PF2_KitsunePlayerTribe</li>
 					</factionDefs>
 				</li>
 			</startingColonists>
@@ -53,26 +53,26 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>PF2_AnadiColonist</li>
+								<li>PF2_KitsuneColonist</li>
 							</kindDefs>
 							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PF2_AnadiPlayerColony</li> 
+						<li>PF2_KitsunePlayerColony</li> 
 					</factionDefs>
 				</li>
 				<li>
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>PF2_AnadiTribal</li>
+								<li>PF2_KitsuneTribal</li>
 							</kindDefs>
 							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PF2_AnadiPlayerTribe</li> 
+						<li>PF2_KitsunePlayerTribe</li> 
 					</factionDefs>
 				</li>
             </alienwandererkinds>
@@ -80,20 +80,37 @@
 	</AlienRace.RaceSettings>
 
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>PF2_Anadi</defName>
-    <label>anadi</label>
-    <description>The anadi are reclusive, sapient humanoid spiders people who hail from the jungles of southern Garund. Though they act in many ways like natural-born shapeshifters, their twin forms actually stem from carefully developed magic.</description>
+    <defName>PF2_Kitsune</defName>
+    <label>kitsune</label>
+    <description>Kitsune are a charismatic and witty people with a connection to the spiritual that grantsthem many magical abilities, chiefly the power to shapechange into other forms. Whether they pass unseen among other peoples or hold their tails high, kitsune are clever observers of the societies around them.</description>
     <alienRace>
         <generalSettings>
 			<maleGenderProbability>0.5</maleGenderProbability>
 			<immuneToAge>false</immuneToAge>
 			<humanRecipeImport>true</humanRecipeImport>
 			<immuneToXenophobia>false</immuneToXenophobia>
-			<minAgeForAdulthood>15</minAgeForAdulthood>
+			<minAgeForAdulthood>17</minAgeForAdulthood>
+			<disallowedTraits>
+                <li>
+                    <defName>Undergrounder</defName>
+				</li>
+                <li>
+                    <defName>Tough</defName>
+				</li>
+				<li>
+					<defName>Beauty</defName>
+					<degree>-1</degree>
+				</li>
+				<li>
+					<defName>Beauty</defName>
+					<degree>-2</degree>
+				</li>
+            </disallowedTraits>
 			<alienPartGenerator>
-				<useGenderedHeads>false</useGenderedHeads>
 				<aliencrowntypes>
-					<li>Average_Normal</li>
+					<li>Average_Normal_A</li>
+					<li>Average_Normal_B</li>
+					<li>Average_Normal_C</li>
 				</aliencrowntypes>
 				<alienbodytypes>
 					<li>Male</li>
@@ -105,53 +122,106 @@
 					<name>skin</name>
 					<first Class="ColorGenerator_Options">
 						<options>
-						<!--Blue-->
+						<!--Black&White-->
+                            <li>
+								<weight>10</weight>
+                                <only>(60, 60, 60)</only>
+                            </li>
                             <li>
                                 <weight>10</weight>
-                                <only>(0, 0, 128)</only>
-                            </li>
-                            <li>
-								<weight>10</weight>
-                                <only>(25, 25, 112)</only>
-                            </li>
-                            <li>
-								<weight>10</weight>
-                                <only>(65, 105, 225)</only>
-                            </li>
-                            <li>
-								<weight>10</weight>
-                                <only>(100, 149, 137)</only>
-                            </li>
-                            <li>
-								<weight>10</weight>
-                                <only>(173, 216, 230)</only>
+                                <only>(240, 240, 240)</only>
                             </li>
 						<!--Other Colors-->
                             <li>
                                 <weight>10</weight>
-                                <only>(55, 55, 55)</only>
+                                <only>(255, 140, 0)</only>
                             </li>
                             <li>
 								<weight>10</weight>
-								<only>(245, 245, 245)</only>
+								<only>(230, 85, 10)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+								<only>(220, 150, 65)</only>
                             </li>
 							<li>
 								<weight>10</weight>
-								<only>(125, 85, 50)</only>
-                            </li>
-							<li>
-								<weight>10</weight>
-								<only>(115, 90, 70)</only>
+								<only>(145, 140, 130)</only>
                             </li>
 						</options>
 					</first>
 					</li>
                 </colorChannels>
+				<bodyAddons>
+					<li>
+						<bodyPart>left ear</bodyPart>
+						<path>Things/Pawn/Kitsune/Ears/Left_Ear</path>
+						<colorChannel>skin</colorChannel>
+						<drawSize>(1.0,1.0)</drawSize>
+						<drawSizePortrait>(1.0,1.0)</drawSizePortrait>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<inFrontOfBody>true</inFrontOfBody>
+						<alignWithHead>true</alignWithHead>
+						<drawnDesiccated>false</drawnDesiccated>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+					<li>
+						<bodyPart>right ear</bodyPart>
+						<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+						<path>Things/Pawn/Kitsune/Ears/Right_Ear</path>
+						<colorChannel>skin</colorChannel>
+						<drawSize>(1.0,1.0)</drawSize>
+						<drawSizePortrait>(1.0,1.0)</drawSizePortrait>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<inFrontOfBody>true</inFrontOfBody>
+						<alignWithHead>true</alignWithHead>
+						<drawnDesiccated>false</drawnDesiccated>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+					<li>
+						<bodyPart>tail</bodyPart>
+						<path>Things/Pawn/Kitsune/Tails/Tails</path>
+						<inFrontOfBody>false</inFrontOfBody>
+						<drawnInBed>false</drawnInBed>
+						<drawSize>1.0</drawSize>
+						<scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+                        <colorChannel>skin</colorChannel>
+						<defaultOffset>Center</defaultOffset>
+						<drawnDesiccated>false</drawnDesiccated>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Male>(0.0,-0.092)</Male>
+									<Female>(0.0,-0.092)</Female>
+									<Thin>(0.0,-0.092)</Thin>
+								</bodyTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Male>(0.0,-0.305)</Male>
+									<Female>(0.0,-0.31)</Female>
+									<Thin>(0.0,-0.305)</Thin>
+								</bodyTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Male>(0.235,-0.156)</Male>
+									<Female>(0.235,-0.156)</Female>
+									<Thin>(0.232,-0.156)</Thin>
+								</bodyTypes>
+							</east>
+						</offsets>	
+					</li>
+				</bodyAddons>
 			</alienPartGenerator>
         </generalSettings>
         <graphicPaths>
 			<li>
-				<head>Things/Pawn/Anadi/</head>
+				<head>Things/Pawn/Kitsune/Head/</head>
 			</li>
         </graphicPaths>
         <styleSettings>
@@ -168,6 +238,11 @@
 				</value>
 			</li>
         </styleSettings>
+        <thoughtSettings>
+			<cannotReceiveThoughts>
+				<li>EnvironmentDark</li>
+			</cannotReceiveThoughts>
+        </thoughtSettings>
         <compatibility>
 			<isFlesh>True</isFlesh>
 			<isSentient>True</isSentient>
@@ -177,11 +252,16 @@
 	<statBases>
 		<MarketValue>1750</MarketValue>
 		<MoveSpeed>5.2</MoveSpeed>
-		<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 		<ComfyTemperatureMax>26</ComfyTemperatureMax>
 		<LeatherAmount>75</LeatherAmount>
 		<RoyalFavorValue>3</RoyalFavorValue>
 		<PsychicSensitivity>1.15</PsychicSensitivity>
+		<MiningSpeed>0.8</MiningSpeed>
+		<ConstructionSpeed>0.8</ConstructionSpeed>
+		<SmoothingSpeed>0.8</SmoothingSpeed>
+		<NegotiationAbility>1.1</NegotiationAbility>
+		<TradePriceImprovement>1.1</TradePriceImprovement>
 		<MeleeDodgeChance>15</MeleeDodgeChance>
 		<PawnTrapSpringChance>0.1</PawnTrapSpringChance>
 	</statBases>
@@ -221,22 +301,48 @@
 			</surpriseAttack>
 		</li>
 		<li>
-			<label>mandibles</label>
-			<capacities>
-				<li>AnadiBite</li>
+            <label>left claw</label>
+            <capacities>
+				<li>Scratch</li>
 			</capacities>
-			<power>8.2</power>
+            <power>4.2</power>
+			<cooldownTime>2</cooldownTime>
+            <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+            <surpriseAttack>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Stun</def>
+                        <amount>8</amount>
+                    </li>
+                </extraMeleeDamages>
+            </surpriseAttack>
+		</li>
+		<li>
+            <label>right claw</label>
+            <capacities>
+				<li>Scratch</li>
+			</capacities>
+            <power>4.2</power>
+			<cooldownTime>2</cooldownTime>
+            <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+            <surpriseAttack>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Stun</def>
+                        <amount>8</amount>
+                    </li>
+                </extraMeleeDamages>
+            </surpriseAttack>
+		</li>
+		<li>
+			<label>teeth</label>
+			<capacities>
+				<li>Bite</li>
+			</capacities>
+			<power>10.2</power>
 			<cooldownTime>2</cooldownTime>
 			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-			<surpriseAttack>
-				<extraMeleeDamages>
-					<li>
-						<def>Stun</def>
-						<amount>20</amount>
-					</li>
-				</extraMeleeDamages>
-			</surpriseAttack>
-			<chanceFactor>0.2</chanceFactor>
+			<chanceFactor>0.07</chanceFactor>
 		</li>
 		<li>
 			<label>head</label>
@@ -251,19 +357,21 @@
 		</li>
 	</tools>
 	<race>
-		<leatherDef>PF2_Leather_Anadi</leatherDef>
+		<leatherDef>Leather_Fox</leatherDef>
 		<thinkTreeMain>Humanlike</thinkTreeMain>
 		<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 		<intelligence>Humanlike</intelligence>
 		<makesFootprints>true</makesFootprints>
-		<lifeExpectancy>80</lifeExpectancy>
-		<nameGenerator>PF2_NamerPersonAnadi</nameGenerator>
+		<lifeExpectancy>70</lifeExpectancy>
+		<nameGenerator>PF2_NamerPersonKitsuneMale</nameGenerator>
+		<nameGeneratorFemale>PF2_NamerPersonKitsuneFemale</nameGeneratorFemale>
 		<useMeatFrom>Human</useMeatFrom>
-		<body>Human</body>
+		<body>PF2_Kitsune</body>
 		<baseBodySize>1.0</baseBodySize>
 		<foodType>OmnivoreHuman</foodType>
 		<gestationPeriodDays>30</gestationPeriodDays>
 		<meatMarketValue>0.8</meatMarketValue>
+		<nuzzleMtbHours>12</nuzzleMtbHours>
 		<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 		<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 		<litterSizeCurve>
@@ -289,11 +397,11 @@
 			</li>
 			<li>
 				<def>HumanlikeTeenager</def>
-				<minAge>6.5</minAge>
+				<minAge>7.5</minAge>
 			</li>
 			<li>
 				<def>HumanlikeAdult</def>
-				<minAge>13</minAge>
+				<minAge>15</minAge>
 			</li>
 		</lifeStageAges>
 		<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
@@ -305,14 +413,14 @@
 		</specialShadowData>
 		<ageGenerationCurve>
 			<points>
-				<li>(13,0)</li>
-				<li>(20,100)</li>
-				<li>(35,100)</li>
-				<li>(40,30)</li>
-				<li>(55,18)</li>
-				<li>(75,10)</li>
-				<li>(80,3)</li>
-				<li>(90,0)</li>
+				<li>(10,0)</li>
+				<li>(15,100)</li>
+				<li>(25,100)</li>
+				<li>(30,30)</li>
+				<li>(45,18)</li>
+				<li>(65,10)</li>
+				<li>(70,3)</li>
+				<li>(80,0)</li>
 			</points>
 		</ageGenerationCurve>
 		<hediffGiverSets>
@@ -330,11 +438,6 @@
 			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
 			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
 		</recipes>
-		<ingredient>
-			<mergeCompatibilityTags>
-				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
-			</mergeCompatibilityTags>
-		</ingredient>
 </AlienRace.ThingDef_AlienRace>
 
 </Defs>

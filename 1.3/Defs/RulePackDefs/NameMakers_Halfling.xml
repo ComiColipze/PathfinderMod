@@ -2,7 +2,7 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>NamerPersonHalflingMale</defName>
+		<defName>PF2_NamerPersonHalflingMale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[HalflingList1] [HalflingList3][HalflingList6]</li>
@@ -39,7 +39,7 @@
 	</RulePackDef>
 
 	<RulePackDef>
-		<defName>NamerPersonHalflingFemale</defName>
+		<defName>PF2_NamerPersonHalflingFemale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[HalflingList2] [HalflingList3][HalflingList6]</li>
@@ -72,6 +72,66 @@
 					<path>HalflingNames/Halfling6</path>
 				</li>
 			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerDeityChaldiran</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[HalflingList1]</li>
+				<li>name->[HalflingList2]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>HalflingList1</keyword>
+					<path>HalflingNames/Halfling1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HalflingList2</keyword>
+					<path>HalflingNames/Halfling2</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerIdeoChaldiran</defName>
+		<include>
+			<li>NamerIdeoGlobal</li>
+		</include>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_DeityTypeMakerChaldiran</defName>
+		<include>
+			<li>DeityTypeMakerGlobal</li>
+		</include>
+	</RulePackDef>
+	
+
+	<RulePackDef>
+		<defName>PF2_LeaderTitleMaker_Chaldiran</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
+
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+				<li>cultureLeaderAdjective->great</li>
+				<li>cultureLeaderAdjective->high</li>
+				<li>cultureLeaderAdjective->good</li>
+
+				<li>cultureLeaderNoun->father</li>
+				<li>cultureLeaderNoun->grandfather</li>
+				<li>cultureLeaderNoun->patriarch</li>
+			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
 

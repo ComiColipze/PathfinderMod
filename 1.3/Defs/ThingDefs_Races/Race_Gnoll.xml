@@ -7,17 +7,17 @@
             <alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_GnollColonist</li>
+						<li>PF2_GnollSlave</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_GnollColonist</li>
+						<li>PF2_GnollRefugee</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_GnollColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_GnollTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_GnollColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_GnollTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -80,8 +80,8 @@
 	</AlienRace.RaceSettings>
 
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>PF2Gnoll</defName>
-    <label>Gnoll</label>
+    <defName>PF2_Gnoll</defName>
+    <label>gnoll</label>
     <description>Gnolls, also known to themselves as “kholo” in the Mwangi Expanse, are eminently practical and pragmatic hunters and raiders. To gnolls, honor is just another word for pointless risk. Any loss of a gnoll affects not just the individual, but their packmates and kin as well. Wasting time on anything but victory, whether it's mercy or cruelty, is seen as little shy of immoral. Gnolls see effectiveness as a cardinal virtue and believe that the best fight is one that never gives the opponent a chance to strike back. Mwangi gnolls are masters of ambushes, tactical feints, and psychological warfare—none of which endears them to their neighbors.</description>
     <alienRace>
         <generalSettings>
@@ -106,9 +106,6 @@
 				</li>
 				<li>
 					<defName>Wimp</defName>
-				</li>
-				<li>
-					<defName>Tough</defName>
 				</li>
 			</disallowedTraits>
 			<alienPartGenerator>
@@ -325,7 +322,6 @@
 		<CarryingCapacity>90</CarryingCapacity>
 		<PlantHarvestYield>0.75</PlantHarvestYield>
 		<AnimalGatherYield>1.10</AnimalGatherYield>
-        <IncomingDamageFactor>0.5</IncomingDamageFactor>
 		<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 	</statBases>
 	<tools>
@@ -392,12 +388,12 @@
 		<makesFootprints>true</makesFootprints>
 		<lifeExpectancy>60</lifeExpectancy>
 		<leatherDef>Leather_Wolf</leatherDef>
-		<nameGenerator>NamerPersonGnoll</nameGenerator>
+		<nameGenerator>PF2_NamerPersonGnoll</nameGenerator>
 		<useMeatFrom>Human</useMeatFrom>
 		<body>Human</body>
 		<baseBodySize>1.12</baseBodySize>
 		<baseHealthScale>1.15</baseHealthScale>
-		<foodType>CarnivoreAnimal, OvivoreAnimal, AnimalProduct</foodType>
+		<foodType>OmnivoreHuman</foodType>
 		<gestationPeriodDays>20</gestationPeriodDays>
 		<meatMarketValue>0.8</meatMarketValue>
 		<nuzzleMtbHours>12</nuzzleMtbHours>

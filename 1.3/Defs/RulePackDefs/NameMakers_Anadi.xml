@@ -2,7 +2,7 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>NamerPersonAnadi</defName>
+		<defName>PF2_NamerPersonAnadi</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[AnadiList1]</li>

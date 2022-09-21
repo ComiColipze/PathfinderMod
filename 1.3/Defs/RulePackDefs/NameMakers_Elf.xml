@@ -2,7 +2,7 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>NamerPersonElfMale</defName>
+		<defName>PF2_NamerPersonElfMale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[ElfList1] [ElfList3]</li>
@@ -25,7 +25,7 @@
 	</RulePackDef>
 
 	<RulePackDef>
-		<defName>NamerPersonElfFemale</defName>
+		<defName>PF2_NamerPersonElfFemale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[ElfList2] [ElfList3]</li>
@@ -49,7 +49,7 @@
 
 
 	<RulePackDef>
-		<defName>NamerDeityKyonan</defName>
+		<defName>PF2_NamerDeityKyonan</defName>
 		<include>
 			<li>NamerDeityGlobal</li>
 		</include>
@@ -72,7 +72,7 @@
 	</RulePackDef>
 	
 	<RulePackDef>
-		<defName>NamerIdeoKyonan</defName>
+		<defName>PF2_NamerIdeoKyonan</defName>
 		<include>
 			<li>NamerIdeoGlobal</li>
 		</include>
@@ -88,14 +88,14 @@
 	</RulePackDef>
 	
 	<RulePackDef>
-		<defName>DeityTypeMakerKyonan</defName>
+		<defName>PF2_DeityTypeMakerKyonan</defName>
 		<include>
 			<li>DeityTypeMakerGlobal</li>
 		</include>
 	</RulePackDef>
 	
 	<RulePackDef>
-		<defName>LeaderTitleMaker_Kyonan</defName>
+		<defName>PF2_LeaderTitleMaker_Kyonan</defName>
 		<include>
 			<li>LeaderTitleMaker_GlobalStructure</li>
 		</include>

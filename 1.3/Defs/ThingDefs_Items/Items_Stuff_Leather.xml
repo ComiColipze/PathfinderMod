@@ -2,7 +2,7 @@
 <Defs>
 
   <ThingDef ParentName="LeatherBase">
-    <defName>Leather_Goblin</defName>
+    <defName>PF2_Leather_Goblin</defName>
     <label>goblin leather</label>
     <description>Tanned, dried, scraped goblin skin. Most people find this material horrifying. Some find it fascinating. It is too thin to protect the wearer, but has great heat insulation.</description>
     <graphicData>
@@ -22,7 +22,7 @@
   </ThingDef>
 
   <ThingDef ParentName="LeatherBase">
-    <defName>Leather_Goloma</defName>
+    <defName>PF2_Leather_Goloma</defName>
     <label>goloma leather</label>
     <description>Tanned, dried, scraped goloma skin. Most people find this material horrifying. Some find it fascinating.</description>
     <graphicData>
@@ -41,7 +41,7 @@
   </ThingDef>
 
   <ThingDef ParentName="LeatherBase">
-    <defName>Leather_Anadi</defName>
+    <defName>PF2_Leather_Anadi</defName>
     <label>anadi leather</label>
     <description>Tanned, dried, scraped anadi skin. Most people find this material horrifying. Some find it fascinating.</description>
     <graphicData>

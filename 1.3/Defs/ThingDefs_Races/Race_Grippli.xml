@@ -2,12 +2,12 @@
 <Defs>
 
 	<AlienRace.RaceSettings>
-		<defName>Goloma_Settings</defName>
+		<defName>Grippli_Settings</defName>
 		<pawnKindSettings>
             <alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_GolomaSlave</li>
+						<li>PF2_GrippliSlave</li>
 					</kindDefs>
 					<chance>10.0</chance>
 				</li>
@@ -15,7 +15,7 @@
             <alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_GolomaRefugee</li>
+						<li>PF2_GrippliRefugee</li>
 					</kindDefs>
 					<chance>10.0</chance>
 				</li>
@@ -25,26 +25,26 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>PF2_GolomaColonist</li>
+								<li>PF2_GrippliColonist</li>
 							</kindDefs>
 							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PF2_GolomaPlayerColony</li> 
+						<li>PF2_GrippliPlayerColony</li> 
 					</factionDefs>
 				</li>
 				<li>
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>PF2_GolomaTribal</li>
+								<li>PF2_GrippliTribal</li>
 							</kindDefs>
 							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PF2_GolomaPlayerTribe</li>
+						<li>PF2_GrippliPlayerTribe</li>
 					</factionDefs>
 				</li>
 			</startingColonists>
@@ -53,26 +53,26 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>PF2_GolomaColonist</li>
+								<li>PF2_GrippliColonist</li>
 							</kindDefs>
 							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PF2_GolomaPlayerColony</li> 
+						<li>PF2_GrippliPlayerColony</li> 
 					</factionDefs>
 				</li>
 				<li>
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>PF2_GolomaTribal</li>
+								<li>PF2_GrippliTribal</li>
 							</kindDefs>
 							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PF2_GolomaPlayerTribe</li> 
+						<li>PF2_GrippliPlayerTribe</li> 
 					</factionDefs>
 				</li>
             </alienwandererkinds>
@@ -80,37 +80,32 @@
 	</AlienRace.RaceSettings>
 
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>PF2_Goloma</defName>
-    <label>goloma</label>
-    <description>Golomas fear most other people and deliberately use their unusual biology to frighten off those they consider to be dangerous predators. Rarely seen and poorly understood, golomas' many-eyed and wooden faced visages instill terror in most they meet.</description>
+    <defName>PF2_Grippli</defName>
+    <label>grippli</label>
+    <description>Gripplis are a shy and cautious people who generally seek to avoid being drawn into the complicated and dangerous affairs of others. Despite their outlook and small stature, gripplis often take bold and noble action when the situation demands it.</description>
     <alienRace>
         <generalSettings>
-			<maleGenderProbability>0.65</maleGenderProbability>
+			<maleGenderProbability>0.5</maleGenderProbability>
 			<immuneToAge>false</immuneToAge>
 			<humanRecipeImport>true</humanRecipeImport>
 			<immuneToXenophobia>false</immuneToXenophobia>
-			<minAgeForAdulthood>20</minAgeForAdulthood>
+			<minAgeForAdulthood>14</minAgeForAdulthood>
 			<disallowedTraits>
                 <li>
                     <defName>Undergrounder</defName>
 				</li>
+				<li>
+					<defName>Immunity</defName>
+					<degree>-1</degree>
+				</li>
             </disallowedTraits>
 			<alienPartGenerator>
-				<useGenderedHeads>false</useGenderedHeads>
 				<aliencrowntypes>
-					<li>Red_Light</li>
-					<li>Red_Dark</li>
-					<li>Blue_Light</li>
-					<li>Blue_Dark</li>
-					<li>Green_Light</li>
-					<li>Green_Dark</li>
-					<li>Yellow_Light</li>
-					<li>Yellow_Dark</li>
+					<li>Average_Normal</li>
 				</aliencrowntypes>
 				<alienbodytypes>
 					<li>Male</li>
 					<li>Female</li>
-					<li>Hulk</li>
 					<li>Thin</li>
 				</alienbodytypes>
 				<colorChannels>
@@ -118,51 +113,88 @@
 					<name>skin</name>
 					<first Class="ColorGenerator_Options">
 						<options>
-                            <li>
-								<weight>15</weight>
-                                <only>(139, 69, 19)</only>
-                            </li>
-                            <li>
-								<weight>15</weight>
-                                <only>(145, 103, 55)</only>
-                            </li>
-                            <li>
-                                <weight>20</weight>
-                                <only>(188, 143, 143)</only>
-                            </li>
+						<!--Green-->
                             <li>
                                 <weight>10</weight>
-                                <only>(189, 183, 107)</only>
+                                <only>(85, 107, 47)</only>
                             </li>
                             <li>
-								<weight>15</weight>
-                                <only>(240, 230, 140)</only>
+								<weight>10</weight>
+                                <only>(115, 145, 40)</only>
                             </li>
                             <li>
-								<weight>20</weight>
-								<only>(238, 232, 170)</only>
-                            </li>
-							<li>
-								<weight>20</weight>
-								<only>(50, 50, 50)</only>
+								<weight>10</weight>
+                                <only>(175, 245, 47)</only>
                             </li>
                             <li>
-                                <weight>20</weight>
-                                <only>(130, 130, 130)</only>
+								<weight>10</weight>
+                                <only>(46, 139, 87)</only>
                             </li>
-							<li>
+						<!--Blue-->
+                            <li>
+								<weight>10</weight>
+                                <only>(102, 205, 170)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+                                <only>(32, 178, 170)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+                                <only>(47, 79, 79)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+                                <only>(0, 245, 245)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+                                <only>(15, 15, 255)</only>
+                            </li>
+						<!--Purple-->
+                            <li>
                                 <weight>10</weight>
-                                <only>(245, 245, 245)</only>
+                                <only>(123, 104, 238)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+								<only>(147, 112, 219)</only>
+                            </li>
+							<li>
+								<weight>10</weight>
+								<only>(139 , 0, 139)</only>
+                            </li>
+							<li>
+								<weight>10</weight>
+								<only>(186, 85, 211)</only>
+                            </li>
+						<!--Orange-->
+                            <li>
+                                <weight>10</weight>
+                                <only>(228, 137, 15)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+								<only>(255, 188, 0)</only>
+                            </li>
+						<!--Brown-->
+							<li>
+								<weight>10</weight>
+								<only>(115 , 77, 35)</only>
+                            </li>
+							<li>
+								<weight>10</weight>
+								<only>(145, 85, 5)</only>
                             </li>
 						</options>
 					</first>
 					</li>
-				</colorChannels>
+                </colorChannels>
 			</alienPartGenerator>
         </generalSettings>
         <graphicPaths>
 			<li>
-				<head>Things/Pawn/Goloma/</head>
+				<head>Things/Pawn/Grippli/</head>
 			</li>
         </graphicPaths>
         <styleSettings>
@@ -183,6 +215,15 @@
 			<cannotReceiveThoughts>
 				<li>EnvironmentDark</li>
 				<li>NeedOutdoors</li>
+				<li>AteRawFood</li>
+				<li>AteKibble</li>
+				<li>AteInsectMeatDirect</li>
+				<li>AteInsectMeatAsIngredient</li>
+				<li>AteWithoutTable</li>
+				<li>SleptOnGround</li>
+				<li>SoakingWet</li>
+				<li>WitnessedDeathNonAlly</li>
+				<li>ColonistBanished</li>
 			</cannotReceiveThoughts>
         </thoughtSettings>
         <compatibility>
@@ -193,16 +234,13 @@
     </alienRace>
 	<statBases>
 		<MarketValue>1750</MarketValue>
-		<MoveSpeed>4.8</MoveSpeed>
-		<ComfyTemperatureMin>-18</ComfyTemperatureMin>
-		<ComfyTemperatureMax>28</ComfyTemperatureMax>
+		<MoveSpeed>4.2</MoveSpeed>
+		<ComfyTemperatureMin>16</ComfyTemperatureMin>
+		<ComfyTemperatureMax>26</ComfyTemperatureMax>
 		<LeatherAmount>65</LeatherAmount>
 		<RoyalFavorValue>3</RoyalFavorValue>
-		<PsychicSensitivity>1.15</PsychicSensitivity>
-		<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
-		<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
-		<ArmorRating_Heat>0.15</ArmorRating_Heat>
-		<ToxicSensitivity>1.15</ToxicSensitivity>
+		<ToxicSensitivity>1.2</ToxicSensitivity>
+        <ImmunityGainSpeed>1.45</ImmunityGainSpeed>
 	</statBases>
 		<tools>
 			<li>
@@ -210,7 +248,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>8.2</power>
+				<power>7.4</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -227,7 +265,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>8.2</power>
+				<power>7.4</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -240,45 +278,11 @@
 				</surpriseAttack>
 			</li>
 			<li>
-				<label>left claw</label>
-				<capacities>
-					<li>Scratch</li>
-				</capacities>
-				<power>4.2</power>
-				<cooldownTime>1.5</cooldownTime>
-				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>8</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
-			</li>
-			<li>
-				<label>right claw</label>
-				<capacities>
-					<li>Scratch</li>
-				</capacities>
-				<power>4.2</power>
-				<cooldownTime>1.5</cooldownTime>
-				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>8</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
-			</li>
-			<li>
 				<label>teeth</label>
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>8.2</power>
+				<power>7.4</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.07</chanceFactor>
@@ -288,7 +292,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>5</power>
+				<power>4.2</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -300,15 +304,15 @@
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 			<intelligence>Humanlike</intelligence>
 			<makesFootprints>true</makesFootprints>
-			<lifeExpectancy>80</lifeExpectancy>
-			<leatherDef>PF2_Leather_Goloma</leatherDef>
-			<nameGenerator>PF2_NamerPersonGoloma</nameGenerator>
+			<lifeExpectancy>60</lifeExpectancy>
+			<leatherDef>Leather_Lizard</leatherDef>
+			<nameGenerator>PF2_NamerPersonGrippli</nameGenerator>
 			<useMeatFrom>Human</useMeatFrom>
-			<body>PF2_Goloma</body>
-			<baseBodySize>1</baseBodySize>
-			<baseHealthScale>1.05</baseHealthScale>
+			<body>Human</body>
+			<baseBodySize>0.75</baseBodySize>
+			<baseHealthScale>0.95</baseHealthScale>
 			<foodType>OmnivoreHuman</foodType>
-			<gestationPeriodDays>30</gestationPeriodDays>
+			<gestationPeriodDays>25</gestationPeriodDays>
 			<meatMarketValue>0.8</meatMarketValue>
 			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
@@ -330,14 +334,14 @@
 			</specialShadowData>
 			<ageGenerationCurve>
 				<points>
-					<li>(14,0)</li>
-					<li>(16,100)</li>
-					<li>(50,100)</li>
-					<li>(60,30)</li>
-					<li>(70,18)</li>
-					<li>(80,10)</li>
-					<li>(90,3)</li>
-					<li>(100,0)</li>
+					<li>(18,0)</li>
+					<li>(30,100)</li>
+					<li>(70,100)</li>
+					<li>(110,30)</li>
+					<li>(150,18)</li>
+					<li>(200,10)</li>
+					<li>(270,3)</li>
+					<li>(350,0)</li>
 				</points>
 			</ageGenerationCurve>
 			<lifeStageAges Inherit="False">
@@ -347,19 +351,19 @@
 				</li>
 				<li>
 					<def>HumanlikeToddler</def>
-					<minAge>1.2</minAge>
+					<minAge>1</minAge>
 				</li>
 				<li>
 					<def>HumanlikeChild</def>
-					<minAge>4</minAge>
+					<minAge>3</minAge>
 				</li>
 				<li>
 					<def>HumanlikeTeenager</def>
-					<minAge>13</minAge>
+					<minAge>6</minAge>
 				</li>
 				<li>
 					<def>HumanlikeAdult</def>
-					<minAge>18</minAge>
+					<minAge>12</minAge>
 				</li>
 			</lifeStageAges>
 			<hediffGiverSets>

@@ -7,17 +7,17 @@
             <alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_OrcColonist</li>
+						<li>PF2_OrcSlave</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_OrcColonist</li>
+						<li>PF2_OrcRefugee</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_OrcColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_OrcTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_OrcColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_OrcTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -80,8 +80,8 @@
 	</AlienRace.RaceSettings>
 
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>PF2Orc</defName>
-    <label>Orc</label>
+    <defName>PF2_Orc</defName>
+    <label>orc</label>
     <description>Orcs are forged in the fires of violence and conflict, often from the moment they are born. As they live lives that are frequently cut brutally short, orcs revel in testing their strength against worthy foes, whether by challenging a higher-ranking member of their community for dominance or raiding a neighboring settlement. Many orcs seek glory as soon as they can walk and carry a blade or club, taming wild beasts or hunting deadly monsters.</description>
     <alienRace>
         <generalSettings>
@@ -192,14 +192,6 @@
 				<head>Things/Pawn/Orc/</head>
 			</li>
         </graphicPaths>
-        <styleSettings>
-			<li>
-				<key>BeardDef</key>
-				<value>
-					<hasStyle>false</hasStyle>
-				</value>
-			</li>
-        </styleSettings>
         <thoughtSettings>
 			<cannotReceiveThoughts>
 				<li>ObservedLayingCorpse</li>
@@ -319,13 +311,14 @@
         </compatibility>
     </alienRace>
 	<statBases>
-		<Mass>85</Mass>
+		<Mass>90</Mass>
 		<MarketValue>1750</MarketValue>
-		<MoveSpeed>4.2</MoveSpeed>
+		<MoveSpeed>4.4</MoveSpeed>
 		<ComfyTemperatureMin>6</ComfyTemperatureMin>
 		<ComfyTemperatureMax>30</ComfyTemperatureMax>
 		<LeatherAmount>85</LeatherAmount>
 		<RoyalFavorValue>3</RoyalFavorValue>
+		<HungerRateMultiplier>0.75</HungerRateMultiplier>
 		<CarryingCapacity>90</CarryingCapacity>
 		<ResearchSpeed>0.7</ResearchSpeed>
 		<MedicalOperationSpeed>0.7</MedicalOperationSpeed>
@@ -340,7 +333,7 @@
 				<li>Blunt</li>
 			</capacities>
 			<power>10</power>
-			<cooldownTime>2</cooldownTime>
+			<cooldownTime>2.1</cooldownTime>
 			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 			<surpriseAttack>
 				<extraMeleeDamages>
@@ -357,7 +350,7 @@
 				<li>Blunt</li>
 			</capacities>
 			<power>10</power>
-			<cooldownTime>2</cooldownTime>
+			<cooldownTime>2.1</cooldownTime>
 			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 			<surpriseAttack>
 				<extraMeleeDamages>
@@ -374,7 +367,7 @@
 				<li>Bite</li>
 			</capacities>
 			<power>12</power>
-			<cooldownTime>2</cooldownTime>
+			<cooldownTime>2.4</cooldownTime>
 			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 			<chanceFactor>0.07</chanceFactor>
 		</li>
@@ -384,7 +377,7 @@
 				<li>Blunt</li>
 			</capacities>
 			<power>8</power>
-			<cooldownTime>2</cooldownTime>
+			<cooldownTime>1.8</cooldownTime>
 			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			<chanceFactor>0.2</chanceFactor>
@@ -397,8 +390,8 @@
 		<makesFootprints>true</makesFootprints>
 		<lifeExpectancy>60</lifeExpectancy>
 		<leatherDef>Leather_Human</leatherDef>
-		<nameGenerator>NamerPersonOrcMale</nameGenerator>
-		<nameGeneratorFemale>NamerPersonOrcFemale</nameGeneratorFemale>
+		<nameGenerator>PF2_NamerPersonOrcMale</nameGenerator>
+		<nameGeneratorFemale>PF2_NamerPersonOrcFemale</nameGeneratorFemale>
 		<useMeatFrom>Human</useMeatFrom>
 		<body>Human</body>
 		<baseBodySize>1.2</baseBodySize>
@@ -454,7 +447,7 @@
 				<li>(40,18)</li>
 				<li>(50,10)</li>
 				<li>(60,3)</li>
-				<li>(65,0)</li>
+				<li>(70,0)</li>
 			</points>
 		</ageGenerationCurve>
 		<hediffGiverSets>

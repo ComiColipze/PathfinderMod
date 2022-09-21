@@ -2,7 +2,7 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>NamerPersonGnoll</defName>
+		<defName>PF2_NamerPersonGnoll</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[GnollList2]</li>

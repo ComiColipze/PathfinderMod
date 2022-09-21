@@ -7,17 +7,17 @@
             <alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_IruxiColonist</li>
+						<li>PF2_IruxiSlave</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_IruxiColonist</li>
+						<li>PF2_IruxiRefugee</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_IruxiColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_IruxiTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_IruxiColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_IruxiTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -80,8 +80,8 @@
 	</AlienRace.RaceSettings>
 
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>PF2Iruxi</defName>
-    <label>Iruxi</label>
+    <defName>PF2_Iruxi</defName>
+    <label>iruxi</label>
     <description>Also called lizardfolk, iruxis move through the societies of other humanoids with the steely reserve of born predators. They have a well-deserved reputation as outstanding rangers and unsentimental fighters. Though iruxis have adapted to many different environments, many of them still prefer to remain near bodies of water, using their ability to hold their breath to their advantage.</description>
     <alienRace>
         <generalSettings>
@@ -392,7 +392,7 @@
 		<MarketValue>1750</MarketValue>
 		<MoveSpeed>4.0</MoveSpeed>
 		<ComfyTemperatureMin>-10</ComfyTemperatureMin>
-		<ComfyTemperatureMax>26</ComfyTemperatureMax>
+		<ComfyTemperatureMax>36</ComfyTemperatureMax>
 		<LeatherAmount>75</LeatherAmount>
 		<RoyalFavorValue>3</RoyalFavorValue>
 		<HungerRateMultiplier>1.25</HungerRateMultiplier>
@@ -464,12 +464,12 @@
 		<makesFootprints>true</makesFootprints>
 		<lifeExpectancy>120</lifeExpectancy>
 		<leatherDef>Leather_Lizard</leatherDef>
-		<nameGenerator>NamerPersonIruxi</nameGenerator>
+		<nameGenerator>PF2_NamerPersonIruxi</nameGenerator>
 		<useMeatFrom>Human</useMeatFrom>
-		<body>Iruxi</body>
+		<body>PF2_Iruxi</body>
 		<baseBodySize>1.1</baseBodySize>
 		<baseHealthScale>1.05</baseHealthScale>
-		<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+		<foodType>OmnivoreHuman</foodType>
 		<gestationPeriodDays>30</gestationPeriodDays>
 		<meatMarketValue>0.8</meatMarketValue>
 		<manhunterOnDamageChance>0.50</manhunterOnDamageChance>

@@ -2,7 +2,7 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>NamerPersonGnomeMale</defName>
+		<defName>PF2_NamerPersonGnomeMale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[GnomeList1][GnomeList2][GnomeList3][GnomeList2][GnomeList4] [GnomeList6]</li>
@@ -51,7 +51,7 @@
 	</RulePackDef>
 
 	<RulePackDef>
-		<defName>NamerPersonGnomeFemale</defName>
+		<defName>PF2_NamerPersonGnomeFemale</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>name->[GnomeList5] [GnomeList6]</li>
@@ -90,6 +90,135 @@
 					<path>GnomeNames/GnomeWelsh2</path>
 				</li>
 			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerDeityFirstWorlder</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[GnomeList1][GnomeList2][GnomeList3][GnomeList2][GnomeList4]</li>
+				<li>name->[GnomeList1][GnomeList2][GnomeList3][GnomeList2][GnomeList3][GnomeList2][GnomeList4]</li>
+				<li>name->[GnomeList1][GnomeList2][GnomeList3][GnomeList2][GnomeList3][GnomeList2][GnomeList3][GnomeList2][GnomeList4]</li>
+				<li>name->[GnomeList1][GnomeList2][GnomeList3][GnomeList2]</li>
+				<li>name->[GnomeList1][GnomeList2][GnomeList4]</li>
+				<li>name->[GnomeList2][GnomeList3][GnomeList2][GnomeList4]</li>
+				<li>name->[GnomeListWelsh1][GnomeListWelsh2]</li>
+				<li>name->[GnomeList5]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>GnomeList1</keyword>
+					<path>GnomeNames/Gnome1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeList2</keyword>
+					<path>GnomeNames/Gnome2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeList3</keyword>
+					<path>GnomeNames/Gnome3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeList4</keyword>
+					<path>GnomeNames/Gnome4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeList5</keyword>
+					<path>GnomeNames/Gnome5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeList6</keyword>
+					<path>GnomeNames/Gnome6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeListWelsh1</keyword>
+					<path>GnomeNames/GnomeWelsh1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeListWelsh2</keyword>
+					<path>GnomeNames/GnomeWelsh2</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerIdeoFirstWorlder</defName>
+		<include>
+			<li>NamerIdeoGlobal</li>
+		</include>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_DeityTypeMakerFirstWorlder</defName>
+		<include>
+			<li>DeityTypeMakerGlobal</li>
+		</include>
+	</RulePackDef>
+	
+
+	<RulePackDef>
+		<defName>PF2_LeaderTitleMaker_FirstWorlder</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
+
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+				<li>cultureLeaderAdjective->smart</li>
+				<li>cultureLeaderAdjective->genius</li>
+				<li>cultureLeaderAdjective->ingenious</li>
+
+				<li>cultureLeaderNoun->emissary</li>
+				<li>cultureLeaderNoun->jack-of-all-trades</li>
+				<li>cultureLeaderNoun->councilor</li>
+				<li>cultureLeaderNoun->leader</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerFactionGnomish</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The [PoliticalUnionsMedieval] of [GnomeWelsh1][GnomeWelsh2]</li>
+				<li>r_name->The [PoliticalUnionsMedieval] of [Gnome6]</li>
+				<li>r_name->[GnomeWelsh1][GnomeWelsh2] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[Gnome6] [PoliticalUnionsMedieval]</li>
+				<li>r_name->The [PoliticalUnionsMedieval] of First World Expatriates</li>
+				<li>r_name->The [PoliticalUnionsMedieval] of First World Refugees</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>GnomeWelsh1->GnomeNames/GnomeWelsh1</li>
+				<li>GnomeWelsh2->GnomeNames/GnomeWelsh2</li>
+				<li>Gnome6->GnomeNames/Gnome6</li>
+				<li>PoliticalUnionsMedieval->PF2Factions/PoliticalUnionsMedieval</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerSettlementGnomish</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[townname_wordgen]</li>
+
+				<li>townname_wordgen(p=2)->[Gnome6]</li>
+				<li>townname_wordgen(p=2)->[SylE][SylE][SylE]stan</li>
+				<li>townname_wordgen(p=2)->[SylE][SylE][SylE]fast</li>
+				<li>townname_wordgen(p=2)->[SylE][SylE][SylE]deth</li>
+				<li>townname_wordgen(p=2)->[SylE][SylE][SylE]fah</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Gnome6->GnomeNames/Gnome6</li>
+			</rulesFiles>
 		</rulePack>
 	</RulePackDef>
 

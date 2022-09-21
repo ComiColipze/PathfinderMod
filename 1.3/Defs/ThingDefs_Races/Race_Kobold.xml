@@ -7,17 +7,17 @@
             <alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_KoboldColonist</li>
+						<li>PF2_KoboldSlave</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_KoboldColonist</li>
+						<li>PF2_KoboldRefugee</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_KoboldColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_KoboldTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_KoboldColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_KoboldTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -80,8 +80,8 @@
 	</AlienRace.RaceSettings>
 
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>PF2Kobold</defName>
-    <label>Kobold</label>
+    <defName>PF2_Kobold</defName>
+    <label>kobold</label>
     <description>Kobolds are resourceful survivors whose snare-guarded warrens and opportunistic scavenging have cast them as villains to most other humanoids, with their draconic reverence lending them a reputation as mere minions and nuisances. Yet some kobolds have emerged from their secluded warrens seeking the relative safety of surface settlements, the lucrative prospects of the adventuring life, or validating awe from followers of their own.</description>
     <alienRace>
         <generalSettings>
@@ -96,18 +96,21 @@
 				</li>
             </disallowedTraits>
 			<alienPartGenerator>
-				<useGenderedHeads>true</useGenderedHeads>
 				<aliencrowntypes>
-					<li>Normal</li>
+					<li>Stubby_Horns</li>
+					<li>Spiked_Horns</li>
+					<li>Curved_Horns</li>
+					<li>Long_Horns</li>
+					<li>Small_Horns</li>
 				</aliencrowntypes>
 				<alienbodytypes>
-					<li>Thin</li>
 					<li>Male</li>
+					<li>Female</li>
+					<li>Thin</li>
 				</alienbodytypes>
 				<customDrawSize>(0.75, 0.75)</customDrawSize>
 				<customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>
-				<headOffset>(0.0, -0.08)</headOffset>
-				<getsGreyAt>500</getsGreyAt>	
+				<headOffset>(0.0, -0.18)</headOffset>
 				<colorChannels>	                    
 					<li>
 						<name>skin</name>
@@ -233,31 +236,6 @@
 				</colorChannels>							
 				<bodyAddons>
 					<li>
-						<bodyPart>left horn</bodyPart>
-						<path>Things/Pawn/Kobold/Horns/Horns</path>
-						<inFrontOfBody>true</inFrontOfBody>
-						<drawnInBed>true</drawnInBed>
-						<drawSize>1.0</drawSize>
-						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-                        <colorChannel>base</colorChannel>
-						<defaultOffset>Center</defaultOffset>
-						<alignWithHead>true</alignWithHead>	
-						<drawnDesiccated>true</drawnDesiccated>
-					</li>
-					<li>
-						<bodyPart>right horn</bodyPart>
-						<path>Things/Pawn/Kobold/Horns/Horns</path>                
-						<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
-						<inFrontOfBody>true</inFrontOfBody>
-						<drawnInBed>true</drawnInBed>
-						<drawSize>1.0</drawSize>
-						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
-                        <colorChannel>base</colorChannel>
-						<defaultOffset>Center</defaultOffset>
-						<alignWithHead>true</alignWithHead>
-						<drawnDesiccated>true</drawnDesiccated>
-					</li>
-					<li>
 						<bodyPart>tail</bodyPart>
 						<path>Things/Pawn/Kobold/Tails/Tails</path>
 						<inFrontOfBody>false</inFrontOfBody>
@@ -340,7 +318,6 @@
 		<ComfyTemperatureMax>28</ComfyTemperatureMax>
 		<LeatherAmount>35</LeatherAmount>
 		<RoyalFavorValue>3</RoyalFavorValue>
-		<HungerRateMultiplier>0.95</HungerRateMultiplier>
 		<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 		<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
 		<ArmorRating_Heat>0.05</ArmorRating_Heat>
@@ -411,13 +388,13 @@
 		<makesFootprints>true</makesFootprints>
 		<lifeExpectancy>120</lifeExpectancy>
 		<leatherDef>Leather_Lizard</leatherDef>
-		<nameGenerator>NamerPersonKoboldMale</nameGenerator>
-		<nameGeneratorFemale>NamerPersonKoboldFemale</nameGeneratorFemale>
+		<nameGenerator>PF2_NamerPersonKoboldMale</nameGenerator>
+		<nameGeneratorFemale>PF2_NamerPersonKoboldFemale</nameGeneratorFemale>
 		<useMeatFrom>Human</useMeatFrom>
-		<body>BodyKobold</body>
+		<body>PF2_Kobold</body>
 		<baseBodySize>0.7</baseBodySize>
 		<baseHealthScale>0.9</baseHealthScale>
-		<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+		<foodType>OmnivoreHuman</foodType>
 		<gestationPeriodDays>25</gestationPeriodDays>
 		<meatMarketValue>0.8</meatMarketValue>
 		<manhunterOnDamageChance>0.50</manhunterOnDamageChance>

@@ -7,17 +7,17 @@
             <alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_AmurrunColonist</li>
+						<li>PF2_AmurrunSlave</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_AmurrunColonist</li>
+						<li>PF2_AmurrunRefugee</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_AmurrunColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_AmurrunTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_AmurrunColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_AmurrunTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -80,8 +80,8 @@
 	</AlienRace.RaceSettings>
 
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>PF2Amurrun</defName>
-    <label>Amurrun</label>
+    <defName>PF2_Amurrun</defName>
+    <label>amurrun</label>
     <description>Curious and gregarious wanderers, catfolk combine features of felines and humanoids in both appearance and temperament. They enjoy learning new things, collecting new tales and trinkets, and ensuring their loved ones are safe and happy. Amurruns view themselves as chosen guardians of natural places in the world and are often recklessly brave, even in the face of overwhelming opposition.</description>
     <alienRace>
         <generalSettings>
@@ -101,15 +101,17 @@
 					<li>Average_FluffyB</li>
 					<li>Average_FluffyC</li>
 					<li>Average_FluffyD</li>
+					<li>Average_FluffyE</li>
 					<li>Average_NarrowA</li>
 					<li>Average_NarrowB</li>
 					<li>Average_NarrowC</li>
 					<li>Average_NarrowD</li>
+					<li>Average_NarrowE</li>
 				</aliencrowntypes>
 				<alienbodytypes>
-					<li>Thin</li>
 					<li>Male</li>
 					<li>Female</li>
+					<li>Thin</li>
 				</alienbodytypes>
 				<colorChannels>
                     <li>
@@ -118,11 +120,11 @@
 						<options>
 						<!--Black&White-->
                             <li>
-								<weight>15</weight>
+								<weight>10</weight>
                                 <only>(60, 60, 60)</only>
                             </li>
                             <li>
-                                <weight>20</weight>
+                                <weight>10</weight>
                                 <only>(240, 240, 240)</only>
                             </li>
 						<!--Other Colors-->
@@ -131,11 +133,11 @@
                                 <only>(176, 196, 222)</only>
                             </li>
                             <li>
-								<weight>20</weight>
+								<weight>10</weight>
 								<only>(255, 140, 0)</only>
                             </li>
 							<li>
-								<weight>20</weight>
+								<weight>10</weight>
 								<only>(245, 219, 179)</only>
                             </li>
 						</options>
@@ -241,7 +243,7 @@
     </alienRace>
 	<statBases>
 		<MarketValue>1750</MarketValue>
-		<MoveSpeed>5.2</MoveSpeed>
+		<MoveSpeed>5.3</MoveSpeed>
 		<ComfyTemperatureMin>0</ComfyTemperatureMin>
 		<ComfyTemperatureMax>26</ComfyTemperatureMax>
 		<LeatherAmount>75</LeatherAmount>
@@ -349,10 +351,10 @@
 		<intelligence>Humanlike</intelligence>
 		<makesFootprints>true</makesFootprints>
 		<lifeExpectancy>70</lifeExpectancy>
-		<nameGenerator>NamerPersonAmurrunMale</nameGenerator>
-		<nameGeneratorFemale>NamerPersonAmurrunFemale</nameGeneratorFemale>
+		<nameGenerator>PF2_NamerPersonAmurrunMale</nameGenerator>
+		<nameGeneratorFemale>PF2_NamerPersonAmurrunFemale</nameGeneratorFemale>
 		<useMeatFrom>Human</useMeatFrom>
-		<body>Amurrun</body>
+		<body>PF2_Amurrun</body>
 		<baseBodySize>1.0</baseBodySize>
 		<foodType>OmnivoreHuman</foodType>
 		<gestationPeriodDays>30</gestationPeriodDays>

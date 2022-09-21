@@ -7,17 +7,17 @@
             <alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_YsokiColonist</li>
+						<li>PF2_YsokiSlave</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_YsokiColonist</li>
+						<li>PF2_YsokiRefugee</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_YsokiColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_YsokiTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_YsokiColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_YsokiTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -80,8 +80,8 @@
 	</AlienRace.RaceSettings>
 
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>PF2Ysoki</defName>
-    <label>Ysoki</label>
+    <defName>PF2_Ysoki</defName>
+    <label>ysoki</label>
     <description>Ysoki are a clever, adaptable, and fastidious ancestry who happily crowd their large families into the smallest of living spaces.</description>
     <alienRace>
         <generalSettings>
@@ -291,7 +291,6 @@
 		<ComfyTemperatureMax>28</ComfyTemperatureMax>
 		<LeatherAmount>35</LeatherAmount>
 		<RoyalFavorValue>3</RoyalFavorValue>
-		<HungerRateMultiplier>0.95</HungerRateMultiplier>
 		<WorkSpeedGlobal>1.15</WorkSpeedGlobal>
 		<GlobalLearningFactor>1.10</GlobalLearningFactor>
 		<GeneralLaborSpeed>1.10</GeneralLaborSpeed>
@@ -360,10 +359,10 @@
 		<makesFootprints>true</makesFootprints>
 		<lifeExpectancy>40</lifeExpectancy>
 		<leatherDef>Leather_Light</leatherDef>
-		<nameGenerator>NamerPersonYsokiMale</nameGenerator>
-		<nameGeneratorFemale>NamerPersonYsokiFemale</nameGeneratorFemale>
+		<nameGenerator>PF2_NamerPersonYsokiMale</nameGenerator>
+		<nameGeneratorFemale>PF2_NamerPersonYsokiFemale</nameGeneratorFemale>
 		<useMeatFrom>Human</useMeatFrom>
-		<body>Ysoki</body>
+		<body>PF2_Ysoki</body>
 		<baseBodySize>0.7</baseBodySize>
 		<baseHealthScale>0.9</baseHealthScale>
 		<foodType>OmnivoreHuman</foodType>

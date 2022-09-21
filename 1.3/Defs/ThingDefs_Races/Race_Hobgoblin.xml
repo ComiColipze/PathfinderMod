@@ -7,17 +7,17 @@
             <alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_HobgoblinColonist</li>
+						<li>PF2_HobgoblinSlave</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_HobgoblinColonist</li>
+						<li>PF2_HobgoblinRefugee</li>
 					</kindDefs>
-					<chance>2.0</chance>
+					<chance>10.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_HobgoblinColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_HobgoblinTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_HobgoblinColonist</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_HobgoblinTribal</li>
 							</kindDefs>
-							<chance>2.0</chance>
+							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -80,8 +80,8 @@
 	</AlienRace.RaceSettings>
 
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>PF2Hobgoblin</defName>
-    <label>Hobgoblin</label>
+    <defName>PF2_Hobgoblin</defName>
+    <label>hobgoblin</label>
     <description>Taller and stronger than their goblin kin, hobgoblins are equals in strength and size to humans, with broad shoulders and long, powerful arms.</description>
     <alienRace>
         <generalSettings>
@@ -91,7 +91,7 @@
 			<immuneToXenophobia>false</immuneToXenophobia>
 			<minAgeForAdulthood>16</minAgeForAdulthood>
 			<notXenophobistTowards>
-				<li>PF2Goblin</li>
+				<li>PF2_Goblin</li>
 			</notXenophobistTowards>
 			<disallowedTraits>
                 <li>
@@ -113,17 +113,49 @@
 				<useGenderedHeads>false</useGenderedHeads>
 				<aliencrowntypes>
 					<li>Average_Normal</li>
+					<li>Average_Spiked</li>
 				</aliencrowntypes>
 				<alienbodytypes>
-					<li>Thin</li>
 					<li>Male</li>
 					<li>Female</li>
+					<li>Thin</li>
 				</alienbodytypes>
 				<customPortraitHeadDrawSize>(1.22, 1.22)</customPortraitHeadDrawSize>
 				<customDrawSize>(1.15, 1.15)</customDrawSize>
 				<customHeadDrawSize>(1.15, 1.15)</customHeadDrawSize>
 				<headOffset>(0.0, 0.08)</headOffset>
 				<getsGreyAt>50</getsGreyAt>		
+				<bodyAddons>
+					<li>
+						<bodyPart>left ear</bodyPart>
+						<path>Things/Pawn/Hobgoblin/Ears/Left_Ears</path>
+						<colorChannel>skin</colorChannel>
+						<drawSize>(1.0,1.0)</drawSize>
+						<drawSizePortrait>(1.0,1.0)</drawSizePortrait>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<inFrontOfBody>true</inFrontOfBody>
+						<alignWithHead>true</alignWithHead>
+						<drawnDesiccated>false</drawnDesiccated>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+					<li>
+						<bodyPart>right ear</bodyPart>
+						<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+						<path>Things/Pawn/Hobgoblin/Ears/Right_Ears</path>
+						<colorChannel>skin</colorChannel>
+						<drawSize>(1.0,1.0)</drawSize>
+						<drawSizePortrait>(1.0,1.0)</drawSizePortrait>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<inFrontOfBody>true</inFrontOfBody>
+						<alignWithHead>true</alignWithHead>
+						<drawnDesiccated>false</drawnDesiccated>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+				</bodyAddons>
 				<colorChannels>	                    
 					<li>
 						<name>skin</name>
@@ -157,7 +189,7 @@
         </generalSettings>
         <graphicPaths>
 			<li>
-				<head>Things/Pawn/Hobgoblin/</head>
+				<head>Things/Pawn/Hobgoblin/Head/</head>
 			</li>
         </graphicPaths>
         <styleSettings>
@@ -263,8 +295,7 @@
     </alienRace>
 	<statBases>
 		<MarketValue>1750</MarketValue>
-		<MoveSpeed>4.6</MoveSpeed>
-		<Flammability>0.3</Flammability>
+		<MoveSpeed>4.8</MoveSpeed>
 		<ComfyTemperatureMin>10</ComfyTemperatureMin>
 		<ComfyTemperatureMax>34</ComfyTemperatureMax>
 		<LeatherAmount>75</LeatherAmount>
@@ -339,12 +370,12 @@
 		<intelligence>Humanlike</intelligence>
 		<makesFootprints>true</makesFootprints>
 		<lifeExpectancy>70</lifeExpectancy>
-		<leatherDef>Leather_Goblin</leatherDef>
-		<nameGenerator>NamerPersonGoblinMale</nameGenerator>
-		<nameGeneratorFemale>NamerPersonGoblinFemale</nameGeneratorFemale>
+		<leatherDef>PF2_Leather_Goblin</leatherDef>
+		<nameGenerator>PF2_NamerPersonHobgoblinMale</nameGenerator>
+		<nameGeneratorFemale>PF2_NamerPersonHobgoblinFemale</nameGeneratorFemale>
 		<useMeatFrom>Human</useMeatFrom>
 		<body>Human</body>
-		<baseBodySize>1.0</baseBodySize>
+		<baseBodySize>1.05</baseBodySize>
 		<baseHealthScale>1.05</baseHealthScale>
 		<foodType>OmnivoreHuman</foodType>
 		<gestationPeriodDays>15</gestationPeriodDays>
