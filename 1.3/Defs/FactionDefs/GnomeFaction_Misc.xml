@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>PF2_GnomeFactionModern</defName>
+		<label>industrial gnome pockets</label>
+		<categoryTag>Outlander</categoryTag>
+		<description>These pockets of autocephalous settlements possess generations of gnome families, many of them comprised of First World expatriates. They are fascinated by learning new things, reflected by their high pursuit of new technologies and sensations. This fascination can be attributed to a fear of the Bleaching, a curse afflicted to all gnomes in the material realm that kills those who doesn't find new ways or experiences. While having techonologies such as gunpowder, they avoid conflict at any cost.</description>
+		<pawnSingular>villager</pawnSingular>
+		<pawnsPlural>villagers</pawnsPlural>
+		<listOrderPriority>20</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+		<colorSpectrum>
+			<li>(204, 0, 102)</li>
+			<li>(102, 0, 51)</li>
+			<li>(255, 204, 229)</li>
+		</colorSpectrum>
+		<fixedLeaderKinds>
+			<li>PF2_GnomeFaction_Emissary</li>
+		</fixedLeaderKinds>
+		<canMakeRandomly>true</canMakeRandomly>
+		<factionIconPath>World/WorldObjects/Expanding/GnomeFaction2</factionIconPath>
+		<geneticVariance>0.1</geneticVariance>
+		<techLevel>Industrial</techLevel>
+		<factionNameMaker>PF2_NamerFactionGnomish</factionNameMaker>
+		<settlementNameMaker>PF2_NamerSettlementGnomish</settlementNameMaker>
+		<allowedCultures><li>PF2_FirstWorlder</li></allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_FreeApproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Free</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Standard</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Required</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_RespectedIfGuilty</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_DontCare</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_Mandatory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_None</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_ExtremelySlow</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_VerySlow</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_Slow</li>
+		</disallowedPrecepts>
+		<structureMemeWeights>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+			<Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
+			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+		</structureMemeWeights>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>50</configurationListOrderPriority>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.95</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<leaderTitle>emissary</leaderTitle>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_CombatSupplier</li>
+			<li>Caravan_Outlander_Exotic</li>
+			<li>Caravan_Outlander_PirateMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(800, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, melee with ranged mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<PF2_GnomeFactionModern_Villager>40</PF2_GnomeFactionModern_Villager>
+					<PF2_GnomeFactionModern_Guard>80</PF2_GnomeFactionModern_Guard>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<PF2_GnomeFactionModern_Guard>80</PF2_GnomeFactionModern_Guard>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<PF2_GnomeFactionModern_Guard>70</PF2_GnomeFactionModern_Guard>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<PF2_GnomeFactionModern_Trader>1</PF2_GnomeFactionModern_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2.5</Alpaca>
+					<Elephant>2</Elephant>
+				</carriers>
+				<guards>
+					<PF2_GnomeFactionModern_Guard>90</PF2_GnomeFactionModern_Guard>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<PF2_GnomeFactionModern_Villager>30</PF2_GnomeFactionModern_Villager>
+					<PF2_GnomeFactionModern_Guard>30</PF2_GnomeFactionModern_Guard>
+					<PF2_GnomeFactionModern_Emissary>60</PF2_GnomeFactionModern_Emissary>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>2</commonality>
+				<options>
+					<PF2_GnomeFactionModern_Miner>5</PF2_GnomeFactionModern_Miner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<PF2_GnomeFactionModern_Hunter>1</PF2_GnomeFactionModern_Hunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<PF2_GnomeFactionModern_Logger>1</PF2_GnomeFactionModern_Logger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<PF2_GnomeFactionModern_Farmer>1</PF2_GnomeFactionModern_Farmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>PF2_GnomeFaction</defName>
+		<label>gnome pockets</label>
+		<categoryTag>Tribal</categoryTag>
+		<description>These pockets of autocephalous settlements possess generations of gnome families, many of them comprised of First World expatriates. They are fascinated by learning new things, reflected by their high pursuit of new technologies and sensations. This fascination can be attributed to a fear of the Bleaching, a curse afflicted to all gnomes in the material realm that kills those who doesn't find new ways or experiences. They avoid conflict at any cost</description>
+		<pawnSingular>villager</pawnSingular>
+		<pawnsPlural>villagers</pawnsPlural>
+		<listOrderPriority>20</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+		<colorSpectrum>
+			<li>(204, 0, 102)</li>
+			<li>(102, 0, 51)</li>
+			<li>(255, 204, 229)</li>
+		</colorSpectrum>
+		<fixedLeaderKinds>
+			<li>PF2_GnomeFaction_Emissary</li>
+		</fixedLeaderKinds>
+		<canMakeRandomly>true</canMakeRandomly>
+		<factionIconPath>World/WorldObjects/Expanding/GnomeFaction</factionIconPath>
+		<geneticVariance>0.1</geneticVariance>
+		<techLevel>Medieval</techLevel>
+		<factionNameMaker>PF2_NamerFactionGnomish</factionNameMaker>
+		<settlementNameMaker>PF2_NamerSettlementGnomish</settlementNameMaker>
+		<allowedCultures><li>PF2_FirstWorlder</li></allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_FreeApproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Free</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Standard</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Acceptable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Honorable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Required</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_RespectedIfGuilty</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_DontCare</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_None</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_ExtremelySlow</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_VerySlow</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_Slow</li>
+		</disallowedPrecepts>
+		<structureMemeWeights>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+			<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Animist>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+			<Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
+			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+		</structureMemeWeights>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>50</configurationListOrderPriority>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<leaderTitle>emissary</leaderTitle>
+		<caravanTraderKinds>
+			<li>Caravan_Neolithic_BulkGoods</li>
+			<li>Caravan_Neolithic_WarMerchant</li>
+			<li>Caravan_Neolithic_ShamanMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Neolithic_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Neolithic_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<raidLootMaker>TribeRaidLootMaker</raidLootMaker>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(800, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, melee with ranged mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<PF2_GnomeFaction_Villager>20</PF2_GnomeFaction_Villager>
+					<PF2_GnomeFaction_Guard>40</PF2_GnomeFaction_Guard>
+					<PF2_GnomeFaction_FootSoldier>30</PF2_GnomeFaction_FootSoldier>
+					<PF2_GnomeFaction_Bowman>50</PF2_GnomeFaction_Bowman>
+					<PF2_GnomeFaction_Champion>20</PF2_GnomeFaction_Champion>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<PF2_GnomeFaction_Guard>40</PF2_GnomeFaction_Guard>
+					<PF2_GnomeFaction_FootSoldier>40</PF2_GnomeFaction_FootSoldier>
+					<PF2_GnomeFaction_Champion>25</PF2_GnomeFaction_Champion>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<PF2_GnomeFaction_Guard>30</PF2_GnomeFaction_Guard>
+					<PF2_GnomeFaction_FootSoldier>30</PF2_GnomeFaction_FootSoldier>
+					<PF2_GnomeFaction_Bowman>40</PF2_GnomeFaction_Bowman>
+					<PF2_GnomeFaction_Champion>20</PF2_GnomeFaction_Champion>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<PF2_GnomeFaction_Trader>1</PF2_GnomeFaction_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2.5</Alpaca>
+					<Elephant>2</Elephant>
+				</carriers>
+				<guards>
+					<PF2_GnomeFaction_Guard>30</PF2_GnomeFaction_Guard>
+					<PF2_GnomeFaction_FootSoldier>30</PF2_GnomeFaction_FootSoldier>
+					<PF2_GnomeFaction_Bowman>40</PF2_GnomeFaction_Bowman>
+					<PF2_GnomeFaction_Champion>10</PF2_GnomeFaction_Champion>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<PF2_GnomeFaction_Villager>30</PF2_GnomeFaction_Villager>
+					<PF2_GnomeFaction_Guard>30</PF2_GnomeFaction_Guard>
+					<PF2_GnomeFaction_FootSoldier>30</PF2_GnomeFaction_FootSoldier>
+					<PF2_GnomeFaction_Bowman>50</PF2_GnomeFaction_Bowman>
+					<PF2_GnomeFaction_Champion>25</PF2_GnomeFaction_Champion>
+					<PF2_GnomeFaction_Emissary>60</PF2_GnomeFaction_Emissary>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>2</commonality>
+				<options>
+					<PF2_GnomeFaction_Miner>5</PF2_GnomeFaction_Miner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<PF2_GnomeFaction_Hunter>1</PF2_GnomeFaction_Hunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<PF2_GnomeFaction_Logger>1</PF2_GnomeFaction_Logger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<PF2_GnomeFaction_Farmer>1</PF2_GnomeFaction_Farmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	
+</Defs>

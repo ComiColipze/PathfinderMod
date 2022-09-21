@@ -2,45 +2,42 @@
 <Defs>
 
 	<FactionDef ParentName="FactionBase">
-		<defName>PF2_OrcFaction</defName>
-		<label>orc war band</label>
+		<defName>PF2_GrippliFaction</defName>
+		<label>grippli tribe</label>
 		<categoryTag>Tribal</categoryTag>
-		<description>A loose confederation of tribal hordes and clans only united by a fierce orc war chief.\n\nThis war bands rely on other nations to exist, but tend to sow crops, build their villages, and seldom trade with other peoples.\n\nWhile they search for opportunity to surprise their enemies, most raiders prefer hand-to-hand confrontations to ranged skirmishes. Their mindset thrilled in pillaging and raiding and driven on a blood-and-honor culture makes them less prone to create alliances with non-orc nations; it may be difficult to turn them into an ally!</description>
-		<pawnSingular>raider</pawnSingular>
-		<pawnsPlural>raiders</pawnsPlural>
+		<description>The individuals from the grippli tribe generally settle on jungle or tropical biomes where it's more humid. While reclusive to the outside world, the grippli tribals exchange materials they gather from their homes to gemstones and metals from other factions.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
 		<listOrderPriority>20</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
-		<startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+		<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
 		<colorSpectrum>
-			<li>(129, 0, 0)</li>
-			<li>(255, 180, 192)</li>
+			<li>(143, 188, 143)</li>
+			<li>(46, 139, 87)</li>
 		</colorSpectrum>
 		<fixedLeaderKinds>
-			<li>PF2_OrcFaction_WarChief</li>
+			<li>PF2_GrippliFaction_Chief</li>
 		</fixedLeaderKinds>
 		<canMakeRandomly>true</canMakeRandomly>
-		<canStageAttacks>true</canStageAttacks>
-		<factionIconPath>World/WorldObjects/Expanding/OrcFaction</factionIconPath>
-		<naturalEnemy>true</naturalEnemy>
+		<factionIconPath>World/WorldObjects/Expanding/GrippliFaction</factionIconPath>
 		<geneticVariance>0.1</geneticVariance>
-		<techLevel>Medieval</techLevel>
-		<factionNameMaker>PF2_NamerFactionOrc</factionNameMaker>
-		<settlementNameMaker>PF2_NamerSettlementOrc</settlementNameMaker>
-		<allowedCultures><li>PF2_Belkzen</li></allowedCultures>
+		<techLevel>Neolithic</techLevel>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<allowedCultures><li>Corunan</li></allowedCultures>
 		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
 		</requiredMemes>
 		<disallowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 		</disallowedMemes>
 		<structureMemeWeights>
-			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistEmbodied>
-			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
-			<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Animist>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+			<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">2</Structure_Animist>
 			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
 			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
 			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
@@ -56,7 +53,7 @@
 				</categories>
 			</li>
 		</backstoryFilters>
-		<leaderTitle>war chief</leaderTitle>
+		<leaderTitle>chief</leaderTitle>
 		<caravanTraderKinds>
 			<li>Caravan_Neolithic_BulkGoods</li>
 			<li>Caravan_Neolithic_WarMerchant</li>
@@ -91,11 +88,11 @@
 				<kindDef>Combat</kindDef>
 				<commonality>100</commonality>
 				<options>
-					<PF2_OrcFaction_Peasant>20</PF2_OrcFaction_Peasant>
-					<PF2_OrcFaction_Brute>40</PF2_OrcFaction_Brute>
-					<PF2_OrcFaction_Warrior>30</PF2_OrcFaction_Warrior>
-					<PF2_OrcFaction_Archer>50</PF2_OrcFaction_Archer>
-					<PF2_OrcFaction_Champion>20</PF2_OrcFaction_Champion>
+					<PF2_GrippliFaction_Peasant>20</PF2_GrippliFaction_Peasant>
+					<PF2_GrippliFaction_Fighter>40</PF2_GrippliFaction_Fighter>
+					<PF2_GrippliFaction_Warrior>30</PF2_GrippliFaction_Warrior>
+					<PF2_GrippliFaction_Archer>50</PF2_GrippliFaction_Archer>
+					<PF2_GrippliFaction_GreatArcher>20</PF2_GrippliFaction_GreatArcher>
 				</options>
 			</li>
 			<li>
@@ -103,26 +100,33 @@
 				<kindDef>Combat</kindDef>
 				<commonality>60</commonality>
 				<options>
-					<PF2_OrcFaction_Peasant>15</PF2_OrcFaction_Peasant>
-					<PF2_OrcFaction_Brute>40</PF2_OrcFaction_Brute>
-					<PF2_OrcFaction_Warrior>40</PF2_OrcFaction_Warrior>
-					<PF2_OrcFaction_Champion>25</PF2_OrcFaction_Champion>
+					<PF2_GrippliFaction_Fighter>40</PF2_GrippliFaction_Fighter>
+					<PF2_GrippliFaction_Warrior>40</PF2_GrippliFaction_Warrior>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<PF2_GrippliFaction_Archer>70</PF2_GrippliFaction_Archer>
+					<PF2_GrippliFaction_GreatArcher>30</PF2_GrippliFaction_GreatArcher>
 				</options>
 			</li>
 			<li>
 				<!-- Peaceful -->
 				<kindDef>Peaceful</kindDef>
 				<options>
-					<PF2_OrcFaction_Brute>30</PF2_OrcFaction_Brute>
-					<PF2_OrcFaction_Warrior>30</PF2_OrcFaction_Warrior>
-					<PF2_OrcFaction_Archer>40</PF2_OrcFaction_Archer>
-					<PF2_OrcFaction_Champion>20</PF2_OrcFaction_Champion>
+					<PF2_GrippliFaction_Fighter>30</PF2_GrippliFaction_Fighter>
+					<PF2_GrippliFaction_Warrior>40</PF2_GrippliFaction_Warrior>
+					<PF2_GrippliFaction_Archer>40</PF2_GrippliFaction_Archer>
+					<PF2_GrippliFaction_GreatArcher>20</PF2_GrippliFaction_GreatArcher>
 				</options>
 			</li>
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
-					<PF2_OrcFaction_Merchant>1</PF2_OrcFaction_Merchant>
+					<PF2_GrippliFaction_Merchant>1</PF2_GrippliFaction_Merchant>
 				</traders>
 				<carriers>
 					<Muffalo>6</Muffalo>
@@ -131,52 +135,62 @@
 					<Elephant>2</Elephant>
 				</carriers>
 				<guards>
-					<PF2_OrcFaction_Brute>30</PF2_OrcFaction_Brute>
-					<PF2_OrcFaction_Warrior>30</PF2_OrcFaction_Warrior>
-					<PF2_OrcFaction_Archer>40</PF2_OrcFaction_Archer>
-					<PF2_OrcFaction_Champion>10</PF2_OrcFaction_Champion>
+					<PF2_GrippliFaction_Fighter>30</PF2_GrippliFaction_Fighter>
+					<PF2_GrippliFaction_Warrior>30</PF2_GrippliFaction_Warrior>
+					<PF2_GrippliFaction_Archer>40</PF2_GrippliFaction_Archer>
+					<PF2_GrippliFaction_GreatArcher>10</PF2_GrippliFaction_GreatArcher>
 				</guards>
 			</li>
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<PF2_OrcFaction_Peasant>30</PF2_OrcFaction_Peasant>
-					<PF2_OrcFaction_Brute>30</PF2_OrcFaction_Brute>
-					<PF2_OrcFaction_Warrior>30</PF2_OrcFaction_Warrior>
-					<PF2_OrcFaction_Archer>50</PF2_OrcFaction_Archer>
-					<PF2_OrcFaction_Champion>25</PF2_OrcFaction_Champion>
-					<PF2_OrcFaction_WarChief>60</PF2_OrcFaction_WarChief>
+					<PF2_GrippliFaction_Peasant>30</PF2_GrippliFaction_Peasant>
+					<PF2_GrippliFaction_Fighter>30</PF2_GrippliFaction_Fighter>
+					<PF2_GrippliFaction_Warrior>30</PF2_GrippliFaction_Warrior>
+					<PF2_GrippliFaction_Archer>50</PF2_GrippliFaction_Archer>
+					<PF2_GrippliFaction_GreatArcher>25</PF2_GrippliFaction_GreatArcher>
+					<PF2_GrippliFaction_Chief>60</PF2_GrippliFaction_Chief>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<kindDef>Miners</kindDef>
-				<commonality>1</commonality>
+				<commonality>2</commonality>
 				<options>
-					<PF2_OrcFaction_Miner>1</PF2_OrcFaction_Miner>
+					<PF2_GrippliFaction_Miner>5</PF2_GrippliFaction_Miner>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<kindDef>Hunters</kindDef>
 				<commonality>1</commonality>
 				<options>
-					<PF2_OrcFaction_Hunter>1</PF2_OrcFaction_Hunter>
+					<PF2_GrippliFaction_Hunter>1</PF2_GrippliFaction_Hunter>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<kindDef>Loggers</kindDef>
 				<commonality>1</commonality>
 				<options>
-					<PF2_OrcFaction_Logger>1</PF2_OrcFaction_Logger>
+					<PF2_GrippliFaction_Logger>1</PF2_GrippliFaction_Logger>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<kindDef>Farmers</kindDef>
 				<commonality>1</commonality>
 				<options>
-					<PF2_OrcFaction_Farmer>1</PF2_OrcFaction_Farmer>
+					<PF2_GrippliFaction_Farmer>1</PF2_GrippliFaction_Farmer>
 				</options>
 			</li>
 		</pawnGroupMakers>
+		<modExtensions>
+			<li Class="VFECore.FactionDefExtension">
+				<allowedBiomes>
+					<li>TemperateForest</li>
+					<li>TemperateSwamp</li>
+					<li>TropicalRainforest</li>
+					<li>TropicalSwamp</li>
+				</allowedBiomes>
+			</li>
+		</modExtensions>
 	</FactionDef>
 	
 </Defs>

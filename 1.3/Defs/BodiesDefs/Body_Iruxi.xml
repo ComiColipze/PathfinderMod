@@ -2,7 +2,7 @@
     <Defs>
 	
         <BodyDef>
-            <defName>Iruxi</defName>
+            <defName>PF2_Iruxi</defName>
             <label>iruxi</label>
             <corePart>
                 <def>Torso</def>

@@ -2,7 +2,7 @@
     <Defs>
 	
         <BodyDef>
-            <defName>Amurrun</defName>
+            <defName>PF2_Amurrun</defName>
             <label>amurrun</label>
             <corePart>
                 <def>Torso</def>

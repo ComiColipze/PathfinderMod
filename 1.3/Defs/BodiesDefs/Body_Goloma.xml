@@ -3,7 +3,7 @@
 
 
   <BodyDef>
-    <defName>Goloma</defName>
+    <defName>PF2_Goloma</defName>
     <label>goloma</label>
     <corePart>
       <def>Torso</def>

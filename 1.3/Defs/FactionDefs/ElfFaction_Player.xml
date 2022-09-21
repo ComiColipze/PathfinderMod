@@ -34,8 +34,8 @@
 		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
 		<factionNameMaker>PF2_NamerFaction</factionNameMaker>
-		<settlementNameMaker>NamerPersonElfMale</settlementNameMaker>
-		<allowedCultures><li>Kyonan</li></allowedCultures>
+		<settlementNameMaker>PF2_NamerPersonElfMale</settlementNameMaker>
+		<allowedCultures><li>PF2_Kyonan</li></allowedCultures>
 		<geneticVariance>1</geneticVariance>
 		<startingResearchTags>
 			<li>TribalStart</li>

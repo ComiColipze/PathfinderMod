@@ -2,7 +2,7 @@
 <Defs>
 
 	<PawnKindDef Name="OrcPawnKindBase" Abstract="True">
-		<race>PF2Orc</race>
+		<race>PF2_Orc</race>
 		<defaultFactionType>PF2_OrcFaction</defaultFactionType>
 		<maxGenerationAge>70</maxGenerationAge>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>

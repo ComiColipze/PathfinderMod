@@ -2,10 +2,10 @@
 <Defs>
 
 	<PawnKindDef ParentName="BasePlayerPawnKind">
-		<defName>PF2_TenguColonist</defName>
-		<label>tengu colonist</label>
-		<race>PF2_Tengu</race>
-		<defaultFactionType>PF2_TenguPlayerColony</defaultFactionType>
+		<defName>PF2_KitsuneColonist</defName>
+		<label>kitsune colonist</label>
+		<race>PF2_Kitsune</race>
+		<defaultFactionType>PF2_KitsunePlayerColony</defaultFactionType>
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
 		<apparelTags>
 			<li>IndustrialBasic</li>
@@ -24,10 +24,10 @@
 	</PawnKindDef>
 
   	<PawnKindDef ParentName="BasePlayerPawnKind">
-		<defName>PF2_TenguTribal</defName>
-		<label>tribal tengu</label>
-		<race>PF2_Tengu</race>
-		<defaultFactionType>PF2_TenguPlayerTribe</defaultFactionType>
+		<defName>PF2_KitsuneTribal</defName>
+		<label>tribal kitsune</label>
+		<race>PF2_Kitsune</race>
+		<defaultFactionType>PF2_KitsunePlayerTribe</defaultFactionType>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<apparelTags>
 			<li>Neolithic</li>

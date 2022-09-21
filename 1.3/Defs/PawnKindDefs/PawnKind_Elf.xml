@@ -4,7 +4,7 @@
 	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>PF2_ElfColonist</defName>
 		<label>elf colonist</label>
-		<race>PF2Elf</race>
+		<race>PF2_Elf</race>
 		<defaultFactionType>PF2_ElfPlayerColony</defaultFactionType>
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
 		<backstoryFiltersOverride>
@@ -34,7 +34,7 @@
   	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>PF2_ElfTribal</defName>
 		<label>tribal elf</label>
-		<race>PF2Elf</race>
+		<race>PF2_Elf</race>
 		<defaultFactionType>PF2_ElfPlayerTribe</defaultFactionType>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<backstoryFiltersOverride>
@@ -61,7 +61,7 @@
 	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>PF2_ElfLiegeman</defName>
 		<label>elf liegeman</label>
-		<race>PF2Elf</race>
+		<race>PF2_Elf</race>
 		<defaultFactionType>PF2_ElfPlayerFaction</defaultFactionType>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<apparelTags>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Defs>
 
-	<PawnKindDef Name="ElfPawnKindBase" Abstract="True">
-		<race>PF2_Elf</race>
-		<defaultFactionType>PF2_ElfFaction</defaultFactionType>
-		<maxGenerationAge>650</maxGenerationAge>
+<Defs>
+	<PawnKindDef Name="GrippliPawnKindBase" Abstract="True">
+		<race>PF2_Grippli</race>
+		<defaultFactionType>PF2_GrippliFaction</defaultFactionType>
+		<maxGenerationAge>60</maxGenerationAge>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<invNutrition>2.55</invNutrition>
 		<invFoodDef>Pemmican</invFoodDef>
 		<apparelTags>
-			<li>MedievalBasic</li>
+			<li>Neolithic</li>
 		</apparelTags>
 	</PawnKindDef>
 
     <!-- Poverty Tier - Peasant -->
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Peasant</defName>
-        <label>elf peasant</label>
+    <PawnKindDef ParentName="GrippliPawnKindBase">
+        <defName>PF2_GrippliFaction_Peasant</defName>
+        <label>grippli peasant</label>
         <combatPower>30</combatPower>
         <chemicalAddictionChance>0.10</chemicalAddictionChance>
         <invNutrition>0</invNutrition>
@@ -30,9 +30,6 @@
             <min>50</min>
             <max>125</max>
         </apparelMoney>
-        <apparelTags>
-            <li>Neolithic</li>
-        </apparelTags>
         <weaponMoney>
             <min>90</min>
             <max>150</max>
@@ -52,9 +49,9 @@
 		<initialResistanceRange>3~8</initialResistanceRange>
     </PawnKindDef>
 
-	<PawnKindDef ParentName="ElfPawnKindBase">
-		<defName>PF2_ElfFaction_Miner</defName>
-		<label>elf miner</label>
+	<PawnKindDef ParentName="GrippliPawnKindBase">
+		<defName>PF2_GrippliFaction_Miner</defName>
+		<label>grippli miner</label>
 		<combatPower>35</combatPower>
 		<backstoryFiltersOverride>
 			<li>
@@ -93,10 +90,10 @@
 		<initialResistanceRange>17~27</initialResistanceRange>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName="ElfPawnKindBase">
-		<defName>PF2_ElfFaction_Logger</defName>
-		<label>elf logger</label>
-		<combatPower>35</combatPower>
+	<PawnKindDef ParentName="GrippliPawnKindBase">
+		<defName>PF2_GrippliFaction_Logger</defName>
+		<label>grippli logger</label>
+		<combatPower>40</combatPower>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesAdulthood>
@@ -137,9 +134,9 @@
 		<initialResistanceRange>17~27</initialResistanceRange>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName="ElfPawnKindBase">
-		<defName>PF2_ElfFaction_Farmer</defName>
-		<label>elf farmer</label>
+	<PawnKindDef ParentName="GrippliPawnKindBase">
+		<defName>PF2_GrippliFaction_Farmer</defName>
+		<label>grippli farmer</label>
 		<combatPower>35</combatPower>
 		<backstoryFiltersOverride>
 			<li>
@@ -181,10 +178,10 @@
 		<initialResistanceRange>17~27</initialResistanceRange>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="ElfPawnKindBase">
-		<defName>PF2_ElfFaction_Hunter</defName>
-		<label>elf hunter</label>
-		<combatPower>55</combatPower>
+	<PawnKindDef ParentName="GrippliPawnKindBase">
+		<defName>PF2_GrippliFaction_Hunter</defName>
+		<label>grippli hunter</label>
+		<combatPower>60</combatPower>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesAdulthood>
@@ -201,7 +198,7 @@
             <max>300</max>
         </apparelMoney>
 		<apparelRequired>
-			<li>Apparel_HatHood</li>
+			<li>Apparel_WarVeil</li>
 		</apparelRequired>
         <weaponMoney>
             <min>100</min>
@@ -218,9 +215,9 @@
 	</PawnKindDef>
 
     <!-- Low-Tier - Merchant, Squire -->
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Merchant</defName>
-        <label>elf merchant</label>
+    <PawnKindDef ParentName="GrippliPawnKindBase">
+        <defName>PF2_GrippliFaction_Merchant</defName>
+        <label>grippli trader</label>
         <combatPower>35</combatPower>
         <trader>true</trader>
         <isFighter>false</isFighter>
@@ -243,9 +240,9 @@
 		<initialResistanceRange>5~9</initialResistanceRange>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Squire</defName>
-        <label>elf squire</label>
+    <PawnKindDef ParentName="GrippliPawnKindBase">
+        <defName>PF2_GrippliFaction_Fighter</defName>
+        <label>grippli fighter</label>
         <combatPower>45</combatPower>
         <canBeSapper>true</canBeSapper>
         <gearHealthRange>
@@ -271,9 +268,9 @@
     </PawnKindDef>
 
     <!-- Mid-tier - footsoldier, bowman -->
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Footsoldier</defName>
-        <label>elf footsoldier</label>
+    <PawnKindDef ParentName="GrippliPawnKindBase">
+        <defName>PF2_GrippliFaction_Warrior</defName>
+        <label>grippli warrior</label>
         <combatPower>65</combatPower>
         <canBeSapper>true</canBeSapper>
         <gearHealthRange>
@@ -284,23 +281,21 @@
             <min>700</min>
             <max>1000</max>
         </apparelMoney>
-        <apparelTags>
-            <li>MedievalMilitary</li>
-        </apparelTags>
         <weaponMoney>
             <min>150</min>
             <max>150</max>
         </weaponMoney>
         <weaponTags>
-            <li>MedievalMeleeDecent</li>
+            <li>NeolithicMeleeDecent</li>
+            <li>NeolithicMeleeAdvanced</li>
         </weaponTags>
 		<initialWillRange>2~4</initialWillRange>
 		<initialResistanceRange>14~22</initialResistanceRange>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Archer</defName>
-        <label>elf archer</label>
+    <PawnKindDef ParentName="GrippliPawnKindBase">
+        <defName>PF2_GrippliFaction_Archer</defName>
+        <label>grippli archer</label>
         <combatPower>65</combatPower>
         <gearHealthRange>
             <min>0.8</min>
@@ -327,39 +322,37 @@
     </PawnKindDef>
 
     <!-- High-tier - knight, lord -->
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Knight</defName>
-        <label>elf knight</label>
+    <PawnKindDef ParentName="GrippliPawnKindBase">
+        <defName>PF2_GrippliFaction_GreatArcher</defName>
+        <label>grippli great archer</label>
         <combatPower>95</combatPower>
         <itemQuality>Good</itemQuality>
         <apparelMoney>
             <min>1000</min>
             <max>1600</max>
         </apparelMoney>
-        <apparelTags>
-			<li>MedievalMilitary</li>
-			<li>MedievalArmorDecent</li>
-			<li>MedievalArmorElite</li>
-        </apparelTags>
         <weaponMoney>
             <min>300</min>
             <max>300</max>
         </weaponMoney>
         <weaponTags>
-            <li>MedievalMeleeDecent</li>
-            <li>MedievalMeleeAdvanced</li>
+      		<li>NeolithicRangedBasic</li>
+      		<li>NeolithicRangedDecent</li>
+            <li>MedievalRanged</li>
         </weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
 		<initialWillRange>2~4</initialWillRange>
 		<initialResistanceRange>17~25</initialResistanceRange>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_King</defName>
-        <label>elf king</label>
-        <labelFemale>elf queen</labelFemale>
+    <PawnKindDef ParentName="GrippliPawnKindBase">
+        <defName>PF2_GrippliFaction_Chief</defName>
+        <label>grippli chief</label>
         <combatPower>135</combatPower>
         <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
-        <minGenerationAge>150</minGenerationAge>
+        <minGenerationAge>20</minGenerationAge>
         <maxGenerationAge>999</maxGenerationAge>
         <itemQuality>Good</itemQuality>
         <factionLeader>true</factionLeader>

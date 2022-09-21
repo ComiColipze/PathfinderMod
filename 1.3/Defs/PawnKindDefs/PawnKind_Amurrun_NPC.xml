@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<PawnKindDef Name="ElfPawnKindBase" Abstract="True">
-		<race>PF2_Elf</race>
-		<defaultFactionType>PF2_ElfFaction</defaultFactionType>
-		<maxGenerationAge>650</maxGenerationAge>
+	<PawnKindDef Name="AmurrunPawnKindBase" Abstract="True">
+		<race>PF2_Amurrun</race>
+		<defaultFactionType>PF2_AmurrunFaction</defaultFactionType>
+		<maxGenerationAge>80</maxGenerationAge>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<invNutrition>2.55</invNutrition>
 		<invFoodDef>Pemmican</invFoodDef>
@@ -14,14 +14,14 @@
 	</PawnKindDef>
 
     <!-- Poverty Tier - Peasant -->
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Peasant</defName>
-        <label>elf peasant</label>
-        <combatPower>30</combatPower>
+    <PawnKindDef ParentName="AmurrunPawnKindBase">
+        <defName>PF2_AmurrunFaction_Peasant</defName>
+        <label>amurrun peasant</label>
+        <combatPower>35</combatPower>
         <chemicalAddictionChance>0.10</chemicalAddictionChance>
         <invNutrition>0</invNutrition>
         <itemQuality>Poor</itemQuality>
-		<isFighter>false</isFighter>
+		<isFighter>false</isFighter> 
         <gearHealthRange>
             <min>0.2</min>
             <max>1.1</max>
@@ -52,10 +52,10 @@
 		<initialResistanceRange>3~8</initialResistanceRange>
     </PawnKindDef>
 
-	<PawnKindDef ParentName="ElfPawnKindBase">
-		<defName>PF2_ElfFaction_Miner</defName>
-		<label>elf miner</label>
-		<combatPower>35</combatPower>
+	<PawnKindDef ParentName="AmurrunPawnKindBase">
+		<defName>PF2_AmurrunFaction_Miner</defName>
+		<label>amurrun miner</label>
+		<combatPower>40</combatPower>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesAdulthood>
@@ -93,10 +93,10 @@
 		<initialResistanceRange>17~27</initialResistanceRange>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName="ElfPawnKindBase">
-		<defName>PF2_ElfFaction_Logger</defName>
-		<label>elf logger</label>
-		<combatPower>35</combatPower>
+	<PawnKindDef ParentName="AmurrunPawnKindBase">
+		<defName>PF2_AmurrunFaction_Logger</defName>
+		<label>amurrun logger</label>
+		<combatPower>40</combatPower>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesAdulthood>
@@ -137,10 +137,10 @@
 		<initialResistanceRange>17~27</initialResistanceRange>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName="ElfPawnKindBase">
-		<defName>PF2_ElfFaction_Farmer</defName>
-		<label>elf farmer</label>
-		<combatPower>35</combatPower>
+	<PawnKindDef ParentName="AmurrunPawnKindBase">
+		<defName>PF2_AmurrunFaction_Farmer</defName>
+		<label>amurrun farmer</label>
+		<combatPower>40</combatPower>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesAdulthood>
@@ -181,10 +181,10 @@
 		<initialResistanceRange>17~27</initialResistanceRange>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="ElfPawnKindBase">
-		<defName>PF2_ElfFaction_Hunter</defName>
-		<label>elf hunter</label>
-		<combatPower>55</combatPower>
+	<PawnKindDef ParentName="AmurrunPawnKindBase">
+		<defName>PF2_AmurrunFaction_Hunter</defName>
+		<label>amurrun hunter</label>
+		<combatPower>60</combatPower>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesAdulthood>
@@ -200,9 +200,6 @@
             <min>200</min>
             <max>300</max>
         </apparelMoney>
-		<apparelRequired>
-			<li>Apparel_HatHood</li>
-		</apparelRequired>
         <weaponMoney>
             <min>100</min>
             <max>100</max>
@@ -216,12 +213,12 @@
 		<initialWillRange>3~8</initialWillRange>
 		<initialResistanceRange>10~16</initialResistanceRange>
 	</PawnKindDef>
-
-    <!-- Low-Tier - Merchant, Squire -->
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Merchant</defName>
-        <label>elf merchant</label>
-        <combatPower>35</combatPower>
+	
+    <!-- Low-Tier - Merchant, fighter -->
+    <PawnKindDef ParentName="AmurrunPawnKindBase">
+        <defName>PF2_AmurrunFaction_Merchant</defName>
+        <label>amurrun merchant</label>
+        <combatPower>40</combatPower>
         <trader>true</trader>
         <isFighter>false</isFighter>
         <gearHealthRange>
@@ -243,10 +240,10 @@
 		<initialResistanceRange>5~9</initialResistanceRange>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Squire</defName>
-        <label>elf squire</label>
-        <combatPower>45</combatPower>
+    <PawnKindDef ParentName="AmurrunPawnKindBase">
+        <defName>PF2_AmurrunFaction_Fighter</defName>
+        <label>amurrun fighter</label>
+        <combatPower>50</combatPower>
         <canBeSapper>true</canBeSapper>
         <gearHealthRange>
             <min>0.5</min>
@@ -270,11 +267,11 @@
 		<initialResistanceRange>5~9</initialResistanceRange>
     </PawnKindDef>
 
-    <!-- Mid-tier - footsoldier, bowman -->
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Footsoldier</defName>
-        <label>elf footsoldier</label>
-        <combatPower>65</combatPower>
+    <!-- Mid-tier - warrior, bowman -->
+    <PawnKindDef ParentName="AmurrunPawnKindBase">
+        <defName>PF2_AmurrunFaction_Warrior</defName>
+        <label>amurrun warrior</label>
+        <combatPower>90</combatPower>
         <canBeSapper>true</canBeSapper>
         <gearHealthRange>
             <min>0.8</min>
@@ -286,10 +283,11 @@
         </apparelMoney>
         <apparelTags>
             <li>MedievalMilitary</li>
+			<li>MedievalArmorDecent</li>
         </apparelTags>
         <weaponMoney>
             <min>150</min>
-            <max>150</max>
+            <max>250</max>
         </weaponMoney>
         <weaponTags>
             <li>MedievalMeleeDecent</li>
@@ -298,10 +296,10 @@
 		<initialResistanceRange>14~22</initialResistanceRange>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Archer</defName>
-        <label>elf archer</label>
-        <combatPower>65</combatPower>
+    <PawnKindDef ParentName="AmurrunPawnKindBase">
+        <defName>PF2_AmurrunFaction_Bowman</defName>
+        <label>amurrun bowman</label>
+        <combatPower>80</combatPower>
         <gearHealthRange>
             <min>0.8</min>
             <max>1.8</max>
@@ -310,28 +308,26 @@
             <min>500</min>
             <max>700</max>
         </apparelMoney>
+		<apparelTags>
+			<li>MedievalArmorDecent</li>
+		</apparelTags>
         <weaponMoney>
             <min>150</min>
             <max>250</max>
         </weaponMoney>
         <weaponTags>
-      		<li>NeolithicRangedBasic</li>
-      		<li>NeolithicRangedDecent</li>
-            <li>MedievalRanged</li>
+			<li>MedievalRanged</li>
+			<li>MedievalRangedHeavy</li>
         </weaponTags>
-		<disallowedTraits>
-			<li>Brawler</li>
-		</disallowedTraits>
 		<initialWillRange>2~4</initialWillRange>
 		<initialResistanceRange>14~22</initialResistanceRange>
     </PawnKindDef>
 
-    <!-- High-tier - knight, lord -->
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Knight</defName>
-        <label>elf knight</label>
-        <combatPower>95</combatPower>
-        <itemQuality>Good</itemQuality>
+    <!-- High-tier - champion, chief -->
+    <PawnKindDef ParentName="AmurrunPawnKindBase">
+        <defName>PF2_AmurrunFaction_Champion</defName>
+        <label>amurrun champion</label>
+        <combatPower>115</combatPower>
         <apparelMoney>
             <min>1000</min>
             <max>1600</max>
@@ -353,13 +349,12 @@
 		<initialResistanceRange>17~25</initialResistanceRange>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_King</defName>
-        <label>elf king</label>
-        <labelFemale>elf queen</labelFemale>
-        <combatPower>135</combatPower>
+    <PawnKindDef ParentName="AmurrunPawnKindBase">
+        <defName>PF2_AmurrunFaction_ElectedCouncilor</defName>
+        <label>amurrun elected councilor</label>
+        <combatPower>160</combatPower>
         <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
-        <minGenerationAge>150</minGenerationAge>
+        <minGenerationAge>25</minGenerationAge>
         <maxGenerationAge>999</maxGenerationAge>
         <itemQuality>Good</itemQuality>
         <factionLeader>true</factionLeader>
@@ -368,7 +363,8 @@
             <max>3000</max>
         </apparelMoney>
         <apparelTags>
-			<li>MedievalApparelNoble</li>
+            <li>MedievalMilitary</li>
+            <li>MedievalArmorDecent</li>
         </apparelTags>
         <weaponMoney>
             <min>500</min>

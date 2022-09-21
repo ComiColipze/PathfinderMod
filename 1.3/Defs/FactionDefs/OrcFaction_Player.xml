@@ -21,7 +21,7 @@
 	<FactionDef ParentName="PlayerFactionBase">
 		<defName>PF2_OrcPlayerFaction</defName>
 		<label>New Orc War Band</label>
-		<description>A small war band composed of dwarves.</description>
+		<description>A small war band composed of orcs.</description>
 		<isPlayer>true</isPlayer>
 		<pawnSingular>raider</pawnSingular>
 		<pawnsPlural>raiders</pawnsPlural>
@@ -33,9 +33,9 @@
 		<factionIconPath>World/WorldObjects/Expanding/OrcFaction</factionIconPath>
 		<settlementTexturePath>World/WorldObjects/TribaçSettlement</settlementTexturePath>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>NamerFactionOrc</factionNameMaker>
-		<settlementNameMaker>NamerSettlementOrc</settlementNameMaker>
-		<allowedCultures><li>Belkzen</li></allowedCultures>
+		<factionNameMaker>PF2_NamerFactionOrc</factionNameMaker>
+		<settlementNameMaker>PF2_NamerSettlementOrc</settlementNameMaker>
+		<allowedCultures><li>PF2_Belkzen</li></allowedCultures>
 		<geneticVariance>1</geneticVariance>
 		<startingResearchTags>
 			<li>TribalStart</li>

@@ -2,9 +2,9 @@
 <Defs>
 	
 	<AlienRace.BackstoryDef>
-		<defName>PF2Forlorn</defName>
+		<defName>PF2_Forlorn</defName>
 		<title>forlorn</title>
-		<baseDescription>[PAWN_nameDef] grew up in a community populated by short-lived races. While being more compassionate and open to change than their isolationist brethren,  {PAWN_gender ? him : she} is more melancholic due to outliving most of their companions.</baseDescription>
+		<baseDescription>[PAWN_nameDef] grew up in a community populated by short-lived races. While being more compassionate and open to change than {PAWN_gender ? his : her} isolationist brethren,  {PAWN_gender ? him : she} is more melancholic due to outliving most of {PAWN_gender ? his : her} companions.</baseDescription>
 		<bodyTypeGlobal>Thin</bodyTypeGlobal>
 		<bodyTypeMale>Male</bodyTypeMale>
 		<bodyTypeFemale>Female</bodyTypeFemale>
@@ -30,12 +30,12 @@
 			<li>
 				<defName>NaturalMood</defName>
 				<degree>-1</degree>
-				<chance>50</chance>
+				<chance>45</chance>
 			</li>
 			<li>
 				<defName>NaturalMood</defName>
 				<degree>-2</degree>
-				<chance>25</chance>
+				<chance>15</chance>
 			</li>
 			<li>
 				<defName>Nerves</defName>
@@ -45,7 +45,7 @@
 			<li>
 				<defName>Xenophobia</defName>
 				<degree>-1</degree>
-				<chance>45</chance>
+				<chance>40</chance>
 			</li>
 		</forcedTraits>
 		<disallowedTraits>

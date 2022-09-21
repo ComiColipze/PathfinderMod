@@ -4,7 +4,7 @@
 	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>PF2_OrcColonist</defName>
 		<label>orc colonist</label>
-		<race>PF2Orc</race>
+		<race>PF2_Orc</race>
 		<defaultFactionType>PF2_OrcPlayerColony</defaultFactionType>
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
 		<apparelTags>
@@ -26,7 +26,7 @@
   	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>PF2_OrcTribal</defName>
 		<label>tribal orc</label>
-		<race>PF2Orc</race>
+		<race>PF2_Orc</race>
 		<defaultFactionType>PF2_OrcPlayerTribe</defaultFactionType>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<apparelTags>
@@ -45,7 +45,7 @@
 	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>PF2_OrcRaider</defName>
 		<label>orc raider</label>
-		<race>PF2Orc</race>
+		<race>PF2_Orc</race>
 		<defaultFactionType>PF2_OrcPlayerFaction</defaultFactionType>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<apparelTags>

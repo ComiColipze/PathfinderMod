@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_GrippliPlayerColony</defName>
+		<label>Grippli Arrivals</label>
+		<description>Your own community composed of gripplis.</description>
+		<basicMemberKind>PF2_GrippliColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_GrippliPlayerTribe</defName>
+		<label>Grippli Tribe</label>
+		<description>A small tribe composed of gripplis.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_GrippliTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

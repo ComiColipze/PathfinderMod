@@ -2,7 +2,7 @@
 <Defs>
 
 	<DamageDef>
-		<defName>AnadiBite</defName>
+		<defName>PF2_AnadiBite</defName>
 		<label>anadi bite</label>
 		<workerClass>DamageWorker_Stab</workerClass>
 		<externalViolence>true</externalViolence>
@@ -11,7 +11,7 @@
 		<hediffSolid>Crack</hediffSolid>
 		<additionalHediffs>
 			<li>
-				<hediff>AnadiVenom</hediff>
+				<hediff>PF2_AnadiVenom</hediff>
 				<severityPerDamageDealt>0.03</severityPerDamageDealt>
 				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
 			</li>

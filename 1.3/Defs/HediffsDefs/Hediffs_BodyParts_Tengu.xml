@@ -2,7 +2,7 @@
 <Defs>
 	<!-- Added body parts -->
 	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>WoodenBeak</defName>
+		<defName>PF2_WoodenBeak</defName>
 		<label>wooden beak</label>
 		<labelNoun>a wooden beak</labelNoun>
 		<description>An installed wooden beak.</description>
@@ -15,11 +15,11 @@
 	</HediffDef>
   
 	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>BionicBeak</defName>
+		<defName>PF2_BionicBeak</defName>
 		<label>bionic beak</label>
 		<labelNoun>a bionic beak</labelNoun>
 		<description>An installed bionic beak.</description>
-		<descriptionHyperlinks><ThingDef>BionicBeak</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks><ThingDef>PF2_BionicBeak</ThingDef></descriptionHyperlinks>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -36,7 +36,7 @@
 				</tools>
 			</li>
 		</comps>
-		<spawnThingOnRemoved>BionicBeak</spawnThingOnRemoved>
+		<spawnThingOnRemoved>PF2_BionicBeak</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>1.25</partEfficiency>
@@ -45,12 +45,12 @@
 	</HediffDef>
 
 	<HediffDef ParentName="AddedBodyPartBase">
-		<defName>SimpleProstheticBeak</defName>
+		<defName>PF2_SimpleProstheticBeak</defName>
 		<label>prosthetic beak</label>
 		<labelNoun>a prosthetic beak</labelNoun>
 		<description>An installed prosthetic beak.</description>
-		<descriptionHyperlinks><ThingDef>SimpleProstheticBeak</ThingDef></descriptionHyperlinks>
-		<spawnThingOnRemoved>SimpleProstheticBeak</spawnThingOnRemoved>
+		<descriptionHyperlinks><ThingDef>PF2_SimpleProstheticBeak</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>PF2_SimpleProstheticBeak</spawnThingOnRemoved>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>0.80</partEfficiency>

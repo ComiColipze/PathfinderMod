@@ -2,10 +2,10 @@
 <Defs>
 
 	<PawnKindDef ParentName="BasePlayerPawnKind">
-		<defName>PF2_TenguColonist</defName>
-		<label>tengu colonist</label>
-		<race>PF2_Tengu</race>
-		<defaultFactionType>PF2_TenguPlayerColony</defaultFactionType>
+		<defName>PF2_GrippliColonist</defName>
+		<label>grippli colonist</label>
+		<race>PF2_Grippli</race>
+		<defaultFactionType>PF2_GrippliPlayerColony</defaultFactionType>
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
 		<apparelTags>
 			<li>IndustrialBasic</li>
@@ -24,10 +24,10 @@
 	</PawnKindDef>
 
   	<PawnKindDef ParentName="BasePlayerPawnKind">
-		<defName>PF2_TenguTribal</defName>
-		<label>tribal tengu</label>
-		<race>PF2_Tengu</race>
-		<defaultFactionType>PF2_TenguPlayerTribe</defaultFactionType>
+		<defName>PF2_GrippliTribal</defName>
+		<label>tribal grippli</label>
+		<race>PF2_Grippli</race>
+		<defaultFactionType>PF2_GrippliPlayerTribe</defaultFactionType>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<apparelTags>
 			<li>Neolithic</li>

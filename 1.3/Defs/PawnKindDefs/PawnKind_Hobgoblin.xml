@@ -4,7 +4,7 @@
 	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>PF2_HobgoblinColonist</defName>
 		<label>hobgoblin colonist</label>
-		<race>PF2Hobgoblin</race>
+		<race>PF2_Hobgoblin</race>
 		<defaultFactionType>PF2_HobgoblinPlayerColony</defaultFactionType>
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
 		<apparelTags>
@@ -26,7 +26,7 @@
   	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>PF2_HobgoblinTribal</defName>
 		<label>tribal hobgoblin</label>
-		<race>PF2Hobgoblin</race>
+		<race>PF2_Hobgoblin</race>
 		<defaultFactionType>PF2_HobgoblinPlayerTribe</defaultFactionType>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<apparelTags>

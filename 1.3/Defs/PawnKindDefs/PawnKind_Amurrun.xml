@@ -4,7 +4,7 @@
 	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>PF2_AmurrunColonist</defName>
 		<label>amurrun colonist</label>
-		<race>PF2Amurrun</race>
+		<race>PF2_Amurrun</race>
 		<defaultFactionType>PF2_AmurrunPlayerColony</defaultFactionType>
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
 		<apparelTags>
@@ -26,7 +26,7 @@
   	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>PF2_AmurrunTribal</defName>
 		<label>tribal amurrun</label>
-		<race>PF2Amurrun</race>
+		<race>PF2_Amurrun</race>
 		<defaultFactionType>PF2_AmurrunPlayerTribe</defaultFactionType>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<apparelTags>

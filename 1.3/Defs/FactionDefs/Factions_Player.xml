@@ -34,7 +34,7 @@
 
 	<FactionDef ParentName="FactionBase" Name="PF2_TribeBase" Abstract="True">
 		<isPlayer>true</isPlayer>
-		<techLevel>Medieval</techLevel>
+		<techLevel>Neolithic</techLevel>
 		<backstoryFilters>
 			<li>
 				<categories>

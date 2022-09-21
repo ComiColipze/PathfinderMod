@@ -2,33 +2,33 @@
 <Defs>
 
 	<FactionDef ParentName="FactionBase">
-		<defName>PF2_OrcFaction</defName>
-		<label>orc war band</label>
+		<defName>PF2_HobgoblinFaction</defName>
+		<label>hobgoblin dictatorship</label>
 		<categoryTag>Tribal</categoryTag>
-		<description>A loose confederation of tribal hordes and clans only united by a fierce orc war chief.\n\nThis war bands rely on other nations to exist, but tend to sow crops, build their villages, and seldom trade with other peoples.\n\nWhile they search for opportunity to surprise their enemies, most raiders prefer hand-to-hand confrontations to ranged skirmishes. Their mindset thrilled in pillaging and raiding and driven on a blood-and-honor culture makes them less prone to create alliances with non-orc nations; it may be difficult to turn them into an ally!</description>
-		<pawnSingular>raider</pawnSingular>
-		<pawnsPlural>raiders</pawnsPlural>
+		<description>This militaristic community of hobgoblins is best known for their hardlined and strict culture. Though not focused on pillaging other settlements, much like their goblin cousins, they'll not play around with their enemies. Hobgoblin culture is based into supremacy over other non-goblins and maintaining their own affairs over other nations, making them isolationist; it may be difficult to turn them into an ally!</description>
+		<pawnSingular>subject</pawnSingular>
+		<pawnsPlural>subjects</pawnsPlural>
 		<listOrderPriority>20</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
-		<startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+		<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
 		<colorSpectrum>
-			<li>(129, 0, 0)</li>
-			<li>(255, 180, 192)</li>
+			<li>(204, 51, 0)</li>
+			<li>(215, 150, 125)</li>
 		</colorSpectrum>
 		<fixedLeaderKinds>
-			<li>PF2_OrcFaction_WarChief</li>
+			<li>PF2_HobgoblinFaction_General</li>
 		</fixedLeaderKinds>
 		<canMakeRandomly>true</canMakeRandomly>
 		<canStageAttacks>true</canStageAttacks>
-		<factionIconPath>World/WorldObjects/Expanding/OrcFaction</factionIconPath>
+		<factionIconPath>World/WorldObjects/Expanding/HobgoblinFaction</factionIconPath>
 		<naturalEnemy>true</naturalEnemy>
 		<geneticVariance>0.1</geneticVariance>
 		<techLevel>Medieval</techLevel>
-		<factionNameMaker>PF2_NamerFactionOrc</factionNameMaker>
-		<settlementNameMaker>PF2_NamerSettlementOrc</settlementNameMaker>
-		<allowedCultures><li>PF2_Belkzen</li></allowedCultures>
+		<factionNameMaker>PF2_NamerFactionHobgoblin</factionNameMaker>
+		<settlementNameMaker>PF2_NamerSettlementHobgoblin</settlementNameMaker>
+		<allowedCultures><li>PF2_Oprakan</li></allowedCultures>
 		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 		</requiredMemes>
 		<disallowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
@@ -56,7 +56,7 @@
 				</categories>
 			</li>
 		</backstoryFilters>
-		<leaderTitle>war chief</leaderTitle>
+		<leaderTitle>general</leaderTitle>
 		<caravanTraderKinds>
 			<li>Caravan_Neolithic_BulkGoods</li>
 			<li>Caravan_Neolithic_WarMerchant</li>
@@ -69,7 +69,7 @@
 			<li>Base_Neolithic_Standard</li>
 		</baseTraderKinds>
 		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
-		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<raidCommonalityFromPointsCurve>
 			<points>
 				<li>(0, 1)</li>
@@ -91,11 +91,11 @@
 				<kindDef>Combat</kindDef>
 				<commonality>100</commonality>
 				<options>
-					<PF2_OrcFaction_Peasant>20</PF2_OrcFaction_Peasant>
-					<PF2_OrcFaction_Brute>40</PF2_OrcFaction_Brute>
-					<PF2_OrcFaction_Warrior>30</PF2_OrcFaction_Warrior>
-					<PF2_OrcFaction_Archer>50</PF2_OrcFaction_Archer>
-					<PF2_OrcFaction_Champion>20</PF2_OrcFaction_Champion>
+					<PF2_HobgoblinFaction_Peasant>20</PF2_HobgoblinFaction_Peasant>
+					<PF2_HobgoblinFaction_Brute>40</PF2_HobgoblinFaction_Brute>
+					<PF2_HobgoblinFaction_Warrior>30</PF2_HobgoblinFaction_Warrior>
+					<PF2_HobgoblinFaction_Archer>50</PF2_HobgoblinFaction_Archer>
+					<PF2_HobgoblinFaction_Champion>20</PF2_HobgoblinFaction_Champion>
 				</options>
 			</li>
 			<li>
@@ -103,26 +103,26 @@
 				<kindDef>Combat</kindDef>
 				<commonality>60</commonality>
 				<options>
-					<PF2_OrcFaction_Peasant>15</PF2_OrcFaction_Peasant>
-					<PF2_OrcFaction_Brute>40</PF2_OrcFaction_Brute>
-					<PF2_OrcFaction_Warrior>40</PF2_OrcFaction_Warrior>
-					<PF2_OrcFaction_Champion>25</PF2_OrcFaction_Champion>
+					<PF2_HobgoblinFaction_Peasant>15</PF2_HobgoblinFaction_Peasant>
+					<PF2_HobgoblinFaction_Brute>40</PF2_HobgoblinFaction_Brute>
+					<PF2_HobgoblinFaction_Warrior>40</PF2_HobgoblinFaction_Warrior>
+					<PF2_HobgoblinFaction_Champion>25</PF2_HobgoblinFaction_Champion>
 				</options>
 			</li>
 			<li>
 				<!-- Peaceful -->
 				<kindDef>Peaceful</kindDef>
 				<options>
-					<PF2_OrcFaction_Brute>30</PF2_OrcFaction_Brute>
-					<PF2_OrcFaction_Warrior>30</PF2_OrcFaction_Warrior>
-					<PF2_OrcFaction_Archer>40</PF2_OrcFaction_Archer>
-					<PF2_OrcFaction_Champion>20</PF2_OrcFaction_Champion>
+					<PF2_HobgoblinFaction_Brute>30</PF2_HobgoblinFaction_Brute>
+					<PF2_HobgoblinFaction_Warrior>30</PF2_HobgoblinFaction_Warrior>
+					<PF2_HobgoblinFaction_Archer>40</PF2_HobgoblinFaction_Archer>
+					<PF2_HobgoblinFaction_Champion>20</PF2_HobgoblinFaction_Champion>
 				</options>
 			</li>
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
-					<PF2_OrcFaction_Merchant>1</PF2_OrcFaction_Merchant>
+					<PF2_HobgoblinFaction_Merchant>1</PF2_HobgoblinFaction_Merchant>
 				</traders>
 				<carriers>
 					<Muffalo>6</Muffalo>
@@ -131,49 +131,49 @@
 					<Elephant>2</Elephant>
 				</carriers>
 				<guards>
-					<PF2_OrcFaction_Brute>30</PF2_OrcFaction_Brute>
-					<PF2_OrcFaction_Warrior>30</PF2_OrcFaction_Warrior>
-					<PF2_OrcFaction_Archer>40</PF2_OrcFaction_Archer>
-					<PF2_OrcFaction_Champion>10</PF2_OrcFaction_Champion>
+					<PF2_HobgoblinFaction_Brute>30</PF2_HobgoblinFaction_Brute>
+					<PF2_HobgoblinFaction_Warrior>30</PF2_HobgoblinFaction_Warrior>
+					<PF2_HobgoblinFaction_Archer>40</PF2_HobgoblinFaction_Archer>
+					<PF2_HobgoblinFaction_Champion>10</PF2_HobgoblinFaction_Champion>
 				</guards>
 			</li>
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<PF2_OrcFaction_Peasant>30</PF2_OrcFaction_Peasant>
-					<PF2_OrcFaction_Brute>30</PF2_OrcFaction_Brute>
-					<PF2_OrcFaction_Warrior>30</PF2_OrcFaction_Warrior>
-					<PF2_OrcFaction_Archer>50</PF2_OrcFaction_Archer>
-					<PF2_OrcFaction_Champion>25</PF2_OrcFaction_Champion>
-					<PF2_OrcFaction_WarChief>60</PF2_OrcFaction_WarChief>
+					<PF2_HobgoblinFaction_Peasant>30</PF2_HobgoblinFaction_Peasant>
+					<PF2_HobgoblinFaction_Brute>30</PF2_HobgoblinFaction_Brute>
+					<PF2_HobgoblinFaction_Warrior>30</PF2_HobgoblinFaction_Warrior>
+					<PF2_HobgoblinFaction_Archer>50</PF2_HobgoblinFaction_Archer>
+					<PF2_HobgoblinFaction_Champion>25</PF2_HobgoblinFaction_Champion>
+					<PF2_HobgoblinFaction_General>60</PF2_HobgoblinFaction_General>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<kindDef>Miners</kindDef>
 				<commonality>1</commonality>
 				<options>
-					<PF2_OrcFaction_Miner>1</PF2_OrcFaction_Miner>
+					<PF2_HobgoblinFaction_Miner>1</PF2_HobgoblinFaction_Miner>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<kindDef>Hunters</kindDef>
 				<commonality>1</commonality>
 				<options>
-					<PF2_OrcFaction_Hunter>1</PF2_OrcFaction_Hunter>
+					<PF2_HobgoblinFaction_Hunter>1</PF2_HobgoblinFaction_Hunter>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<kindDef>Loggers</kindDef>
 				<commonality>1</commonality>
 				<options>
-					<PF2_OrcFaction_Logger>1</PF2_OrcFaction_Logger>
+					<PF2_HobgoblinFaction_Logger>1</PF2_HobgoblinFaction_Logger>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<kindDef>Farmers</kindDef>
 				<commonality>1</commonality>
 				<options>
-					<PF2_OrcFaction_Farmer>1</PF2_OrcFaction_Farmer>
+					<PF2_HobgoblinFaction_Farmer>1</PF2_HobgoblinFaction_Farmer>
 				</options>
 			</li>
 		</pawnGroupMakers>

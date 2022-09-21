@@ -20,8 +20,8 @@
 
 	<FactionDef ParentName="PlayerFactionBase">
 		<defName>PF2_DwarfPlayerFaction</defName>
-		<label>New Dwarven Kingdom</label>
-		<description>A small kingdom composed of dwarves.</description>
+		<label>New Dwarven Clan</label>
+		<description>A small clan composed of dwarves.</description>
 		<isPlayer>true</isPlayer>
 		<pawnSingular>subject</pawnSingular>
 		<pawnsPlural>subjects</pawnsPlural>
@@ -33,9 +33,9 @@
 		<factionIconPath>World/WorldObjects/Expanding/DwarfFaction</factionIconPath>
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-		<factionNameMaker>NamerFactionDwarven</factionNameMaker>
-		<settlementNameMaker>NamerSettlementDwarven</settlementNameMaker>
-		<allowedCultures><li>Toraghdan</li></allowedCultures>
+		<factionNameMaker>PF2_NamerFactionDwarven</factionNameMaker>
+		<settlementNameMaker>PF2_NamerSettlementDwarven</settlementNameMaker>
+		<allowedCultures><li>PF2_Toraghdan</li></allowedCultures>
 		<geneticVariance>1</geneticVariance>
 		<startingResearchTags>
 			<li>TribalStart</li>

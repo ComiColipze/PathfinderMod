@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<PawnKindDef Name="ElfPawnKindBase" Abstract="True">
-		<race>PF2_Elf</race>
-		<defaultFactionType>PF2_ElfFaction</defaultFactionType>
-		<maxGenerationAge>650</maxGenerationAge>
+	<PawnKindDef Name="HobgoblinPawnKindBase" Abstract="True">
+		<race>PF2_Hobgoblin</race>
+		<defaultFactionType>PF2_HobgoblinFaction</defaultFactionType>
+		<maxGenerationAge>70</maxGenerationAge>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<invNutrition>2.55</invNutrition>
 		<invFoodDef>Pemmican</invFoodDef>
 		<apparelTags>
-			<li>MedievalBasic</li>
+			<li>Neolithic</li>
 		</apparelTags>
 	</PawnKindDef>
 
     <!-- Poverty Tier - Peasant -->
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Peasant</defName>
-        <label>elf peasant</label>
-        <combatPower>30</combatPower>
+    <PawnKindDef ParentName="HobgoblinPawnKindBase">
+        <defName>PF2_HobgoblinFaction_Peasant</defName>
+        <label>hobgoblin peasant</label>
+        <combatPower>40</combatPower>
         <chemicalAddictionChance>0.10</chemicalAddictionChance>
         <invNutrition>0</invNutrition>
         <itemQuality>Poor</itemQuality>
-		<isFighter>false</isFighter>
         <gearHealthRange>
             <min>0.2</min>
             <max>1.1</max>
@@ -30,9 +29,6 @@
             <min>50</min>
             <max>125</max>
         </apparelMoney>
-        <apparelTags>
-            <li>Neolithic</li>
-        </apparelTags>
         <weaponMoney>
             <min>90</min>
             <max>150</max>
@@ -52,10 +48,10 @@
 		<initialResistanceRange>3~8</initialResistanceRange>
     </PawnKindDef>
 
-	<PawnKindDef ParentName="ElfPawnKindBase">
-		<defName>PF2_ElfFaction_Miner</defName>
-		<label>elf miner</label>
-		<combatPower>35</combatPower>
+	<PawnKindDef ParentName="HobgoblinPawnKindBase">
+		<defName>PF2_HobgoblinFaction_Miner</defName>
+		<label>hobgoblin miner</label>
+		<combatPower>40</combatPower>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesAdulthood>
@@ -93,10 +89,10 @@
 		<initialResistanceRange>17~27</initialResistanceRange>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName="ElfPawnKindBase">
-		<defName>PF2_ElfFaction_Logger</defName>
-		<label>elf logger</label>
-		<combatPower>35</combatPower>
+	<PawnKindDef ParentName="HobgoblinPawnKindBase">
+		<defName>PF2_HobgoblinFaction_Logger</defName>
+		<label>hobgoblin logger</label>
+		<combatPower>45</combatPower>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesAdulthood>
@@ -137,10 +133,10 @@
 		<initialResistanceRange>17~27</initialResistanceRange>
 	</PawnKindDef>
 	
-	<PawnKindDef ParentName="ElfPawnKindBase">
-		<defName>PF2_ElfFaction_Farmer</defName>
-		<label>elf farmer</label>
-		<combatPower>35</combatPower>
+	<PawnKindDef ParentName="HobgoblinPawnKindBase">
+		<defName>PF2_HobgoblinFaction_Farmer</defName>
+		<label>hobgoblin farmer</label>
+		<combatPower>40</combatPower>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesAdulthood>
@@ -181,10 +177,10 @@
 		<initialResistanceRange>17~27</initialResistanceRange>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="ElfPawnKindBase">
-		<defName>PF2_ElfFaction_Hunter</defName>
-		<label>elf hunter</label>
-		<combatPower>55</combatPower>
+	<PawnKindDef ParentName="HobgoblinPawnKindBase">
+		<defName>PF2_HobgoblinFaction_Hunter</defName>
+		<label>hobgoblin hunter</label>
+		<combatPower>65</combatPower>
 		<backstoryFiltersOverride>
 			<li>
 				<categoriesAdulthood>
@@ -218,10 +214,10 @@
 	</PawnKindDef>
 
     <!-- Low-Tier - Merchant, Squire -->
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Merchant</defName>
-        <label>elf merchant</label>
-        <combatPower>35</combatPower>
+    <PawnKindDef ParentName="HobgoblinPawnKindBase">
+        <defName>PF2_HobgoblinFaction_Merchant</defName>
+        <label>hobgoblin merchant</label>
+        <combatPower>40</combatPower>
         <trader>true</trader>
         <isFighter>false</isFighter>
         <gearHealthRange>
@@ -243,10 +239,10 @@
 		<initialResistanceRange>5~9</initialResistanceRange>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Squire</defName>
-        <label>elf squire</label>
-        <combatPower>45</combatPower>
+    <PawnKindDef ParentName="HobgoblinPawnKindBase">
+        <defName>PF2_HobgoblinFaction_Brute</defName>
+        <label>hobgoblin brute</label>
+        <combatPower>50</combatPower>
         <canBeSapper>true</canBeSapper>
         <gearHealthRange>
             <min>0.5</min>
@@ -271,10 +267,10 @@
     </PawnKindDef>
 
     <!-- Mid-tier - footsoldier, bowman -->
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Footsoldier</defName>
-        <label>elf footsoldier</label>
-        <combatPower>65</combatPower>
+    <PawnKindDef ParentName="HobgoblinPawnKindBase">
+        <defName>PF2_HobgoblinFaction_Warrior</defName>
+        <label>hobgoblin warrior</label>
+        <combatPower>70</combatPower>
         <canBeSapper>true</canBeSapper>
         <gearHealthRange>
             <min>0.8</min>
@@ -298,10 +294,10 @@
 		<initialResistanceRange>14~22</initialResistanceRange>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Archer</defName>
-        <label>elf archer</label>
-        <combatPower>65</combatPower>
+    <PawnKindDef ParentName="HobgoblinPawnKindBase">
+        <defName>PF2_HobgoblinFaction_Archer</defName>
+        <label>hobgoblin archer</label>
+        <combatPower>70</combatPower>
         <gearHealthRange>
             <min>0.8</min>
             <max>1.8</max>
@@ -318,6 +314,7 @@
       		<li>NeolithicRangedBasic</li>
       		<li>NeolithicRangedDecent</li>
             <li>MedievalRanged</li>
+            <li>MedievalRangedHeavy</li>
         </weaponTags>
 		<disallowedTraits>
 			<li>Brawler</li>
@@ -327,10 +324,10 @@
     </PawnKindDef>
 
     <!-- High-tier - knight, lord -->
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Knight</defName>
-        <label>elf knight</label>
-        <combatPower>95</combatPower>
+    <PawnKindDef ParentName="HobgoblinPawnKindBase">
+        <defName>PF2_HobgoblinFaction_Champion</defName>
+        <label>hobgoblin champion</label>
+        <combatPower>100</combatPower>
         <itemQuality>Good</itemQuality>
         <apparelMoney>
             <min>1000</min>
@@ -339,7 +336,6 @@
         <apparelTags>
 			<li>MedievalMilitary</li>
 			<li>MedievalArmorDecent</li>
-			<li>MedievalArmorElite</li>
         </apparelTags>
         <weaponMoney>
             <min>300</min>
@@ -353,14 +349,13 @@
 		<initialResistanceRange>17~25</initialResistanceRange>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_King</defName>
-        <label>elf king</label>
-        <labelFemale>elf queen</labelFemale>
-        <combatPower>135</combatPower>
+    <PawnKindDef ParentName="HobgoblinPawnKindBase">
+        <defName>PF2_HobgoblinFaction_General</defName>
+        <label>hobgoblin general</label>
+        <combatPower>150</combatPower>
         <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
-        <minGenerationAge>150</minGenerationAge>
-        <maxGenerationAge>999</maxGenerationAge>
+        <minGenerationAge>15</minGenerationAge>
+        <maxGenerationAge>80</maxGenerationAge>
         <itemQuality>Good</itemQuality>
         <factionLeader>true</factionLeader>
         <apparelMoney>
@@ -368,7 +363,8 @@
             <max>3000</max>
         </apparelMoney>
         <apparelTags>
-			<li>MedievalApparelNoble</li>
+			<li>MedievalMilitary</li>
+			<li>MedievalArmorDecent</li>
         </apparelTags>
         <weaponMoney>
             <min>500</min>

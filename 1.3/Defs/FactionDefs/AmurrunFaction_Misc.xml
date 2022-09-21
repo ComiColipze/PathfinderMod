@@ -2,49 +2,36 @@
 <Defs>
 
 	<FactionDef ParentName="FactionBase">
-		<defName>PF2_DwarfFaction</defName>
-		<label>dwarven clan</label>
+		<defName>PF2_AmurrunFaction</defName>
+		<label>amurrun union</label>
 		<categoryTag>Tribal</categoryTag>
-		<description>This collection of conservative settlements are comprised mostly by dwarves. While molded by their turbulent history with neighbors—specially with the orc holds and goblinoid tribes—their fierceness is balanced by their altruism. Because of this, bordering nations have to gain the trust of the dwarven high king in order to trade with them.</description>
-		<pawnSingular>subject</pawnSingular>
-		<pawnsPlural>subjects</pawnsPlural>
+		<description>These disparate amurrun city-states and independent guilds founded an alliance for an ideal, being it strategically asserting regional influence, conducting commerce with other nations, or defending the whole world from a calamitous turn.\n\nWhile their population are concentrated in these city-states, it is extremely common for amurruns to travel beyond their borders, or leaving their homeland entirely, making them less prone to pillaging other factions—but they won't think a second time to defend their lands from foreing incursions.\n\nThey also are the most profitable factions in the Rim.</description>
+		<pawnSingular>traveler</pawnSingular>
+		<pawnsPlural>travelers</pawnsPlural>
 		<listOrderPriority>20</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
-		<startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+		<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
 		<colorSpectrum>
-			<li>(120, 138, 153)</li>
-			<li>(186, 206, 232)</li>
+			<li>(189, 183, 107)</li>
+			<li>(240, 230, 140)</li>
 		</colorSpectrum>
 		<fixedLeaderKinds>
-			<li>PF2_DwarfFaction_HighKing</li>
+			<li>PF2_AmurrunFaction_ElectedCouncilor</li>
 		</fixedLeaderKinds>
 		<canMakeRandomly>true</canMakeRandomly>
 		<canStageAttacks>true</canStageAttacks>
-		<factionIconPath>World/WorldObjects/Expanding/DwarfFaction</factionIconPath>
+		<factionIconPath>World/WorldObjects/Expanding/AmurrunFaction</factionIconPath>
 		<geneticVariance>0.1</geneticVariance>
 		<techLevel>Medieval</techLevel>
-		<factionNameMaker>PF2_NamerFactionDwarven</factionNameMaker>
-		<settlementNameMaker>PF2_NamerSettlementDwarven</settlementNameMaker>
-		<allowedCultures><li>PF2_Toraghdan</li></allowedCultures>
-		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
-		</requiredMemes>
+		<factionNameMaker>PF2_NamerFactionAmurrun</factionNameMaker>
+		<settlementNameMaker>PF2_NamerSettlementAmurrun</settlementNameMaker>
+		<allowedCultures><li>Corunan</li></allowedCultures>
 		<disallowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 		</disallowedMemes>
 		<disallowedPrecepts>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_FreeApproved</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Free</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Standard</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">DrugUse_Essential</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Acceptable</li>
@@ -71,11 +58,14 @@
 				</categories>
 			</li>
 		</backstoryFilters>
-		<leaderTitle>high king</leaderTitle>
+		<leaderTitle>elected councilor</leaderTitle>
 		<caravanTraderKinds>
 			<li>Caravan_Neolithic_BulkGoods</li>
 			<li>Caravan_Neolithic_WarMerchant</li>
 			<li>Caravan_Neolithic_ShamanMerchant</li>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_Exotic</li>
+			<li>Caravan_Outlander_PirateMerchant</li>
 		</caravanTraderKinds>
 		<visitorTraderKinds>
 			<li>Visitor_Neolithic_Standard</li>
@@ -106,11 +96,10 @@
 				<kindDef>Combat</kindDef>
 				<commonality>100</commonality>
 				<options>
-					<PF2_DwarfFaction_Peasant>20</PF2_DwarfFaction_Peasant>
-					<PF2_DwarfFaction_Fighter>40</PF2_DwarfFaction_Fighter>
-					<PF2_DwarfFaction_Warrior>30</PF2_DwarfFaction_Warrior>
-					<PF2_DwarfFaction_Bowman>50</PF2_DwarfFaction_Bowman>
-					<PF2_DwarfFaction_Champion>20</PF2_DwarfFaction_Champion>
+					<PF2_AmurrunFaction_Fighter>40</PF2_AmurrunFaction_Fighter>
+					<PF2_AmurrunFaction_Warrior>30</PF2_AmurrunFaction_Warrior>
+					<PF2_AmurrunFaction_Bowman>50</PF2_AmurrunFaction_Bowman>
+					<PF2_AmurrunFaction_Champion>20</PF2_AmurrunFaction_Champion>
 				</options>
 			</li>
 			<li>
@@ -118,92 +107,89 @@
 				<kindDef>Combat</kindDef>
 				<commonality>60</commonality>
 				<options>
-					<PF2_DwarfFaction_Peasant>15</PF2_DwarfFaction_Peasant>
-					<PF2_DwarfFaction_Fighter>40</PF2_DwarfFaction_Fighter>
-					<PF2_DwarfFaction_Warrior>40</PF2_DwarfFaction_Warrior>
-					<PF2_DwarfFaction_Champion>25</PF2_DwarfFaction_Champion>
+					<PF2_AmurrunFaction_Fighter>40</PF2_AmurrunFaction_Fighter>
+					<PF2_AmurrunFaction_Warrior>40</PF2_AmurrunFaction_Warrior>
+					<PF2_AmurrunFaction_Champion>25</PF2_AmurrunFaction_Champion>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<options>
+					<PF2_AmurrunFaction_Bowman>60</PF2_AmurrunFaction_Bowman>
+					<PF2_AmurrunFaction_Hunter>40</PF2_AmurrunFaction_Hunter>
 				</options>
 			</li>
 			<li>
 				<!-- Peaceful -->
 				<kindDef>Peaceful</kindDef>
 				<options>
-					<PF2_DwarfFaction_Fighter>30</PF2_DwarfFaction_Fighter>
-					<PF2_DwarfFaction_Warrior>30</PF2_DwarfFaction_Warrior>
-					<PF2_DwarfFaction_Bowman>40</PF2_DwarfFaction_Bowman>
-					<PF2_DwarfFaction_Champion>20</PF2_DwarfFaction_Champion>
+					<PF2_AmurrunFaction_Peasant>20</PF2_AmurrunFaction_Peasant>
+					<PF2_AmurrunFaction_Fighter>30</PF2_AmurrunFaction_Fighter>
+					<PF2_AmurrunFaction_Warrior>30</PF2_AmurrunFaction_Warrior>
+					<PF2_AmurrunFaction_Bowman>40</PF2_AmurrunFaction_Bowman>
+					<PF2_AmurrunFaction_Champion>20</PF2_AmurrunFaction_Champion>
 				</options>
 			</li>
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
-					<PF2_DwarfFaction_Merchant>1</PF2_DwarfFaction_Merchant>
+					<PF2_AmurrunFaction_Merchant>5</PF2_AmurrunFaction_Merchant>
 				</traders>
 				<carriers>
-					<Muffalo>6</Muffalo>
-					<Dromedary>5</Dromedary>
-					<Alpaca>2.5</Alpaca>
-					<Elephant>2</Elephant>
+					<Muffalo>8</Muffalo>
+					<Dromedary>7</Dromedary>
+					<Alpaca>4.5</Alpaca>
+					<Elephant>4</Elephant>
 				</carriers>
 				<guards>
-					<PF2_DwarfFaction_Fighter>30</PF2_DwarfFaction_Fighter>
-					<PF2_DwarfFaction_Warrior>30</PF2_DwarfFaction_Warrior>
-					<PF2_DwarfFaction_Bowman>40</PF2_DwarfFaction_Bowman>
-					<PF2_DwarfFaction_Champion>10</PF2_DwarfFaction_Champion>
+					<PF2_AmurrunFaction_Fighter>30</PF2_AmurrunFaction_Fighter>
+					<PF2_AmurrunFaction_Warrior>30</PF2_AmurrunFaction_Warrior>
+					<PF2_AmurrunFaction_Bowman>40</PF2_AmurrunFaction_Bowman>
+					<PF2_AmurrunFaction_Champion>10</PF2_AmurrunFaction_Champion>
 				</guards>
 			</li>
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<PF2_DwarfFaction_Peasant>30</PF2_DwarfFaction_Peasant>
-					<PF2_DwarfFaction_Fighter>30</PF2_DwarfFaction_Fighter>
-					<PF2_DwarfFaction_Warrior>30</PF2_DwarfFaction_Warrior>
-					<PF2_DwarfFaction_Bowman>50</PF2_DwarfFaction_Bowman>
-					<PF2_DwarfFaction_Champion>25</PF2_DwarfFaction_Champion>
-					<PF2_DwarfFaction_HighKing>60</PF2_DwarfFaction_HighKing>
+					<PF2_AmurrunFaction_Peasant>30</PF2_AmurrunFaction_Peasant>
+					<PF2_AmurrunFaction_Fighter>30</PF2_AmurrunFaction_Fighter>
+					<PF2_AmurrunFaction_Warrior>30</PF2_AmurrunFaction_Warrior>
+					<PF2_AmurrunFaction_Bowman>50</PF2_AmurrunFaction_Bowman>
+					<PF2_AmurrunFaction_Champion>25</PF2_AmurrunFaction_Champion>
+					<PF2_AmurrunFaction_ElectedCouncilor>60</PF2_AmurrunFaction_ElectedCouncilor>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<kindDef>Miners</kindDef>
 				<commonality>2</commonality>
 				<options>
-					<PF2_DwarfFaction_Miner>5</PF2_DwarfFaction_Miner>
+					<PF2_AmurrunFaction_Miner>5</PF2_AmurrunFaction_Miner>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<kindDef>Hunters</kindDef>
 				<commonality>1</commonality>
 				<options>
-					<PF2_DwarfFaction_Hunter>1</PF2_DwarfFaction_Hunter>
+					<PF2_AmurrunFaction_Hunter>1</PF2_AmurrunFaction_Hunter>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<kindDef>Loggers</kindDef>
 				<commonality>1</commonality>
 				<options>
-					<PF2_DwarfFaction_Logger>1</PF2_DwarfFaction_Logger>
+					<PF2_AmurrunFaction_Logger>1</PF2_AmurrunFaction_Logger>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<kindDef>Farmers</kindDef>
 				<commonality>1</commonality>
 				<options>
-					<PF2_DwarfFaction_Farmer>1</PF2_DwarfFaction_Farmer>
+					<PF2_AmurrunFaction_Farmer>1</PF2_AmurrunFaction_Farmer>
 				</options>
 			</li>
 		</pawnGroupMakers>
-		<modExtensions>
-			<li Class="VFECore.FactionDefExtension">
-				<allowedBiomes>
-					<li>IceSheet</li>
-					<li>SeaIce</li>
-					<li>BorealForest</li>
-					<li>ColdBog</li>
-					<li>Tundra</li>
-					<li>TemperateForest</li>
-				</allowedBiomes>
-			</li>
-		</modExtensions>
 	</FactionDef>
 	
 </Defs>

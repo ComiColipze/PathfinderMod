@@ -2,7 +2,7 @@
 <Defs>
   
 	<HediffDef ParentName="InfectionBase">
-		<defName>AnadiVenom</defName>
+		<defName>PF2_AnadiVenom</defName>
 		<label>anadi venom</label>
 		<description>The after-effects from an anadi bite. It begins with dizziness, nausea and weak pain, but gets progressively more severe if not treated. At late stages, it slows blood filtration, weakens consciousness, and cause debilitating pain.</description>
 		<hediffClass>HediffWithComps</hediffClass>

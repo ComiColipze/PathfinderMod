@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
     <Defs>
         <BodyDef>
-            <defName>BodyKobold</defName>
+            <defName>PF2_Kobold</defName>
             <label>kobold</label>
             <corePart>
                 <def>Torso</def>

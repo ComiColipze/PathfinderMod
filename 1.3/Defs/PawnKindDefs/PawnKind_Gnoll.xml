@@ -4,7 +4,7 @@
 	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>PF2_GnollColonist</defName>
 		<label>gnoll colonist</label>
-		<race>PF2Gnoll</race>
+		<race>PF2_Gnoll</race>
 		<defaultFactionType>PF2_GnollPlayerColony</defaultFactionType>
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
 		<apparelTags>
@@ -26,7 +26,7 @@
   	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>PF2_GnollTribal</defName>
 		<label>tribal gnoll</label>
-		<race>PF2Gnoll</race>
+		<race>PF2_Gnoll</race>
 		<defaultFactionType>PF2_GnollPlayerTribe</defaultFactionType>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<apparelTags>

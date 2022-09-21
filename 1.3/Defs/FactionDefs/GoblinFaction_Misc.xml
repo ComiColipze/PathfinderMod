@@ -5,12 +5,12 @@
 		<defName>PF2_GoblinFaction</defName>
 		<label>goblin union</label>
 		<categoryTag>Tribal</categoryTag>
-		<description>This nightmare alliance composed of chaotic and disparate tribes are extremely feared among its neighboring nations. They don't sow, build for themselves, or trade with other peoples, prefering to pillage and take what it's theirs. They are also fond of fire, despise any species of dogs and love to burn books. They are too savage to make friends with; you will not be able to ally with them!</description>
+		<description>This nightmare alliance composed of chaotic and disparate tribes are extremely feared among its neighboring nations. They don't sow, build for themselves, or trade with other peoples, prefering to pillage and take what they think it's theirs. They are also fond of fire, despise any species of dogs and love to burn books. They are too savage to make friends with; you will not be able to ally with them!</description>
 		<pawnSingular>goblin</pawnSingular>
 		<pawnsPlural>goblins</pawnsPlural>
 		<listOrderPriority>20</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
-		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<startingCountAtWorldCreation>1</startingCountAtWorldCreation>
 		<colorSpectrum>
 			<li>(255, 69, 0)</li>
 			<li>(255, 180, 0)</li>
@@ -24,15 +24,29 @@
 		<permanentEnemy>true</permanentEnemy>
 		<geneticVariance>0.1</geneticVariance>
 		<techLevel>Neolithic</techLevel>
-		<factionNameMaker>NamerFactionGoblin</factionNameMaker>
-		<settlementNameMaker>NamerSettlementGoblin</settlementNameMaker>
-		<allowedCultures><li>Goblin</li></allowedCultures>
+		<factionNameMaker>PF2_NamerFactionGoblin</factionNameMaker>
+		<settlementNameMaker>PF2_NamerSettlementGoblin</settlementNameMaker>
+		<allowedCultures><li>PF2_Goblin</li></allowedCultures>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
 		</requiredMemes>
+		<allowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+		</allowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_Slow</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_Normal</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_Fast</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Research_VeryFast</li>
+		</disallowedPrecepts>
 		<structureMemeWeights>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
 			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
-			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
 		</structureMemeWeights>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>50</configurationListOrderPriority>

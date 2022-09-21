@@ -2,7 +2,7 @@
 <Defs>
 
 	<PawnKindDef Name="GoblinPawnKindBase" Abstract="True">
-		<race>PF2Goblin</race>
+		<race>PF2_Goblin</race>
 		<defaultFactionType>PF2_GoblinFaction</defaultFactionType>
 		<maxGenerationAge>50</maxGenerationAge>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
