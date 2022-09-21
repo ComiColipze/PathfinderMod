@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <ToolCapacityDef>
+    <defName>AnadiBite</defName>
+    <label>anadi bite</label>
+  </ToolCapacityDef>
+
+</Defs>

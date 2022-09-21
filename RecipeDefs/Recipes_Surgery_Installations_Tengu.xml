@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RecipeDef ParentName="SurgeryInstallWoodenPartBase">
+		<defName>PF2_InstallWoodenBeak</defName>
+		<label>install wooden beak</label>
+		<description>Install a wooden beak.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing a wooden beak.</jobString>
+		<recipeUsers>
+			<li>PF2_Tengu</li>
+		</recipeUsers>
+		<appliedOnFixedBodyParts>
+			<li>AvianBeak</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>PF2_WoodenBeak</addsHediff>
+	</RecipeDef>
+  
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>PF2_InstallBionicBeak</defName>
+		<label>install bionic beak</label>
+		<description>Install a bionic beak.</description>
+		<descriptionHyperlinks>
+			<ThingDef>PF2_BionicBeak</ThingDef>
+			<HediffDef>PF2_BionicBeak</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing bionic beak.</jobString>
+		<recipeUsers>
+			<li>PF2_Tengu</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PF2_BionicBeak</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PF2_BionicBeak</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>AvianBeak</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>PF2_BionicBeak</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>PF2_InstallSimpleProstheticBeak</defName>
+		<label>install prosthetic beak</label>
+		<description>Install a prosthetic beak.</description>
+		<descriptionHyperlinks>
+			<ThingDef>PF2_SimpleProstheticBeak</ThingDef>
+			<HediffDef>PF2_SimpleProstheticBeak</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosthetic beak.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>PF2_SimpleProstheticBeak</li>
+				</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PF2_SimpleProstheticBeak</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>AvianBeak</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>PF2_SimpleProstheticBeak</addsHediff>
+	</RecipeDef>
+	
+</Defs>

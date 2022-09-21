@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<CultureDef>
+		<defName>PF2_Toraghdan</defName>
+		<label>toraghdan</label>
+		<description>A close-knit society based around dwarven history and culture.</description>
+		<pawnNameMaker>PF2_NamerPersonDwarfMale</pawnNameMaker>
+		<pawnNameMakerFemale>PF2_NamerPersonDwarfFemale</pawnNameMakerFemale>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_NamerIdeoToraghdan</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_NamerDeityToraghdan</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_DeityTypeMakerToraghdan</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_LeaderTitleMaker_Toraghdan</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginTribal</li>
+		</allowedPlaceTags>
+		<iconPath>World/WorldObjects/Expanding/DwarfFaction</iconPath>
+		<iconColor>(0.8, 0.8, 0.8)</iconColor>
+        <preferredWeaponClasses>
+			<noble>MeleeBlunt</noble>
+            <despised>Ranged</despised>
+        </preferredWeaponClasses>
+		<thingStyleCategories>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Totemic</category>
+				<priority>2</priority>
+			</li>
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>Tribal</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Urban</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Rural</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>0</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardRural</tag>
+				<baseWeight>16</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardTribal</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardUrban</tag>
+				<baseWeight>6</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+ 
+	<CultureDef>
+		<defName>PF2_Kyonan</defName>
+		<label>Kyonan</label>
+		<description>An insular but vivacious culture adopted by many elves.</description>
+		<pawnNameMaker>PF2_NamerPersonElfMale</pawnNameMaker>
+		<pawnNameMakerFemale>PF2_NamerPersonElfFemale</pawnNameMakerFemale>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_NamerIdeoKyonan</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_NamerDeityKyonan</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_DeityTypeMakerKyonan</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_LeaderTitleMaker_Kyonan</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginTribal</li>
+		</allowedPlaceTags>
+		<iconPath>World/WorldObjects/ElfFaction2</iconPath>
+        <preferredWeaponClasses>
+			<noble>Ranged</noble>
+            <despised>Melee</despised>
+        </preferredWeaponClasses>
+		<styleItemTags>
+			<li>
+				<tag>Tribal</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Urban</tag>
+				<baseWeight>0.6</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Punk</tag>
+				<baseWeight>0.4</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Royal</tag>
+				<baseWeight>0.8</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>20</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardTribal</tag>
+				<baseWeight>0</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+ 
+	<CultureDef>
+		<defName>PF2_Belkzen</defName>
+		<label>Belkzen</label>
+		<description>a brutal culture based on orcs' vision of honor and war.</description>
+		<pawnNameMaker>PF2_NamerPersonOrcMale</pawnNameMaker>
+		<pawnNameMakerFemale>PF2_NamerPersonOrcFemale</pawnNameMakerFemale>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_NamerIdeoBelkzen</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_NamerDeityBelkzen</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_DeityTypeMakerBelkzen</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_LeaderTitleMaker_Belkzen</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginTribal</li>
+		</allowedPlaceTags>
+		<iconPath>World/WorldObjects/Expanding/OrcFaction</iconPath>
+		<iconColor>(0.8, 0.8, 0.8)</iconColor>
+        <preferredWeaponClasses>
+			<noble>Melee</noble>
+            <despised>Ranged</despised>
+        </preferredWeaponClasses>
+		<thingStyleCategories>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Morbid</category>
+				<priority>2</priority>
+			</li>
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>Tribal</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardTribal</tag>
+				<baseWeight>0.3</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooFaceTribal</tag>
+				<baseWeight>0.8</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooBodyTribal</tag>
+				<baseWeight>0.8</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+ 
+	<CultureDef>
+		<defName>PF2_Goblin</defName>
+		<label>Goblin</label>
+		<description>a mish-mash of savage visions adopted by goblin tribes.</description>
+		<pawnNameMaker>PF2_NamerPersonGoblinMale</pawnNameMaker>
+		<pawnNameMakerFemale>PF2_NamerPersonGoblinFemale</pawnNameMakerFemale>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_NamerIdeoGoblin</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_NamerDeityGoblin</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_DeityTypeMakerGoblin</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_LeaderTitleMaker_Goblin</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginTribal</li>
+		</allowedPlaceTags>
+		<iconPath>World/WorldObjects/GoblinFaction2</iconPath>
+        <preferredWeaponClasses>
+			<noble>RangedHeavy</noble>
+            <despised>RangedLight</despised>
+        </preferredWeaponClasses>
+		<thingStyleCategories>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Spikecore</category>
+				<priority>2</priority>
+			</li>
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>Tribal</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardTribal</tag>
+				<baseWeight>0.3</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooFaceTribal</tag>
+				<baseWeight>0.8</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooBodyTribal</tag>
+				<baseWeight>0.8</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+	
+	<CultureDef>
+		<defName>PF2_Chaldiran</defName>
+		<label>Chaldiran</label>
+		<description>a pacifist cultural movement created by the halfling race.</description>
+		<pawnNameMaker>PF2_NamerPersonHalflingMale</pawnNameMaker>
+		<pawnNameMakerFemale>PF2_NamerPersonHalflingFemale</pawnNameMakerFemale>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_NamerIdeoChaldiran</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_NamerDeityChaldiran</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_DeityTypeMakerChaldiran</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_LeaderTitleMaker_Chaldiran</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginTribal</li>
+		</allowedPlaceTags>
+		<iconPath>World/WorldObjects/Expanding/HalflingFaction</iconPath>
+		<iconColor>(0.8, 0.8, 0.8)</iconColor>
+		<thingStyleCategories>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Rustic</category>
+				<priority>2</priority>
+			</li>
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>Rustic</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Tribal</tag>
+				<baseWeight>0.4</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Urban</tag>
+				<baseWeight>0.9</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Punk</tag>
+				<baseWeight>0</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Royal</tag>
+				<baseWeight>0.2</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardTribal</tag>
+				<baseWeight>0.1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardRustic</tag>
+				<baseWeight>0.2</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+	
+	<CultureDef>
+		<defName>PF2_FirstWorlder</defName>
+		<label>First worlder</label>
+		<description>a whimsical set of costumes from the magical lands of the First World.</description>
+		<pawnNameMaker>PF2_NamerPersonGnomeMale</pawnNameMaker>
+		<pawnNameMakerFemale>PF2_NamerPersonGnomeFemale</pawnNameMakerFemale>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_NamerIdeoFirstWorlder</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_NamerDeityFirstWorlder</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_DeityTypeMakerFirstWorlder</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_LeaderTitleMaker_FirstWorlder</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginTribal</li>
+		</allowedPlaceTags>
+		<iconPath>World/WorldObjects/GnomeFaction3</iconPath>
+		<iconColor>(0.8, 0.8, 0.8)</iconColor>
+		<styleItemTags>
+			<li>
+				<tag>Urban</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Punk</tag>
+				<baseWeight>0.8</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>Royal</tag>
+				<baseWeight>0.4</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardTribal</tag>
+				<baseWeight>0.1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardRustic</tag>
+				<baseWeight>0.3</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardUrban</tag>
+				<baseWeight>0.4</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardPunk</tag>
+				<baseWeight>0.2</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+ 
+	<CultureDef>
+		<defName>PF2_Draconic</defName>
+		<label>Draconic</label>
+		<description>an idealized vision of kobolds' interpretation of dragon might and imponence.</description>
+		<pawnNameMaker>PF2_NamerPersonKoboldMale</pawnNameMaker>
+		<pawnNameMakerFemale>PF2_NamerPersonKoboldFemale</pawnNameMakerFemale>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_NamerIdeoDraconic</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_NamerDeityDraconic</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_DeityTypeMakerDraconic</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_LeaderTitleMaker_Draconic</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginTribal</li>
+		</allowedPlaceTags>
+		<iconPath>World/WorldObjects/KoboldFaction2</iconPath>
+		<styleItemTags>
+			<li>
+				<tag>Tribal</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardTribal</tag>
+				<baseWeight>0</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooFaceTribal</tag>
+				<baseWeight>0.4</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooBodyTribal</tag>
+				<baseWeight>0.2</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+ 
+	<CultureDef>
+		<defName>PF2_Oprakan</defName>
+		<label>Oprakan</label>
+		<description>a pragmatic and military culture followed by hobgoblins.</description>
+		<pawnNameMaker>PF2_NamerPersonHobgoblinMale</pawnNameMaker>
+		<pawnNameMakerFemale>PF2_NamerPersonHobgoblinFemale</pawnNameMakerFemale>
+		<ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_NamerIdeoOprakan</ideoNameMaker>
+		<deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_NamerDeityOprakan</deityNameMaker>
+		<deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_DeityTypeMakerOprakan</deityTypeMaker>
+		<leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">PF2_LeaderTitleMaker_Oprakan</leaderTitleMaker>
+		<festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+		<allowedPlaceTags>
+			<li>OriginTribal</li>
+		</allowedPlaceTags>
+		<iconPath>World/WorldObjects/Expanding/HobgoblinFaction</iconPath>
+		<iconColor>(0.8, 0.8, 0.8)</iconColor>
+		<thingStyleCategories>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Spikecore</category>
+				<priority>2</priority>
+			</li>
+		</thingStyleCategories>
+		<styleItemTags>
+			<li>
+				<tag>Tribal</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoBeard</tag>
+				<baseWeight>10</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>BeardTribal</tag>
+				<baseWeight>0.3</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooFaceTribal</tag>
+				<baseWeight>0.8</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>TattooBodyTribal</tag>
+				<baseWeight>0.8</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+			<li>
+				<tag>NoTattoo</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+	</CultureDef>
+	
+</Defs>
