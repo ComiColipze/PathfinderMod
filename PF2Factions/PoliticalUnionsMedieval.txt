@@ -1,0 +1,46 @@
+﻿//Common with outlanders
+union
+nation
+confederacy
+confederation
+alliance
+kin league
+covenant
+treaty
+pact
+enclave
+state
+coalition
+dominion
+chancellery
+federation
+republic
+conglomerate
+commonwealth
+
+//Tribe specific
+kinship
+people
+tribe
+league
+compact
+accord
+concord
+amalgamation
+commune
+unification
+horde
+community
+
+//Medieval specific
+kingdom
+empire
+brotherhood
+dynasty
+grand duchy
+satrapy
+oligarchy
+despotate
+duchy
+council
+patriarchate

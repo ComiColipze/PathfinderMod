@@ -1,0 +1,11 @@
+Castle
+Fort
+Keep
+Citadel
+Palace
+Hold
+Stronghold
+Fortress
+Village
+Feud
+Wall
