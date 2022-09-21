@@ -9,7 +9,14 @@ covenant
 treaty
 pact
 enclave
+state
 coalition
+dominion
+chancellery
+federation
+republic
+conglomerate
+commonwealth
 
 //Tribe specific
 kinship
@@ -20,12 +27,20 @@ compact
 accord
 concord
 amalgamation
+commune
 unification
+horde
+community
 
 //Medieval specific
 kingdom
 empire
+brotherhood
 dynasty
+grand duchy
+satrapy
+oligarchy
+despotate
 duchy
-commune
 council
+patriarchate
