@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded - Security</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+
+                <VFECore.SiegeParameterSetDef>
+                    <defName>MedievalMod</defName>
+                    <coverDef>VFES_ShortWall</coverDef>
+                    <artilleryBuildingTags>
+                        <li>ArtilleryMedieval_BaseDestroyer</li>
+                    </artilleryBuildingTags>
+                    <artilleryCountRange>1~2</artilleryCountRange>
+                    <mealDef>Pemmican</mealDef>
+                </VFECore.SiegeParameterSetDef>
+
+            </value>
+        </match>
+    </Operation>
+
+
+</Patch>

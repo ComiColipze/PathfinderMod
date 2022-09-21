@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ScenarioDef>
+        <defName>PF2_ExiledForHumiliation</defName>
+        <label>Exiled for Humiliation</label>
+        <description>You dishonored yourself in front of the high kings, your brothers and your sisters. Lost or broke your clan dagger, slighted your brethren, insulted their gods or even cut the beard of a fellow dwarf are one of the transgressions any dwarf will not forgive. To not face hatred by your own people, you chose exile, followed by three individuals whom too commited the same vile acts. Now free from your former clan's harsh laws, you can now settle a new clan and search for your own Quest for Sky.\n\nNote:  Since you'll start with few supplies, lack technology, and the dwarven clan being always hostile, this is a difficult scenario.</description>
+        <scenario>
+            <summary>Four exiled dwarves in search for a new free life. Difficult.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>PF2_DwarfPlayerFaction</factionDef>
+            </playerFaction>
+            <parts>
+
+                <!-- Config pages -->
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+                    <def>ConfigPage_ConfigureStartingPawns</def>
+                    <pawnCount>4</pawnCount>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                </li>
+
+                <!-- Player starting stuff spawn method-->
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>Standing</method>
+                </li>
+
+                <!-- Player pawns modifiers -->
+                <li Class="ScenPart_SetNeedLevel">
+                    <def>SetNeedLevel</def>
+                    <visible>false</visible>
+                    <context>PlayerStarter</context>
+                    <chance>1.0</chance>
+                    <need>Food</need>
+                    <levelRange>
+                        <min>0.5</min>
+                        <max>0.7</max>
+                    </levelRange>
+                </li>
+
+                <!-- Player starting things -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>200</count>
+				</li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Gold</thingDef>
+                    <count>150</count>
+                </li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Pemmican</thingDef>
+					<count>450</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineHerbal</thingDef>
+					<count>10</count>
+				</li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_LongSword</thingDef>
+                    <stuff>Steel</stuff>
+                    <count>1</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_Mace</thingDef>
+                    <stuff>Steel</stuff>
+                    <count>1</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_Knife</thingDef>
+                    <stuff>Steel</stuff>
+                    <count>2</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Apparel_PlateArmor</thingDef>
+                    <stuff>Steel</stuff>
+                    <count>2</count>
+                </li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<count>4</count>
+					<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+				</li>
+
+                <!-- Faction relations -->
+                <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+                    <def>VFEC_ForcedFactionGoodwill</def>
+                    <factionDef>PF2_DwarfFaction</factionDef>
+                    <alwaysHostile>true</alwaysHostile>
+                    <visible>false</visible>
+                </li>
+
+                <!-- Game start dialog -->
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+					<text>After humiliating yourself on your former home, you and three forsaken brethren got exiled and will try to forge a new, better version of the dwarven clan. However, by leaving your people, and abandoning your high king, the dwarven clan has closed their stone gates for you; you will be unable to befriend them.</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+
+            </parts>
+        </scenario>
+    </ScenarioDef>
+
+    <ScenarioDef>
+        <defName>PF2_ReturningfromDisaster</defName>
+        <label>Returning from Disaster</label>
+        <description>You finally returned. For hundreds of years, you've been awaiting the moment to return to your ancestral home. A terrible cataclysm has threatened your people past centuries ago, forcing them to leave their settlements, stories and past via ships that traveled for decades to a neighboring planet. You are still as anxious as a turtle walking through a roadway, but your spirit never falter. Now, with your chosen partner, you will finally claim what was your birthright.\n\nNote: Since you start with two colonists with few resources and less technology, this is a difficult scenario.</description>
+        <scenario>
+            <summary>An elven couple arriving at their former planet after a cataclysm. Difficult.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>PF2_ElfPlayerFaction</factionDef>
+            </playerFaction>
+            <parts>
+
+                <!-- Config pages -->
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+                    <def>ConfigPage_ConfigureStartingPawns</def>
+                    <pawnCount>2</pawnCount>
+                    <pawnChoiceCount>4</pawnChoiceCount>
+                </li>
+
+                <!-- Player starting stuff spawn method-->
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>DropPods</method>
+					<visible>false</visible>
+                </li>
+
+                <!-- Player pawns modifiers -->
+				<li Class="ScenPart_ForcedHediff">
+					<def>ForcedHediff</def>
+					<visible>false</visible>
+					<context>PlayerStarter</context>
+					<chance>0.2</chance>
+					<hediff>CryptosleepSickness</hediff>
+					<hideOffMap>true</hideOffMap>
+					<severityRange>1~1</severityRange>
+				</li>
+
+                <!-- Player starting things -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>600</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>10</count>
+				</li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_LongSword</thingDef>
+                    <stuff>Plasteel</stuff>
+                    <count>1</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_Knife</thingDef>
+                    <stuff>Plasteel</stuff>
+                    <count>1</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Bow_Great</thingDef>
+                </li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<count>1</count>
+					<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+				</li>
+
+                <!-- Game start dialog -->
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+					<text>Finally, you've waited paciently to come back, alongside with a fellow elf to make you company. A disaster has forced you to evacuate to another planet. But even if you return in a cryptosleep drop pods, your technology has been lost due how elves adapt and innovate.</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+
+            </parts>
+        </scenario>
+    </ScenarioDef>
+
+</Defs>
