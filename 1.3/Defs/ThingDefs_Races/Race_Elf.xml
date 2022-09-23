@@ -317,21 +317,18 @@
 	<statBases>
 		<MarketValue>2750</MarketValue>
 		<MoveSpeed>5.4</MoveSpeed>
-		<Flammability>1.05</Flammability>
+		<Flammability>1.1</Flammability>
 		<ComfyTemperatureMin>16</ComfyTemperatureMin>
 		<ComfyTemperatureMax>26</ComfyTemperatureMax>
 		<LeatherAmount>55</LeatherAmount>
 		<RoyalFavorValue>5</RoyalFavorValue>
-        <CarryingCapacity>-10</CarryingCapacity>
-        <GeneralLaborSpeed>-0.10</GeneralLaborSpeed>
+        <CarryingCapacity>-25</CarryingCapacity>
 		<PsychicSensitivity>1.20</PsychicSensitivity>
 		<MiningSpeed>0.7</MiningSpeed>
 		<ConstructionSpeed>0.7</ConstructionSpeed>
 		<SmoothingSpeed>0.7</SmoothingSpeed>
 		<EatingSpeed>0.8</EatingSpeed>
-		<GlobalLearningFactor>1.15</GlobalLearningFactor>
-		<NegotiationAbility>1.2</NegotiationAbility>
-		<TradePriceImprovement>1.2</TradePriceImprovement>
+		<GlobalLearningFactor>1.20</GlobalLearningFactor>
 	</statBases>
 	<tools>
 		<li>
@@ -339,7 +336,7 @@
 			<capacities>
 				<li>Blunt</li>
 			</capacities>
-			<power>8.2</power>
+			<power>7.8</power>
 			<cooldownTime>2</cooldownTime>
 			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 			<surpriseAttack>
@@ -356,7 +353,7 @@
 			<capacities>
 				<li>Blunt</li>
 			</capacities>
-			<power>8.2</power>
+			<power>7.8</power>
 			<cooldownTime>2</cooldownTime>
 			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 			<surpriseAttack>
@@ -373,7 +370,7 @@
 			<capacities>
 				<li>Bite</li>
 			</capacities>
-			<power>8.2</power>
+			<power>7.8</power>
 			<cooldownTime>2</cooldownTime>
 			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 			<chanceFactor>0.07</chanceFactor>
@@ -383,7 +380,7 @@
 			<capacities>
 				<li>Blunt</li>
 			</capacities>
-			<power>5</power>
+			<power>4.6</power>
 			<cooldownTime>2</cooldownTime>
 			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>

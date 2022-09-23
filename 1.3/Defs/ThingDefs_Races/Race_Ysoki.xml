@@ -286,14 +286,14 @@
 	<statBases>
 		<Mass>35</Mass>
 		<MarketValue>1750</MarketValue>
-		<MoveSpeed>4.8</MoveSpeed>
-		<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		<MoveSpeed>4.2</MoveSpeed>
+		<ComfyTemperatureMin>8</ComfyTemperatureMin>
 		<ComfyTemperatureMax>28</ComfyTemperatureMax>
 		<LeatherAmount>35</LeatherAmount>
 		<RoyalFavorValue>3</RoyalFavorValue>
 		<WorkSpeedGlobal>1.15</WorkSpeedGlobal>
 		<GlobalLearningFactor>1.10</GlobalLearningFactor>
-		<GeneralLaborSpeed>1.10</GeneralLaborSpeed>
+		<GeneralLaborSpeed>1.15</GeneralLaborSpeed>
 	</statBases>
 	<tools>
 		<li>
@@ -357,7 +357,7 @@
 		<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 		<intelligence>Humanlike</intelligence>
 		<makesFootprints>true</makesFootprints>
-		<lifeExpectancy>40</lifeExpectancy>
+		<lifeExpectancy>50</lifeExpectancy>
 		<leatherDef>Leather_Light</leatherDef>
 		<nameGenerator>PF2_NamerPersonYsokiMale</nameGenerator>
 		<nameGeneratorFemale>PF2_NamerPersonYsokiFemale</nameGeneratorFemale>
@@ -369,7 +369,7 @@
 		<gestationPeriodDays>15</gestationPeriodDays>
 		<meatMarketValue>0.8</meatMarketValue>
 		<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
-		<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
+		<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 		<litterSizeCurve>
 			<points>
 				<li>(0.5, 0)</li>

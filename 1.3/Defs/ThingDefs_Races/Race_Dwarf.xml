@@ -137,15 +137,15 @@
     </alienRace>
 	<statBases>
 		<MarketValue>1750</MarketValue>
-		<MoveSpeed>4.2</MoveSpeed>
+		<MoveSpeed>4.0</MoveSpeed>
 		<ComfyTemperatureMin>-48</ComfyTemperatureMin>
 		<ComfyTemperatureMax>28</ComfyTemperatureMax>
 		<LeatherAmount>65</LeatherAmount>
 		<RoyalFavorValue>3</RoyalFavorValue>
 		<CarryingCapacity>90</CarryingCapacity>
 		<MiningSpeed>2.2</MiningSpeed>
-		<MiningYield>1.3</MiningYield>
-		<ToxicSensitivity>1.25</ToxicSensitivity>
+		<MiningYield>1.2</MiningYield>
+		<ToxicSensitivity>0.50</ToxicSensitivity>
         <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
 	</statBases>
 		<tools>

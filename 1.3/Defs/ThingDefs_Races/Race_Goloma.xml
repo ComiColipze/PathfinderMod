@@ -202,7 +202,7 @@
 		<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
 		<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
 		<ArmorRating_Heat>0.15</ArmorRating_Heat>
-		<ToxicSensitivity>1.15</ToxicSensitivity>
+		<ToxicSensitivity>0.75</ToxicSensitivity>
 	</statBases>
 		<tools>
 			<li>
@@ -311,7 +311,7 @@
 			<gestationPeriodDays>30</gestationPeriodDays>
 			<meatMarketValue>0.8</meatMarketValue>
 			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
-			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+			<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>

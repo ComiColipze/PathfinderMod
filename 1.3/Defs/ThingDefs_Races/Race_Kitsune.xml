@@ -97,6 +97,9 @@
                 <li>
                     <defName>Tough</defName>
 				</li>
+                <li>
+                    <defName>Nimble</defName>
+				</li>
 				<li>
 					<defName>Beauty</defName>
 					<degree>-1</degree>
@@ -111,6 +114,7 @@
 					<li>Average_Normal_A</li>
 					<li>Average_Normal_B</li>
 					<li>Average_Normal_C</li>
+					<li>Average_Normal_D</li>
 				</aliencrowntypes>
 				<alienbodytypes>
 					<li>Male</li>

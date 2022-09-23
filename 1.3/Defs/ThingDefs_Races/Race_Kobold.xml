@@ -321,7 +321,7 @@
 		<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 		<ArmorRating_Sharp>0.25</ArmorRating_Sharp>
 		<ArmorRating_Heat>0.05</ArmorRating_Heat>
-		<WorkSpeedGlobal>1.10</WorkSpeedGlobal>
+		<WorkSpeedGlobal>1.2</WorkSpeedGlobal>
 		<MiningSpeed>1.2</MiningSpeed>
 	</statBases>
 	<tools>

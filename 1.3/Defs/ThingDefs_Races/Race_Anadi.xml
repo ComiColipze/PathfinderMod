@@ -90,6 +90,11 @@
 			<humanRecipeImport>true</humanRecipeImport>
 			<immuneToXenophobia>false</immuneToXenophobia>
 			<minAgeForAdulthood>15</minAgeForAdulthood>
+			<disallowedTraits>
+                <li>
+                    <defName>Nimble</defName>
+				</li>
+            </disallowedTraits>
 			<alienPartGenerator>
 				<useGenderedHeads>false</useGenderedHeads>
 				<aliencrowntypes>
@@ -176,8 +181,8 @@
     </alienRace>
 	<statBases>
 		<MarketValue>1750</MarketValue>
-		<MoveSpeed>5.2</MoveSpeed>
-		<ComfyTemperatureMin>0</ComfyTemperatureMin>
+		<MoveSpeed>5.0</MoveSpeed>
+		<ComfyTemperatureMin>16</ComfyTemperatureMin>
 		<ComfyTemperatureMax>26</ComfyTemperatureMax>
 		<LeatherAmount>75</LeatherAmount>
 		<RoyalFavorValue>3</RoyalFavorValue>

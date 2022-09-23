@@ -234,13 +234,13 @@
     </alienRace>
 	<statBases>
 		<MarketValue>1750</MarketValue>
-		<MoveSpeed>4.2</MoveSpeed>
+		<MoveSpeed>4.0</MoveSpeed>
 		<ComfyTemperatureMin>16</ComfyTemperatureMin>
 		<ComfyTemperatureMax>26</ComfyTemperatureMax>
 		<LeatherAmount>65</LeatherAmount>
 		<RoyalFavorValue>3</RoyalFavorValue>
-		<ToxicSensitivity>1.2</ToxicSensitivity>
-        <ImmunityGainSpeed>1.45</ImmunityGainSpeed>
+		<ToxicSensitivity>0.75</ToxicSensitivity>
+        <ImmunityGainSpeed>1.4</ImmunityGainSpeed>
 	</statBases>
 		<tools>
 			<li>
@@ -315,7 +315,7 @@
 			<gestationPeriodDays>25</gestationPeriodDays>
 			<meatMarketValue>0.8</meatMarketValue>
 			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
-			<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+			<manhunterOnTameFailChance>0.20</manhunterOnTameFailChance>
 			<litterSizeCurve>
 				<points>
 					<li>(0.5, 0)</li>

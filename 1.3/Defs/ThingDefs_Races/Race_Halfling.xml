@@ -119,8 +119,9 @@
         </compatibility>
     </alienRace>	
 	<statBases>
+		<Mass>35</Mass>
 		<MarketValue>1750</MarketValue>
-		<MoveSpeed>4.2</MoveSpeed>
+		<MoveSpeed>4.0</MoveSpeed>
 		<ComfyTemperatureMin>16</ComfyTemperatureMin>
 		<ComfyTemperatureMax>26</ComfyTemperatureMax>
 		<LeatherAmount>35</LeatherAmount>
@@ -128,6 +129,8 @@
 		<MeleeDodgeChance>15</MeleeDodgeChance>
 		<PawnTrapSpringChance>0.1</PawnTrapSpringChance>
 		<ForagedNutritionPerDay>0.3</ForagedNutritionPerDay>
+		<PlantWorkSpeed>1.2</PlantWorkSpeed>
+		<PlantHarvestYield>1.2</PlantHarvestYield>
 	</statBases>
 	<tools>
 		<li>

@@ -322,9 +322,9 @@
 		<CarryingCapacity>90</CarryingCapacity>
 		<ResearchSpeed>0.7</ResearchSpeed>
 		<MedicalOperationSpeed>0.7</MedicalOperationSpeed>
-		<MedicalTendSpeed>0.7</MedicalTendSpeed>
 		<DrugSynthesisSpeed>0.7</DrugSynthesisSpeed>
-		<SmeltingSpeed>1.3</SmeltingSpeed>
+		<ConstructionSpeed>1.2</ConstructionSpeed>
+		<SmeltingSpeed>1.2</SmeltingSpeed>
 	</statBases>
 	<tools>
 		<li>

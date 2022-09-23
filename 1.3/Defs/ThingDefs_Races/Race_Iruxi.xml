@@ -111,9 +111,9 @@
 					<li>Average_Normal</li>
 				</aliencrowntypes>
 				<alienbodytypes>
+					<li>Male</li>
 					<li>Thin</li>
 					<li>Hulk</li>
-					<li>Male</li>
 				</alienbodytypes>
 				<colorChannels>	                    
 					<li>
@@ -390,7 +390,7 @@
     </alienRace>
 	<statBases>
 		<MarketValue>1750</MarketValue>
-		<MoveSpeed>4.0</MoveSpeed>
+		<MoveSpeed>4.2</MoveSpeed>
 		<ComfyTemperatureMin>-10</ComfyTemperatureMin>
 		<ComfyTemperatureMax>36</ComfyTemperatureMax>
 		<LeatherAmount>75</LeatherAmount>

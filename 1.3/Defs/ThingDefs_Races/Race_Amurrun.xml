@@ -94,6 +94,9 @@
                 <li>
                     <defName>Undergrounder</defName>
 				</li>
+                <li>
+                    <defName>Nimble</defName>
+				</li>
             </disallowedTraits>
 			<alienPartGenerator>
 				<aliencrowntypes>
@@ -243,7 +246,7 @@
     </alienRace>
 	<statBases>
 		<MarketValue>1750</MarketValue>
-		<MoveSpeed>5.3</MoveSpeed>
+		<MoveSpeed>5.2</MoveSpeed>
 		<ComfyTemperatureMin>0</ComfyTemperatureMin>
 		<ComfyTemperatureMax>26</ComfyTemperatureMax>
 		<LeatherAmount>75</LeatherAmount>

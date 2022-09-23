@@ -381,7 +381,7 @@
 		<gestationPeriodDays>15</gestationPeriodDays>
 		<meatMarketValue>0.8</meatMarketValue>
 		<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
-		<manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
+		<manhunterOnTameFailChance>0.20</manhunterOnTameFailChance>
 		<litterSizeCurve>
 			<points>
 				<li>(0.5, 0)</li>

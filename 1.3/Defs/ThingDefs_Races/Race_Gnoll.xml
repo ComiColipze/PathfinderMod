@@ -321,8 +321,11 @@
 		<RoyalFavorValue>3</RoyalFavorValue>
 		<CarryingCapacity>90</CarryingCapacity>
 		<PlantHarvestYield>0.75</PlantHarvestYield>
-		<AnimalGatherYield>1.10</AnimalGatherYield>
+		<PlantWorkSpeed>0.75</PlantWorkSpeed>
+		<AnimalGatherSpeed>1.15</AnimalGatherSpeed>
+		<AnimalGatherYield>1.15</AnimalGatherYield>
 		<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
+		<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
 	</statBases>
 	<tools>
 		<li>
@@ -367,7 +370,7 @@
 			<power>16.2</power>
 			<cooldownTime>2</cooldownTime>
 			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-			<chanceFactor>0.07</chanceFactor>
+			<chanceFactor>0.2</chanceFactor>
 		</li>
 		<li>
 			<label>head</label>

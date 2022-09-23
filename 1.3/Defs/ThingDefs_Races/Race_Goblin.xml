@@ -361,7 +361,8 @@
 		<LeatherAmount>35</LeatherAmount>
 		<RoyalFavorValue>3</RoyalFavorValue>
 		<ResearchSpeed>0.75</ResearchSpeed>
-		<HungerRateMultiplier>0.95</HungerRateMultiplier>
+		<MedicalTendQuality>0.75</MedicalTendQuality>
+		<HungerRateMultiplier>1.2</HungerRateMultiplier>
 		<HuntingStealth>1.2</HuntingStealth>
 		<EatingSpeed>1.5</EatingSpeed>
         <FoodPoisonChance>0.25</FoodPoisonChance>
@@ -419,7 +420,7 @@
 		<nameGeneratorFemale>PF2_NamerPersonGoblinFemale</nameGeneratorFemale>
 		<useMeatFrom>Human</useMeatFrom>
 		<body>Human</body>
-		<baseBodySize>0.75</baseBodySize>
+		<baseBodySize>0.60</baseBodySize>
 		<baseHealthScale>0.95</baseHealthScale>
 		<foodType>OmnivoreHuman</foodType>
 		<gestationPeriodDays>10</gestationPeriodDays>

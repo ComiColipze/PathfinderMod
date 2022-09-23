@@ -181,7 +181,7 @@
 		<LeatherAmount>75</LeatherAmount>
 		<RoyalFavorValue>3</RoyalFavorValue>
 		<SocialImpact>1.2</SocialImpact>
-		<NegotiationAbility>1.1</NegotiationAbility>
+		<NegotiationAbility>1.2</NegotiationAbility>
 		<GlobalLearningFactor>1.25</GlobalLearningFactor>
 	</statBases>
 	<tools>
@@ -190,7 +190,7 @@
 			<capacities>
 				<li>Blunt</li>
 			</capacities>
-			<power>8.2</power>
+			<power>7.8</power>
 			<cooldownTime>2</cooldownTime>
 			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 			<surpriseAttack>
@@ -207,7 +207,7 @@
 			<capacities>
 				<li>Blunt</li>
 			</capacities>
-			<power>8.2</power>
+			<power>7.8</power>
 			<cooldownTime>2</cooldownTime>
 			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 			<surpriseAttack>
@@ -224,7 +224,7 @@
 			<capacities>
 				<li>Bite</li>
 			</capacities>
-			<power>8.2</power>
+			<power>7.8</power>
 			<cooldownTime>2</cooldownTime>
 			<linkedBodyPartsGroup>AvianBeak</linkedBodyPartsGroup>
 			<chanceFactor>0.07</chanceFactor>
@@ -234,7 +234,7 @@
 			<capacities>
 				<li>Blunt</li>
 			</capacities>
-			<power>5</power>
+			<power>4.6</power>
 			<cooldownTime>2</cooldownTime>
 			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
