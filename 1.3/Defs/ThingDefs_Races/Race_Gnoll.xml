@@ -145,6 +145,29 @@
 						</options>
 					</first>
 					</li>
+                    <li>
+					<name>hair</name>
+					<first Class="ColorGenerator_Options">
+						<options>
+                            <li>
+								<weight>15</weight>
+                                <only>(184, 134, 11)</only>
+                            </li>
+                            <li>
+                                <weight>20</weight>
+                                <only>(218, 165, 32)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(145, 75, 25)</only>
+                            </li>
+                            <li>
+								<weight>15</weight>
+                                <only>(160, 85, 45)</only>
+                            </li>
+						</options>
+					</first>
+					</li>
                 </colorChannels>
 				<bodyAddons>
 					<li>

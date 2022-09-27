@@ -188,7 +188,7 @@
 								</li>
 							</options>
 						</first>
-					</li>
+					</li>                
 				</colorChannels>
 				<bodyAddons>
 					<li>
@@ -264,6 +264,12 @@
         </graphicPaths>
         <styleSettings>
 			<li>
+				<key>HairDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+			<li>
 				<key>BeardDef</key>
 				<value>
 					<hasStyle>false</hasStyle>
@@ -293,7 +299,6 @@
 		<RoyalFavorValue>3</RoyalFavorValue>
 		<WorkSpeedGlobal>1.15</WorkSpeedGlobal>
 		<GlobalLearningFactor>1.10</GlobalLearningFactor>
-		<GeneralLaborSpeed>1.15</GeneralLaborSpeed>
 	</statBases>
 	<tools>
 		<li>

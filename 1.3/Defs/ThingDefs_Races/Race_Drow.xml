@@ -2,12 +2,12 @@
 <Defs>
 
 	<AlienRace.RaceSettings>
-		<defName>Orc_Settings</defName>
+		<defName>Drow_Settings</defName>
 		<pawnKindSettings>
             <alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_OrcSlave</li>
+						<li>PF2_DrowSlave</li>
 					</kindDefs>
 					<chance>10.0</chance>
 				</li>
@@ -15,7 +15,7 @@
             <alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_OrcRefugee</li>
+						<li>PF2_DrowRefugee</li>
 					</kindDefs>
 					<chance>10.0</chance>
 				</li>
@@ -25,26 +25,26 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>PF2_OrcColonist</li>
+								<li>PF2_DrowColonist</li>
 							</kindDefs>
 							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PF2_OrcPlayerColony</li> 
+						<li>PF2_DrowPlayerColony</li> 
 					</factionDefs>
 				</li>
 				<li>
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>PF2_OrcTribal</li>
+								<li>PF2_DrowTribal</li>
 							</kindDefs>
 							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PF2_OrcPlayerTribe</li>
+						<li>PF2_DrowPlayerTribe</li>
 					</factionDefs>
 				</li>
 			</startingColonists>
@@ -53,26 +53,26 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>PF2_OrcColonist</li>
+								<li>PF2_DrowColonist</li>
 							</kindDefs>
 							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PF2_OrcPlayerColony</li> 
+						<li>PF2_DrowPlayerColony</li> 
 					</factionDefs>
 				</li>
 				<li>
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>PF2_OrcTribal</li>
+								<li>PF2_DrowTribal</li>
 							</kindDefs>
 							<chance>10.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PF2_OrcPlayerTribe</li> 
+						<li>PF2_DrowPlayerTribe</li> 
 					</factionDefs>
 				</li>
             </alienwandererkinds>
@@ -80,83 +80,81 @@
 	</AlienRace.RaceSettings>
 
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>PF2_Orc</defName>
-    <label>orc</label>
-    <description>Orcs are forged in the fires of violence and conflict, often from the moment they are born. As they live lives that are frequently cut brutally short, orcs revel in testing their strength against worthy foes, whether by challenging a higher-ranking member of their community for dominance or raiding a neighboring settlement. Many orcs seek glory as soon as they can walk and carry a blade or club, taming wild beasts or hunting deadly monsters.</description>
+    <defName>PF2_Drow</defName>
+    <label>drow</label>
+    <description>Dark reflections of surface elves, drow are shadowy hunters who strive to snuff out the world's light. Drow are powerful magical creatures who typically serve demons, and only their chaotic nature stops them from becoming an even greater menace. A select few forsake their race's depraved and nihilistic society to walk a heroic path.</description>
     <alienRace>
         <generalSettings>
-			<maleGenderProbability>0.65</maleGenderProbability>
-			<immuneToAge>false</immuneToAge>
+			<maleGenderProbability>0.35</maleGenderProbability>
+			<immuneToAge>true</immuneToAge>
 			<humanRecipeImport>true</humanRecipeImport>
 			<immuneToXenophobia>false</immuneToXenophobia>
-			<minAgeForAdulthood>14</minAgeForAdulthood>
+			<minAgeForAdulthood>110</minAgeForAdulthood>
 			<disallowedTraits>
                 <li>
                     <defName>Undergrounder</defName>
 				</li>
+                <li>
+                    <defName>Tough</defName>
+				</li>
+                <li>
+                    <defName>Psychopath</defName>
+				</li>
 				<li>
-					<defName>Psychopath</defName>
+					<defName>SpeedOffset</defName>
+					<degree>-1</degree>
 				</li>
 				<li>
 					<defName>Beauty</defName>
-					<degree>2</degree>
+					<degree>-1</degree>
 				</li>
 				<li>
-					<defName>Cannibal</defName>
+					<defName>Beauty</defName>
+					<degree>-2</degree>
 				</li>
-				<li>
-					<defName>TooSmart</defName>
-				</li>
-				<li>
-					<defName>Wimp</defName>
-				</li>
-			</disallowedTraits>
+            </disallowedTraits>
 			<alienPartGenerator>
 				<aliencrowntypes>
-					<li>Average_Normal</li>
+					<li>Red_Eyes</li>
+					<li>White_Eyes</li>
 				</aliencrowntypes>
 				<alienbodytypes>
-					<li>Hulk</li>
+					<li>Thin</li>
 					<li>Male</li>
 					<li>Female</li>
 				</alienbodytypes>
-				<getsGreyAt>40</getsGreyAt>
+				<customDrawSize>(1.15, 1.15)</customDrawSize>
+				<customHeadDrawSize>(1.15, 1.15)</customHeadDrawSize>
+				<headOffset>(0.0, 0.08)</headOffset>
+				<getsGreyAt>600</getsGreyAt>
 				<colorChannels>
                     <li>
 					<name>skin</name>
 					<first Class="ColorGenerator_Options">
 						<options>
                             <li>
-								<weight>15</weight>
-                                <only>(154, 205, 50)</only>
-                            </li>
-                            <li>
-                                <weight>20</weight>
-                                <only>(107, 142, 35)</only>
+                                <weight>10</weight>
+                                <only>(88, 97, 130)</only>
                             </li>
                             <li>
                                 <weight>10</weight>
-                                <only>(143, 188, 143)</only>
+                                <only>(128, 142, 187)</only>
                             </li>
                             <li>
-								<weight>15</weight>
-                                <only>(166, 122, 77)</only>
-                            </li>
-                            <li>
-								<weight>20</weight>
-								<only>(150, 153, 170)</only>
-                            </li>
-							<li>
-								<weight>20</weight>
-								<only>(122, 116, 126)</only>
-                            </li>
-                            <li>
-                                <weight>20</weight>
-                                <only>(255, 204, 153)</only>
-                            </li>
-							<li>
                                 <weight>10</weight>
-                                <only>(255, 175, 85)</only>
+                                <only>(139, 127, 137)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(144, 143, 176)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(88, 133, 162)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(119, 173, 207)</only>
                             </li>
 						</options>
 					</first>
@@ -167,31 +165,74 @@
 						<options>
                             <li>
                                 <weight>10</weight>
-                                <only>(40, 40, 40)</only>
+                                <only>(219, 219, 219)</only>
                             </li>
                             <li>
                                 <weight>10</weight>
-								<only>(55, 50, 50)</only>
+                                <only>(245, 245, 245)</only>
                             </li>
                             <li>
-								<weight>10</weight>
-                                <only>(55, 30, 0)</only>
+                                <weight>10</weight>
+                                <only>(224, 255, 255)</only>
                             </li>
                             <li>
-								<weight>10</weight>
-                                <only>(70, 35, 0)</only>
+                                <weight>10</weight>
+                                <only>(245, 245, 220)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(245, 255, 250)</only>
                             </li>
 						</options>
 					</first>
                     </li>
                 </colorChannels>
+				<bodyAddons>
+					<li>
+						<bodyPart>left ear</bodyPart>
+						<path>Things/Pawn/Elf/Ears/Left_Ears</path>
+						<colorChannel>skin</colorChannel>
+						<drawSize>(1.0,1.0)</drawSize>
+						<drawSizePortrait>(1.0,1.0)</drawSizePortrait>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<inFrontOfBody>true</inFrontOfBody>
+						<alignWithHead>true</alignWithHead>
+						<drawnDesiccated>false</drawnDesiccated>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+					<li>
+						<bodyPart>right ear</bodyPart>
+						<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+						<path>Things/Pawn/Elf/Ears/Right_Ears</path>
+						<colorChannel>skin</colorChannel>
+						<drawSize>(1.0,1.0)</drawSize>
+						<drawSizePortrait>(1.0,1.0)</drawSizePortrait>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<inFrontOfBody>true</inFrontOfBody>
+						<alignWithHead>true</alignWithHead>
+						<drawnDesiccated>false</drawnDesiccated>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+				</bodyAddons>
 			</alienPartGenerator>
-        </generalSettings>
-        <graphicPaths>
+		</generalSettings>
+		<graphicPaths>
 			<li>
-				<head>Things/Pawn/Orc/</head>
+				<head>Things/Pawn/Elf/DarkElf/</head>
 			</li>
         </graphicPaths>
+        <styleSettings>
+			<li>
+				<key>BeardDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+        </styleSettings>
         <thoughtSettings>
 			<cannotReceiveThoughts>
 				<li>ObservedLayingCorpse</li>
@@ -202,10 +243,6 @@
 				<li>KnowPrisonerDiedInnocent</li>
 				<li>AteRawFood</li>
 				<li>AteKibble</li>
-				<li>AteCorpse</li>
-				<li>AteHumanlikeMeatDirect</li>
-				<li>AteHumanlikeMeatAsIngredient</li>
-				<li>AteHumanlikeMeatAsIngredientCannibal</li>
 				<li>AteInsectMeatDirect</li>
 				<li>AteInsectMeatAsIngredient</li>
 				<li>AteWithoutTable</li>
@@ -221,60 +258,33 @@
 				<li>ColonistBanishedToDie</li>
 				<li>PrisonerBanishedToDie</li>
 				<li>ButcheredHumanlikeCorpseOpinion</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Abhorrent</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Know_Abhorrent</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Abhorrent</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent_Opinion</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Disapproved</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AteAlienMeat_Know_Disapproved</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Disapproved</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ObservedGibbetCage</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ObservedSkullspike</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Abhorrent</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent_Opinion</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Disapproved</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved_Opinion</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved_Opinion</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Abhorrent</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Abhorrent</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Abhorrent_Opinion</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Know_Abhorrent</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_Abhorrent</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Horrible</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Horrible</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Horrible</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Horrible_Opinion</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Know_Horrible</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_Horrible</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Disapproved</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">AteHumanMeat_Know_Disapproved</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Disapproved</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Disapproved</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Disapproved_Opinion</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_Disapproved</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_Preferred</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_RequiredStrong</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_RequiredRavenous</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">AteMeat_Abhorrent</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">AteMeat_Know_Abhorrent</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">AteMeat_Horrible</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">AteMeat_Know_Horrible</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">AteMeat_Disapproved</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">AteMeat_Know_Disapproved</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">ExecutedGuest_Know_Abhorrent_Mood</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">ObservedGibbetCage</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">ObservedSkullspike</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">BlindingCeremony_Know_Horrible</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Horrible</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Horrible</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Horrible_Opinion</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">HumanLeatherApparel_Horrible</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Disapproved</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Disapproved</li>
-				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Disapproved_Opinion</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">KilledInnocentAnimal_Know_Abhorrent</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">KilledInnocentAnimal_Know_Abhorrent_Mood</li>
 				<li MayRequire="Ludeon.RimWorld.Ideology">KilledInnocentAnimal_Horrible</li>
@@ -311,19 +321,23 @@
         </compatibility>
     </alienRace>
 	<statBases>
-		<Mass>90</Mass>
-		<MarketValue>1750</MarketValue>
-		<MoveSpeed>4.4</MoveSpeed>
-		<ComfyTemperatureMin>6</ComfyTemperatureMin>
-		<ComfyTemperatureMax>30</ComfyTemperatureMax>
-		<LeatherAmount>85</LeatherAmount>
-		<RoyalFavorValue>3</RoyalFavorValue>
-		<HungerRateMultiplier>0.75</HungerRateMultiplier>
-		<CarryingCapacity>90</CarryingCapacity>
-		<ResearchSpeed>0.7</ResearchSpeed>
-		<DrugSynthesisSpeed>0.7</DrugSynthesisSpeed>
-		<ConstructionSpeed>1.2</ConstructionSpeed>
-		<SmeltingSpeed>1.2</SmeltingSpeed>
+		<MarketValue>2750</MarketValue>
+		<MoveSpeed>5.4</MoveSpeed>
+		<Flammability>1.1</Flammability>
+		<ComfyTemperatureMin>-12</ComfyTemperatureMin>
+		<ComfyTemperatureMax>26</ComfyTemperatureMax>
+		<LeatherAmount>50</LeatherAmount>
+		<RoyalFavorValue>6</RoyalFavorValue>
+        <CarryingCapacity>45</CarryingCapacity>
+		<PsychicSensitivity>1.5</PsychicSensitivity>
+		<WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+		<GeneralLaborSpeed>0.8</GeneralLaborSpeed>
+		<SocialImpact>1.25</SocialImpact>
+		<EatingSpeed>0.8</EatingSpeed>
+		<ToxicSensitivity>0.75</ToxicSensitivity>
+		<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">1.2</SuppressionPower>
+		<RestRateMultiplier>1.2</RestRateMultiplier>
+		<GlobalLearningFactor>1.15</GlobalLearningFactor>
 	</statBases>
 	<tools>
 		<li>
@@ -331,8 +345,8 @@
 			<capacities>
 				<li>Blunt</li>
 			</capacities>
-			<power>10</power>
-			<cooldownTime>2.1</cooldownTime>
+			<power>7</power>
+			<cooldownTime>2</cooldownTime>
 			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 			<surpriseAttack>
 				<extraMeleeDamages>
@@ -348,8 +362,8 @@
 			<capacities>
 				<li>Blunt</li>
 			</capacities>
-			<power>10</power>
-			<cooldownTime>2.1</cooldownTime>
+			<power>7</power>
+			<cooldownTime>2</cooldownTime>
 			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 			<surpriseAttack>
 				<extraMeleeDamages>
@@ -365,8 +379,8 @@
 			<capacities>
 				<li>Bite</li>
 			</capacities>
-			<power>12</power>
-			<cooldownTime>2.4</cooldownTime>
+			<power>7</power>
+			<cooldownTime>2</cooldownTime>
 			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 			<chanceFactor>0.07</chanceFactor>
 		</li>
@@ -375,31 +389,31 @@
 			<capacities>
 				<li>Blunt</li>
 			</capacities>
-			<power>8</power>
-			<cooldownTime>1.8</cooldownTime>
+			<power>3.8</power>
+			<cooldownTime>2</cooldownTime>
 			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
 			<chanceFactor>0.2</chanceFactor>
 		</li>
 	</tools>
 	<race>
+		<leatherDef>Leather_Human</leatherDef>
 		<thinkTreeMain>Humanlike</thinkTreeMain>
 		<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 		<intelligence>Humanlike</intelligence>
 		<makesFootprints>true</makesFootprints>
-		<lifeExpectancy>60</lifeExpectancy>
-		<leatherDef>Leather_Human</leatherDef>
-		<nameGenerator>PF2_NamerPersonOrcMale</nameGenerator>
-		<nameGeneratorFemale>PF2_NamerPersonOrcFemale</nameGeneratorFemale>
+		<lifeExpectancy>600</lifeExpectancy>
+		<nameGenerator>PF2_NamerPersonDrowMale</nameGenerator>
+		<nameGeneratorFemale>PF2_NamerPersonDrowFemale</nameGeneratorFemale>
 		<useMeatFrom>Human</useMeatFrom>
 		<body>Human</body>
-		<baseBodySize>1.2</baseBodySize>
-		<baseHealthScale>1.25</baseHealthScale>
+		<baseBodySize>1.0</baseBodySize>
+		<baseHealthScale>0.9</baseHealthScale>
 		<foodType>OmnivoreHuman</foodType>
-		<gestationPeriodDays>15</gestationPeriodDays>
-		<meatMarketValue>0.8</meatMarketValue>
+		<gestationPeriodDays>50</gestationPeriodDays>
+		<meatMarketValue>1.2</meatMarketValue>
 		<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
-		<manhunterOnTameFailChance>0.30</manhunterOnTameFailChance>
+		<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 		<litterSizeCurve>
 			<points>
 				<li>(0.5, 0)</li>
@@ -415,19 +429,19 @@
 			</li>
 			<li>
 				<def>HumanlikeToddler</def>
-				<minAge>1</minAge>
+				<minAge>3.5</minAge>
 			</li>
 			<li>
 				<def>HumanlikeChild</def>
-				<minAge>4</minAge>
+				<minAge>7.5</minAge>
 			</li>
 			<li>
 				<def>HumanlikeTeenager</def>
-				<minAge>8</minAge>
+				<minAge>15</minAge>
 			</li>
 			<li>
 				<def>HumanlikeAdult</def>
-				<minAge>12</minAge>
+				<minAge>20</minAge>
 			</li>
 		</lifeStageAges>
 		<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
@@ -439,31 +453,32 @@
 		</specialShadowData>
 		<ageGenerationCurve>
 			<points>
-				<li>(8,0)</li>
-				<li>(12,100)</li>
-				<li>(25,100)</li>
-				<li>(30,30)</li>
-				<li>(40,18)</li>
-				<li>(50,10)</li>
-				<li>(60,3)</li>
-				<li>(70,0)</li>
+				<li>(10,0)</li>
+				<li>(20,0)</li>
+				<li>(100,100)</li>
+				<li>(150,100)</li>
+				<li>(200,30)</li>
+				<li>(350,18)</li>
+				<li>(500,10)</li>
+				<li>(600,3)</li>
+				<li>(650,0)</li>
 			</points>
 		</ageGenerationCurve>
 		<hediffGiverSets>
 			<li>OrganicStandard</li>
-            <li>Human</li>
+			<li>Human</li>
 		</hediffGiverSets>
 	</race>
-	<recipes>
-		<li>ExciseCarcinoma</li>
-		<li>AdministerMechSerumHealer</li>
-		<li>RemoveBodyPart</li>
-		<li>Euthanize</li>
-		<li>Anesthetize</li>
-		<li>CureScaria</li>
-		<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
-		<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
-	</recipes>
+		<recipes>
+			<li>ExciseCarcinoma</li>
+			<li>AdministerMechSerumHealer</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+			<li>CureScaria</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+		</recipes>
 </AlienRace.ThingDef_AlienRace>
 
 </Defs>

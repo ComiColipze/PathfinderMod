@@ -33,5 +33,91 @@
 			</rulesRaw>
 		</rulePack>
 	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerFactionGrippli</defName>
+		<include>
+			<li>TribalWordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[GrippliList1][GrippliList2][GrippliList3][GrippliList2][GrippliList4] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[GrippliList1][GrippliList2][GrippliList3][GrippliList2][GrippliList3][GrippliList2] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[GrippliList1][GrippliList2][GrippliList4] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[GrippliList1][GrippliList2][GrippliList3][GrippliList2] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[GrippliList2][GrippliList3][GrippliList2][GrippliList4] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[GrippliList2][GrippliList3][GrippliList2] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[GrippliList2][GrippliList3][GrippliList2][GrippliList3][GrippliList2] [PoliticalUnionsMedieval]</li>
+				<li>r_name->The [GrippliList1][GrippliList2][GrippliList3][GrippliList2][GrippliList4] [PoliticalUnionsMedieval]</li>
+				<li>r_name->The [GrippliList1][GrippliList2][GrippliList3][GrippliList2][GrippliList3][GrippliList2] [PoliticalUnionsMedieval]</li>
+				<li>r_name->The [GrippliList1][GrippliList2][GrippliList4] [PoliticalUnionsMedieval]</li>
+				<li>r_name->The [GrippliList1][GrippliList2][GrippliList3][GrippliList2] [PoliticalUnionsMedieval]</li>
+				<li>r_name->The [GrippliList2][GrippliList3][GrippliList2][GrippliList4] [PoliticalUnionsMedieval]</li>
+				<li>r_name->The [GrippliList2][GrippliList3][GrippliList2] [PoliticalUnionsMedieval]</li>
+				<li>r_name->The [GrippliList2][GrippliList3][GrippliList2][GrippliList3][GrippliList2] [PoliticalUnionsMedieval]</li>
+				<li>r_name->The [Color] [TerrainFeature] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[PoliticalUnionsMedieval] of [GrippliList1][GrippliList2][GrippliList3][GrippliList2][GrippliList4]</li>
+				<li>r_name->[PoliticalUnionsMedieval] of [GrippliList1][GrippliList2][GrippliList3][GrippliList2][GrippliList3][GrippliList2]</li>
+				<li>r_name->[PoliticalUnionsMedieval] of [GrippliList1][GrippliList2][GrippliList4]</li>
+				<li>r_name->[PoliticalUnionsMedieval] of [GrippliList1][GrippliList2][GrippliList3][GrippliList2]</li>
+				<li>r_name->[PoliticalUnionsMedieval] of [GrippliList2][GrippliList3][GrippliList2][GrippliList4]</li>
+				<li>r_name->[PoliticalUnionsMedieval] of [GrippliList2][GrippliList3][GrippliList2]</li>
+				<li>r_name->[PoliticalUnionsMedieval] of [GrippliList2][GrippliList3][GrippliList2][GrippliList3][GrippliList2]</li>
+				<li>r_name->The [Color] [Animal] [GrippliList1][GrippliList2][GrippliList3][GrippliList2][GrippliList4]</li>
+				<li>r_name->The [Color] [Animal] [GrippliList1][GrippliList2][GrippliList3][GrippliList2][GrippliList3][GrippliList2]</li>
+				<li>r_name->The [Color] [Animal] [GrippliList1][GrippliList2][GrippliList4]</li>
+				<li>r_name->The [Color] [Animal] [GrippliList1][GrippliList2][GrippliList3][GrippliList2]</li>
+				<li>r_name->The [Color] [Animal] [GrippliList2][GrippliList3][GrippliList2][GrippliList4]</li>
+				<li>r_name->The [Color] [Animal] [GrippliList2][GrippliList3][GrippliList2]</li>
+				<li>r_name->The [Color] [Animal] [GrippliList2][GrippliList3][GrippliList2][GrippliList3][GrippliList2]</li>
+				<li>r_name->The [PoliticalUnionsMedieval] of the [TerrainFeature]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>GrippliList1->GrippliNames/Grippli1</li>
+				<li>GrippliList2->GrippliNames/Grippli2</li>
+				<li>GrippliList3->GrippliNames/Grippli3</li>
+				<li>GrippliList4->GrippliNames/Grippli4</li>
+				<li>PoliticalUnionsMedieval->PF2Factions/PoliticalUnionsMedieval</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerSettlementGrippli</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[townname_wordgen]</li>
+				
+				<li>r_name(p=2)->[GrippliList1][GrippliList2][GrippliList3][GrippliList2][GrippliList4]</li>
+				<li>r_name(p=2)->[GrippliList1][GrippliList2][GrippliList3][GrippliList2][GrippliList3][GrippliList2]</li>
+				<li>r_name(p=2)->[GrippliList1][GrippliList2][GrippliList4]</li>
+				<li>r_name(p=2)->[GrippliList1][GrippliList2][GrippliList3][GrippliList2]</li>
+				<li>r_name(p=2)->[GrippliList2][GrippliList3][GrippliList2][GrippliList4]</li>
+				<li>r_name(p=2)->[GrippliList2][GrippliList3][GrippliList2]</li>
+				<li>r_name(p=2)->[GrippliList2][GrippliList3][GrippliList2][GrippliList3][GrippliList2]</li>
+				<li>r_name->[Color] [GrippliList1][GrippliList2][GrippliList3][GrippliList2][GrippliList4]</li>
+				<li>r_name->[Color] [GrippliList1][GrippliList2][GrippliList3][GrippliList2][GrippliList3][GrippliList2]</li>
+				<li>r_name->[Color] [GrippliList1][GrippliList2][GrippliList4]</li>
+				<li>r_name->[Color] [GrippliList1][GrippliList2][GrippliList3][GrippliList2]</li>
+				<li>r_name->[Color] [GrippliList2][GrippliList3][GrippliList2][GrippliList4]</li>
+				<li>r_name->[Color] [GrippliList2][GrippliList3][GrippliList2]</li>
+				<li>r_name->[Color] [GrippliList2][GrippliList3][GrippliList2][GrippliList3][GrippliList2]</li>
+				<li>r_name->[Color] [TerrainFeature]</li>
+				<li>r_name->[GrippliList1][GrippliList2][GrippliList3][GrippliList2][GrippliList4] [TerrainFeature]</li>
+				<li>r_name->[GrippliList1][GrippliList2][GrippliList3][GrippliList2][GrippliList3][GrippliList2] [TerrainFeature]</li>
+				<li>r_name->[GrippliList1][GrippliList2][GrippliList4] [TerrainFeature]</li>
+				<li>r_name->[GrippliList1][GrippliList2][GrippliList3][GrippliList2] [TerrainFeature]</li>
+				<li>r_name->[GrippliList2][GrippliList3][GrippliList2][GrippliList4] [TerrainFeature]</li>
+				<li>r_name->[GrippliList2][GrippliList3][GrippliList2] [TerrainFeature]</li>
+				<li>r_name->[GrippliList2][GrippliList3][GrippliList2][GrippliList3][GrippliList2] [TerrainFeature]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>GrippliList1->GrippliNames/Grippli1</li>
+				<li>GrippliList2->GrippliNames/Grippli2</li>
+				<li>GrippliList3->GrippliNames/Grippli3</li>
+				<li>GrippliList4->GrippliNames/Grippli4</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
 
 </Defs>

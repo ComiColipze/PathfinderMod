@@ -7,10 +7,13 @@
 			<rulesStrings>
 				<li>name->[KitsuneList1][KitsuneList2][KitsuneList3] [KitsuneList1][KitsuneList2][KitsuneList2][KitsuneList3]</li>
 				<li>name->[KitsuneList1][KitsuneList3] [KitsuneList1][KitsuneList2][KitsuneList2][KitsuneList3]</li>
+				
 				<li>name->[KitsuneList1][KitsuneList2][KitsuneList3] '[Male_Random]' [KitsuneList1][KitsuneList2][KitsuneList2][KitsuneList3]</li>
 				<li>name->[KitsuneList1][KitsuneList3] '[Male_Random]' [KitsuneList1][KitsuneList2][KitsuneList2][KitsuneList3]</li>
+				
 				<li>name->[KitsuneList1][KitsuneList2][KitsuneList3] [KitsuneList4][KitsuneList5][KitsuneList5][KitsuneList6]</li>
 				<li>name->[KitsuneList1][KitsuneList3] [KitsuneList4][KitsuneList5][KitsuneList5][KitsuneList6]</li>
+				
 				<li>name->[KitsuneList1][KitsuneList2][KitsuneList3] '[Male_Random]' [KitsuneList4][KitsuneList5][KitsuneList5][KitsuneList6]</li>
 				<li>name->[KitsuneList1][KitsuneList3] '[Male_Random]' [KitsuneList4][KitsuneList5][KitsuneList5][KitsuneList6]</li>
 			</rulesStrings>
@@ -57,10 +60,13 @@
 			<rulesStrings>
 				<li>name->[KitsuneList4][KitsuneList5][KitsuneList6] [KitsuneList1][KitsuneList2][KitsuneList2][KitsuneList3]</li>
 				<li>name->[KitsuneList4][KitsuneList6] [KitsuneList1][KitsuneList2][KitsuneList2][KitsuneList3]</li>
+				
 				<li>name->[KitsuneList4][KitsuneList5][KitsuneList6] '[Female_Random]' [KitsuneList1][KitsuneList2][KitsuneList2][KitsuneList3]</li>
 				<li>name->[KitsuneList4][KitsuneList6] '[Female_Random]' [KitsuneList1][KitsuneList2][KitsuneList2][KitsuneList3]</li>
+				
 				<li>name->[KitsuneList4][KitsuneList5][KitsuneList6] [KitsuneList4][KitsuneList5][KitsuneList5][KitsuneList6]</li>
 				<li>name->[KitsuneList4][KitsuneList6] [KitsuneList4][KitsuneList5][KitsuneList5][KitsuneList6]</li>
+				
 				<li>name->[KitsuneList4][KitsuneList5][KitsuneList6] '[Female_Random]' [KitsuneList4][KitsuneList5][KitsuneList5][KitsuneList6]</li>
 				<li>name->[KitsuneList4][KitsuneList6] '[Female_Random]' [KitsuneList4][KitsuneList5][KitsuneList5][KitsuneList6]</li>
 			</rulesStrings>
@@ -100,5 +106,101 @@
 			</rulesRaw>
 		</rulePack>
 	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerFactionKitsune</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[KitsuneList1][KitsuneList2][KitsuneList3] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[KitsuneList1][KitsuneList3] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[KitsuneList4][KitsuneList5][KitsuneList6] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[KitsuneList4][KitsuneList6] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[KitsuneList1][KitsuneList2][KitsuneList3] Shogunate</li>
+				<li>r_name->[KitsuneList1][KitsuneList3] Shogunate</li>
+				<li>r_name->[KitsuneList4][KitsuneList5][KitsuneList6] Shogunate</li>
+				<li>r_name->[KitsuneList4][KitsuneList6] Shogunate</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>KitsuneList1->KitsuneNames/Kitsune1</li>
+				<li>KitsuneList2->KitsuneNames/Kitsune2</li>
+				<li>KitsuneList3->KitsuneNames/Kitsune3</li>
+				<li>KitsuneList4->KitsuneNames/Kitsune4</li>
+				<li>KitsuneList5->KitsuneNames/Kitsune5</li>
+				<li>KitsuneList6->KitsuneNames/Kitsune6</li>
+				<li>PoliticalUnionsMedieval->PF2Factions/PoliticalUnionsMedieval</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerSettlementKitsune</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[townname_wordgen]</li>
+
+				<li>r_name(p=4)->[townname_wordgen]</li>
+				<li>r_name(p=2)->[townname_combo]</li>
+
+				<li>townname_combo(p=2)->[KitsuneList1][KitsuneList2][KitsuneList3]'s [TerrainFeature]</li>
+				<li>townname_combo(p=2)->[KitsuneList1][KitsuneList3]'s [TerrainFeature]</li>
+				<li>townname_combo(p=2)->[KitsuneList4][KitsuneList5][KitsuneList6]'s [TerrainFeature]</li>
+				<li>townname_combo(p=2)->[KitsuneList4][KitsuneList6]'s [TerrainFeature]</li>
+				<li>townname_combo(p=2)->[KitsuneList1][KitsuneList2][KitsuneList3]'s [Community]</li>
+				<li>townname_combo(p=2)->[KitsuneList1][KitsuneList3]'s [Community]</li>
+				<li>townname_combo(p=2)->[KitsuneList4][KitsuneList5][KitsuneList6]'s [Community]</li>
+				<li>townname_combo(p=2)->[KitsuneList4][KitsuneList6]'s [Community]</li>
+				<li>townname_combo(p=2)->[KitsuneList1][KitsuneList2][townendsamurai]</li>
+				<li>townname_combo(p=2)->[KitsuneList4][KitsuneList5][townendsamurai]</li>
+
+				<li>townname_wordgen(p=2)->[KitsuneList1][townendsamurai]</li>
+				<li>townname_wordgen(p=2)->[KitsuneList1][KitsuneList2][townendsamurai]</li>
+				<li>townname_wordgen(p=2)->[KitsuneList1][KitsuneList2][KitsuneList3][townendsamurai]</li>
+				<li>townname_wordgen(p=2)->[KitsuneList4][townendsamurai]</li>
+				<li>townname_wordgen(p=2)->[KitsuneList4][KitsuneList5][townendsamurai]</li>
+				<li>townname_wordgen(p=2)->[KitsuneList4][KitsuneList5][KitsuneList6][townendsamurai]</li>
+				<li>townname_wordgen(p=2)->[KitsuneList1][townendsamurai] [TerrainFeature]</li>
+				<li>townname_wordgen(p=2)->[KitsuneList4][townendsamurai] [TerrainFeature]</li>
+				<li>townendsamurai->machi</li>
+				<li>townendsamurai->mura</li>
+				<li>townendsamurai->ku</li>
+				<li>townendsamurai->shi</li>
+				<li>townendsamurai->hama</li>
+				<li>townendsamurai->poro</li>
+				<li>townendsamurai->gawa</li>
+				<li>townendsamurai->do</li>
+				<li>townendsamurai->naka</li>
+				<li>townendsamurai->izumi</li>
+				<li>townendsamurai->kami</li>
+				<li>townendsamurai->shima</li>
+				<li>townendsamurai->shimo</li>
+				<li>townendsamurai->shita</li>
+				<li>townendsamurai->oka</li>
+				<li>townendsamurai->saki</li>
+				<li>townendsamurai-> Prefecture</li>
+				<li>townendsamurai->gami</li>
+				<li>townendsamurai-> Province</li>
+				<li>townendsamurai->pon</li>
+				<li>townendsamurai->pan</li>
+				<li>townendsamurai->ichi</li>
+				<li>townendsamurai->shuku</li>
+				<li>townendsamurai->juku</li>
+				<li>townendsamurai->ken</li>
+				<li>townendsamurai->to</li>
+				<li>townendsamurai->fu</li>
+				<li>townendsamurai->kaido</li>
+				<li>townendsamurai->kyo</li>
+				<li>townendsamurai->saka</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>KitsuneList1->KitsuneNames/Kitsune1</li>
+				<li>KitsuneList2->KitsuneNames/Kitsune2</li>
+				<li>KitsuneList3->KitsuneNames/Kitsune3</li>
+				<li>KitsuneList4->KitsuneNames/Kitsune4</li>
+				<li>KitsuneList5->KitsuneNames/Kitsune5</li>
+				<li>KitsuneList6->KitsuneNames/Kitsune6</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
 
 </Defs>

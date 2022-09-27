@@ -2,16 +2,24 @@
 <Defs>
 
 	<PawnKindDef ParentName="BasePlayerPawnKind">
-		<defName>PF2_GoblinColonist</defName>
-		<label>goblin colonist</label>
-		<race>PF2_Goblin</race>
+		<defName>PF2_DrowColonist</defName>
+		<label>drow colonist</label>
+		<race>PF2_Drow</race>
 		<combatPower>30</combatPower>
 		<isFighter>false</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<initialWillRange>0~0</initialWillRange>
-		<defaultFactionType>PF2_GoblinPlayerColony</defaultFactionType>
+		<defaultFactionType>PF2_DrowPlayerColony</defaultFactionType>
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Drow</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<apparelTags>
 			<li>IndustrialBasic</li>
 		</apparelTags>
@@ -29,11 +37,19 @@
 	</PawnKindDef>
 
   	<PawnKindDef ParentName="BasePlayerPawnKind">
-		<defName>PF2_GoblinTribal</defName>
-		<label>tribal goblin</label>
-		<race>PF2_Goblin</race>
-		<defaultFactionType>PF2_GoblinPlayerTribe</defaultFactionType>
+		<defName>PF2_DrowTribal</defName>
+		<label>tribal drow</label>
+		<race>PF2_Drow</race>
+		<defaultFactionType>PF2_DrowPlayerTribe</defaultFactionType>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Tribal</li>
+					<li>Drow</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<apparelTags>
 			<li>Neolithic</li>
 		</apparelTags>
@@ -46,24 +62,5 @@
 		<techHediffsChance>0.02</techHediffsChance>
 		<initialResistanceRange>9~15</initialResistanceRange>
 	</PawnKindDef>
-
-	<PawnKindDef ParentName="BasePlayerPawnKind">
-		<defName>PF2_GoblinRaider</defName>
-		<label>goblin raider</label>
-		<race>PF2_Goblin</race>
-		<defaultFactionType>PF2_GoblinPlayerFaction</defaultFactionType>
-		<chemicalAddictionChance>0.05</chemicalAddictionChance>
-		<apparelTags>
-			<li>Neolithic</li>
-		</apparelTags>
-		<apparelMoney>200~200</apparelMoney>
-		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-		<techHediffsMoney>50~50</techHediffsMoney>
-		<techHediffsTags>
-			<li>Poor</li>
-		</techHediffsTags>
-		<techHediffsChance>0.02</techHediffsChance>
-		<initialResistanceRange>12~17</initialResistanceRange>
-	 </PawnKindDef>
 
 </Defs>

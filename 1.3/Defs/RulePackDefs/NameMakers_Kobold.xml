@@ -55,7 +55,7 @@
 		<defName>PF2_NamerPersonKoboldFemale</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>name->[KoboldList5][KoboldList6][KoboldList7][KoboldList8]</li>
+				<li>name->[KoboldList5][KoboldList6][KoboldList8]</li>
 				<li>name->[KoboldList5][KoboldList6][KoboldList7][KoboldList6][KoboldList8]</li>
 				<li>name->[KoboldList5][KoboldList6][KoboldList7][KoboldList6][KoboldList7][KoboldList6][KoboldList8]</li>
 				<li>name->[KoboldList5][KoboldList6][KoboldList7][KoboldList6][KoboldList7][KoboldList6]</li>
@@ -98,84 +98,6 @@
 					<path>KoboldNames/Kobold8</path>
 				</li>
 			</rulesRaw>
-		</rulePack>
-	</RulePackDef>
-
-	<RulePackDef>
-		<defName>PF2_NamerDeityDraconic</defName>
-		<include>
-			<li>NamerDeityGlobal</li>
-		</include>
-		<rulePack>
-			<rulesStrings>
-				<li>name->[DragonList1]</li>
-				<li>name->[DragonList2]</li>
-				<li>name->[DragonList3][DragonList4]</li>
-			</rulesStrings>
-			<rulesRaw>
-				<li Class="Rule_File">
-					<keyword>DragonList1</keyword>
-					<path>KoboldNames/Dragon1</path>
-				</li>
-				<li Class="Rule_File">
-					<keyword>DragonList2</keyword>
-					<path>KoboldNames/Dragon2</path>
-				</li>
-				<li Class="Rule_File">
-					<keyword>DragonList3</keyword>
-					<path>KoboldNames/Dragon3</path>
-				</li>
-				<li Class="Rule_File">
-					<keyword>DragonList4</keyword>
-					<path>KoboldNames/Dragon4</path>
-				</li>
-			</rulesRaw>
-		</rulePack>
-	</RulePackDef>
-	
-	<RulePackDef>
-		<defName>PF2_NamerIdeoDraconic</defName>
-		<include>
-			<li>NamerIdeoGlobal</li>
-		</include>
-		<rulePack>
-			<rulesStrings>
-				<li>globalAdjective->Dragon</li>
-				<li>globalAdjective->Draconic</li>
-				<li>globalAdjective->Supreme</li>
-				<li>globalAdjective->Elemental</li>
-				<li>globalAdjective->Kobold</li>
-			</rulesStrings>
-		</rulePack>
-	</RulePackDef>
-	
-	<RulePackDef>
-		<defName>PF2_DeityTypeMakerDraconic</defName>
-		<include>
-			<li>DeityTypeMakerGlobal</li>
-		</include>
-	</RulePackDef>
-	
-
-	<RulePackDef>
-		<defName>PF2_LeaderTitleMaker_Draconic</defName>
-		<include>
-			<li>LeaderTitleMaker_GlobalStructure</li>
-		</include>
-		<rulePack>
-			<rulesStrings>
-				<li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
-
-				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
-
-				<li>cultureLeaderAdjective->draconic</li>
-				<li>cultureLeaderAdjective->dragon</li>
-				<li>cultureLeaderAdjective->dank</li>
-
-				<li>cultureLeaderNoun->chief</li>
-				<li>cultureLeaderNoun->chieftain</li>
-				<li>cultureLeaderNoun->master</li>
-			</rulesStrings>
 		</rulePack>
 	</RulePackDef>
 	

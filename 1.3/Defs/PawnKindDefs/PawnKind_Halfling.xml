@@ -5,6 +5,11 @@
 		<defName>PF2_HalflingColonist</defName>
 		<label>halfling colonist</label>
 		<race>PF2_Halfling</race>
+		<combatPower>30</combatPower>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<initialWillRange>0~0</initialWillRange>
 		<defaultFactionType>PF2_HalflingPlayerColony</defaultFactionType>
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
 		<apparelTags>
@@ -41,5 +46,25 @@
 		<techHediffsChance>0.02</techHediffsChance>
 		<initialResistanceRange>9~15</initialResistanceRange>
 	</PawnKindDef>
+
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>PF2_HalflingPeasant</defName>
+		<label>halfling peasant</label>
+		<race>PF2_Halfling</race>
+		<defaultFactionType>PF2_HalflingPlayerFaction</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelTags>
+			<li>MedievalBasic</li>
+			<li>Neolithic</li>
+		</apparelTags>
+		<apparelMoney>200~200</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsMoney>500~500</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.02</techHediffsChance>
+		<initialResistanceRange>12~17</initialResistanceRange>
+	 </PawnKindDef>
 
 </Defs>

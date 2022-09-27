@@ -322,12 +322,13 @@
 		<ComfyTemperatureMax>26</ComfyTemperatureMax>
 		<LeatherAmount>55</LeatherAmount>
 		<RoyalFavorValue>5</RoyalFavorValue>
-        <CarryingCapacity>-25</CarryingCapacity>
+        <CarryingCapacity>50</CarryingCapacity>
 		<PsychicSensitivity>1.20</PsychicSensitivity>
 		<MiningSpeed>0.7</MiningSpeed>
 		<ConstructionSpeed>0.7</ConstructionSpeed>
 		<SmoothingSpeed>0.7</SmoothingSpeed>
 		<EatingSpeed>0.8</EatingSpeed>
+		<RestRateMultiplier>1.2</RestRateMultiplier>
 		<GlobalLearningFactor>1.20</GlobalLearningFactor>
 	</statBases>
 	<tools>
@@ -398,7 +399,7 @@
 		<nameGeneratorFemale>PF2_NamerPersonElfFemale</nameGeneratorFemale>
 		<useMeatFrom>Human</useMeatFrom>
 		<body>Human</body>
-		<baseBodySize>1.05</baseBodySize>
+		<baseBodySize>1.0</baseBodySize>
 		<baseHealthScale>0.9</baseHealthScale>
 		<foodType>OmnivoreHuman</foodType>
 		<gestationPeriodDays>50</gestationPeriodDays>

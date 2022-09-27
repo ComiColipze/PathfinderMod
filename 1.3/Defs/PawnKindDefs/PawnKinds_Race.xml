@@ -51,6 +51,12 @@
   </PawnKindDef>
   
   <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_DrowSlave</defName>
+    <label>drow slave</label>
+    <race>PF2_Drow</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
     <defName>PF2_DwarfSlave</defName>
     <label>dwarf slave</label>
     <race>PF2_Dwarf</race>
@@ -175,6 +181,12 @@
     <defName>PF2_AnadiRefugee</defName>
     <label>anadi refugee</label>
     <race>PF2_Anadi</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_DrowRefugee</defName>
+    <label>drow refugee</label>
+    <race>PF2_Drow</race>
   </PawnKindDef>
   
   <PawnKindDef ParentName="RefugeePawnKind">

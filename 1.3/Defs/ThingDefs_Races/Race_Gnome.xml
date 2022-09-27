@@ -324,7 +324,7 @@
 		<RoyalFavorValue>3</RoyalFavorValue>
 		<ResearchSpeed>1.2</ResearchSpeed>
 		<DrugCookingSpeed>1.2</DrugCookingSpeed>
-		<HackingSpeed MayRequireIdeology>1.2</HackingSpeed>
+		<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">1.2</HackingSpeed>
 		<DrugSynthesisSpeed>1.2</DrugSynthesisSpeed>
 		<RestRateMultiplier>0.8</RestRateMultiplier>
 	</statBases>

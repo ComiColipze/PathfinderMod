@@ -112,6 +112,7 @@
 				</aliencrowntypes>
 				<alienbodytypes>
 					<li>Male</li>
+					<li>Female</li>
 					<li>Thin</li>
 					<li>Hulk</li>
 				</alienbodytypes>
@@ -174,20 +175,23 @@
 							<south>
 								<bodyTypes>
 									<Male>(0.0, 0.092)</Male>
+									<Female>(0.0, 0.092)</Female>
 									<Thin>(0.0, 0.092)</Thin>
 									<Hulk>(0.0, 0.092)</Hulk>
 								</bodyTypes>
 							</south>
 							<north>
 								<bodyTypes>
-									<Male>(0.0, -0.079)</Male>
-									<Thin>(0.0, -0.0105)</Thin>
-									<Hulk>(0.0, -0.0188)</Hulk>
+									<Male>(0.0, -0.199)</Male>
+									<Female>(0.0, -0.199)</Female>
+									<Thin>(0.0, -0.0285)</Thin>
+									<Hulk>(0.0,-0.288)</Hulk>
 								</bodyTypes>
 							</north>
 							<east>
 								<bodyTypes>
 									<Male>(0.435, -0.25)</Male>
+									<Female>(0.435, -0.25)</Female>
 									<Thin>(0.435, -0.25)</Thin>
 									<Hulk>(0.435, -0.25)</Hulk>
 								</bodyTypes>
@@ -200,6 +204,7 @@
         <graphicPaths>
 			<li>
 				<head>Things/Pawn/Iruxi/Head/</head>
+				<body>Things/Pawn/Iruxi/Body/</body>
 			</li>
         </graphicPaths>
         <styleSettings>
@@ -464,7 +469,8 @@
 		<makesFootprints>true</makesFootprints>
 		<lifeExpectancy>120</lifeExpectancy>
 		<leatherDef>Leather_Lizard</leatherDef>
-		<nameGenerator>PF2_NamerPersonIruxi</nameGenerator>
+		<nameGenerator>PF2_NamerPersonIruxiMale</nameGenerator>
+		<nameGeneratorFemale>PF2_NamerPersonIruxiFemale</nameGeneratorFemale>
 		<useMeatFrom>Human</useMeatFrom>
 		<body>PF2_Iruxi</body>
 		<baseBodySize>1.1</baseBodySize>

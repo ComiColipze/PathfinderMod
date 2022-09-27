@@ -203,6 +203,7 @@
 		<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
 		<ArmorRating_Heat>0.15</ArmorRating_Heat>
 		<ToxicSensitivity>0.75</ToxicSensitivity>
+		<MentalBreakThreshold>0.20</MentalBreakThreshold>
 	</statBases>
 		<tools>
 			<li>

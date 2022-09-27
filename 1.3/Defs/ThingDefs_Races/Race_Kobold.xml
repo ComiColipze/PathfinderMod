@@ -97,11 +97,8 @@
             </disallowedTraits>
 			<alienPartGenerator>
 				<aliencrowntypes>
-					<li>Stubby_Horns</li>
-					<li>Spiked_Horns</li>
-					<li>Curved_Horns</li>
-					<li>Long_Horns</li>
-					<li>Small_Horns</li>
+					<li>Average_Normal</li>
+					<li>Narrow_Normal</li>
 				</aliencrowntypes>
 				<alienbodytypes>
 					<li>Male</li>
@@ -110,7 +107,7 @@
 				</alienbodytypes>
 				<customDrawSize>(0.75, 0.75)</customDrawSize>
 				<customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>
-				<headOffset>(0.0, -0.18)</headOffset>
+				<headOffset>(0.0, -0.19)</headOffset>
 				<colorChannels>	                    
 					<li>
 						<name>skin</name>
@@ -235,6 +232,17 @@
 					</li>
 				</colorChannels>							
 				<bodyAddons>
+					<li>
+						<bodyPart>KoboldHorn</bodyPart>
+						<path>Things/Pawn/Kobold/Horns/Horns</path>
+						<inFrontOfBody>true</inFrontOfBody>
+						<drawnInBed>true</drawnInBed>
+						<drawSize>1.0</drawSize>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                        <colorChannel>base</colorChannel>
+						<defaultOffset>Center</defaultOffset>
+						<alignWithHead>true</alignWithHead>	
+					</li>
 					<li>
 						<bodyPart>tail</bodyPart>
 						<path>Things/Pawn/Kobold/Tails/Tails</path>

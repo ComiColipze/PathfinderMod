@@ -2,10 +2,9 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>PF2_NamerPersonIruxi</defName>
+		<defName>PF2_NamerPersonIruxiMale</defName>
 		<rulePack>
 			<rulesStrings>
-				<li>name->[IruxiList1]</li>
 				<li>name->[IruxiList1][IruxiList2]</li>
 				<li>name->[IruxiList1][IruxiList2][IruxiList3]</li>
 			</rulesStrings>
@@ -21,6 +20,54 @@
 				<li Class="Rule_File">
 					<keyword>IruxiList3</keyword>
 					<path>IruxiNames/Iruxi3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>IruxiList4</keyword>
+					<path>IruxiNames/Iruxi4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>IruxiList5</keyword>
+					<path>IruxiNames/Iruxi5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>IruxiList6</keyword>
+					<path>IruxiNames/Iruxi6</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerPersonIruxiFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[IruxiList4][IruxiList5]</li>
+				<li>name->[IruxiList4][IruxiList5][IruxiList6]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>IruxiList1</keyword>
+					<path>IruxiNames/Iruxi1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>IruxiList2</keyword>
+					<path>IruxiNames/Iruxi2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>IruxiList3</keyword>
+					<path>IruxiNames/Iruxi3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>IruxiList4</keyword>
+					<path>IruxiNames/Iruxi4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>IruxiList5</keyword>
+					<path>IruxiNames/Iruxi5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>IruxiList6</keyword>
+					<path>IruxiNames/Iruxi6</path>
 				</li>
 			</rulesRaw>
 		</rulePack>

@@ -5,6 +5,11 @@
 		<defName>PF2_DwarfColonist</defName>
 		<label>dwarf colonist</label>
 		<race>PF2_Dwarf</race>
+		<combatPower>30</combatPower>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<initialWillRange>0~0</initialWillRange>
 		<defaultFactionType>PF2_DwarfPlayerColony</defaultFactionType>
 		<chemicalAddictionChance>0.06</chemicalAddictionChance>
 		<apparelTags>

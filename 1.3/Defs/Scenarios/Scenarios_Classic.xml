@@ -4,7 +4,7 @@
     <ScenarioDef>
         <defName>PF2_ExiledForHumiliation</defName>
         <label>Exiled for Humiliation</label>
-        <description>You dishonored yourself in front of the high kings, your brothers and your sisters. Lost or broke your clan dagger, slighted your brethren, insulted their gods or even cut the beard of a fellow dwarf are one of the transgressions any dwarf will not forgive. To not face hatred by your own people, you chose exile, followed by three individuals whom too commited the same vile acts. Now free from your former clan's harsh laws, you can now settle a new clan and search for your own Quest for Sky.\n\nNote:  Since you'll start with few supplies, lack technology, and the dwarven clan being always hostile, this is a difficult scenario.</description>
+        <description>You dishonored yourself in front of the high kings, your brothers and your sisters. Lost or broke your clan dagger, slighted your brethren, insulted their gods or even cut the beard of a fellow dwarf are one of the transgressions any dwarf will not forgive. To not face hatred by your own people, you chose exile, followed by three individuals whom too commited the same vile acts. Now free from your former clan's harsh laws, you can now settle a new clan and search for your own Quest for Sky.\n\nNote: Since you start with few supplies, lacking technology, and the dwarven clan being always hostile, this is a difficult scenario.</description>
         <scenario>
             <summary>Four exiled dwarves in search for a new free life. Difficult.</summary>
             <playerFaction>
@@ -74,7 +74,7 @@
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
-                    <thingDef>MeleeWeapon_Knife</thingDef>
+                    <thingDef>MeleeWeapon_Gladius</thingDef>
                     <stuff>Steel</stuff>
                     <count>2</count>
                 </li>
@@ -183,6 +183,88 @@
                 <li Class="ScenPart_GameStartDialog">
                     <def>GameStartDialog</def>
 					<text>Finally, you've waited paciently to come back, alongside with a fellow elf to make you company. A disaster has forced you to evacuate to another planet. But even if you return in a cryptosleep drop pods, your technology has been lost due how elves adapt and innovate.</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+
+            </parts>
+        </scenario>
+    </ScenarioDef>
+
+    <ScenarioDef>
+        <defName>PF2_StartingANewLife</defName>
+        <label>Starting a New Life</label>
+        <description>Time has passed. You've helped your people with the fields, fed the chickens for the stocks and ommeletes, and contributed with the yearly festivals that many halflings in this covenant love to do. But now, time has passed. You've decided to leave your home. You felt the heart-crushing sadness in the faces of your parents, friends, and neighbors, but they knew that it's your choice, and if it makes you happy, so be it. So you packed your pemmican, picked some chickens, put a saddle on your horse, and left for a new life.\n\nNote: Since you start with few supplies, lack technology and weapons, and with one colonist, this is a difficult scenario.</description>
+        <scenario>
+            <summary>An aspiring halfling starting anew. Difficult.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>PF2_HalflingPlayerFaction</factionDef>
+            </playerFaction>
+            <parts>
+
+                <!-- Config pages -->
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+                    <def>ConfigPage_ConfigureStartingPawns</def>
+                    <pawnCount>1</pawnCount>
+                    <pawnChoiceCount>3</pawnChoiceCount>
+                </li>
+
+                <!-- Player starting stuff spawn method-->
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>Standing</method>
+                </li>
+
+                <!-- Player starting things -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>100</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Pemmican</thingDef>
+					<count>450</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineHerbal</thingDef>
+					<count>4</count>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Bedroll</thingDef>
+					<stuff>Cloth</stuff>
+					<count>2</count>
+				</li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<animalKind>Horse</animalKind>
+					<count>1</count>
+					<bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+				</li>
+				<li Class="ScenPart_StartingAnimal">
+					<def>StartingAnimal</def>
+					<animalKind>Chicken</animalKind>
+					<count>4</count>
+				</li>
+
+				<!-- Scatter some things near player start -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>50</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>300</count>
+				</li>      
+
+                <!-- Game start dialog -->
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+					<text>You left your home to make a better life elsewhere. You brought four chickens and your beloved horse to the trip. Even if this rimworld is as ruthless as the slavers that ravaged your people for generations, your family and friend at the halfling covenant will always help you.</text>
                     <closeSound>GameStartSting</closeSound>
                 </li>
 

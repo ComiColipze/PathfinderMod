@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<PawnKindDef Name="ElfPawnKindBase" Abstract="True">
-		<race>PF2_Elf</race>
-		<defaultFactionType>PF2_ElfFaction</defaultFactionType>
+	<PawnKindDef Name="DrowPawnKindBase" Abstract="True">
+		<race>PF2_Drow</race>
+		<defaultFactionType>PF2_DrowFaction</defaultFactionType>
 		<maxGenerationAge>650</maxGenerationAge>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<invNutrition>2.55</invNutrition>
@@ -14,9 +14,9 @@
 	</PawnKindDef>
 
     <!-- Poverty Tier - Peasant -->
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Peasant</defName>
-        <label>elf peasant</label>
+    <PawnKindDef ParentName="DrowPawnKindBase">
+        <defName>PF2_DrowFaction_Peasant</defName>
+        <label>drow peasant</label>
         <combatPower>30</combatPower>
         <chemicalAddictionChance>0.10</chemicalAddictionChance>
         <invNutrition>0</invNutrition>
@@ -52,9 +52,9 @@
 		<initialResistanceRange>3~8</initialResistanceRange>
     </PawnKindDef>
 
-	<PawnKindDef ParentName="ElfPawnKindBase">
-		<defName>PF2_ElfFaction_Hunter</defName>
-		<label>elf hunter</label>
+	<PawnKindDef ParentName="DrowPawnKindBase">
+		<defName>PF2_DrowFaction_Hunter</defName>
+		<label>drow hunter</label>
 		<combatPower>55</combatPower>
 		<backstoryFiltersOverride>
 			<li>
@@ -89,9 +89,9 @@
 	</PawnKindDef>
 
     <!-- Low-Tier - Merchant, Squire -->
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Merchant</defName>
-        <label>elf merchant</label>
+    <PawnKindDef ParentName="DrowPawnKindBase">
+        <defName>PF2_DrowFaction_Merchant</defName>
+        <label>drow merchant</label>
         <combatPower>35</combatPower>
         <trader>true</trader>
         <isFighter>false</isFighter>
@@ -114,9 +114,9 @@
 		<initialResistanceRange>5~9</initialResistanceRange>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Squire</defName>
-        <label>elf squire</label>
+    <PawnKindDef ParentName="DrowPawnKindBase">
+        <defName>PF2_DrowFaction_Squire</defName>
+        <label>drow squire</label>
         <combatPower>45</combatPower>
         <canBeSapper>true</canBeSapper>
         <gearHealthRange>
@@ -142,9 +142,9 @@
     </PawnKindDef>
 
     <!-- Mid-tier - footsoldier, bowman -->
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Footsoldier</defName>
-        <label>elf footsoldier</label>
+    <PawnKindDef ParentName="DrowPawnKindBase">
+        <defName>PF2_DrowFaction_Footsoldier</defName>
+        <label>drow footsoldier</label>
         <combatPower>65</combatPower>
         <canBeSapper>true</canBeSapper>
         <gearHealthRange>
@@ -169,9 +169,9 @@
 		<initialResistanceRange>14~22</initialResistanceRange>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Archer</defName>
-        <label>elf archer</label>
+    <PawnKindDef ParentName="DrowPawnKindBase">
+        <defName>PF2_DrowFaction_Archer</defName>
+        <label>drow archer</label>
         <combatPower>65</combatPower>
         <gearHealthRange>
             <min>0.8</min>
@@ -198,9 +198,9 @@
     </PawnKindDef>
 
     <!-- High-tier - knight, lord -->
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_Knight</defName>
-        <label>elf knight</label>
+    <PawnKindDef ParentName="DrowPawnKindBase">
+        <defName>PF2_DrowFaction_Knight</defName>
+        <label>drow knight</label>
         <combatPower>95</combatPower>
         <itemQuality>Good</itemQuality>
         <apparelMoney>
@@ -224,10 +224,10 @@
 		<initialResistanceRange>17~25</initialResistanceRange>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="ElfPawnKindBase">
-        <defName>PF2_ElfFaction_King</defName>
-        <label>elf king</label>
-        <labelFemale>elf queen</labelFemale>
+    <PawnKindDef ParentName="DrowPawnKindBase">
+        <defName>PF2_DrowFaction_Matriarch</defName>
+        <label>drow matriarch</label>
+        <labelFemale>drow queen</labelFemale>
         <combatPower>135</combatPower>
         <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
         <minGenerationAge>150</minGenerationAge>
