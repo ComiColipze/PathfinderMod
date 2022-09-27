@@ -98,6 +98,39 @@
 				
 				<li Class="PatchOperationConditional">
 					<success>Always</success>
+					<xpath>/Defs/FactionDef[defName="PF2_DrowFaction"]/disallowedMemes</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/FactionDef[defName="PF2_DrowFaction"]</xpath>
+						<value>
+							<disallowedMemes>
+								<li MayRequire="Ludeon.RimWorld.Ideology">VME_Republic</li>
+								<li MayRequire="Ludeon.RimWorld.Ideology">VME_Trader</li>
+								<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
+								<li MayRequire="Ludeon.RimWorld.Ideology">VME_Egalitarian</li>
+								<li MayRequire="Ludeon.RimWorld.Ideology">VME_Pacifist</li>
+								<li MayRequire="Ludeon.RimWorld.Ideology">VME_Emancipation</li>
+								<li MayRequire="Ludeon.RimWorld.Ideology">VME_Healthcare</li>
+								<li MayRequire="Ludeon.RimWorld.Ideology">VME_PartyLife</li>
+							</disallowedMemes>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/FactionDef[defName="PF2_DrowFaction"]/disallowedMemes</xpath>
+						<value>
+							<li MayRequire="Ludeon.RimWorld.Ideology">VME_Republic</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">VME_Trader</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">VME_Vegan</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">VME_Egalitarian</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">VME_Pacifist</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">VME_Emancipation</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">VME_Healthcare</li>
+							<li MayRequire="Ludeon.RimWorld.Ideology">VME_PartyLife</li>
+						</value>
+					</match>
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
 					<xpath>/Defs/FactionDef[defName="PF2_HobgoblinFaction"]/disallowedMemes</xpath>
 					<nomatch Class="PatchOperationAdd">
 						<xpath>/Defs/FactionDef[defName="PF2_HobgoblinFaction"]</xpath>
@@ -339,6 +372,48 @@
 					
 					<match Class="PatchOperationAdd">
 						<xpath>/Defs/FactionDef[defName="PF2_ElfFaction"]/structureMemeWeights</xpath>
+						<value>
+							<VME_Structure_Serketist MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Serketist>
+							<VME_Structure_Esotericism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Esotericism>
+							<VME_Structure_Bacchanalianism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Bacchanalianism>
+							<VME_Structure_ChthonianCult MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_ChthonianCult>
+							<VME_Structure_Eschatologism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Eschatologism>
+							<VME_Structure_Authoritarianism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Authoritarianism>
+							<VME_Structure_CultOfPersonality MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_CultOfPersonality>
+							<VME_Structure_Pantheism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Pantheism>
+							<VME_Structure_Omnism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Omnism>
+							<VME_Structure_Agnosticism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Agnosticism>
+							<VME_Structure_SecularSpirituality MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_SecularSpirituality>
+						</value>
+					</match>
+					
+				</li>
+				
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/FactionDef[defName="PF2_DrowFaction"]/structureMemeWeights</xpath>
+					
+					<nomatch Class="PatchOperationAdd">
+						<xpath>/Defs/FactionDef[defName="PF2_DrowFaction"]</xpath>
+						<value>
+							<structureMemeWeights>
+								<VME_Structure_Serketist MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Serketist>
+								<VME_Structure_Esotericism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Esotericism>
+								<VME_Structure_Bacchanalianism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Bacchanalianism>
+								<VME_Structure_ChthonianCult MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_ChthonianCult>
+								<VME_Structure_Eschatologism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Eschatologism>
+								<VME_Structure_Authoritarianism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Authoritarianism>
+								<VME_Structure_CultOfPersonality MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_CultOfPersonality>
+								<VME_Structure_Pantheism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Pantheism>
+								<VME_Structure_Omnism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Omnism>
+								<VME_Structure_Agnosticism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Agnosticism>
+								<VME_Structure_SecularSpirituality MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_SecularSpirituality>
+							</structureMemeWeights>
+						</value>
+					</nomatch>
+					
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/FactionDef[defName="PF2_DrowFaction"]/structureMemeWeights</xpath>
 						<value>
 							<VME_Structure_Serketist MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Serketist>
 							<VME_Structure_Esotericism MayRequire="Ludeon.RimWorld.Ideology">1</VME_Structure_Esotericism>
