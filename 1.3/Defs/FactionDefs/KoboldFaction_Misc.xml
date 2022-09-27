@@ -5,7 +5,7 @@
 		<defName>PF2_KoboldFaction</defName>
 		<label>kobold union</label>
 		<categoryTag>Tribal</categoryTag>
-		<description>United by an idealized depiction of the mythic dragons, a kobold union is an alliance encompassing dozens of tribes spread across this world. It's often isolated from other factions from the fear of being subjulgated by their minuscule size. Though small, kobolds are known to be oportunistic and keen to some advantages of smaller creatures, like their faster movement and less chance of being hit. While they're described as tribespeople, they are technologically more advanced than the goblin union.</description>
+		<description>United by an idealized depiction of the mythic dragons, a kobold union is an alliance encompassing dozens of tribes spread across this world. It's often isolated from other factions from the fear of being subjulgated by their minuscule size. While they're described as tribespeople, the kobold union is technologically more advanced than other tribes. Their chiefs are delusional, venerating legendary dragons like gods, and assimilating what they view as virtues. Hoarding wealth and dominating the bigger races are the most common agenda of kobold chiefs; it may be difficult to turn them into an ally!</description>
 		<pawnSingular>tribesman</pawnSingular>
 		<pawnsPlural>tribespeople</pawnsPlural>
 		<listOrderPriority>20</listOrderPriority>
@@ -24,6 +24,7 @@
 		<canMakeRandomly>true</canMakeRandomly>
 		<canStageAttacks>true</canStageAttacks>
 		<factionIconPath>World/WorldObjects/Expanding/KoboldFaction</factionIconPath>
+		<naturalEnemy>true</naturalEnemy>
 		<geneticVariance>0.1</geneticVariance>
 		<techLevel>Medieval</techLevel>
 		<factionNameMaker>PF2_NamerFactionKobold</factionNameMaker>
@@ -42,8 +43,9 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
 		</disallowedPrecepts>
 		<structureMemeWeights>
-			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistEmbodied>
-			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+			<PF2_Structure_OriginInnerSea MayRequire="Ludeon.RimWorld.Ideology">2</PF2_Structure_OriginInnerSea>
 			<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Animist>
 			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
 			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
@@ -52,7 +54,7 @@
 			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
 		</structureMemeWeights>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-		<configurationListOrderPriority>50</configurationListOrderPriority>
+		<configurationListOrderPriority>90</configurationListOrderPriority>
 		<backstoryFilters>
 			<li>
 				<categories>

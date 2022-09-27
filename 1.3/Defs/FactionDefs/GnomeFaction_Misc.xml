@@ -55,8 +55,9 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Research_Slow</li>
 		</disallowedPrecepts>
 		<structureMemeWeights>
-			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistEmbodied>
-			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+			<PF2_Structure_OriginInnerSea MayRequire="Ludeon.RimWorld.Ideology">2</PF2_Structure_OriginInnerSea>
 			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
 			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
 			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
@@ -65,7 +66,7 @@
 			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
 		</structureMemeWeights>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-		<configurationListOrderPriority>50</configurationListOrderPriority>
+		<configurationListOrderPriority>90</configurationListOrderPriority>
 		<backstoryFilters>
 			<li>
 				<categories>
@@ -243,8 +244,9 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Research_Slow</li>
 		</disallowedPrecepts>
 		<structureMemeWeights>
-			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistEmbodied>
-			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+			<PF2_Structure_OriginInnerSea MayRequire="Ludeon.RimWorld.Ideology">2</PF2_Structure_OriginInnerSea>
 			<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Animist>
 			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
 			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
@@ -253,7 +255,7 @@
 			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
 		</structureMemeWeights>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-		<configurationListOrderPriority>50</configurationListOrderPriority>
+		<configurationListOrderPriority>90</configurationListOrderPriority>
 		<backstoryFilters>
 			<li>
 				<categories>

@@ -29,6 +29,7 @@
 		<techLevel>Medieval</techLevel>
 		<backstoryCategories>
 			<li>Tribal</li>
+			<li>Elven</li>
 		</backstoryCategories>
 		<factionIconPath>World/WorldObjects/Expanding/ElfFaction</factionIconPath>
 		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>

@@ -18,4 +18,33 @@
 		<basicMemberKind>PF2_HalflingTribal</basicMemberKind>
 	</FactionDef>
 
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>PF2_HalflingPlayerFaction</defName>
+		<label>New Halfling Covenant</label>
+		<description>A small halfling covenant composed of halflings.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>peasant</pawnSingular>
+		<pawnsPlural>peasants</pawnsPlural>
+		<basicMemberKind>PF2_HalflingPeasant</basicMemberKind>
+		<techLevel>Medieval</techLevel>
+		<backstoryCategories>
+			<li>Tribal</li>
+		</backstoryCategories>
+		<factionIconPath>World/WorldObjects/Expanding/HalflingFaction</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>PF2_NamerFaction</factionNameMaker>
+		<settlementNameMaker>PF2_NamerSettlement</settlementNameMaker>
+		<allowedCultures><li>PF2_Chaldiran</li></allowedCultures>
+		<geneticVariance>1</geneticVariance>
+		<startingResearchTags>
+			<li>TribalStart</li>
+		</startingResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
 </Defs>

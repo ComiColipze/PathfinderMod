@@ -2,38 +2,40 @@
 <Defs>
 
 	<FactionDef ParentName="FactionBase">
-		<defName>PF2_HobgoblinFaction</defName>
-		<label>hobgoblin dictatorship</label>
+		<defName>PF2_KitsuneFaction</defName>
+		<label>kitsune shogunate</label>
 		<categoryTag>Tribal</categoryTag>
-		<description>This militaristic community of hobgoblins is best known for their hardlined and strict culture. Though not focused on pillaging other settlements, much like their goblin cousins, they'll not play around with their enemies. Hobgoblin culture is based into supremacy over other non-goblins and maintaining their own affairs over other nations, making them isolationist; it may be difficult to turn them into an ally!</description>
+		<description>This conglomerate of kitsune settlements were founded as means to centralize its people. They are not as violent or honor-bound as other civilizations with the same government structure. Led by a master of foxes, they're mostly a peaceful folk; its economy and work force mostly comprised by rice farmers. They are also moved by an individualistic mindset, since their shapeshifting ability forces them to adapt to any situation.</description>
 		<pawnSingular>subject</pawnSingular>
 		<pawnsPlural>subjects</pawnsPlural>
 		<listOrderPriority>20</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
 		<colorSpectrum>
-			<li>(204, 51, 0)</li>
-			<li>(215, 150, 125)</li>
+			<li>(0.25, 0.70, 0.95)</li>
+			<li>(0.50, 0.65, 1)</li>
+			<li>(0.10, 0.50, 1)</li>
 		</colorSpectrum>
 		<fixedLeaderKinds>
-			<li>PF2_HobgoblinFaction_General</li>
+			<li>PF2_KitsuneFaction_MasterOfFoxes</li>
 		</fixedLeaderKinds>
 		<canMakeRandomly>true</canMakeRandomly>
 		<canStageAttacks>true</canStageAttacks>
-		<factionIconPath>World/WorldObjects/Expanding/HobgoblinFaction</factionIconPath>
-		<naturalEnemy>true</naturalEnemy>
+		<factionIconPath>World/WorldObjects/Expanding/KitsuneFaction</factionIconPath>
 		<geneticVariance>0.1</geneticVariance>
 		<techLevel>Medieval</techLevel>
-		<factionNameMaker>PF2_NamerFactionHobgoblin</factionNameMaker>
-		<settlementNameMaker>PF2_NamerSettlementHobgoblin</settlementNameMaker>
-		<allowedCultures><li>PF2_Oprakan</li></allowedCultures>
+		<factionNameMaker>PF2_NamerFactionKitsune</factionNameMaker>
+		<settlementNameMaker>PF2_NamerSettlementKitsune</settlementNameMaker>
+		<allowedCultures><li>PF2_Daikitsun</li></allowedCultures>
 		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
 		</requiredMemes>
 		<disallowedMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 		</disallowedMemes>
@@ -41,7 +43,7 @@
 			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
 			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
 			<PF2_Structure_OriginInnerSea MayRequire="Ludeon.RimWorld.Ideology">2</PF2_Structure_OriginInnerSea>
-			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+			<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Animist>
 			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
 			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
 			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
@@ -57,7 +59,7 @@
 				</categories>
 			</li>
 		</backstoryFilters>
-		<leaderTitle>general</leaderTitle>
+		<leaderTitle>chief</leaderTitle>
 		<caravanTraderKinds>
 			<li>Caravan_Neolithic_BulkGoods</li>
 			<li>Caravan_Neolithic_WarMerchant</li>
@@ -92,11 +94,11 @@
 				<kindDef>Combat</kindDef>
 				<commonality>100</commonality>
 				<options>
-					<PF2_HobgoblinFaction_Peasant>20</PF2_HobgoblinFaction_Peasant>
-					<PF2_HobgoblinFaction_Brute>40</PF2_HobgoblinFaction_Brute>
-					<PF2_HobgoblinFaction_Warrior>30</PF2_HobgoblinFaction_Warrior>
-					<PF2_HobgoblinFaction_Archer>50</PF2_HobgoblinFaction_Archer>
-					<PF2_HobgoblinFaction_Champion>20</PF2_HobgoblinFaction_Champion>
+					<PF2_KitsuneFaction_Peasant>20</PF2_KitsuneFaction_Peasant>
+					<PF2_KitsuneFaction_Fighter>20</PF2_KitsuneFaction_Fighter>
+					<PF2_KitsuneFaction_Warrior>40</PF2_KitsuneFaction_Warrior>
+					<PF2_KitsuneFaction_Hunter>30</PF2_KitsuneFaction_Hunter>
+					<PF2_KitsuneFaction_Bowman>20</PF2_KitsuneFaction_Bowman>
 				</options>
 			</li>
 			<li>
@@ -104,26 +106,36 @@
 				<kindDef>Combat</kindDef>
 				<commonality>60</commonality>
 				<options>
-					<PF2_HobgoblinFaction_Peasant>15</PF2_HobgoblinFaction_Peasant>
-					<PF2_HobgoblinFaction_Brute>40</PF2_HobgoblinFaction_Brute>
-					<PF2_HobgoblinFaction_Warrior>40</PF2_HobgoblinFaction_Warrior>
-					<PF2_HobgoblinFaction_Champion>25</PF2_HobgoblinFaction_Champion>
+					<PF2_KitsuneFaction_Peasant>50</PF2_KitsuneFaction_Peasant>
+					<PF2_KitsuneFaction_Fighter>30</PF2_KitsuneFaction_Fighter>
+					<PF2_KitsuneFaction_Warrior>40</PF2_KitsuneFaction_Warrior>
+					<PF2_KitsuneFaction_Champion>20</PF2_KitsuneFaction_Champion>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<options>
+					<PF2_KitsuneFaction_Hunter>60</PF2_KitsuneFaction_Hunter>
+					<PF2_KitsuneFaction_Bowman>40</PF2_KitsuneFaction_Bowman>
 				</options>
 			</li>
 			<li>
 				<!-- Peaceful -->
 				<kindDef>Peaceful</kindDef>
 				<options>
-					<PF2_HobgoblinFaction_Brute>30</PF2_HobgoblinFaction_Brute>
-					<PF2_HobgoblinFaction_Warrior>30</PF2_HobgoblinFaction_Warrior>
-					<PF2_HobgoblinFaction_Archer>40</PF2_HobgoblinFaction_Archer>
-					<PF2_HobgoblinFaction_Champion>20</PF2_HobgoblinFaction_Champion>
+					<PF2_KitsuneFaction_Peasant>10</PF2_KitsuneFaction_Peasant>
+					<PF2_KitsuneFaction_Fighter>20</PF2_KitsuneFaction_Fighter>
+					<PF2_KitsuneFaction_Warrior>40</PF2_KitsuneFaction_Warrior>
+					<PF2_KitsuneFaction_Bowman>30</PF2_KitsuneFaction_Bowman>
+					<PF2_KitsuneFaction_Hunter>30</PF2_KitsuneFaction_Hunter>
 				</options>
 			</li>
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
-					<PF2_HobgoblinFaction_Merchant>1</PF2_HobgoblinFaction_Merchant>
+					<PF2_KitsuneFaction_Merchant>1</PF2_KitsuneFaction_Merchant>
 				</traders>
 				<carriers>
 					<Muffalo>6</Muffalo>
@@ -132,49 +144,49 @@
 					<Elephant>2</Elephant>
 				</carriers>
 				<guards>
-					<PF2_HobgoblinFaction_Brute>30</PF2_HobgoblinFaction_Brute>
-					<PF2_HobgoblinFaction_Warrior>30</PF2_HobgoblinFaction_Warrior>
-					<PF2_HobgoblinFaction_Archer>40</PF2_HobgoblinFaction_Archer>
-					<PF2_HobgoblinFaction_Champion>10</PF2_HobgoblinFaction_Champion>
+					<PF2_KitsuneFaction_Fighter>30</PF2_KitsuneFaction_Fighter>
+					<PF2_KitsuneFaction_Warrior>30</PF2_KitsuneFaction_Warrior>
+					<PF2_KitsuneFaction_Bowman>40</PF2_KitsuneFaction_Bowman>
+					<PF2_KitsuneFaction_Champion>10</PF2_KitsuneFaction_Champion>
 				</guards>
 			</li>
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<PF2_HobgoblinFaction_Peasant>30</PF2_HobgoblinFaction_Peasant>
-					<PF2_HobgoblinFaction_Brute>30</PF2_HobgoblinFaction_Brute>
-					<PF2_HobgoblinFaction_Warrior>30</PF2_HobgoblinFaction_Warrior>
-					<PF2_HobgoblinFaction_Archer>50</PF2_HobgoblinFaction_Archer>
-					<PF2_HobgoblinFaction_Champion>25</PF2_HobgoblinFaction_Champion>
-					<PF2_HobgoblinFaction_General>60</PF2_HobgoblinFaction_General>
+					<PF2_KitsuneFaction_Peasant>30</PF2_KitsuneFaction_Peasant>
+					<PF2_KitsuneFaction_Fighter>30</PF2_KitsuneFaction_Fighter>
+					<PF2_KitsuneFaction_Warrior>30</PF2_KitsuneFaction_Warrior>
+					<PF2_KitsuneFaction_Champion>25</PF2_KitsuneFaction_Champion>
+					<PF2_KitsuneFaction_Bowman>20</PF2_KitsuneFaction_Bowman>
+					<PF2_KitsuneFaction_MasterOfFoxes>60</PF2_KitsuneFaction_MasterOfFoxes>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<kindDef>Miners</kindDef>
-				<commonality>1</commonality>
+				<commonality>2</commonality>
 				<options>
-					<PF2_HobgoblinFaction_Miner>1</PF2_HobgoblinFaction_Miner>
+					<PF2_KitsuneFaction_Miner>5</PF2_KitsuneFaction_Miner>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<kindDef>Hunters</kindDef>
 				<commonality>1</commonality>
 				<options>
-					<PF2_HobgoblinFaction_Hunter>1</PF2_HobgoblinFaction_Hunter>
+					<PF2_KitsuneFaction_Hunter>1</PF2_KitsuneFaction_Hunter>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<kindDef>Loggers</kindDef>
 				<commonality>1</commonality>
 				<options>
-					<PF2_HobgoblinFaction_Logger>1</PF2_HobgoblinFaction_Logger>
+					<PF2_KitsuneFaction_Logger>1</PF2_KitsuneFaction_Logger>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<kindDef>Farmers</kindDef>
 				<commonality>1</commonality>
 				<options>
-					<PF2_HobgoblinFaction_Farmer>1</PF2_HobgoblinFaction_Farmer>
+					<PF2_KitsuneFaction_Farmer>1</PF2_KitsuneFaction_Farmer>
 				</options>
 			</li>
 		</pawnGroupMakers>

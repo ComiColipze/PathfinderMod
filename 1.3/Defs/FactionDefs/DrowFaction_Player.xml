@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_DrowPlayerColony</defName>
+		<label>Drow Arrivals</label>
+		<description>Your own community composed of drow.</description>
+		<basicMemberKind>PF2_DrowColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_DrowPlayerTribe</defName>
+		<label>Drow Tribe</label>
+		<description>A small tribe composed of drow.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_DrowTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

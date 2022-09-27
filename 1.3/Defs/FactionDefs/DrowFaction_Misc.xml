@@ -2,43 +2,42 @@
 <Defs>
 
 	<FactionDef ParentName="FactionBase">
-		<defName>PF2_ElfFaction</defName>
-		<label>elven enclave</label>
+		<defName>PF2_DrowFaction</defName>
+		<label>drow enclave</label>
 		<categoryTag>Tribal</categoryTag>
-		<description>This isolationist collection of settlements are mostly populated by elves. Their culture and identity is in a long, but depressing decline, and to prevent more loss, they isolated themselves in tightly-knit enclaves. Those elves who are in diaspora, settling down on villages of different races, are called forlorn, or abandoned elves.\n\nWhile they prioritize conflicts and commerce in their territory over other civilizations, adopting a loyalist mindset, elves in the enclave are mostly generous with individuals of other races or nations, despising slavery and imperialism. The enclave is also extremely advocate on maintaining nature on its immaculate state, not abusing the florests they settle and not hunt animals for sport.</description>
+		<description>This isolationist collection of settlements are mostly populated by drow. Their culture and identity is in a long, but depressing decline, and to prevent more loss, they isolated themselves in tightly-knit enclaves.\n\nDifferent from their cousin elves, drow enclaves are decadent, resorting to kidnap and enslave other races to do their work. Its supremacist culture makes them natural enemies to everyone; you will not be able to ally with them!</description>
 		<pawnSingular>liegeman</pawnSingular>
 		<pawnsPlural>liegemen</pawnsPlural>
 		<listOrderPriority>20</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
-		<startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+		<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
 		<colorSpectrum>
-			<li>(0, 102, 51)</li>
-			<li>(0, 255, 168)</li>
+			<li>(153, 102, 153)</li>
+			<li>(212, 41, 212)</li>
 		</colorSpectrum>
 		<fixedLeaderKinds>
-			<li>PF2_ElfFaction_King</li>
+			<li>PF2_DrowFaction_Matriarch</li>
 		</fixedLeaderKinds>
 		<canMakeRandomly>true</canMakeRandomly>
 		<canStageAttacks>true</canStageAttacks>
-		<factionIconPath>World/WorldObjects/Expanding/ElfFaction</factionIconPath>
+		<factionIconPath>World/WorldObjects/Expanding/DrowFaction</factionIconPath>
+		<permanentEnemy>true</permanentEnemy>
 		<geneticVariance>0.1</geneticVariance>
 		<techLevel>Medieval</techLevel>
-		<factionNameMaker>PF2_NamerFaction</factionNameMaker>
-		<settlementNameMaker>PF2_NamerPersonElfMale</settlementNameMaker>
-		<allowedCultures><li>PF2_Kyonan</li></allowedCultures>
+		<factionNameMaker>PF2_NamerFactionDrow</factionNameMaker>
+		<settlementNameMaker>PF2_NamerSettlementDrow</settlementNameMaker>
+		<allowedCultures><li>PF2_Sekaminite</li></allowedCultures>
 		<requiredMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
 		</requiredMemes>
 		<disallowedMemes>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_Xenophilia</li>
 		</disallowedMemes>
 		<disallowedPrecepts>
@@ -48,25 +47,28 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator_Preferred</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">NeuralSupercharge_Preferred</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">AgeReversal_Demanded</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienDating_Prohibited</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienDating_Acceptable</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienDating_Preferred</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienDating_Honorable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Disapproved</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Acceptable</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Honorable</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienRaces_Abhorrent</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienRaces_Respected</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienRaces_Exalted</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Required</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_RespectedIfGuilty</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_DontCare</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_HorribleIfInnocent</li>
 		</disallowedPrecepts>
 		<structureMemeWeights>
 			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
 			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
 			<PF2_Structure_OriginInnerSea MayRequire="Ludeon.RimWorld.Ideology">2</PF2_Structure_OriginInnerSea>
-			<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Animist>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
 			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
 			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
 			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
@@ -83,7 +85,7 @@
 				</categories>
 			</li>
 		</backstoryFilters>
-		<leaderTitle>king</leaderTitle>
+		<leaderTitle>matriarch</leaderTitle>
 		<caravanTraderKinds>
 			<li>Caravan_Neolithic_BulkGoods</li>
 			<li>Caravan_Neolithic_WarMerchant</li>
@@ -96,7 +98,7 @@
 			<li>Base_Neolithic_Standard</li>
 		</baseTraderKinds>
 		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
-		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<raidCommonalityFromPointsCurve>
 			<points>
 				<li>(0, 1)</li>
@@ -118,11 +120,11 @@
 				<kindDef>Combat</kindDef>
 				<commonality>100</commonality>
 				<options>
-					<PF2_ElfFaction_Peasant>20</PF2_ElfFaction_Peasant>
-					<PF2_ElfFaction_Squire>40</PF2_ElfFaction_Squire>
-					<PF2_ElfFaction_Footsoldier>30</PF2_ElfFaction_Footsoldier>
-					<PF2_ElfFaction_Archer>50</PF2_ElfFaction_Archer>
-					<PF2_ElfFaction_Knight>20</PF2_ElfFaction_Knight>
+					<PF2_DrowFaction_Peasant>20</PF2_DrowFaction_Peasant>
+					<PF2_DrowFaction_Squire>40</PF2_DrowFaction_Squire>
+					<PF2_DrowFaction_Footsoldier>30</PF2_DrowFaction_Footsoldier>
+					<PF2_DrowFaction_Archer>50</PF2_DrowFaction_Archer>
+					<PF2_DrowFaction_Knight>20</PF2_DrowFaction_Knight>
 				</options>
 			</li>
 			<li>
@@ -130,23 +132,23 @@
 				<kindDef>Combat</kindDef>
 				<commonality>30</commonality>
 				<options>
-					<PF2_ElfFaction_Archer>100</PF2_ElfFaction_Archer>
+					<PF2_DrowFaction_Archer>100</PF2_DrowFaction_Archer>
 				</options>
 			</li>
 			<li>
 				<!-- Peaceful -->
 				<kindDef>Peaceful</kindDef>
 				<options>
-					<PF2_ElfFaction_Squire>30</PF2_ElfFaction_Squire>
-					<PF2_ElfFaction_Footsoldier>30</PF2_ElfFaction_Footsoldier>
-					<PF2_ElfFaction_Archer>40</PF2_ElfFaction_Archer>
-					<PF2_ElfFaction_Knight>20</PF2_ElfFaction_Knight>
+					<PF2_DrowFaction_Squire>30</PF2_DrowFaction_Squire>
+					<PF2_DrowFaction_Footsoldier>30</PF2_DrowFaction_Footsoldier>
+					<PF2_DrowFaction_Archer>40</PF2_DrowFaction_Archer>
+					<PF2_DrowFaction_Knight>20</PF2_DrowFaction_Knight>
 				</options>
 			</li>
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
-					<PF2_ElfFaction_Merchant>1</PF2_ElfFaction_Merchant>
+					<PF2_DrowFaction_Merchant>1</PF2_DrowFaction_Merchant>
 				</traders>
 				<carriers>
 					<Muffalo>6</Muffalo>
@@ -155,49 +157,21 @@
 					<Elephant>2</Elephant>
 				</carriers>
 				<guards>
-					<PF2_ElfFaction_Squire>30</PF2_ElfFaction_Squire>
-					<PF2_ElfFaction_Footsoldier>30</PF2_ElfFaction_Footsoldier>
-					<PF2_ElfFaction_Archer>40</PF2_ElfFaction_Archer>
-					<PF2_ElfFaction_Knight>10</PF2_ElfFaction_Knight>
+					<PF2_DrowFaction_Squire>30</PF2_DrowFaction_Squire>
+					<PF2_DrowFaction_Footsoldier>30</PF2_DrowFaction_Footsoldier>
+					<PF2_DrowFaction_Archer>40</PF2_DrowFaction_Archer>
+					<PF2_DrowFaction_Knight>10</PF2_DrowFaction_Knight>
 				</guards>
 			</li>
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<PF2_ElfFaction_Peasant>30</PF2_ElfFaction_Peasant>
-					<PF2_ElfFaction_Squire>30</PF2_ElfFaction_Squire>
-					<PF2_ElfFaction_Footsoldier>30</PF2_ElfFaction_Footsoldier>
-					<PF2_ElfFaction_Archer>50</PF2_ElfFaction_Archer>
-					<PF2_ElfFaction_Knight>25</PF2_ElfFaction_Knight>
-					<PF2_ElfFaction_King>60</PF2_ElfFaction_King>
-				</options>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">
-				<kindDef>Miners</kindDef>
-				<commonality>1</commonality>
-				<options>
-					<PF2_ElfFaction_Miner>1</PF2_ElfFaction_Miner>
-				</options>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">
-				<kindDef>Hunters</kindDef>
-				<commonality>1</commonality>
-				<options>
-					<PF2_ElfFaction_Hunter>1</PF2_ElfFaction_Hunter>
-				</options>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">
-				<kindDef>Loggers</kindDef>
-				<commonality>1</commonality>
-				<options>
-					<PF2_ElfFaction_Logger>1</PF2_ElfFaction_Logger>
-				</options>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">
-				<kindDef>Farmers</kindDef>
-				<commonality>1</commonality>
-				<options>
-					<PF2_ElfFaction_Farmer>1</PF2_ElfFaction_Farmer>
+					<PF2_DrowFaction_Peasant>30</PF2_DrowFaction_Peasant>
+					<PF2_DrowFaction_Squire>30</PF2_DrowFaction_Squire>
+					<PF2_DrowFaction_Footsoldier>30</PF2_DrowFaction_Footsoldier>
+					<PF2_DrowFaction_Archer>50</PF2_DrowFaction_Archer>
+					<PF2_DrowFaction_Knight>25</PF2_DrowFaction_Knight>
+					<PF2_DrowFaction_Matriarch>60</PF2_DrowFaction_Matriarch>
 				</options>
 			</li>
 		</pawnGroupMakers>

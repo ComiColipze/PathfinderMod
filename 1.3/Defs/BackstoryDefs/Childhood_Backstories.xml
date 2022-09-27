@@ -3,11 +3,10 @@
 	
 	<AlienRace.BackstoryDef>
 		<defName>PF2_Forlorn</defName>
-		<title>forlorn</title>
-		<baseDescription>[PAWN_nameDef] grew up in a community populated by short-lived races. While being more compassionate and open to change than {PAWN_gender ? his : her} isolationist brethren,  {PAWN_gender ? him : she} is more melancholic due to outliving most of {PAWN_gender ? his : her} companions.</baseDescription>
-		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<title>Forlorn</title>
+		<baseDescription>[PAWN_nameDef] spent {PAWN_gender ? his : her} hundred years of {PAWN_gender ? his : her} life in a community populated by short-lived races, like humans, dwarves and halflings.\n\nWhile being more compassionate and open to change than {PAWN_gender ? his : her} isolationist brethren,  {PAWN_gender ? he : she}'s more melancholic due to outliving most of {PAWN_gender ? his : her} companions.</baseDescription>
 		<bodyTypeMale>Male</bodyTypeMale>
-		<bodyTypeFemale>Female</bodyTypeFemale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
 		<slot>Childhood</slot>
 		<spawnCategories>
 			<li>Elven</li>
@@ -15,7 +14,7 @@
 		<skillGains>
 			<li>
 				<defName>Artistic</defName>
-				<amount>2</amount>
+				<amount>4</amount>
 			</li>
 			<li>
 				<defName>Intellectual</defName>
@@ -23,7 +22,7 @@
 			</li>
 			<li>
 				<defName>Social</defName>
-				<amount>-2</amount>
+				<amount>-4</amount>
 			</li>
 		</skillGains>
 		<forcedTraits>
@@ -61,6 +60,67 @@
 				<degree>1</degree>
 			</li>
     </disallowedTraits>
+	</AlienRace.BackstoryDef>
+	
+	<AlienRace.BackstoryDef>
+		<defName>PF2_DrowPrincess</defName>
+		<title>Drow princess</title>
+		<titleShort>Princess</titleShort>
+		<baseDescription>From young age, [PAWN_nameDef] was thaught to lash {PAWN_gender ? his : her} servants for disobedience and harass their minds to make them {PAWN_gender ? his : her} silent, perfect, dutiful slaves for the house. With time, [PAWN_nameDef] took a liking to hurt others.</baseDescription>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>Drow</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Melee</defName>
+				<amount>2</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>3</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>3</amount>
+			</li>
+		</skillGains>
+		<forcedTraits>
+			<li>
+				<defName>Xenophobia</defName>
+				<degree>1</degree>
+				<chance>35</chance>
+			</li>
+			<li>
+				<defName>Psychopath</defName>
+			</li>
+			<li>
+				<defName>Bloodlust</defName>
+				<chance>25</chance>
+			</li>
+			<li>
+				<defName>Beauty</defName>
+				<degree>2</degree>
+				<chance>45</chance>
+			</li>
+		</forcedTraits>
+		<disallowedTraits>
+			<li>
+				<defName>Xenophobia</defName>
+				<degree>-1</degree>
+			</li>
+			<li>
+				<defName>Kind</defName>
+			</li>
+		</disallowedTraits>   
+		<workDisables>
+			<li>ManualDumb</li>
+			<li>Caring</li>
+		</workDisables>
+		<maleCommonality>0</maleCommonality>
+		<femaleCommonality>100</femaleCommonality>
 	</AlienRace.BackstoryDef>
 	
 </Defs>

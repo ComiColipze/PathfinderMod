@@ -5,7 +5,7 @@
 		<defName>PF2_GoblinFaction</defName>
 		<label>goblin union</label>
 		<categoryTag>Tribal</categoryTag>
-		<description>This nightmare alliance composed of chaotic and disparate tribes are extremely feared among its neighboring nations. They don't sow, build for themselves, or trade with other peoples, prefering to pillage and take what they think it's theirs. They are also fond of fire, despise any species of dogs and love to burn books. They are too savage to make friends with; you will not be able to ally with them!</description>
+		<description>This nightmarish alliance composed of chaotic and disparate tribes are extremely feared among its neighboring nations. They don't sow, build for themselves, or trade with other peoples, prefering to pillage and take what they think it's theirs. They are also fond of fire, despise any species of dogs and love to burn books. They are too savage to make friends with; you will not be able to ally with them!</description>
 		<pawnSingular>goblin</pawnSingular>
 		<pawnsPlural>goblins</pawnsPlural>
 		<listOrderPriority>20</listOrderPriority>
@@ -47,9 +47,10 @@
 		<structureMemeWeights>
 			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
 			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+			<PF2_Structure_OriginInnerSea MayRequire="Ludeon.RimWorld.Ideology">1</PF2_Structure_OriginInnerSea>
 		</structureMemeWeights>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-		<configurationListOrderPriority>50</configurationListOrderPriority>
+		<configurationListOrderPriority>90</configurationListOrderPriority>
 		<backstoryFilters>
 			<li>
 				<categories>

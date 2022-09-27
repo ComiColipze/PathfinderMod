@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<AlienRace.BackstoryDef>
+		<defName>PF2_ReturningRegent</defName>
+		<title>Returning regent</title>
+		<titleShort>Regent</titleShort>
+		<baseDescription>For centuries, [PAWN_nameDef] was a powerful regent from {PAWN_gender ? his : her} house. But a calamity forced {PAWN_gender ? him : her} to leave behind {PAWN_gender ? his : her} priviledges and possessions.\n\nNowadays, even after returning from the calamity that took him everything, {PAWN_nameDef} still treats people, even other elves, with a condescending, arrogant attitude.</baseDescription>
+		<bodyTypeGlobal>Thin</bodyTypeGlobal>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>Elven</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<defName>Artistic</defName>
+				<amount>6</amount>
+			</li>
+			<li>
+				<defName>Intellectual</defName>
+				<amount>5</amount>
+			</li>
+			<li>
+				<defName>Social</defName>
+				<amount>-4</amount>
+			</li>
+		</skillGains>
+		<forcedTraits>
+			<li>
+				<defName>Abrasive</defName>
+				<chance>45</chance>
+			</li>
+		</forcedTraits>
+		<disallowedTraits>
+			<li>
+				<defName>Xenophobia</defName>
+				<degree>-1</degree>
+			</li>
+			<li>
+				<defName>Kind</defName>
+			</li>
+		</disallowedTraits>   
+		<workDisables>
+			<li>ManualDumb</li>
+		</workDisables>    
+		<bioAgeRange>
+			<min>150</min>
+			<max>650</max>
+		</bioAgeRange>
+	</AlienRace.BackstoryDef>
+	
+</Defs>
