@@ -1,0 +1,10 @@
+﻿village
+town
+township
+hamlet
+district
+city
+settlement
+encampment
+campsite
+feud
