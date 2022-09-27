@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingStyleDef ParentName="PF2_RotateWeapons">
+		<defName>PF2_DwarvenAxe</defName>
+		<overrideLabel>dwarven waraxe</overrideLabel>
+		<graphicData>
+			<texPath>Things/Item/Weapons/DwarvenAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="PF2_RotateWeapons">
+		<defName>PF2_DwarvenBreachHammer</defName>
+		<overrideLabel>dwarven maulaxe</overrideLabel>
+
+		<graphicData>
+			<texPath>Things/Item/Weapons/DwarvenBreachHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="PF2_RotateWeapons">
+		<defName>PF2_ClanDagger</defName>
+		<overrideLabel>clan dagger</overrideLabel>
+		<graphicData>
+			<texPath>Things/Item/Weapons/ClanDagger</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="PF2_RotateWeapons">
+		<defName>PF2_DwarvenMace</defName>		
+		<graphicData>
+			<texPath>Things/Item/Weapons/DwarvenMace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="PF2_RotateWeapons">
+		<defName>PF2_DwarvenClub</defName>
+		<graphicData>
+			<texPath>Things/Item/Weapons/DwarvenClub</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="PF2_RotateWeapons">
+		<defName>PF2_DwarvenKnife</defName>
+		<graphicData>
+			<texPath>Things/Item/Weapons/DwarvenKnife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="PF2_RotateWeapons">
+		<defName>PF2_DwarvenLongSword</defName>
+		<graphicData>
+			<texPath>Things/Item/Weapons/DwarvenLongSword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="PF2_RotateWeapons">
+		<defName>PF2_DwarvenDoubleWarAxe</defName>
+		<overrideLabel>dwarven double waraxe</overrideLabel>
+		<graphicData>
+			<texPath>Things/Item/Weapons/DwarvenDoubleWarAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+
+</Defs>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<RulePackDef>
+		<defName>PF2_NamerIdeoToraghdan</defName>
+		<include>
+			<li>NamerIdeoGlobal</li>
+			</include>
+		<rulePack>
+			<rulesStrings>
+				<li>globalAdjective->Battleforged</li>
+				<li>globalAdjective->Stoic</li>
+				<li>globalAdjective->Honored</li>
+				<li>globalAdjective->Determined</li>
+				<li>globalAdjective->Dwarf</li>
+				<li>globalAdjective->Dwarven</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerIdeoKyonan</defName>
+		<include>
+			<li>NamerIdeoGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>globalAdjective->Millenary</li>
+				<li>globalAdjective->Capricious</li>
+				<li>globalAdjective->Ideal</li>
+				<li>globalAdjective->Mystical</li>
+				<li>globalAdjective->Artistic</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerIdeoFirstWorlder</defName>
+		<include>
+			<li>NamerIdeoGlobal</li>
+		</include>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerIdeoGoblin</defName>
+		<include>
+			<li>NamerIdeoGlobal</li>
+			</include>
+		<rulePack>
+			<rulesStrings>
+				<li>globalAdjective->Bad</li>
+				<li>globalAdjective->Mad</li>
+				<li>globalAdjective->Radical</li>
+				<li>globalAdjective->Crazy</li>
+				<li>globalAdjective->Hyper</li>
+				<li>globalAdjective->Goblin</li>
+				<li>globalAdjective->Goblinoid</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerIdeoChaldiran</defName>
+		<include>
+			<li>NamerIdeoGlobal</li>
+		</include>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerIdeoOprakan</defName>
+		<include>
+			<li>NamerIdeoGlobal</li>
+			</include>
+		<rulePack>
+			<rulesStrings>
+				<li>globalAdjective->Bad</li>
+				<li>globalAdjective->In-Line</li>
+				<li>globalAdjective->Lawful</li>
+				<li>globalAdjective->Military</li>
+				<li>globalAdjective->Hyper</li>
+				<li>globalAdjective->Hobgoblin</li>
+				<li>globalAdjective->Hobgoblinoid</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerIdeoDraconic</defName>
+		<include>
+			<li>NamerIdeoGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>globalAdjective->Dragon</li>
+				<li>globalAdjective->Draconic</li>
+				<li>globalAdjective->Supreme</li>
+				<li>globalAdjective->Elemental</li>
+				<li>globalAdjective->Kobold</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerIdeoBelkzen</defName>
+		<include>
+			<li>NamerIdeoGlobal</li>
+			</include>
+		<rulePack>
+			<rulesStrings>
+				<li>globalAdjective->Battlescarred</li>
+				<li>globalAdjective->Battleready</li>
+				<li>globalAdjective->Savage</li>
+				<li>globalAdjective->Warrior</li>
+				<li>globalAdjective->Tribal</li>
+				<li>globalAdjective->Orc</li>
+				<li>globalAdjective->Orcish</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+</Defs>

@@ -4,7 +4,7 @@
   <MemeDef>
     <defName>PF2_Structure_OriginInnerSea</defName>
     <label>Inner Sea origin</label>
-    <description>This ideoligion is a descendant of the ancient Inner Sea pantheon of deities. It may have very different precepts than those of thousands of years ago, but its symbols are similar.</description>
+    <description>This ideoligion is a descendant of the ancient Inner Sea deities. It may have very different precepts than those of thousands of years ago, but its symbols are similar.</description>
     <category>Structure</category>
     <iconPath>UI/Structures/Structure_InnerSea</iconPath>
     <impact>0</impact>
@@ -94,6 +94,7 @@
 		<li><name>Sivanah</name><type>Goddess of Illusion</type></li>
 		<li><name>Tsukiyo</name><type>Moon God</type></li>
 		<li><name>Zyphus</name><type>God of Tragedy</type></li>
+		
     </fixedDeityNameTypes>
     <symbolPacks>
       <li>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<RulePackDef>
+		<defName>PF2_LeaderTitleMaker_Toraghdan</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
+
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+				<li>cultureLeaderAdjective->great</li>
+				<li>cultureLeaderAdjective->high</li>
+				<li>cultureLeaderAdjective->grand</li>
+
+				<li>cultureLeaderNoun->chief</li>
+				<li>cultureLeaderNoun->king</li>
+				<li>cultureLeaderNoun->smith</li>
+				<li>cultureLeaderNoun->councilor</li>
+				<li>cultureLeaderNoun->leader</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_LeaderTitleMaker_Kyonan</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
+
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+				<li>cultureLeaderAdjective->millenarian</li>
+				<li>cultureLeaderAdjective->elder</li>
+				<li>cultureLeaderAdjective->ancient</li>
+
+				<li>cultureLeaderNoun->ruler</li>
+				<li>cultureLeaderNoun->king</li>
+				<li>cultureLeaderNoun->leader</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_LeaderTitleMaker_FirstWorlder</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+				<li>cultureLeaderAdjective->smart</li>
+				<li>cultureLeaderAdjective->genius</li>
+				<li>cultureLeaderAdjective->ingenious</li>
+
+				<li>cultureLeaderNoun->emissary</li>
+				<li>cultureLeaderNoun->jack-of-all-trades</li>
+				<li>cultureLeaderNoun->councilor</li>
+				<li>cultureLeaderNoun->leader</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_LeaderTitleMaker_Goblin</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>cultureLeaderTitle->[cultureLeaderNoun]</li>
+
+				<li>cultureLeaderNoun->chief</li>
+				<li>cultureLeaderNoun->king</li>
+				<li>cultureLeaderNoun->commando</li>
+				<li>cultureLeaderNoun->war chanter</li>
+				<li>cultureLeaderNoun->boss</li>
+				<li>cultureLeaderNoun->mad lad</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+
+	<RulePackDef>
+		<defName>PF2_LeaderTitleMaker_Chaldiran</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+				<li>cultureLeaderAdjective->great</li>
+				<li>cultureLeaderAdjective->high</li>
+				<li>cultureLeaderAdjective->good</li>
+
+				<li>cultureLeaderNoun->father</li>
+				<li>cultureLeaderNoun->grandfather</li>
+				<li>cultureLeaderNoun->patriarch</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_LeaderTitleMaker_Oprakan</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
+
+				<li>cultureLeaderTitle(priority=2)->[cultureLeaderNoun]</li>
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+				<li>cultureLeaderAdjective->brigadier</li>
+				<li>cultureLeaderAdjective->major</li>
+				<li>cultureLeaderAdjective->army</li>
+				<li>cultureLeaderAdjective->officer</li>
+				
+				<li>cultureLeaderNoun->commando</li>
+				<li>cultureLeaderNoun->marshal</li>
+				<li>cultureLeaderNoun->commander-in-chief</li>
+				<li>cultureLeaderNoun->colonel</li>
+				<li>cultureLeaderNoun->lieutenant</li>
+				<li>cultureLeaderNoun->general</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_LeaderTitleMaker_Draconic</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
+
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+				<li>cultureLeaderAdjective->draconic</li>
+				<li>cultureLeaderAdjective->dragon</li>
+				<li>cultureLeaderAdjective->dank</li>
+
+				<li>cultureLeaderNoun->chief</li>
+				<li>cultureLeaderNoun->chieftain</li>
+				<li>cultureLeaderNoun->servant</li>
+				<li>cultureLeaderNoun->follower</li>
+				<li>cultureLeaderNoun->disciple</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_LeaderTitleMaker_Belkzen</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+				<li>cultureLeaderAdjective->war</li>
+				<li>cultureLeaderAdjective->great</li>
+				<li>cultureLeaderAdjective->grand</li>
+				<li>cultureLeaderAdjective->warrior</li>
+
+				<li>cultureLeaderNoun->chief</li>
+				<li>cultureLeaderNoun->master</li>
+				<li>cultureLeaderNoun->khan</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_LeaderTitleMaker_Sekaminite</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
+
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+				<li>cultureLeaderAdjective->ancient</li>
+				<li>cultureLeaderAdjective->spider</li>
+				<li>cultureLeaderAdjective->demonic</li>
+				<li>cultureLeaderAdjective->slaver</li>
+				<li>cultureLeaderAdjective->honored</li>
+				<li>cultureLeaderAdjective->reverend</li>
+
+				<li>cultureLeaderNoun->queen</li>
+				<li>cultureLeaderNoun->matriarch</li>
+				<li>cultureLeaderNoun->matre</li>
+				<li>cultureLeaderNoun->mother</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_LeaderTitleMaker_Daikitsun</defName>
+		<include>
+			<li>LeaderTitleMaker_GlobalStructure</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>cultureLeaderTitle->[cultureLeaderAdjective] [cultureLeaderNoun]</li>
+
+				<li>cultureLeaderAdjective->celestial</li>
+				<li>cultureLeaderAdjective->great</li>
+				<li>cultureLeaderAdjective->high</li>
+				<li>cultureLeaderAdjective->vulpine</li>
+				<li>cultureLeaderAdjective->bountiful</li>
+				<li>cultureLeaderAdjective->ever-changing</li>
+
+				<li>cultureLeaderNoun->master</li>
+				<li>cultureLeaderNoun->master of foxes</li>
+				<li>cultureLeaderNoun->shogun</li>
+				<li>cultureLeaderNoun->daimyo</li>
+				<li>cultureLeaderNoun->lord</li>
+				<li>cultureLeaderNoun->lord of foxes</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+</Defs>

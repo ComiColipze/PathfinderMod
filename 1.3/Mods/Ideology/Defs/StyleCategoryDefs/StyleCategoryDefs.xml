@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<StyleCategoryDef>
+		<defName>PF2_Dwarven</defName>
+		<label>dwarven</label>
+		<iconPath>UI/Structures/DwarvenStyle</iconPath>
+		<soundOngoingRitual>PF2_RitualSustainer_Totemic</soundOngoingRitual>
+		<ritualVisualEffectDef>Totemic</ritualVisualEffectDef>
+		<thingDefStyles>
+			<li>
+				<thingDef>MeleeWeapon_Gladius</thingDef>
+				<styleDef>PF2_ClanDagger</styleDef>
+			</li>
+			<li>
+				<thingDef>MeleeWeapon_Knife</thingDef>
+				<styleDef>PF2_DwarvenKnife</styleDef>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">
+				<thingDef>MeleeWeapon_Axe</thingDef>
+				<styleDef>PF2_DwarvenAxe</styleDef>
+			</li>
+			<li>
+				<thingDef>MeleeWeapon_BreachAxe</thingDef>
+				<styleDef>PF2_DwarvenBreachHammer</styleDef>
+			</li>
+			<li>
+				<thingDef>MeleeWeapon_Mace</thingDef>
+				<styleDef>PF2_DwarvenMace</styleDef>
+			</li>
+			<li>
+				<thingDef>MeleeWeapon_Club</thingDef>
+				<styleDef>PF2_DwarvenClub</styleDef>
+			</li>
+			<li>
+				<thingDef>MeleeWeapon_Knife</thingDef>
+				<styleDef>PF2_DwarvenKnife</styleDef>
+			</li>
+			<li>
+				<thingDef>MeleeWeapon_LongSword</thingDef>
+				<styleDef>PF2_DwarvenLongSword</styleDef>
+			</li>
+		</thingDefStyles>
+	</StyleCategoryDef>
+</Defs>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>PF2_NamerDeityToraghdan</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[DwarfList9][DwarfList10]</li>
+				<li>name->[DwarfList11][DwarfList12]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>DwarfList9</keyword>
+					<path>DwarfNames/Dwarf9</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList10</keyword>
+					<path>DwarfNames/Dwarf10</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList11</keyword>
+					<path>DwarfNames/Dwarf11</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList12</keyword>
+					<path>DwarfNames/Dwarf12</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerDeityKyonan</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[ElfList1]</li>
+				<li>name->[ElfList2]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>ElfList1</keyword>
+					<path>ElfNames/Elf1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList2</keyword>
+					<path>ElfNames/Elf2</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerDeityFirstWorlder</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[GnomeList1][GnomeList2][GnomeList3][GnomeList2][GnomeList4]</li>
+				<li>name->[GnomeList1][GnomeList2][GnomeList3][GnomeList2][GnomeList3][GnomeList2][GnomeList4]</li>
+				<li>name->[GnomeList1][GnomeList2][GnomeList3][GnomeList2][GnomeList3][GnomeList2][GnomeList3][GnomeList2][GnomeList4]</li>
+				<li>name->[GnomeList1][GnomeList2][GnomeList3][GnomeList2]</li>
+				<li>name->[GnomeList1][GnomeList2][GnomeList4]</li>
+				<li>name->[GnomeList2][GnomeList3][GnomeList2][GnomeList4]</li>
+				<li>name->[GnomeListWelsh1][GnomeListWelsh2]</li>
+				<li>name->[GnomeList5]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>GnomeList1</keyword>
+					<path>GnomeNames/Gnome1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeList2</keyword>
+					<path>GnomeNames/Gnome2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeList3</keyword>
+					<path>GnomeNames/Gnome3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeList4</keyword>
+					<path>GnomeNames/Gnome4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeList5</keyword>
+					<path>GnomeNames/Gnome5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeList6</keyword>
+					<path>GnomeNames/Gnome6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeListWelsh1</keyword>
+					<path>GnomeNames/GnomeWelsh1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GnomeListWelsh2</keyword>
+					<path>GnomeNames/GnomeWelsh2</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerDeityGoblin</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[GoblinList1][GoblinList2][GoblinList4]</li>
+				<li>name->[GoblinList1][GoblinList2][GoblinList3][GoblinList2]</li>
+				<li>name->[GoblinList1][GoblinList2][GoblinList3][GoblinList2][GoblinList3][GoblinList2]</li>
+				<li>name->[GoblinList1][GoblinList2][GoblinList3][GoblinList2][GoblinList4]</li>
+				<li>name->[GoblinList1][GoblinList2][GoblinList3][GoblinList2][GoblinList3][GoblinList2][GoblinList4]</li>
+				<li>name->[GoblinList2][GoblinList3][GoblinList2][GoblinList4]</li>
+				<li>name->[GoblinList2][GoblinList3][GoblinList2]</li>
+				<li>name->[GoblinList5][GoblinList6][GoblinList8]</li>
+				<li>name->[GoblinList5][GoblinList6][GoblinList7][GoblinList6][GoblinList8]</li>
+				<li>name->[GoblinList5][GoblinList6][GoblinList7][GoblinList6][GoblinList7][GoblinList6][GoblinList8]</li>
+				<li>name->[GoblinList5][GoblinList6][GoblinList7][GoblinList6][GoblinList7][GoblinList6]</li>
+				<li>name->[GoblinList5][GoblinList6][GoblinList7][GoblinList6]</li>
+				<li>name->[GoblinList6][GoblinList7][GoblinList6][GoblinList8]</li>
+				<li>name->[GoblinList6][GoblinList7][GoblinList6]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>GoblinList1</keyword>
+					<path>GoblinNames/Goblin1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList2</keyword>
+					<path>GoblinNames/Goblin2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList3</keyword>
+					<path>GoblinNames/Goblin3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList4</keyword>
+					<path>GoblinNames/Goblin4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList5</keyword>
+					<path>GoblinNames/Goblin5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList6</keyword>
+					<path>GoblinNames/Goblin6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList7</keyword>
+					<path>GoblinNames/Goblin7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList8</keyword>
+					<path>GoblinNames/Goblin8</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList9</keyword>
+					<path>GoblinNames/Goblin9</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList10</keyword>
+					<path>GoblinNames/Goblin10</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerDeityChaldiran</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[HalflingList1]</li>
+				<li>name->[HalflingList2]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>HalflingList1</keyword>
+					<path>HalflingNames/Halfling1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HalflingList2</keyword>
+					<path>HalflingNames/Halfling2</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerDeityOprakan</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList4]</li>
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList3][HobgoblinList2]</li>
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList3][HobgoblinList2][HobgoblinList3][HobgoblinList2]</li>
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList3][HobgoblinList2][HobgoblinList4]</li>
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList3][HobgoblinList2][HobgoblinList3][HobgoblinList2][HobgoblinList4]</li>
+				<li>name->[HobgoblinList2][HobgoblinList3][HobgoblinList2][HobgoblinList4]</li>
+				<li>name->[HobgoblinList2][HobgoblinList3][HobgoblinList2]</li>
+				<li>name->[HobgoblinList5][HobgoblinList6][HobgoblinList8]</li>
+				<li>name->[HobgoblinList5][HobgoblinList6][HobgoblinList7][HobgoblinList6][HobgoblinList8]</li>
+				<li>name->[HobgoblinList5][HobgoblinList6][HobgoblinList7][HobgoblinList6][HobgoblinList7][HobgoblinList6][HobgoblinList8]</li>
+				<li>name->[HobgoblinList5][HobgoblinList6][HobgoblinList7][HobgoblinList6][HobgoblinList7][HobgoblinList6]</li>
+				<li>name->[HobgoblinList5][HobgoblinList6][HobgoblinList7][HobgoblinList6]</li>
+				<li>name->[HobgoblinList6][HobgoblinList7][HobgoblinList6][HobgoblinList8]</li>
+				<li>name->[HobgoblinList6][HobgoblinList7][HobgoblinList6]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList1</keyword>
+					<path>HobgoblinNames/Hobgoblin1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList2</keyword>
+					<path>HobgoblinNames/Hobgoblin2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList3</keyword>
+					<path>HobgoblinNames/Hobgoblin3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList4</keyword>
+					<path>HobgoblinNames/Hobgoblin4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList5</keyword>
+					<path>HobgoblinNames/Hobgoblin5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList6</keyword>
+					<path>HobgoblinNames/Hobgoblin6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList7</keyword>
+					<path>HobgoblinNames/Hobgoblin7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList8</keyword>
+					<path>HobgoblinNames/Hobgoblin8</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerDeityDraconic</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[DragonList1]</li>
+				<li>name->[DragonList2]</li>
+				<li>name->[DragonList3][DragonList4]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>DragonList1</keyword>
+					<path>KoboldNames/Dragon1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DragonList2</keyword>
+					<path>KoboldNames/Dragon2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DragonList3</keyword>
+					<path>KoboldNames/Dragon3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DragonList4</keyword>
+					<path>KoboldNames/Dragon4</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerDeityBelkzen</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[OrcList1][OrcList2][OrcList4]</li>
+				<li>name->[OrcList1][OrcList2][OrcList3][OrcList2]</li>
+				<li>name->[OrcList1][OrcList2][OrcList3][OrcList2][OrcList4]</li>
+				<li>name->[OrcList5][OrcList6][OrcList8]</li>
+				<li>name->[OrcList5][OrcList6][OrcList7][OrcList6]</li>
+				<li>name->[OrcList5][OrcList6][OrcList7][OrcList6][OrcList8]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>OrcList1</keyword>
+					<path>OrcNames/Orc1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList2</keyword>
+					<path>OrcNames/Orc2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList3</keyword>
+					<path>OrcNames/Orc3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList4</keyword>
+					<path>OrcNames/Orc4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList5</keyword>
+					<path>OrcNames/Orc5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList6</keyword>
+					<path>OrcNames/Orc6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList7</keyword>
+					<path>OrcNames/Orc7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList8</keyword>
+					<path>OrcNames/Orc8</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerDeitySekaminite</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[DrowList5][DrowList6][DrowList8]</li>
+				<li>name->[DrowList5][DrowList6][DrowList7][DrowList6]</li>
+				<li>name->[DrowList5][DrowList6][DrowList7][DrowList6][DrowList7][DrowList6]</li>
+				<li>name->[DrowList6][DrowList7][DrowList6][DrowList8]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>DrowList1</keyword>
+					<path>DrowNames/Drow1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList2</keyword>
+					<path>DrowNames/Drow2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList3</keyword>
+					<path>DrowNames/Drow3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList4</keyword>
+					<path>DrowNames/Drow4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList5</keyword>
+					<path>DrowNames/Drow5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList6</keyword>
+					<path>DrowNames/Drow6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList7</keyword>
+					<path>DrowNames/Drow7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList8</keyword>
+					<path>DrowNames/Drow8</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerDeityDaikitsun</defName>
+		<include>
+			<li>NamerDeityGlobal</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[KitsuneList1][KitsuneList2][KitsuneList3]</li>
+				<li>name->[KitsuneList1][KitsuneList3]</li>
+				<li>name->[KitsuneList4][KitsuneList5][KitsuneList6]</li>
+				<li>name->[KitsuneList4][KitsuneList6]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>KitsuneList1</keyword>
+					<path>KitsuneNames/Kitsune1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KitsuneList2</keyword>
+					<path>KitsuneNames/Kitsune2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KitsuneList3</keyword>
+					<path>KitsuneNames/Kitsune3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KitsuneList4</keyword>
+					<path>KitsuneNames/Kitsune4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KitsuneList5</keyword>
+					<path>KitsuneNames/Kitsune5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>KitsuneList6</keyword>
+					<path>KitsuneNames/Kitsune6</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+</Defs>
