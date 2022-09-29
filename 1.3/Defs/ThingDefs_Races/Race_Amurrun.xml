@@ -9,7 +9,7 @@
 					<kindDefs>
 						<li>PF2_AmurrunSlave</li>
 					</kindDefs>
-					<chance>10.0</chance>
+					<chance>20.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
@@ -17,7 +17,7 @@
 					<kindDefs>
 						<li>PF2_AmurrunRefugee</li>
 					</kindDefs>
-					<chance>10.0</chance>
+					<chance>20.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_AmurrunColonist</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_AmurrunTribal</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_AmurrunColonist</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_AmurrunTribal</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -236,6 +236,9 @@
         <thoughtSettings>
 			<cannotReceiveThoughts>
 				<li>EnvironmentDark</li>
+				<li>AteRawFood</li>
+				<li>AteWithoutTable</li>
+				<li>SleptOnGround</li>
 			</cannotReceiveThoughts>
         </thoughtSettings>
         <compatibility>
@@ -253,6 +256,7 @@
 		<RoyalFavorValue>3</RoyalFavorValue>
 		<NegotiationAbility>1.2</NegotiationAbility>
 		<TradePriceImprovement>1.2</TradePriceImprovement>
+		<HuntingStealth>1.2</HuntingStealth>
 		<MeleeDodgeChance>15</MeleeDodgeChance>
 		<PawnTrapSpringChance>0.1</PawnTrapSpringChance>
 	</statBases>

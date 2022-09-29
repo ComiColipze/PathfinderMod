@@ -9,7 +9,7 @@
 					<kindDefs>
 						<li>PF2_ElfSlave</li>
 					</kindDefs>
-					<chance>10.0</chance>
+					<chance>20.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
@@ -17,7 +17,7 @@
 					<kindDefs>
 						<li>PF2_ElfRefugee</li>
 					</kindDefs>
-					<chance>10.0</chance>
+					<chance>20.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_ElfColonist</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_ElfTribal</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_ElfColonist</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_ElfTribal</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -329,7 +329,7 @@
 		<SmoothingSpeed>0.7</SmoothingSpeed>
 		<EatingSpeed>0.8</EatingSpeed>
 		<RestRateMultiplier>1.2</RestRateMultiplier>
-		<GlobalLearningFactor>1.20</GlobalLearningFactor>
+		<GlobalLearningFactor>1.2</GlobalLearningFactor>
 	</statBases>
 	<tools>
 		<li>

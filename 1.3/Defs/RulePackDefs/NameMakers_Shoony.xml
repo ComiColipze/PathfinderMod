@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>PF2_NamerPersonShoonyMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[ShoonyList1][ShoonyList2][ShoonyList3] [ShoonyList6][ShoonyList7]</li>
+				<li>name->[ShoonyList1][ShoonyList2][ShoonyList3] [ShoonyList8]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>ShoonyList1</keyword>
+					<path>ShoonyNames/Shoony1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ShoonyList2</keyword>
+					<path>ShoonyNames/Shoony2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ShoonyList3</keyword>
+					<path>ShoonyNames/Shoony3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ShoonyList4</keyword>
+					<path>ShoonyNames/Shoony4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ShoonyList5</keyword>
+					<path>ShoonyNames/Shoony5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ShoonyList6</keyword>
+					<path>ShoonyNames/Shoony6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ShoonyList7</keyword>
+					<path>ShoonyNames/Shoony7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ShoonyList8</keyword>
+					<path>ShoonyNames/Shoony8</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerPersonShoonyFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[ShoonyList4][ShoonyList5] [ShoonyList6][ShoonyList7]</li>
+				<li>name->[ShoonyList4][ShoonyList5] [ShoonyList8]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>ShoonyList1</keyword>
+					<path>ShoonyNames/Shoony1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ShoonyList2</keyword>
+					<path>ShoonyNames/Shoony2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ShoonyList3</keyword>
+					<path>ShoonyNames/Shoony3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ShoonyList4</keyword>
+					<path>ShoonyNames/Shoony4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ShoonyList5</keyword>
+					<path>ShoonyNames/Shoony5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ShoonyList6</keyword>
+					<path>ShoonyNames/Shoony6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ShoonyList7</keyword>
+					<path>ShoonyNames/Shoony7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ShoonyList8</keyword>
+					<path>ShoonyNames/Shoony8</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

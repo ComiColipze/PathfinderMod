@@ -2,12 +2,12 @@
 <Defs>
 
 	<AlienRace.RaceSettings>
-		<defName>Tengu_Settings</defName>
+		<defName>Shoony_Settings</defName>
 		<pawnKindSettings>
             <alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_TenguSlave</li>
+						<li>PF2_ShoonySlave</li>
 					</kindDefs>
 					<chance>20.0</chance>
 				</li>
@@ -15,7 +15,7 @@
             <alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>PF2_TenguRefugee</li>
+						<li>PF2_ShoonyRefugee</li>
 					</kindDefs>
 					<chance>20.0</chance>
 				</li>
@@ -25,26 +25,26 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>PF2_TenguColonist</li>
+								<li>PF2_ShoonyColonist</li>
 							</kindDefs>
 							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PF2_TenguPlayerColony</li> 
+						<li>PF2_ShoonyPlayerColony</li> 
 					</factionDefs>
 				</li>
 				<li>
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>PF2_TenguTribal</li>
+								<li>PF2_ShoonyTribal</li>
 							</kindDefs>
 							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PF2_TenguPlayerTribe</li>
+						<li>PF2_ShoonyPlayerTribe</li>
 					</factionDefs>
 				</li>
 			</startingColonists>
@@ -53,26 +53,26 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>PF2_TenguColonist</li>
+								<li>PF2_ShoonyColonist</li>
 							</kindDefs>
 							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PF2_TenguPlayerColony</li> 
+						<li>PF2_ShoonyPlayerColony</li> 
 					</factionDefs>
 				</li>
 				<li>
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>PF2_TenguTribal</li>
+								<li>PF2_ShoonyTribal</li>
 							</kindDefs>
 							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>PF2_TenguPlayerTribe</li> 
+						<li>PF2_ShoonyPlayerTribe</li> 
 					</factionDefs>
 				</li>
             </alienwandererkinds>
@@ -80,69 +80,149 @@
 	</AlienRace.RaceSettings>
 
 <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>PF2_Tengu</defName>
-    <label>tengu</label>
-    <description>Tengus are survivalists and conversationalists, equally at home living off the wilderness and finding a niche in dense cities. They accumulate knowledge, tools, and companions, adding them to their collection as they travel.</description>
+    <defName>PF2_Shoony</defName>
+    <label>shoony</label>
+    <description>Diminutive humanoids who resemble squat, bipedal dogs, shoonies are sometimes mistaken for weak and insular pacifists. However, their sheer perseverance, incredible work ethic, and resourceful use of diplomacy make shoonies far from helpless.</description>
     <alienRace>
         <generalSettings>
 			<maleGenderProbability>0.5</maleGenderProbability>
 			<immuneToAge>false</immuneToAge>
 			<humanRecipeImport>true</humanRecipeImport>
 			<immuneToXenophobia>false</immuneToXenophobia>
-			<minAgeForAdulthood>17</minAgeForAdulthood>
+			<minAgeForAdulthood>10</minAgeForAdulthood>
 			<disallowedTraits>
                 <li>
                     <defName>Undergrounder</defName>
 				</li>
-                <li>
-                    <defName>Tough</defName>
+				<li>
+					<defName>Immunity</defName>
+					<degree>-1</degree>
 				</li>
             </disallowedTraits>
 			<alienPartGenerator>
-				<useGenderedHeads>false</useGenderedHeads>
 				<aliencrowntypes>
 					<li>Average_Normal</li>
 				</aliencrowntypes>
 				<alienbodytypes>
-					<li>Thin</li>
 					<li>Male</li>
 					<li>Female</li>
+					<li>Fat</li>
 				</alienbodytypes>
-				<headOffset>(0.0, -0.08)</headOffset>
-				<colorChannels>
-                    <li>
-					<name>skin</name>
-					<first Class="ColorGenerator_Options">
-						<options>
-                            <li>
-								<weight>15</weight>
-                                <only>(55, 55, 55)</only>
-                            </li>
-                            <li>
-                                <weight>20</weight>
-                                <only>(76, 76, 76)</only>
-                            </li>
-                            <li>
-                                <weight>10</weight>
-                                <only>(25, 45, 90)</only>
-                            </li>
-                            <li>
-                                <weight>10</weight>
-                                <only>(55, 65, 90)</only>
-                            </li>
-                            <li>
-								<weight>20</weight>
-								<only>(55, 50, 85)</only>
-                            </li>
-						</options>
-					</first>
+				<customDrawSize>(0.75, 0.75)</customDrawSize>
+				<customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>
+				<headOffset>(0.0, -0.09)</headOffset>
+				<getsGreyAt>30</getsGreyAt>
+				<colorChannels>	                    
+					<li>
+						<name>skin</name>
+						<first Class="ColorGenerator_Options">
+							<options>
+								<li>
+									<weight>10</weight>
+									<only>(73, 61, 46)</only>
+								</li>
+								<li>
+									<weight>10</weight>
+									<only>(91, 68, 56)</only>
+								</li>
+								<li>
+									<weight>10</weight>
+									<only>(94,90,92)</only>
+								</li>
+								<li>
+									<weight>10</weight>
+									<only>(126,106,88)</only>
+								</li>
+								<li>
+									<weight>10</weight>
+									<only>(149, 123, 88)</only>
+								</li>
+								<li>
+									<weight>10</weight>
+									<only>(159, 114, 64)</only>
+								</li>
+								<li>
+									<weight>10</weight>
+									<only>(173, 125, 75)</only>
+								</li>
+								<li>
+									<weight>10</weight>
+									<only>(179, 148, 94)</only>
+								</li>
+							</options>
+						</first>
+					</li>                
+				</colorChannels>
+				<bodyAddons>
+					<li>
+						<bodyPart>left ear</bodyPart>
+						<path>Things/Pawn/Shoony/Ears/Left_Ear</path>
+						<colorChannel>skin</colorChannel>
+						<drawSize>(1.0,1.0)</drawSize>
+						<drawSizePortrait>(1.0,1.0)</drawSizePortrait>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<inFrontOfBody>true</inFrontOfBody>
+						<alignWithHead>true</alignWithHead>
+						<drawnDesiccated>false</drawnDesiccated>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
 					</li>
-                </colorChannels>
+					<li>
+						<bodyPart>right ear</bodyPart>
+						<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+						<path>Things/Pawn/Shoony/Ears/Right_Ear</path>
+						<colorChannel>skin</colorChannel>
+						<drawSize>(1.0,1.0)</drawSize>
+						<drawSizePortrait>(1.0,1.0)</drawSizePortrait>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<inFrontOfBody>true</inFrontOfBody>
+						<alignWithHead>true</alignWithHead>
+						<drawnDesiccated>false</drawnDesiccated>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+					<li>
+						<bodyPart>tail</bodyPart>
+						<path>Things/Pawn/Shoony/Tails/Tails</path>
+						<inFrontOfBody>false</inFrontOfBody>
+						<drawnInBed>false</drawnInBed>
+						<drawSize>0.85</drawSize>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                        <colorChannel>skin</colorChannel>
+						<defaultOffset>Center</defaultOffset>
+						<drawnDesiccated>false</drawnDesiccated>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Male>(0.0,-0.092)</Male>
+									<Female>(0.0,-0.092)</Female>
+									<Fat>(0.0,-0.092)</Fat>
+								</bodyTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Male>(0.0,-0.179)</Male>
+									<Female>(0.0,-0.195)</Female>
+									<Fat>(0.0,-0.278)</Fat>
+								</bodyTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Male>(0.235,-0.176)</Male>
+									<Female>(0.235,-0.176)</Female>
+									<Fat>(0.432,-0.176)</Fat>
+								</bodyTypes>
+							</east>
+						</offsets>	
+					</li>
+				</bodyAddons>
 			</alienPartGenerator>
         </generalSettings>
         <graphicPaths>
 			<li>
-				<head>Things/Pawn/Tengu/</head>
+				<head>Things/Pawn/Shoony/Head/</head>
 			</li>
         </graphicPaths>
         <styleSettings>
@@ -162,9 +242,6 @@
         <thoughtSettings>
 			<cannotReceiveThoughts>
 				<li>EnvironmentDark</li>
-				<li>AteRawFood</li>
-				<li>AteWithoutTable</li>
-				<li>SleptOnGround</li>
 			</cannotReceiveThoughts>
         </thoughtSettings>
         <compatibility>
@@ -174,15 +251,17 @@
         </compatibility>
     </alienRace>
 	<statBases>
+		<Mass>35</Mass>
 		<MarketValue>1750</MarketValue>
-		<MoveSpeed>4.6</MoveSpeed>
-		<ComfyTemperatureMin>8</ComfyTemperatureMin>
-		<ComfyTemperatureMax>28</ComfyTemperatureMax>
-		<LeatherAmount>75</LeatherAmount>
+		<MoveSpeed>4.0</MoveSpeed>
+		<ComfyTemperatureMin>-15</ComfyTemperatureMin>
+		<ComfyTemperatureMax>26</ComfyTemperatureMax>
+		<LeatherAmount>45</LeatherAmount>
 		<RoyalFavorValue>3</RoyalFavorValue>
-		<SocialImpact>1.2</SocialImpact>
-		<NegotiationAbility>1.2</NegotiationAbility>
-		<GlobalLearningFactor>1.25</GlobalLearningFactor>
+		<EatingSpeed>0.8</EatingSpeed>
+		<GeneralLaborSpeed>1.05</GeneralLaborSpeed>
+		<SocialImpact>1.05</SocialImpact>
+		<HuntingStealth>1.05</HuntingStealth>
 	</statBases>
 	<tools>
 		<li>
@@ -190,7 +269,7 @@
 			<capacities>
 				<li>Blunt</li>
 			</capacities>
-			<power>7.8</power>
+			<power>7.4</power>
 			<cooldownTime>2</cooldownTime>
 			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 			<surpriseAttack>
@@ -207,7 +286,7 @@
 			<capacities>
 				<li>Blunt</li>
 			</capacities>
-			<power>7.8</power>
+			<power>7.4</power>
 			<cooldownTime>2</cooldownTime>
 			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 			<surpriseAttack>
@@ -220,13 +299,13 @@
 			</surpriseAttack>
 		</li>
 		<li>
-			<label>beak</label>
+			<label>teeth</label>
 			<capacities>
 				<li>Bite</li>
 			</capacities>
-			<power>7.8</power>
+			<power>8.2</power>
 			<cooldownTime>2</cooldownTime>
-			<linkedBodyPartsGroup>AvianBeak</linkedBodyPartsGroup>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 			<chanceFactor>0.07</chanceFactor>
 		</li>
 		<li>
@@ -234,7 +313,7 @@
 			<capacities>
 				<li>Blunt</li>
 			</capacities>
-			<power>4.6</power>
+			<power>4.2</power>
 			<cooldownTime>2</cooldownTime>
 			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -242,21 +321,22 @@
 		</li>
 	</tools>
 	<race>
-		<leatherDef>Leather_Bird</leatherDef>
 		<thinkTreeMain>Humanlike</thinkTreeMain>
 		<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 		<intelligence>Humanlike</intelligence>
 		<makesFootprints>true</makesFootprints>
-		<lifeExpectancy>70</lifeExpectancy>
-		<nameGenerator>PF2_NamerPersonTenguMale</nameGenerator>
-		<nameGeneratorFemale>PF2_NamerPersonTenguFemale</nameGeneratorFemale>
+		<lifeExpectancy>50</lifeExpectancy>
+		<leatherDef>Leather_Dog</leatherDef>
+		<nameGenerator>PF2_NamerPersonShoonyMale</nameGenerator>
+		<nameGeneratorFemale>PF2_NamerPersonShoonyFemale</nameGeneratorFemale>
 		<useMeatFrom>Human</useMeatFrom>
-		<body>PF2_Tengu</body>
-		<baseBodySize>1.0</baseBodySize>
-		<baseHealthScale>0.95</baseHealthScale>
+		<body>PF2_Shoony</body>
+		<baseBodySize>0.7</baseBodySize>
+		<baseHealthScale>0.9</baseHealthScale>
 		<foodType>OmnivoreHuman</foodType>
-		<gestationPeriodDays>30</gestationPeriodDays>
-		<meatMarketValue>1.2</meatMarketValue>
+		<gestationPeriodDays>15</gestationPeriodDays>
+		<meatMarketValue>0.8</meatMarketValue>
+		<nuzzleMtbHours>12</nuzzleMtbHours>
 		<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
 		<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
 		<litterSizeCurve>
@@ -267,52 +347,53 @@
 				<li>(3.5, 0)</li>
 			</points>
 		</litterSizeCurve>
-		<lifeStageAges>
+		<lifeStageAges Inherit="False">
 			<li>
 				<def>HumanlikeBaby</def>
 				<minAge>0</minAge>
 			</li>
 			<li>
 				<def>HumanlikeToddler</def>
-				<minAge>1</minAge>
+				<minAge>0.4</minAge>
 			</li>
 			<li>
 				<def>HumanlikeChild</def>
-				<minAge>3</minAge>
+				<minAge>2.2</minAge>
 			</li>
 			<li>
 				<def>HumanlikeTeenager</def>
-				<minAge>7.5</minAge>
+				<minAge>4</minAge>
 			</li>
 			<li>
 				<def>HumanlikeAdult</def>
-				<minAge>15</minAge>
+				<minAge>8</minAge>
 			</li>
 		</lifeStageAges>
 		<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
 		<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
 		<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+		<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
 		<specialShadowData>
 			<volume>(0.3, 0.8, 0.4)</volume>
 			<offset>(0,0,-0.3)</offset>
 		</specialShadowData>
 		<ageGenerationCurve>
 			<points>
-				<li>(10,0)</li>
+				<li>(5,0)</li>
+				<li>(10,100)</li>
 				<li>(15,100)</li>
-				<li>(25,100)</li>
-				<li>(30,30)</li>
-				<li>(45,18)</li>
-				<li>(65,10)</li>
-				<li>(70,3)</li>
-				<li>(80,0)</li>
+				<li>(32,30)</li>
+				<li>(35,18)</li>
+				<li>(39,10)</li>
+				<li>(40,3)</li>
+				<li>(42,0)</li>
 			</points>
 		</ageGenerationCurve>
 		<hediffGiverSets>
 			<li>OrganicStandard</li>
 			<li>Human</li>
 		</hediffGiverSets>
-	</race>
+		</race>
 		<recipes>
 			<li>ExciseCarcinoma</li>
 			<li>AdministerMechSerumHealer</li>

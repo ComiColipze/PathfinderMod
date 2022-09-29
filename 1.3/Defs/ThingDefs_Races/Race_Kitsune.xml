@@ -9,7 +9,7 @@
 					<kindDefs>
 						<li>PF2_KitsuneSlave</li>
 					</kindDefs>
-					<chance>10.0</chance>
+					<chance>20.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
@@ -17,7 +17,7 @@
 					<kindDefs>
 						<li>PF2_KitsuneRefugee</li>
 					</kindDefs>
-					<chance>10.0</chance>
+					<chance>20.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_KitsuneColonist</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_KitsuneTribal</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_KitsuneColonist</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_KitsuneTribal</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>

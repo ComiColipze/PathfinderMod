@@ -9,7 +9,7 @@
 					<kindDefs>
 						<li>PF2_GrippliSlave</li>
 					</kindDefs>
-					<chance>10.0</chance>
+					<chance>20.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
@@ -17,7 +17,7 @@
 					<kindDefs>
 						<li>PF2_GrippliRefugee</li>
 					</kindDefs>
-					<chance>10.0</chance>
+					<chance>20.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_GrippliColonist</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_GrippliTribal</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_GrippliColonist</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_GrippliTribal</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -233,6 +233,7 @@
         </compatibility>
     </alienRace>
 	<statBases>
+		<Mass>35</Mass>
 		<MarketValue>1750</MarketValue>
 		<MoveSpeed>4.0</MoveSpeed>
 		<ComfyTemperatureMin>16</ComfyTemperatureMin>
@@ -240,7 +241,7 @@
 		<LeatherAmount>65</LeatherAmount>
 		<RoyalFavorValue>3</RoyalFavorValue>
 		<ToxicSensitivity>0.75</ToxicSensitivity>
-        <ImmunityGainSpeed>1.4</ImmunityGainSpeed>
+        <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
 	</statBases>
 		<tools>
 			<li>

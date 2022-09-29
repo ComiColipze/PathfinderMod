@@ -9,7 +9,7 @@
 					<kindDefs>
 						<li>PF2_HalflingSlave</li>
 					</kindDefs>
-					<chance>10.0</chance>
+					<chance>20.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
@@ -17,7 +17,7 @@
 					<kindDefs>
 						<li>PF2_HalflingRefugee</li>
 					</kindDefs>
-					<chance>10.0</chance>
+					<chance>20.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_HalflingColonist</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_HalflingTribal</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_HalflingColonist</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_HalflingTribal</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -128,9 +128,10 @@
 		<RoyalFavorValue>3</RoyalFavorValue>
 		<MeleeDodgeChance>15</MeleeDodgeChance>
 		<PawnTrapSpringChance>0.1</PawnTrapSpringChance>
-		<ForagedNutritionPerDay>0.3</ForagedNutritionPerDay>
+		<ForagedNutritionPerDay>0.6</ForagedNutritionPerDay>
 		<PlantWorkSpeed>1.2</PlantWorkSpeed>
 		<PlantHarvestYield>1.2</PlantHarvestYield>
+		<PruningSpeed MayRequire="Ludeon.RimWorld.Ideology">1.2</PruningSpeed>
 	</statBases>
 	<tools>
 		<li>
@@ -201,7 +202,7 @@
 		<useMeatFrom>Human</useMeatFrom>
 		<body>Human</body>
 		<baseBodySize>0.70</baseBodySize>
-		<baseHealthScale>0.95</baseHealthScale>
+		<baseHealthScale>0.9</baseHealthScale>
 		<foodType>OmnivoreHuman</foodType>
 		<gestationPeriodDays>30</gestationPeriodDays>
 		<meatMarketValue>0.8</meatMarketValue>

@@ -9,7 +9,7 @@
 					<kindDefs>
 						<li>PF2_DwarfSlave</li>
 					</kindDefs>
-					<chance>10.0</chance>
+					<chance>20.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
@@ -17,7 +17,7 @@
 					<kindDefs>
 						<li>PF2_DwarfRefugee</li>
 					</kindDefs>
-					<chance>10.0</chance>
+					<chance>20.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_DwarfColonist</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_DwarfTribal</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_DwarfColonist</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_DwarfTribal</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -145,9 +145,10 @@
 		<CarryingCapacity>90</CarryingCapacity>
 		<MiningSpeed>2.2</MiningSpeed>
 		<MiningYield>1.2</MiningYield>
+		<SmoothingSpeed>2.2</SmoothingSpeed>
 		<ToxicSensitivity>0.50</ToxicSensitivity>
         <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
-		<GeneralLaborSpeed>1.2</GeneralLaborSpeed>
+		<GeneralLaborSpeed>1.15</GeneralLaborSpeed>
 	</statBases>
 		<tools>
 			<li>

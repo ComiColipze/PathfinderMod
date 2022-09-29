@@ -182,6 +182,7 @@
 				<li>townendsamurai->pon</li>
 				<li>townendsamurai->pan</li>
 				<li>townendsamurai->ichi</li>
+				<li>townendsamurai->ne</li>
 				<li>townendsamurai->shuku</li>
 				<li>townendsamurai->juku</li>
 				<li>townendsamurai->ken</li>
@@ -190,6 +191,7 @@
 				<li>townendsamurai->kaido</li>
 				<li>townendsamurai->kyo</li>
 				<li>townendsamurai->saka</li>
+				<li>townendsamurai->to</li>
 			</rulesStrings>
 			<rulesFiles>
 				<li>KitsuneList1->KitsuneNames/Kitsune1</li>

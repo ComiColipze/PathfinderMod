@@ -9,7 +9,7 @@
 					<kindDefs>
 						<li>PF2_GoblinSlave</li>
 					</kindDefs>
-					<chance>10.0</chance>
+					<chance>20.0</chance>
 				</li>
             </alienslavekinds>
             <alienrefugeekinds>
@@ -17,7 +17,7 @@
 					<kindDefs>
 						<li>PF2_GoblinRefugee</li>
 					</kindDefs>
-					<chance>10.0</chance>
+					<chance>20.0</chance>
 				</li>
             </alienrefugeekinds>
 			<startingColonists>
@@ -27,7 +27,7 @@
 							<kindDefs>
 								<li>PF2_GoblinColonist</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -40,7 +40,7 @@
 							<kindDefs>
 								<li>PF2_GoblinTribal</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -55,7 +55,7 @@
 							<kindDefs>
 								<li>PF2_GoblinColonist</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -68,7 +68,7 @@
 							<kindDefs>
 								<li>PF2_GoblinTribal</li>
 							</kindDefs>
-							<chance>10.0</chance>
+							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
@@ -361,9 +361,7 @@
 		<LeatherAmount>35</LeatherAmount>
 		<RoyalFavorValue>3</RoyalFavorValue>
 		<ResearchSpeed>0.75</ResearchSpeed>
-		<MedicalTendQuality>0.75</MedicalTendQuality>
 		<HungerRateMultiplier>1.2</HungerRateMultiplier>
-		<HuntingStealth>1.2</HuntingStealth>
 		<EatingSpeed>1.5</EatingSpeed>
         <FoodPoisonChance>0.25</FoodPoisonChance>
 		<EquipDelay>-0.08</EquipDelay>
