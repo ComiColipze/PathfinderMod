@@ -3,8 +3,8 @@
 	<StyleCategoryDef>
 		<defName>PF2_Dwarven</defName>
 		<label>dwarven</label>
-		<iconPath>UI/Structures/DwarvenStyle</iconPath>
-		<soundOngoingRitual>PF2_RitualSustainer_Totemic</soundOngoingRitual>
+		<iconPath>World/WorldObjects/DwarfFaction1</iconPath>
+		<soundOngoingRitual>RitualSustainer_Totemic</soundOngoingRitual>
 		<ritualVisualEffectDef>Totemic</ritualVisualEffectDef>
 		<thingDefStyles>
 			<li>
@@ -30,6 +30,10 @@
 			<li>
 				<thingDef>MeleeWeapon_Club</thingDef>
 				<styleDef>PF2_DwarvenClub</styleDef>
+			</li>
+			<li>
+				<thingDef>MeleeWeapon_Ikwa</thingDef>
+				<styleDef>PF2_DwarvenIkwa</styleDef>
 			</li>
 			<li>
 				<thingDef>MeleeWeapon_Knife</thingDef>

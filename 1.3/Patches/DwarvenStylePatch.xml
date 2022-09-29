@@ -22,6 +22,16 @@
 								<styleDef>PF2_DwarvenDoubleWarAxe</styleDef>
 							</li>
 							
+							<li>
+								<thingDef>VWE_MeleeWeapon_Hammer</thingDef>
+								<styleDef>PF2_DwarvenHammer</styleDef>
+							</li>
+							
+							<li>
+								<thingDef>VWE_MeleeWeapon_Axe</thingDef>
+								<styleDef>PF2_DwarvenHatchet</styleDef>
+							</li>
+							
 
 						</value>
 					</match>

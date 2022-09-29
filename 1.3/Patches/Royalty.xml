@@ -26,6 +26,7 @@
 			<li>PF2_KitsunePlayerColony</li>
 			<li>PF2_KoboldPlayerColony</li>
 			<li>PF2_OrcPlayerColony</li>
+			<li>PF2_ShoonyPlayerColony</li>
 			<li>PF2_TenguPlayerColony</li>
 			<li>PF2_YsokiPlayerColony</li>
 			<li>PF2_AmurrunPlayerTribe</li>
@@ -44,6 +45,7 @@
 			<li>PF2_KitsunePlayerTribe</li>
 			<li>PF2_KoboldPlayerTribe</li>
 			<li>PF2_OrcPlayerTribe</li>
+			<li>PF2_ShoonyPlayerTribe</li>
 			<li>PF2_TenguPlayerTribe</li>
 			<li>PF2_YsokiPlayerTribe</li>
 			<li>PF2_DwarfPlayerFaction</li>

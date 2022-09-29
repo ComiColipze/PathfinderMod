@@ -48,6 +48,13 @@
 		</graphicData>
 	</ThingStyleDef>
 	<ThingStyleDef ParentName="PF2_RotateWeapons">
+		<defName>PF2_DwarvenIkwa</defName>
+		<graphicData>
+			<texPath>Things/Item/Weapons/DwarvenIkwa</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="PF2_RotateWeapons">
 		<defName>PF2_DwarvenLongSword</defName>
 		<graphicData>
 			<texPath>Things/Item/Weapons/DwarvenLongSword</texPath>
@@ -59,6 +66,21 @@
 		<overrideLabel>dwarven double waraxe</overrideLabel>
 		<graphicData>
 			<texPath>Things/Item/Weapons/DwarvenDoubleWarAxe</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="PF2_RotateWeapons">
+		<defName>PF2_DwarvenHammer</defName>
+		<overrideLabel>dwarven maul</overrideLabel>
+		<graphicData>
+			<texPath>Things/Item/Weapons/DwarvenHammer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	<ThingStyleDef ParentName="PF2_RotateWeapons">
+		<defName>PF2_DwarvenHatchet</defName>
+		<graphicData>
+			<texPath>Things/Item/Weapons/DwarvenHatchet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 	</ThingStyleDef>
