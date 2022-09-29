@@ -10,7 +10,7 @@
 		<pawnsPlural>villagers</pawnsPlural>
 		<listOrderPriority>20</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
-		<startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+		<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
 		<colorSpectrum>
 			<li>(204, 0, 102)</li>
 			<li>(102, 0, 51)</li>

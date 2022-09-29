@@ -135,6 +135,12 @@
   </PawnKindDef>
   
   <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_ShoonySlave</defName>
+    <label>shoony slave</label>
+    <race>PF2_Shoony</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
     <defName>PF2_TenguSlave</defName>
     <label>tengu slave</label>
     <race>PF2_Tengu</race>
@@ -265,6 +271,12 @@
     <defName>PF2_OrcRefugee</defName>
     <label>orc refugee</label>
     <race>PF2_Orc</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_ShoonyRefugee</defName>
+    <label>shoony refugee</label>
+    <race>PF2_Shoony</race>
   </PawnKindDef>
   
   <PawnKindDef ParentName="RefugeePawnKind">

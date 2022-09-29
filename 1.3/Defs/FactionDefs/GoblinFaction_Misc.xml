@@ -33,7 +33,6 @@
 		<allowedMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
@@ -46,8 +45,6 @@
 		</disallowedPrecepts>
 		<structureMemeWeights>
 			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
-			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
-			<PF2_Structure_OriginInnerSea MayRequire="Ludeon.RimWorld.Ideology">1</PF2_Structure_OriginInnerSea>
 		</structureMemeWeights>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>90</configurationListOrderPriority>

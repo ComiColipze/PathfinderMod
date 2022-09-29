@@ -23,7 +23,7 @@
         </preferredWeaponClasses>
 		<thingStyleCategories>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
-				<category>Totemic</category>
+				<category>PF2_Dwarven</category>
 				<priority>2</priority>
 			</li>
 		</thingStyleCategories>
@@ -509,6 +509,12 @@
 			<noble>Ranged</noble>
             <despised>Melee</despised>
         </preferredWeaponClasses>
+		<thingStyleCategories>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<category>Spikecore</category>
+				<priority>2</priority>
+			</li>
+		</thingStyleCategories>
 		<styleItemTags>
 			<li>
 				<tag>Tribal</tag>
