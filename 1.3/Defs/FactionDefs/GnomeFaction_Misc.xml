@@ -36,19 +36,13 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
 		</disallowedMemes>
 		<disallowedPrecepts>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_FreeApproved</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Free</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Standard</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Acceptable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Honorable</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Required</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_RespectedIfGuilty</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_DontCare</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_Mandatory</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Research_None</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Research_ExtremelySlow</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Research_VerySlow</li>
@@ -225,12 +219,6 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
 		</disallowedMemes>
 		<disallowedPrecepts>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_FreeApproved</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Free</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
-			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Standard</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Acceptable</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Honorable</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
