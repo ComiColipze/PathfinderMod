@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<RulePackDef>
+		<defName>PF2_DeityTypeMakerToraghdan</defName>
+		<include>
+			<li>DeityTypeMakerGlobal</li>
+		</include>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_DeityTypeMakerKyonan</defName>
+		<include>
+			<li>DeityTypeMakerGlobal</li>
+		</include>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_DeityTypeMakerFirstWorlder</defName>
+		<include>
+			<li>DeityTypeMakerGlobal</li>
+		</include>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_DeityTypeMakerGoblin</defName>
+		<include>
+			<li>DeityTypeMakerGlobal</li>
+		</include>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_DeityTypeMakerChaldiran</defName>
+		<include>
+			<li>DeityTypeMakerGlobal</li>
+		</include>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_DeityTypeMakerOprakan</defName>
+		<include>
+			<li>DeityTypeMakerGlobal</li>
+		</include>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_DeityTypeMakerDraconic</defName>
+		<include>
+			<li>DeityTypeMakerGlobal</li>
+		</include>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_DeityTypeMakerBelkzen</defName>
+		<include>
+			<li>DeityTypeMakerGlobal</li>
+		</include>
+	</RulePackDef>
+	
+</Defs>

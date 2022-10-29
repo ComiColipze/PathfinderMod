@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Weapons Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationConditional">
+					<success>Always</success>
+					<xpath>/Defs/StyleCategoryDef[defName = "PF2_Dwarven"]/thingDefStyles</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>/Defs/StyleCategoryDef[defName = "PF2_Dwarven"]/thingDefStyles</xpath>
+						<value>
+							
+							<li>
+								<thingDef>VWE_MeleeWeapon_BattleAxe</thingDef>
+								<styleDef>PF2_DwarvenDoubleWarAxe</styleDef>
+							</li>
+							
+							<li>
+								<thingDef>VWE_MeleeWeapon_Hammer</thingDef>
+								<styleDef>PF2_DwarvenHammer</styleDef>
+							</li>
+							
+							<li>
+								<thingDef>VWE_MeleeWeapon_Axe</thingDef>
+								<styleDef>PF2_DwarvenHatchet</styleDef>
+							</li>
+							
+							<li>
+								<thingDef>VWE_Gun_Flintlock</thingDef>
+								<styleDef>PF2_DwarvenPistol</styleDef>
+							</li>
+							
+
+						</value>
+					</match>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+	
+	
+
+
+
+
+
+
+</Patch>
