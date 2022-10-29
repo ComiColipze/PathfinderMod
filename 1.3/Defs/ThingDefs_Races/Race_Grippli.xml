@@ -100,6 +100,7 @@
 				</li>
             </disallowedTraits>
 			<alienPartGenerator>
+				<useGenderedHeads>false</useGenderedHeads>
 				<aliencrowntypes>
 					<li>Average_Normal</li>
 				</aliencrowntypes>
@@ -195,6 +196,7 @@
         <graphicPaths>
 			<li>
 				<head>Things/Pawn/Grippli/</head>
+				<body>Things/Pawn/Iruxi/Body/</body>
 			</li>
         </graphicPaths>
         <styleSettings>
