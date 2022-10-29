@@ -3,7 +3,7 @@
 	<StyleCategoryDef>
 		<defName>PF2_Dwarven</defName>
 		<label>dwarven</label>
-		<iconPath>World/WorldObjects/DwarfFaction1</iconPath>
+		<iconPath>UI/Styles/DwarvenStyle</iconPath>
 		<soundOngoingRitual>RitualSustainer_Totemic</soundOngoingRitual>
 		<ritualVisualEffectDef>Totemic</ritualVisualEffectDef>
 		<thingDefStyles>
