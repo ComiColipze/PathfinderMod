@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Bases -->
+
+  <HeadTypeDef ParentName="NarrowBase" Name="Elf_HeadtypeBase" Abstract="True">
+  </HeadTypeDef>
+
+
+  <HeadTypeDef ParentName="Elf_HeadtypeBase">
+    <defName>Elf_Male_Black_Eyes</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Elf\Elf\Male_Black_Eyes</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Elf_HeadtypeBase">
+    <defName>Elf_Male_Blue_Eyes</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Elf\Elf\Male_Blue_Eyes</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Elf_HeadtypeBase">
+    <defName>Elf_Male_Green_Eyes</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Elf\Elf\Male_Green_Eyes</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Elf_HeadtypeBase">
+    <defName>Elf_Male_White_Eyes</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Elf\Elf\Male_White_Eyes</graphicPath>
+  </HeadTypeDef>
+  
+  
+  <HeadTypeDef ParentName="Elf_HeadtypeBase">
+    <defName>Elf_Female_Black_Eyes</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Elf\Elf\Female_Black_Eyes</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Elf_HeadtypeBase">
+    <defName>Elf_Female_Blue_Eyes</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Elf\Elf\Female_Blue_Eyes</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Elf_HeadtypeBase">
+    <defName>Elf_Female_Green_Eyes</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Elf\Elf\Female_Green_Eyes</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Elf_HeadtypeBase">
+    <defName>Elf_Female_White_Eyes</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Elf\Elf\Female_White_Eyes</graphicPath>
+  </HeadTypeDef>
+</Defs>

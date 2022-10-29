@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Bases -->
+
+  <HeadTypeDef ParentName="AverageBase" Name="Orc_HeadtypeBase" Abstract="True">
+  </HeadTypeDef>
+
+
+  <HeadTypeDef ParentName="Orc_HeadtypeBase">
+    <defName>Orc_Male_Average_Normal</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Orc\Male_Average_Normal</graphicPath>
+  </HeadTypeDef>
+
+
+  <HeadTypeDef ParentName="Orc_HeadtypeBase">
+    <defName>Orc_Female_Average_Normal</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Orc\Female_Average_Normal</graphicPath>
+  </HeadTypeDef>
+</Defs>

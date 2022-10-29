@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Slave -->
+  <PawnKindDef Name="SlavePawnKind" Abstract="True">
+	<combatPower>60</combatPower>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+			<li>Offworld</li>
+			<li>Outlander</li>
+			<li>Outsider</li>
+			<li>Tribal</li>
+		</categories>
+      </li>
+    </backstoryFiltersOverride>
+    <defaultFactionType>OutlanderCivil</defaultFactionType>
+    <itemQuality>Poor</itemQuality>
+    <backstoryCryptosleepCommonality>0.10</backstoryCryptosleepCommonality>
+    <isFighter>false</isFighter>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <gearHealthRange>0.2~0.8</gearHealthRange>
+    <apparelTags>
+		<li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelMoney>0~350</apparelMoney>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <techHediffsChance>0.03</techHediffsChance>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <techHediffsTags>
+		<li>Poor</li>
+    </techHediffsTags>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <invNutrition>1</invNutrition>
+    <invFoodDef>Pemmican</invFoodDef>
+    <initialWillRange>0~0</initialWillRange>
+    <initialResistanceRange>10~17</initialResistanceRange>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_AmurrunSlave</defName>
+    <label>amurrun slave</label>
+    <race>PF2_Amurrun</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_AnadiSlave</defName>
+    <label>anadi slave</label>
+    <race>PF2_Anadi</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_DrowSlave</defName>
+    <label>drow slave</label>
+    <race>PF2_Drow</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_DwarfSlave</defName>
+    <label>dwarf slave</label>
+    <race>PF2_Dwarf</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_ElfSlave</defName>
+    <label>elf slave</label>
+    <race>PF2_Elf</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_GnollSlave</defName>
+    <label>gnoll slave</label>
+    <race>PF2_Gnoll</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_GnomeSlave</defName>
+    <label>gnome slave</label>
+    <race>PF2_Gnome</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_GoblinSlave</defName>
+    <label>goblin slave</label>
+    <race>PF2_Goblin</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_GolomaSlave</defName>
+    <label>goloma slave</label>
+    <race>PF2_Goloma</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_GrippliSlave</defName>
+    <label>grippli slave</label>
+    <race>PF2_Grippli</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_HalflingSlave</defName>
+    <label>halfling slave</label>
+    <race>PF2_Halfling</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_HobgoblinSlave</defName>
+    <label>hobgoblin slave</label>
+    <race>PF2_Hobgoblin</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_IruxiSlave</defName>
+    <label>iruxi slave</label>
+    <race>PF2_Iruxi</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_KitsuneSlave</defName>
+    <label>kitsune slave</label>
+    <race>PF2_Kobold</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_KoboldSlave</defName>
+    <label>kobold slave</label>
+    <race>PF2_Kobold</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_OrcSlave</defName>
+    <label>orc slave</label>
+    <race>PF2_Orc</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_ShoonySlave</defName>
+    <label>shoony slave</label>
+    <race>PF2_Shoony</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_TenguSlave</defName>
+    <label>tengu slave</label>
+    <race>PF2_Tengu</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="SlavePawnKind">
+    <defName>PF2_YsokiSlave</defName>
+    <label>ysoki slave</label>
+    <race>PF2_Ysoki</race>
+  </PawnKindDef>
+  
+<!-- SpaceRefugee -->
+  <PawnKindDef Name="RefugeePawnKind" Abstract="True">
+    <apparelMoney>0~1000</apparelMoney>
+    <initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>12~19</initialResistanceRange>
+    <combatPower>60</combatPower>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <isFighter>false</isFighter>
+    <chemicalAddictionChance>0.08</chemicalAddictionChance>
+    <gearHealthRange>0.4~1.4</gearHealthRange>
+    <apparelTags>
+		<li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <techHediffsTags>
+		<li>Poor</li>
+		<li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_AmurrunRefugee</defName>
+    <label>amurrun refugee</label>
+    <race>PF2_Amurrun</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_AnadiRefugee</defName>
+    <label>anadi refugee</label>
+    <race>PF2_Anadi</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_DrowRefugee</defName>
+    <label>drow refugee</label>
+    <race>PF2_Drow</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_DwarfRefugee</defName>
+    <label>dwarf refugee</label>
+    <race>PF2_Dwarf</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_ElfRefugee</defName>
+    <label>elf refugee</label>
+    <race>PF2_Elf</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_GnollRefugee</defName>
+    <label>gnoll refugee</label>
+    <race>PF2_Gnoll</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_GnomeRefugee</defName>
+    <label>gnome refugee</label>
+    <race>PF2_Gnome</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_GoblinRefugee</defName>
+    <label>goblin refugee</label>
+    <race>PF2_Goblin</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_GolomaRefugee</defName>
+    <label>goloma refugee</label>
+    <race>PF2_Goloma</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_GrippliRefugee</defName>
+    <label>grippli refugee</label>
+    <race>PF2_Grippli</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_HalflingRefugee</defName>
+    <label>halfling refugee</label>
+    <race>PF2_Halfling</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_HobgoblinRefugee</defName>
+    <label>hobgoblin refugee</label>
+    <race>PF2_Hobgoblin</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_IruxiRefugee</defName>
+    <label>iruxi refugee</label>
+    <race>PF2_Iruxi</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_KitsuneRefugee</defName>
+    <label>kitsune refugee</label>
+    <race>PF2_Kobold</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_KoboldRefugee</defName>
+    <label>kobold refugee</label>
+    <race>PF2_Kobold</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_OrcRefugee</defName>
+    <label>orc refugee</label>
+    <race>PF2_Orc</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_ShoonyRefugee</defName>
+    <label>shoony refugee</label>
+    <race>PF2_Shoony</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_TenguRefugee</defName>
+    <label>tengu refugee</label>
+    <race>PF2_Tengu</race>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="RefugeePawnKind">
+    <defName>PF2_YsokiRefugee</defName>
+    <label>ysoki refugee</label>
+    <race>PF2_Ysoki</race>
+  </PawnKindDef>
+  
+</Defs>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>PF2_NamerPersonGoloma</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[GolomaList1][GolomaList2]</li>
+				<li>name->[GolomaList1][GolomaList2] [GolomaList3][GolomaList4]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>GolomaList1</keyword>
+					<path>GolomaNames/Goloma1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GolomaList2</keyword>
+					<path>GolomaNames/Goloma2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GolomaList3</keyword>
+					<path>GolomaNames/Goloma3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GolomaList4</keyword>
+					<path>GolomaNames/Goloma4</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

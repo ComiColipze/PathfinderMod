@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Added body parts -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>PF2_WoodenBeak</defName>
+		<label>wooden beak</label>
+		<labelNoun>a wooden beak</labelNoun>
+		<description>An installed wooden beak.</description>
+		<priceImpact>false</priceImpact>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.60</partEfficiency>
+		</addedPartProps>
+		<spawnThingOnRemoved>WoodLog</spawnThingOnRemoved>
+	</HediffDef>
+  
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>PF2_BionicBeak</defName>
+		<label>bionic beak</label>
+		<labelNoun>a bionic beak</labelNoun>
+		<description>An installed bionic beak.</description>
+		<descriptionHyperlinks><ThingDef>PF2_BionicBeak</ThingDef></descriptionHyperlinks>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>beak</label>
+						<capacities>
+							<li>Bite</li>
+						</capacities>
+						<power>12</power>
+						<cooldownTime>2</cooldownTime>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<spawnThingOnRemoved>PF2_BionicBeak</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>PF2_SimpleProstheticBeak</defName>
+		<label>prosthetic beak</label>
+		<labelNoun>a prosthetic beak</labelNoun>
+		<description>An installed prosthetic beak.</description>
+		<descriptionHyperlinks><ThingDef>PF2_SimpleProstheticBeak</ThingDef></descriptionHyperlinks>
+		<spawnThingOnRemoved>PF2_SimpleProstheticBeak</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>0.80</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+  
+</Defs>

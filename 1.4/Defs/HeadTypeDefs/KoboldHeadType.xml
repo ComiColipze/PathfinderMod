@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Bases -->
+
+  <HeadTypeDef ParentName="AverageBase" Name="Kobold_HeadtypeBase" Abstract="True">
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="NarrowBase" Name="Kobold_HeadtypeNarrowBase" Abstract="True">
+  </HeadTypeDef>
+
+
+  <HeadTypeDef ParentName="Kobold_HeadtypeBase">
+    <defName>Kobold_Male_Average_Normal</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Kobold\Head\Male_Average_Normal</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Kobold_HeadtypeBase">
+    <defName>Kobold_Female_Average_Normal</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Kobold\Head\Female_Average_Normal</graphicPath>
+  </HeadTypeDef>
+
+
+  <HeadTypeDef ParentName="Kobold_HeadtypeNarrowBase">
+    <defName>Kobold_Male_Narrow_Normal</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Kobold\Head\Male_Narrow_Normal</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Kobold_HeadtypeNarrowBase">
+    <defName>Kobold_Female_Narrow_Normal</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Kobold\Head\Female_Narrow_Normal</graphicPath>
+  </HeadTypeDef>
+
+
+</Defs>

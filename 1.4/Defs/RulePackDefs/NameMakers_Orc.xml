@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>PF2_NamerPersonOrcMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[OrcList1][OrcList2][OrcList4] [OrcList9][OrcList10]</li>
+				<li>name->[OrcList1][OrcList2][OrcList3][OrcList2][OrcList4] [OrcList9][OrcList10]</li>
+				<li>name->[OrcList1][OrcList2][OrcList3][OrcList2] [OrcList9][OrcList10]</li>
+				<li>name->[OrcList2][OrcList3][OrcList2][OrcList4] [OrcList9][OrcList10]</li>
+				<li>name->[OrcList2][OrcList3][OrcList2] [OrcList9][OrcList10]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>OrcList1</keyword>
+					<path>OrcNames/Orc1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList2</keyword>
+					<path>OrcNames/Orc2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList3</keyword>
+					<path>OrcNames/Orc3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList4</keyword>
+					<path>OrcNames/Orc4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList5</keyword>
+					<path>OrcNames/Orc5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList6</keyword>
+					<path>OrcNames/Orc6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList7</keyword>
+					<path>OrcNames/Orc7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList8</keyword>
+					<path>OrcNames/Orc8</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList9</keyword>
+					<path>OrcNames/Orc9</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList10</keyword>
+					<path>OrcNames/Orc10</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList11</keyword>
+					<path>OrcNames/Orc11</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList12</keyword>
+					<path>OrcNames/Orc12</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerPersonOrcFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[OrcList5][OrcList6][OrcList8] [OrcList9][OrcList10]</li>
+				<li>name->[OrcList5][OrcList6][OrcList7][OrcList6] [OrcList9][OrcList10]</li>
+				<li>name->[OrcList5][OrcList6][OrcList7][OrcList6][OrcList8] [OrcList9][OrcList10]</li>
+				<li>name->[OrcList5][OrcList6][OrcList7][OrcList6][OrcList7][OrcList6][OrcList8] [OrcList9][OrcList10]</li>
+				<li>name->[OrcList6][OrcList7][OrcList6][OrcList7][OrcList6][OrcList8] [OrcList9][OrcList10]</li>
+				<li>name->[OrcList6][OrcList7][OrcList6][OrcList7][OrcList6] [OrcList9][OrcList10]</li>
+				<li>name->[OrcList6][OrcList7][OrcList6] [OrcList9][OrcList10]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>OrcList1</keyword>
+					<path>OrcNames/Orc1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList2</keyword>
+					<path>OrcNames/Orc2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList3</keyword>
+					<path>OrcNames/Orc3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList4</keyword>
+					<path>OrcNames/Orc4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList5</keyword>
+					<path>OrcNames/Orc5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList6</keyword>
+					<path>OrcNames/Orc6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList7</keyword>
+					<path>OrcNames/Orc7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList8</keyword>
+					<path>OrcNames/Orc8</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList9</keyword>
+					<path>OrcNames/Orc9</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList10</keyword>
+					<path>OrcNames/Orc10</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList11</keyword>
+					<path>OrcNames/Orc11</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>OrcList12</keyword>
+					<path>OrcNames/Orc12</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerFactionOrc</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[OrcList1][OrcList2][OrcList4]</li>
+				<li>r_name->[OrcList1][OrcList2][OrcList3][OrcList2][OrcList4]</li>
+				<li>r_name->[OrcList5][OrcList6][OrcList8]</li>
+				<li>r_name->[OrcList5][OrcList6][OrcList7][OrcList6][OrcList8]</li>
+				<li>r_name->[OrcList1][OrcList2][OrcList4] [OrcSettlements]</li>
+				<li>r_name->[OrcList1][OrcList2][OrcList3][OrcList2][OrcList4] [OrcSettlements]</li>
+				<li>r_name->[OrcList5][OrcList6][OrcList8] [OrcSettlements]</li>
+				<li>r_name->[OrcList5][OrcList6][OrcList7][OrcList6][OrcList8] [OrcSettlements]</li>
+				<li>r_name->The [OrcSettlements] of [OrcList1][OrcList2][OrcList4]</li>
+				<li>r_name->The [OrcSettlements] of [OrcList1][OrcList2][OrcList3][OrcList2][OrcList4]</li>
+				<li>r_name->The [OrcSettlements] of [OrcList5][OrcList6][OrcList8]</li>
+				<li>r_name->The [OrcSettlements] of [OrcList5][OrcList6]][OrcList7][OrcList6][OrcList8]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>OrcList1->OrcNames/Orc1</li>
+				<li>OrcList2->OrcNames/Orc2</li>
+				<li>OrcList3->OrcNames/Orc3</li>
+				<li>OrcList4->OrcNames/Orc4</li>
+				<li>OrcList5->OrcNames/Orc5</li>
+				<li>OrcList6->OrcNames/Orc6</li>
+				<li>OrcList7->OrcNames/Orc7</li>
+				<li>OrcList8->OrcNames/Orc8</li>
+				<li>OrcSettlements->OrcNames/OrcSettlements</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerSettlementOrc</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[townname_wordgen]</li>
+
+				<li>townname_wordgen(p=2)->[Orc9][Orc10] [OrcTribes]</li>
+				<li>townname_wordgen(p=2)->[Orc11] [Orc12] [OrcTribes]</li>
+				<li>townname_wordgen(p=2)->[Orc11][Orc12] [OrcTribes]</li>
+				<li>townname_wordgen(p=2)->[Color] [Orc12] [OrcTribes]</li>
+				<li>townname_wordgen(p=2)->[Color][Orc12] [OrcTribes]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Orc9->OrcNames/Orc9</li>
+				<li>Orc10->OrcNames/Orc10</li>
+				<li>Orc11->OrcNames/Orc11</li>
+				<li>Orc12->OrcNames/Orc12</li>
+				<li>OrcTribes->OrcNames/OrcTribes</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

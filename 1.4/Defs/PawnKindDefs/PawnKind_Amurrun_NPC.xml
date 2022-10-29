@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="AmurrunPawnKindBase" Abstract="True">
+		<race>PF2_Amurrun</race>
+		<defaultFactionType>PF2_AmurrunFaction</defaultFactionType>
+		<maxGenerationAge>80</maxGenerationAge>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<invNutrition>2.55</invNutrition>
+		<invFoodDef>Pemmican</invFoodDef>
+		<apparelTags>
+			<li>MedievalBasic</li>
+		</apparelTags>
+	</PawnKindDef>
+
+    <!-- Poverty Tier - Peasant -->
+    <PawnKindDef ParentName="AmurrunPawnKindBase">
+        <defName>PF2_AmurrunFaction_Peasant</defName>
+        <label>amurrun peasant</label>
+        <combatPower>35</combatPower>
+        <chemicalAddictionChance>0.10</chemicalAddictionChance>
+        <invNutrition>0</invNutrition>
+        <itemQuality>Poor</itemQuality>
+		<isFighter>false</isFighter> 
+        <gearHealthRange>
+            <min>0.2</min>
+            <max>1.1</max>
+        </gearHealthRange>
+        <apparelMoney>
+            <min>50</min>
+            <max>125</max>
+        </apparelMoney>
+        <apparelTags>
+            <li>Neolithic</li>
+        </apparelTags>
+        <weaponMoney>
+            <min>90</min>
+            <max>150</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeBasic</li>
+        </weaponTags>
+        <techHediffsMoney>
+            <min>50</min>
+            <max>50</max>
+        </techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.15</techHediffsChance>
+		<initialWillRange>1~2</initialWillRange>
+		<initialResistanceRange>3~8</initialResistanceRange>
+    </PawnKindDef>
+
+	<PawnKindDef ParentName="AmurrunPawnKindBase">
+		<defName>PF2_AmurrunFaction_Hunter</defName>
+		<label>amurrun hunter</label>
+		<combatPower>60</combatPower>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesAdulthood>
+					<li>TribalHunter</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+        <gearHealthRange>
+            <min>0.5</min>
+            <max>1.8</max>
+        </gearHealthRange>
+        <apparelMoney>
+            <min>200</min>
+            <max>300</max>
+        </apparelMoney>
+        <weaponMoney>
+            <min>100</min>
+            <max>100</max>
+        </weaponMoney>
+		<weaponTags>
+			<li>NeolithicRangedDecent</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialWillRange>3~8</initialWillRange>
+		<initialResistanceRange>10~16</initialResistanceRange>
+	</PawnKindDef>
+	
+    <!-- Low-Tier - Merchant, fighter -->
+    <PawnKindDef ParentName="AmurrunPawnKindBase">
+        <defName>PF2_AmurrunFaction_Merchant</defName>
+        <label>amurrun merchant</label>
+        <combatPower>40</combatPower>
+        <trader>true</trader>
+        <isFighter>false</isFighter>
+        <gearHealthRange>
+            <min>1</min>
+            <max>1</max>
+        </gearHealthRange>
+        <apparelMoney>
+            <min>300</min>
+            <max>500</max>
+        </apparelMoney>
+        <weaponMoney>
+            <min>100</min>
+            <max>150</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeBasic</li>
+        </weaponTags>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>5~9</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="AmurrunPawnKindBase">
+        <defName>PF2_AmurrunFaction_Fighter</defName>
+        <label>amurrun fighter</label>
+        <combatPower>50</combatPower>
+        <canBeSapper>true</canBeSapper>
+        <gearHealthRange>
+            <min>0.5</min>
+            <max>1.8</max>
+        </gearHealthRange>
+        <apparelMoney>
+            <min>300</min>
+            <max>500</max>
+        </apparelMoney>
+        <apparelTags>
+            <li>MedievalArmorBasic</li>
+        </apparelTags>
+        <weaponMoney>
+            <min>100</min>
+            <max>150</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+        </weaponTags>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>5~9</initialResistanceRange>
+    </PawnKindDef>
+
+    <!-- Mid-tier - warrior, bowman -->
+    <PawnKindDef ParentName="AmurrunPawnKindBase">
+        <defName>PF2_AmurrunFaction_Warrior</defName>
+        <label>amurrun warrior</label>
+        <combatPower>90</combatPower>
+        <canBeSapper>true</canBeSapper>
+        <gearHealthRange>
+            <min>0.8</min>
+            <max>1.8</max>
+        </gearHealthRange>
+        <apparelMoney>
+            <min>700</min>
+            <max>1000</max>
+        </apparelMoney>
+        <apparelTags>
+            <li>MedievalMilitary</li>
+			<li>MedievalArmorDecent</li>
+        </apparelTags>
+        <weaponMoney>
+            <min>150</min>
+            <max>250</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+        </weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="AmurrunPawnKindBase">
+        <defName>PF2_AmurrunFaction_Bowman</defName>
+        <label>amurrun bowman</label>
+        <combatPower>80</combatPower>
+        <gearHealthRange>
+            <min>0.8</min>
+            <max>1.8</max>
+        </gearHealthRange>
+        <apparelMoney>
+            <min>500</min>
+            <max>700</max>
+        </apparelMoney>
+		<apparelTags>
+			<li>MedievalArmorDecent</li>
+		</apparelTags>
+        <weaponMoney>
+            <min>150</min>
+            <max>250</max>
+        </weaponMoney>
+        <weaponTags>
+			<li>MedievalRanged</li>
+			<li>MedievalRangedHeavy</li>
+        </weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+    </PawnKindDef>
+
+    <!-- High-tier - champion, chief -->
+    <PawnKindDef ParentName="AmurrunPawnKindBase">
+        <defName>PF2_AmurrunFaction_Champion</defName>
+        <label>amurrun champion</label>
+        <combatPower>115</combatPower>
+        <apparelMoney>
+            <min>1000</min>
+            <max>1600</max>
+        </apparelMoney>
+        <apparelTags>
+			<li>MedievalMilitary</li>
+			<li>MedievalArmorDecent</li>
+			<li>MedievalArmorElite</li>
+        </apparelTags>
+        <weaponMoney>
+            <min>300</min>
+            <max>300</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>17~25</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="AmurrunPawnKindBase">
+        <defName>PF2_AmurrunFaction_ElectedCouncilor</defName>
+        <label>amurrun elected councilor</label>
+        <combatPower>160</combatPower>
+        <minGenerationAge>25</minGenerationAge>
+        <maxGenerationAge>999</maxGenerationAge>
+        <itemQuality>Good</itemQuality>
+        <factionLeader>true</factionLeader>
+        <apparelMoney>
+            <min>1600</min>
+            <max>3000</max>
+        </apparelMoney>
+        <apparelTags>
+            <li>MedievalMilitary</li>
+            <li>MedievalArmorDecent</li>
+        </apparelTags>
+        <weaponMoney>
+            <min>500</min>
+            <max>700</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>20~30</initialResistanceRange>
+    </PawnKindDef>
+
+</Defs>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Bases -->
+
+  <HeadTypeDef ParentName="AverageBase" Name="Anadi_HeadtypeBase" Abstract="True">
+  </HeadTypeDef>
+
+
+  <HeadTypeDef ParentName="Anadi_HeadtypeBase">
+    <defName>Anadi_Average_Normal</defName>
+	<gender>None</gender>
+    <graphicPath>Things\Pawn\Anadi\Average_Normal</graphicPath>
+  </HeadTypeDef>
+</Defs>

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>PF2_NamerPersonHobgoblinMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList4]</li>
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList3][HobgoblinList2]</li>
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList3][HobgoblinList2][HobgoblinList3][HobgoblinList2]</li>
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList3][HobgoblinList2][HobgoblinList4]</li>
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList3][HobgoblinList2][HobgoblinList3][HobgoblinList2][HobgoblinList4]</li>
+				<li>name->[HobgoblinList2][HobgoblinList3][HobgoblinList2][HobgoblinList4]</li>
+				<li>name->[HobgoblinList2][HobgoblinList3][HobgoblinList2]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList1</keyword>
+					<path>HobgoblinNames/Hobgoblin1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList2</keyword>
+					<path>HobgoblinNames/Hobgoblin2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList3</keyword>
+					<path>HobgoblinNames/Hobgoblin3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList4</keyword>
+					<path>HobgoblinNames/Hobgoblin4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList5</keyword>
+					<path>HobgoblinNames/Hobgoblin5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList6</keyword>
+					<path>HobgoblinNames/Hobgoblin6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList7</keyword>
+					<path>HobgoblinNames/Hobgoblin7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList8</keyword>
+					<path>HobgoblinNames/Hobgoblin8</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerPersonHobgoblinFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[HobgoblinList5][HobgoblinList6][HobgoblinList8]</li>
+				<li>name->[HobgoblinList5][HobgoblinList6][HobgoblinList7][HobgoblinList6][HobgoblinList8]</li>
+				<li>name->[HobgoblinList5][HobgoblinList6][HobgoblinList7][HobgoblinList6][HobgoblinList7][HobgoblinList6][HobgoblinList8]</li>
+				<li>name->[HobgoblinList5][HobgoblinList6][HobgoblinList7][HobgoblinList6][HobgoblinList7][HobgoblinList6]</li>
+				<li>name->[HobgoblinList5][HobgoblinList6][HobgoblinList7][HobgoblinList6]</li>
+				<li>name->[HobgoblinList6][HobgoblinList7][HobgoblinList6][HobgoblinList8]</li>
+				<li>name->[HobgoblinList6][HobgoblinList7][HobgoblinList6]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList1</keyword>
+					<path>HobgoblinNames/Hobgoblin1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList2</keyword>
+					<path>HobgoblinNames/Hobgoblin2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList3</keyword>
+					<path>HobgoblinNames/Hobgoblin3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList4</keyword>
+					<path>HobgoblinNames/Hobgoblin4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList5</keyword>
+					<path>HobgoblinNames/Hobgoblin5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList6</keyword>
+					<path>HobgoblinNames/Hobgoblin6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList7</keyword>
+					<path>HobgoblinNames/Hobgoblin7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList8</keyword>
+					<path>HobgoblinNames/Hobgoblin8</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerFactionHobgoblin</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Color] [Hobgoblin1][Hobgoblin2][Hobgoblin4] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[Color] [Hobgoblin2][Hobgoblin3][Hobgoblin2][Hobgoblin4] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[Hobgoblin1][Hobgoblin2][Hobgoblin4] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[Hobgoblin2][Hobgoblin3][Hobgoblin2][Hobgoblin4] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[Color] [PoliticalUnionsMedieval] of [Hobgoblin1][Hobgoblin2][Hobgoblin4]</li>
+				<li>r_name->[Color] [PoliticalUnionsMedieval] of [Hobgoblin2][Hobgoblin3][Hobgoblin2][Hobgoblin4]</li>
+				<li>r_name->[PoliticalUnionsMedieval] of [Hobgoblin1][Hobgoblin2][Hobgoblin4]</li>
+				<li>r_name->[PoliticalUnionsMedieval] of [Hobgoblin2][Hobgoblin3][Hobgoblin2][Hobgoblin4]</li>
+				<li>r_name->The [Color] [PoliticalUnionsMedieval] of [Hobgoblin1][Hobgoblin2][Hobgoblin4]</li>
+				<li>r_name->The [Color] [PoliticalUnionsMedieval] of [Hobgoblin2][Hobgoblin3][Hobgoblin2][Hobgoblin4]</li>
+				<li>r_name->The [PoliticalUnionsMedieval] of [Hobgoblin1][Hobgoblin2][Hobgoblin4]</li>
+				<li>r_name->The [PoliticalUnionsMedieval] of [Hobgoblin2][Hobgoblin3][Hobgoblin2][Hobgoblin4]</li>
+				<li>r_name->The United States of [Hobgoblin1][Hobgoblin2][Hobgoblin4]</li>
+				<li>r_name->The United States of [Hobgoblin1][Hobgoblin2][Hobgoblin3][Hobgoblin2][Hobgoblin4]</li>
+				<li>r_name->The United States of [Hobgoblin2][Hobgoblin3][Hobgoblin2][Hobgoblin4]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Hobgoblin1->HobgoblinNames/Hobgoblin1</li>
+				<li>Hobgoblin2->HobgoblinNames/Hobgoblin2</li>
+				<li>Hobgoblin3->HobgoblinNames/Hobgoblin3</li>
+				<li>Hobgoblin4->HobgoblinNames/Hobgoblin4</li>
+				<li>PoliticalUnionsMedieval->PF2Factions/PoliticalUnionsMedieval</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerSettlementHobgoblin</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[townname_wordgen]</li>
+
+				<li>townname_wordgen(p=2)->[Hobgoblin1][Hobgoblin2][Hobgoblin3][Hobgoblin2][Hobgoblin4]'s [Community]</li>
+				<li>townname_wordgen(p=2)->[Hobgoblin1][Hobgoblin2][Hobgoblin3][Hobgoblin2][Hobgoblin4]</li>
+				<li>townname_wordgen(p=2)->[Color] [Hobgoblin1][Hobgoblin2][Hobgoblin3][Hobgoblin2][Hobgoblin4]'s [Community]</li>
+				<li>townname_wordgen(p=2)->[Color] [Hobgoblin1][Hobgoblin2][Hobgoblin3][Hobgoblin2][Hobgoblin4]</li>
+				<li>townname_wordgen(p=2)->[SylE][SylE]</li>
+				<li>townname_wordgen(p=2)->[SylE][SylE][SylE]</li>
+				<li>townname_wordgen(p=2)->[Color] [SylE][SylE]</li>
+				<li>townname_wordgen(p=2)->[Color] [SylE][SylE][SylE]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Hobgoblin1->HobgoblinNames/Hobgoblin1</li>
+				<li>Hobgoblin2->HobgoblinNames/Hobgoblin2</li>
+				<li>Hobgoblin3->HobgoblinNames/Hobgoblin3</li>
+				<li>Hobgoblin4->HobgoblinNames/Hobgoblin4</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

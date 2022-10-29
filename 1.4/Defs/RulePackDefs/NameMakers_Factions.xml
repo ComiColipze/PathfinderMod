@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RulePackDef>
+        <defName>PF2_NamerFaction</defName>
+        <include>
+            <li>OutlanderPlaceNameUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=0.35)->[PlaceOutlander]</li>
+                <li>r_name->the [Political_Union_Medieval] of [PlaceOutlander]</li>
+                <li>r_name->[PlaceOutlander] [Political_Union_Medieval]</li>
+            </rulesStrings>
+            <rulesFiles>
+                <li>Political_Union_Medieval->PF2Factions/PoliticalUnionsMedieval</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>PF2_NamerSettlement</defName>
+        <include>
+            <li>OutlanderPlaceNameUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=4)->[PlaceOutlander] [MedievalSettlementEnd]</li>
+                <li>r_name->[AnimalBadass]'s [MedievalSettlementEnd]-on-the-[TerrainFeature]</li>
+                <li>r_name->[AnimalBadass]'s [MedievalSettlementEnd]-by-the-[TerrainFeature]</li>
+            </rulesStrings>
+            <rulesFiles>
+                <li>MedievalSettlementEnd->PF2Factions/PlaceEndMedieval</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

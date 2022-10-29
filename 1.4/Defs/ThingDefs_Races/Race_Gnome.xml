@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.RaceSettings>
+		<defName>Gnome_Settings</defName>
+		<pawnKindSettings>
+            <alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>PF2_GnomeSlave</li>
+					</kindDefs>
+					<chance>20.0</chance>
+				</li>
+            </alienslavekinds>
+            <alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>PF2_GnomeRefugee</li>
+					</kindDefs>
+					<chance>20.0</chance>
+				</li>
+            </alienrefugeekinds>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_GnomeColonist</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_GnomePlayerColony</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_GnomeTribal</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_GnomePlayerTribe</li>
+					</factionDefs>
+				</li>
+			</startingColonists>
+            <alienwandererkinds>
+                <li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_GnomeColonist</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_GnomePlayerColony</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_GnomeTribal</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_GnomePlayerTribe</li> 
+					</factionDefs>
+				</li>
+            </alienwandererkinds>
+        </pawnKindSettings>
+	</AlienRace.RaceSettings>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>PF2_Gnome</defName>
+    <label>gnome</label>
+    <description>Expatriates of the strange land of fey, these small folk have a reputation for flighty and eccentric behavior. Many gnomes are whimsical artisans and tinkers, creating strange devices powered by magic, alchemy, and their quirky imagination. Gnomes have an insatiable need for new experiences that often gets them in trouble.</description>
+    <alienRace>
+        <generalSettings>
+			<maleGenderProbability>0.5</maleGenderProbability>
+			<immuneToAge>false</immuneToAge>
+			<humanRecipeImport>true</humanRecipeImport>
+			<immuneToXenophobia>false</immuneToXenophobia>
+			<minAgeForAdulthood>20</minAgeForAdulthood>
+			<disallowedTraits>
+                <li>
+                    <defName>Undergrounder</defName>
+				</li>
+            </disallowedTraits>
+			<alienPartGenerator>
+				<headTypes>
+					<li>Male_AverageNormal</li>
+					<li>Male_AverageWide</li>
+					<li>Male_NarrowWide</li>
+					<li>Female_AverageNormal</li>
+					<li>Female_AverageWide</li>
+					<li>Female_NarrowWide</li>
+				</headTypes>
+				<bodyTypes>
+					<li>Thin</li>
+					<li>Male</li>
+					<li>Female</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+				</bodyTypes>
+				<customDrawSize>(0.75, 0.75)</customDrawSize>
+				<customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>
+				<headOffset>(0.0, -0.09)</headOffset>
+				<getsGreyAt>350</getsGreyAt>
+				<colorChannels>
+                    <li>
+					<name>hair</name>
+					<first Class="ColorGenerator_Options">
+						<options>
+							<!--Black&White-->
+                            <li>
+                                <weight>10</weight>
+                                <only>(40, 40, 40)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(80, 80, 80)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(135, 135, 135)</only>
+                            </li>
+							<li>
+                                <weight>10</weight>
+                                <only>(200, 200, 200)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(255, 255, 255)</only>
+                            </li>
+							<!--Red&Orange-->
+                            <li>
+                                <weight>10</weight>
+                                <only>(153, 0, 0)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(255, 51, 51)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(255, 128, 0)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(255, 178, 102)</only>
+                            </li>
+							<!--Yellow&Green-->
+                            <li>
+                                <weight>10</weight>
+                                <only>(255, 255, 0)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(255, 255, 153)</only>
+                            </li>
+							<li>
+                                <weight>10</weight>
+								<only>(153, 255, 51)</only>
+							</li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(0, 204, 0)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(0, 255, 128)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+                                <only>(102, 255, 178)</only>
+                            </li>
+							<!--Blues-->
+                            <li>
+                                <weight>10</weight>
+                                <only>(102, 255, 255)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(204, 255, 255)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(0, 76, 153)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(0, 128, 255)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(0, 0, 153)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(102, 102, 255)</only>
+                            </li>
+							<!--Purple&Pink-->
+                            <li>
+                                <weight>10</weight>
+                                <only>(76, 0, 153)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+								<only>(153, 51, 255)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(153, 0, 153)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(255, 153, 255)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(153, 0, 76)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(255, 0, 107)</only>
+                            </li>
+                        </options>
+					</first>
+					</li>
+                </colorChannels>
+				<bodyAddons>
+					<li>
+						<bodyPart>left ear</bodyPart>
+						<path>Things/Pawn/Gnome/Ears/Left_Ears</path>
+						<colorChannel>skin</colorChannel>
+						<drawSize>(1.0,1.0)</drawSize>
+						<drawSizePortrait>(1.0,1.0)</drawSizePortrait>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<inFrontOfBody>true</inFrontOfBody>
+						<alignWithHead>true</alignWithHead>
+						<drawnDesiccated>false</drawnDesiccated>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+					<li>
+						<bodyPart>right ear</bodyPart>
+						<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+						<path>Things/Pawn/Gnome/Ears/Right_Ears</path>
+						<colorChannel>skin</colorChannel>
+						<drawSize>(1.0,1.0)</drawSize>
+						<drawSizePortrait>(1.0,1.0)</drawSizePortrait>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<inFrontOfBody>true</inFrontOfBody>
+						<alignWithHead>true</alignWithHead>
+						<drawnDesiccated>false</drawnDesiccated>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+					<li>
+						<path>Things/Pawn/Gnome/Eyebrows/Eyebrows</path>
+						<bodyPart>Head</bodyPart>
+						<inFrontOfBody>true</inFrontOfBody>
+						<drawnInBed>true</drawnInBed>
+						<drawSize>1.2</drawSize>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+                        <colorChannel>hair</colorChannel>
+						<defaultOffset>Head</defaultOffset>
+						<drawnDesiccated>false</drawnDesiccated>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+						<offsets>
+							<south>
+								<headTypes>
+									<Average_Normal>(0.0,-0.25)</Average_Normal>
+									<Average_Pointy>(0.0,-0.25)</Average_Pointy>
+									<Average_Wide>(0.0,-0.25)</Average_Wide>
+								</headTypes>
+							</south>
+							<north>
+								<headTypes>
+									<Average_Normal>(0.0,-0.25)</Average_Normal>
+									<Average_Pointy>(0.0,-0.25)</Average_Pointy>
+									<Average_Wide>(0.0,-0.25)</Average_Wide>
+								</headTypes>
+							</north>
+							<east>
+								<headTypes>
+									<Average_Normal>(-0.02,-0.25)</Average_Normal>
+									<Average_Pointy>(-0.02,-0.25)</Average_Pointy>
+									<Average_Wide>(-0.03,-0.25)</Average_Wide>
+								</headTypes>
+							</east>
+						</offsets>			
+					</li>
+				</bodyAddons>
+			</alienPartGenerator>
+        </generalSettings>
+        <thoughtSettings>
+			<cannotReceiveThoughts>
+				<li>EnvironmentDark</li>
+				<li>NeedOutdoors</li>	
+			</cannotReceiveThoughts>
+        </thoughtSettings>
+        <compatibility>
+			<isFlesh>True</isFlesh>
+			<isSentient>True</isSentient>
+			<hasBlood>True</hasBlood>
+        </compatibility>
+    </alienRace>	
+	<statBases>
+		<Mass>35</Mass>
+		<MarketValue>1750</MarketValue>
+		<MoveSpeed>4.2</MoveSpeed>
+		<ComfyTemperatureMin>16</ComfyTemperatureMin>
+		<ComfyTemperatureMax>26</ComfyTemperatureMax>
+		<LeatherAmount>35</LeatherAmount>
+		<RoyalFavorValue>3</RoyalFavorValue>
+		<ResearchSpeed>1.2</ResearchSpeed>
+		<DrugCookingSpeed>1.2</DrugCookingSpeed>
+		<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">1.2</HackingSpeed>
+		<DrugSynthesisSpeed>1.2</DrugSynthesisSpeed>
+		<RestRateMultiplier>0.8</RestRateMultiplier>
+	</statBases>
+	<tools>
+		<li>
+			<label>left fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>7.4</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>right fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>7.4</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>teeth</label>
+			<capacities>
+				<li>Bite</li>
+			</capacities>
+			<power>7.4</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<chanceFactor>0.07</chanceFactor>
+		</li>
+		<li>
+			<label>head</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>4.2</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.2</chanceFactor>
+		</li>
+	</tools>
+	<race>
+		<thinkTreeMain>Humanlike</thinkTreeMain>
+		<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+		<intelligence>Humanlike</intelligence>
+		<makesFootprints>true</makesFootprints>
+		<lifeExpectancy>400</lifeExpectancy>
+		<leatherDef>Leather_Human</leatherDef>
+		<nameGenerator>PF2_NamerPersonGnomeMale</nameGenerator>
+		<nameGeneratorFemale>PF2_NamerPersonGnomeFemale</nameGeneratorFemale>
+		<useMeatFrom>Human</useMeatFrom>
+		<body>Human</body>
+		<baseBodySize>0.6</baseBodySize>
+		<baseHealthScale>1.0</baseHealthScale>
+		<foodType>OmnivoreHuman</foodType>
+		<gestationPeriodDays>45</gestationPeriodDays>
+		<meatMarketValue>0.8</meatMarketValue>
+		<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+		<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+		<litterSizeCurve>
+			<points>
+				<li>(0.5, 0)</li>
+				<li>(1, 1)</li>
+				<li>(1.01, 0.02)</li>
+				<li>(3.5, 0)</li>
+			</points>
+		</litterSizeCurve>
+		<lifeStageAges Inherit="False">
+			<li>
+				<def>HumanlikeBaby</def>
+				<minAge>0</minAge>
+			</li>
+			<li>
+				<def>HumanlikeChild</def>
+				<minAge>4</minAge>
+			</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<def>HumanlikePreTeenager</def>
+					<minAge>7</minAge>
+				</li>
+			<li>
+				<def>HumanlikeTeenager</def>
+				<minAge>9</minAge>
+			</li>
+			<li>
+				<def>HumanlikeAdult</def>
+				<minAge>18</minAge>
+			</li>
+		</lifeStageAges>
+		<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+			<Firefighter>7</Firefighter>
+			<Patient>0</Patient>
+			<Doctor>10</Doctor>
+			<PatientBedRest>0</PatientBedRest>
+			<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+			<BasicWorker>7</BasicWorker>
+			<Warden>10</Warden>
+			<Handling>7</Handling>
+			<Cooking>7</Cooking>
+			<Hunting>7</Hunting>
+			<Construction>10</Construction>
+			<Growing>7</Growing>
+			<Mining>7</Mining>
+			<PlantCutting>7</PlantCutting>
+			<Smithing>13</Smithing>
+			<Tailoring>7</Tailoring>
+			<Art>10</Art>
+			<Crafting>7</Crafting>
+			<Hauling>3</Hauling>
+			<Cleaning>3</Cleaning>
+			<Research>13</Research>
+		</lifeStageWorkSettings>
+		<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+		<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+		<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+		<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+		<specialShadowData>
+			<volume>(0.3, 0.8, 0.4)</volume>
+			<offset>(0,0,-0.3)</offset>
+		</specialShadowData>
+		<ageGenerationCurve>
+			<points>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(3,86)</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(7.5,118)</li>  <!-- Exclude 12.5-13 years to avoid spawning pawns who are very 	close to becoming adults -->  
+				<li MayRequire="Ludeon.RimWorld.Biotech">(7.51,0)</li>  
+				<li MayRequire="Ludeon.RimWorld.Biotech">(8,0)</li>      
+				<li MayRequire="Ludeon.RimWorld.Biotech">(8.001,122)</li><!-- End exclude -->
+				<li MayRequire="Ludeon.RimWorld.Biotech">(8.999,130)</li>
+				<li>(10,0)</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(10.001,130)</li>
+				<li>(15,0)</li>
+				<li>(30,100)</li>
+				<li>(70,100)</li>
+				<li>(150,30)</li>
+				<li>(250,18)</li>
+				<li>(350,10)</li>
+				<li>(400,3)</li>
+				<li>(450,0)</li>
+			</points>
+		</ageGenerationCurve>
+		<hediffGiverSets>
+			<li>OrganicStandard</li>
+			<li>Human</li>
+		</hediffGiverSets>
+		</race>
+		<recipes>
+			<li>ExciseCarcinoma</li>
+			<li>AdministerMechSerumHealer</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+			<li>CureScaria</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Vasectomy</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ReverseVasectomy</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">TubalLigation</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ExtractOvum</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ExtractHemogenPack</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">BloodTransfusion</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ImplantXenogerm</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ImplantIUD</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">RemoveIUD</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">TerminatePregnancy</li>
+		</recipes>
+</AlienRace.ThingDef_AlienRace>
+
+</Defs>

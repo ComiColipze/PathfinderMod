@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>PF2_NamerPersonDrowMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[DrowList1][DrowList2][DrowList4] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList1][DrowList2][DrowList4] [DrowList1][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList1][DrowList2][DrowList4] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList1][DrowList2][DrowList4] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList1][DrowList2][DrowList4] [DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList1][DrowList2][DrowList4] [DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2] [DrowList1][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2] [DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2] [DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2][DrowList4] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2][DrowList4] [DrowList1][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2][DrowList4] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2][DrowList4] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2][DrowList4] [DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2][DrowList4] [DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4] [DrowList1][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4] [DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4] [DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2] [DrowList1][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2] [DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2] [DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				
+				<li>name->[DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4] [DrowList1][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4] [DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4] [DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>DrowList1</keyword>
+					<path>DrowNames/Drow1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList2</keyword>
+					<path>DrowNames/Drow2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList3</keyword>
+					<path>DrowNames/Drow3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList4</keyword>
+					<path>DrowNames/Drow4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList5</keyword>
+					<path>DrowNames/Drow5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList6</keyword>
+					<path>DrowNames/Drow6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList7</keyword>
+					<path>DrowNames/Drow7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList8</keyword>
+					<path>DrowNames/Drow8</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerPersonDrowFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[DrowList5][DrowList6][DrowList8] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList5][DrowList6][DrowList8] [DrowList1][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList5][DrowList6][DrowList8] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList5][DrowList6][DrowList8] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList5][DrowList6][DrowList8] [DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList5][DrowList6][DrowList8] [DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				
+				<li>name->[DrowList5][DrowList6][DrowList7][DrowList6] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList5][DrowList6][DrowList7][DrowList6] [DrowList1][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList5][DrowList6][DrowList7][DrowList6] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList5][DrowList6][DrowList7][DrowList6] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList5][DrowList6][DrowList7][DrowList6] [DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList5][DrowList6][DrowList7][DrowList6] [DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				
+				<li>name->[DrowList5][DrowList6][DrowList7][DrowList6][DrowList7][DrowList6] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList5][DrowList6][DrowList7][DrowList6][DrowList7][DrowList6] [DrowList1][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList5][DrowList6][DrowList7][DrowList6][DrowList7][DrowList6] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList5][DrowList6][DrowList7][DrowList6][DrowList7][DrowList6] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList5][DrowList6][DrowList7][DrowList6][DrowList7][DrowList6] [DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList5][DrowList6][DrowList7][DrowList6][DrowList7][DrowList6] [DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				
+				<li>name->[DrowList6][DrowList7][DrowList6][DrowList8] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList6][DrowList7][DrowList6][DrowList8] [DrowList1][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList6][DrowList7][DrowList6][DrowList8] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList6][DrowList7][DrowList6][DrowList8] [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2]]</li>
+				<li>name->[DrowList6][DrowList7][DrowList6][DrowList8] [DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList6][DrowList7][DrowList6][DrowList8] [DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				
+				<li>name->[DrowList6][DrowList7][DrowList6][DrowList7][DrowList6][DrowList7][DrowList6]  [DrowList1][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList6][DrowList7][DrowList6][DrowList7][DrowList6][DrowList7][DrowList6]  [DrowList1][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList6][DrowList7][DrowList6][DrowList7][DrowList6][DrowList7][DrowList6]  [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList6][DrowList7][DrowList6][DrowList7][DrowList6][DrowList7][DrowList6]  [DrowList1][DrowList2][DrowList3][DrowList2][DrowList3][DrowList2]</li>
+				<li>name->[DrowList6][DrowList7][DrowList6][DrowList7][DrowList6][DrowList7][DrowList6]  [DrowList2][DrowList3][DrowList2][DrowList4]</li>
+				<li>name->[DrowList6][DrowList7][DrowList6][DrowList7][DrowList6][DrowList7][DrowList6] [DrowList2][DrowList3][DrowList2][DrowList3][DrowList2][DrowList4]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>DrowList1</keyword>
+					<path>DrowNames/Drow1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList2</keyword>
+					<path>DrowNames/Drow2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList3</keyword>
+					<path>DrowNames/Drow3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList4</keyword>
+					<path>DrowNames/Drow4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList5</keyword>
+					<path>DrowNames/Drow5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList6</keyword>
+					<path>DrowNames/Drow6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList7</keyword>
+					<path>DrowNames/Drow7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DrowList8</keyword>
+					<path>DrowNames/Drow8</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerFactionDrow</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Color] [Drow5][Drow6][Drow8] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[Drow5][Drow6][Drow8] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[Color] [PoliticalUnionsMedieval] of [Drow5][Drow6][Drow8]</li>
+				<li>r_name->[PoliticalUnionsMedieval] of [Drow5][Drow6][Drow8]</li>
+				<li>r_name->The [Color] [PoliticalUnionsMedieval] of [Drow5][Drow6][Drow8]</li>
+				<li>r_name->The [PoliticalUnionsMedieval] of [Drow5][Drow6][Drow8]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Drow5->DrowNames/Drow5</li>
+				<li>Drow6->DrowNames/Drow6</li>
+				<li>Drow7->DrowNames/Drow7</li>
+				<li>Drow8->DrowNames/Drow8</li>
+				<li>PoliticalUnionsMedieval->PF2Factions/PoliticalUnionsMedieval</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerSettlementDrow</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[townname_wordgen]</li>
+
+				<li>townname_wordgen(p=2)->[Drow5][Drow6][Drow8]</li>
+				<li>townname_wordgen(p=2)->[Drow5][Drow6][Drow7][Drow6][Drow8]</li>
+				<li>townname_wordgen(p=2)->[Drow5][Drow6][Drow7][Drow6][Drow7][Drow6][Drow8]</li>
+				<li>townname_wordgen(p=2)->[Drow6][Drow7][Drow6][Drow7][Drow6][Drow8]</li>
+				<li>townname_wordgen(p=2)->[Drow6][Drow7][Drow6][Drow7][Drow6]</li>
+				<li>townname_wordgen(p=2)->[Drow6][Drow7][Drow6][Drow8]</li>
+
+				<li>townname_wordgen(p=2)->[Drow5][Drow6][Drow8] [Community]</li>
+				<li>townname_wordgen(p=2)->[Drow5][Drow6][Drow7][Drow6][Drow8] [Community]</li>
+				<li>townname_wordgen(p=2)->[Drow5][Drow6][Drow7][Drow6][Drow7][Drow6][Drow8] [Community]</li>
+				<li>townname_wordgen(p=2)->[Drow6][Drow7][Drow6][Drow7][Drow6][Drow8] [Community]</li>
+				<li>townname_wordgen(p=2)->[Drow6][Drow7][Drow6][Drow7][Drow6] [Community]</li>
+				<li>townname_wordgen(p=2)->[Drow6][Drow7][Drow6][Drow8] [Community]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Drow5->DrowNames/Drow5</li>
+				<li>Drow6->DrowNames/Drow6</li>
+				<li>Drow7->DrowNames/Drow7</li>
+				<li>Drow8->DrowNames/Drow8</li>
+				<li>Communities->PF2Factions/Communities</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

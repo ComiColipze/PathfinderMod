@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Bases -->
+
+  <HeadTypeDef ParentName="AverageBase" Name="Goloma_HeadtypeBase" Abstract="True">
+  </HeadTypeDef>
+
+
+  <HeadTypeDef ParentName="Goloma_HeadtypeBase">
+    <defName>Goloma_Red_Light</defName>
+	<gender>None</gender>
+    <graphicPath>Things\Pawn\Goloma\Red_Light</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Goloma_HeadtypeBase">
+    <defName>Goloma_Red_Dark</defName>
+	<gender>None</gender>
+    <graphicPath>Things\Pawn\Goloma\Red_Dark</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Goloma_HeadtypeBase">
+    <defName>Goloma_Blue_Light</defName>
+	<gender>None</gender>
+    <graphicPath>Things\Pawn\Goloma\Blue_Light</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Goloma_HeadtypeBase">
+    <defName>Goloma_Blue_Dark</defName>
+	<gender>None</gender>
+    <graphicPath>Things\Pawn\Goloma\Blue_Dark</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Goloma_HeadtypeBase">
+    <defName>Goloma_Green_Light</defName>
+	<gender>None</gender>
+    <graphicPath>Things\Pawn\Goloma\Green_Light</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Goloma_HeadtypeBase">
+    <defName>Goloma_Green_Dark</defName>
+	<gender>None</gender>
+    <graphicPath>Things\Pawn\Goloma\Green_Dark</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Goloma_HeadtypeBase">
+    <defName>Goloma_Yellow_Light</defName>
+	<gender>None</gender>
+    <graphicPath>Things\Pawn\Goloma\Yellow_Light</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Goloma_HeadtypeBase">
+    <defName>Goloma_Yellow_Dark</defName>
+	<gender>None</gender>
+    <graphicPath>Things\Pawn\Goloma\Yellow_Dark</graphicPath>
+  </HeadTypeDef>
+</Defs>

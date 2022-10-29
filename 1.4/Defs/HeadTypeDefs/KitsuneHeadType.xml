@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Bases -->
+
+  <HeadTypeDef ParentName="AverageBase" Name="Kitsune_HeadtypeBase" Abstract="True">
+  </HeadTypeDef>
+
+
+  <HeadTypeDef ParentName="Kitsune_HeadtypeBase">
+    <defName>Kitsune_Male_Average_Normal_A</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Kitsune\Head\Male_Average_Normal_A</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Kitsune_HeadtypeBase">
+    <defName>Kitsune_Male_Average_Normal_B</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Kitsune\Head\Male_Average_Normal_B</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Kitsune_HeadtypeBase">
+    <defName>Kitsune_Male_Average_Normal_C</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Kitsune\Head\Male_Average_Normal_C</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Kitsune_HeadtypeBase">
+    <defName>Kitsune_Male_Average_Normal_D</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Kitsune\Head\Male_Average_Normal_D</graphicPath>
+  </HeadTypeDef>
+  
+  
+  <HeadTypeDef ParentName="Kitsune_HeadtypeBase">
+    <defName>Kitsune_Female_Average_Normal_A</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Kitsune\Head\Female_Average_Normal_A</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Kitsune_HeadtypeBase">
+    <defName>Kitsune_Female_Average_Normal_B</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Kitsune\Head\Female_Average_Normal_B</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Kitsune_HeadtypeBase">
+    <defName>Kitsune_Female_Average_Normal_C</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Kitsune\Head\Female_Average_Normal_C</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Kitsune_HeadtypeBase">
+    <defName>Kitsune_Female_Average_Normal_D</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Kitsune\Head\Female_Average_Normal_D</graphicPath>
+  </HeadTypeDef>
+</Defs>

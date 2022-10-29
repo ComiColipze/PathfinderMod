@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Bases -->
+
+  <HeadTypeDef ParentName="AverageBase" Name="Ysoki_HeadtypeBase" Abstract="True">
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="NarrowBase" Name="Ysoki_HeadtypeNarrowBase" Abstract="True">
+  </HeadTypeDef>
+
+
+  <HeadTypeDef ParentName="Ysoki_HeadtypeNarrowBase">
+    <defName>Ysoki_Male_NarrowA</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Ysoki\Head\Male_NarrowA</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Ysoki_HeadtypeNarrowBase">
+    <defName>Ysoki_Male_NarrowB</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Ysoki\Head\Male_NarrowB</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Ysoki_HeadtypeNarrowBase">
+    <defName>Ysoki_Male_NarrowC</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Ysoki\Head\Male_NarrowC</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Ysoki_HeadtypeBase">
+    <defName>Ysoki_Male_RoundA</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Ysoki\Head\Male_RoundA</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Ysoki_HeadtypeBase">
+    <defName>Ysoki_Male_RoundB</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Ysoki\Head\Male_RoundB</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Ysoki_HeadtypeBase">
+    <defName>Ysoki_Male_RoundC</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Ysoki\Head\Male_RoundC</graphicPath>
+  </HeadTypeDef>
+  
+  
+  <HeadTypeDef ParentName="Ysoki_HeadtypeNarrowBase">
+    <defName>Ysoki_Female_NarrowA</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Ysoki\Head\Female_NarrowA</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Ysoki_HeadtypeNarrowBase">
+    <defName>Ysoki_Female_NarrowB</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Ysoki\Head\Female_NarrowB</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Ysoki_HeadtypeNarrowBase">
+    <defName>Ysoki_Female_NarrowC</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Ysoki\Head\Female_NarrowC</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Ysoki_HeadtypeBase">
+    <defName>Ysoki_Female_RoundA</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Ysoki\Head\Female_RoundA</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Ysoki_HeadtypeBase">
+    <defName>Ysoki_Female_RoundB</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Ysoki\Head\Female_RoundB</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Ysoki_HeadtypeBase">
+    <defName>Ysoki_Female_RoundC</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Ysoki\Head\Female_RoundC</graphicPath>
+  </HeadTypeDef>
+</Defs>

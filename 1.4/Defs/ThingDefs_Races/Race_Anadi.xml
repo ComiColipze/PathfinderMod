@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.RaceSettings>
+		<defName>Anadi_Settings</defName>
+		<pawnKindSettings>
+            <alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>PF2_AnadiSlave</li>
+					</kindDefs>
+					<chance>20.0</chance>
+				</li>
+            </alienslavekinds>
+            <alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>PF2_AnadiRefugee</li>
+					</kindDefs>
+					<chance>20.0</chance>
+				</li>
+            </alienrefugeekinds>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_AnadiColonist</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_AnadiPlayerColony</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_AnadiTribal</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_AnadiPlayerTribe</li>
+					</factionDefs>
+				</li>
+			</startingColonists>
+            <alienwandererkinds>
+                <li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_AnadiColonist</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_AnadiPlayerColony</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_AnadiTribal</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_AnadiPlayerTribe</li> 
+					</factionDefs>
+				</li>
+            </alienwandererkinds>
+        </pawnKindSettings>
+	</AlienRace.RaceSettings>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>PF2_Anadi</defName>
+    <label>anadi</label>
+    <description>The anadi are reclusive, sapient humanoid spiders people who hail from the jungles of southern Garund. Though they act in many ways like natural-born shapeshifters, their twin forms actually stem from carefully developed magic.</description>
+    <alienRace>
+        <generalSettings>
+			<maleGenderProbability>0.5</maleGenderProbability>
+			<immuneToAge>false</immuneToAge>
+			<humanRecipeImport>true</humanRecipeImport>
+			<immuneToXenophobia>false</immuneToXenophobia>
+			<minAgeForAdulthood>15</minAgeForAdulthood>
+			<disallowedTraits>
+                <li>
+                    <defName>Nimble</defName>
+				</li>
+            </disallowedTraits>
+			<alienPartGenerator>
+				<headTypes>
+					<li>Anadi_Average_Normal</li>
+				</headTypes>
+				<bodyTypes>
+					<li>Male</li>
+					<li>Female</li>
+					<li>Thin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+				</bodyTypes>
+				<colorChannels>
+                    <li>
+					<name>skin</name>
+					<first Class="ColorGenerator_Options">
+						<options>
+						<!--Blue-->
+                            <li>
+                                <weight>10</weight>
+                                <only>(0, 0, 128)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+                                <only>(25, 25, 112)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+                                <only>(65, 105, 225)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+                                <only>(100, 149, 137)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+                                <only>(173, 216, 230)</only>
+                            </li>
+						<!--Other Colors-->
+                            <li>
+                                <weight>10</weight>
+                                <only>(55, 55, 55)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+								<only>(245, 245, 245)</only>
+                            </li>
+							<li>
+								<weight>10</weight>
+								<only>(125, 85, 50)</only>
+                            </li>
+							<li>
+								<weight>10</weight>
+								<only>(115, 90, 70)</only>
+                            </li>
+						</options>
+					</first>
+					</li>
+                </colorChannels>
+			</alienPartGenerator>
+        </generalSettings>
+        <graphicPaths>
+			<head>Things/Pawn/Anadi/</head>
+        </graphicPaths>
+        <styleSettings>
+			<li>
+				<key>HairDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+			<li>
+				<key>BeardDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+        </styleSettings>
+        <compatibility>
+			<isFlesh>True</isFlesh>
+			<isSentient>True</isSentient>
+			<hasBlood>True</hasBlood>
+        </compatibility>
+    </alienRace>
+	<statBases>
+		<MarketValue>1750</MarketValue>
+		<MoveSpeed>5.0</MoveSpeed>
+		<ComfyTemperatureMin>16</ComfyTemperatureMin>
+		<ComfyTemperatureMax>26</ComfyTemperatureMax>
+		<LeatherAmount>75</LeatherAmount>
+		<RoyalFavorValue>3</RoyalFavorValue>
+		<PsychicSensitivity>1.15</PsychicSensitivity>
+		<MeleeDodgeChance>15</MeleeDodgeChance>
+		<PawnTrapSpringChance>0.1</PawnTrapSpringChance>
+	</statBases>
+	<tools>
+		<li>
+			<label>left fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>7.8</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>right fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>7.8</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>mandibles</label>
+			<capacities>
+				<li>AnadiBite</li>
+			</capacities>
+			<power>8.2</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>20</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+			<chanceFactor>0.2</chanceFactor>
+		</li>
+		<li>
+			<label>head</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>5</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.2</chanceFactor>
+		</li>
+	</tools>
+	<race>
+		<leatherDef>PF2_Leather_Anadi</leatherDef>
+		<thinkTreeMain>Humanlike</thinkTreeMain>
+		<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+		<intelligence>Humanlike</intelligence>
+		<makesFootprints>true</makesFootprints>
+		<lifeExpectancy>80</lifeExpectancy>
+		<nameGenerator>PF2_NamerPersonAnadi</nameGenerator>
+		<useMeatFrom>Human</useMeatFrom>
+		<body>Human</body>
+		<baseBodySize>1.0</baseBodySize>
+		<foodType>OmnivoreHuman</foodType>
+		<gestationPeriodDays>18</gestationPeriodDays>
+		<meatMarketValue>0.8</meatMarketValue>
+		<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+		<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+		<litterSizeCurve>
+			<points>
+				<li>(0.5, 0)</li>
+				<li>(1, 1)</li>
+				<li>(1.01, 0.02)</li>
+				<li>(3.5, 0)</li>
+			</points>
+		</litterSizeCurve>
+		<lifeStageAges>
+			<li>
+				<def>HumanlikeBaby</def>
+				<minAge>0</minAge>
+			</li>
+			<li>
+				<def>HumanlikeChild</def>
+				<minAge>3</minAge>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<def>HumanlikePreTeenager</def>
+				<minAge>5</minAge>
+			</li>
+			<li>
+				<def>HumanlikeTeenager</def>
+				<minAge>6</minAge>
+			</li>
+			<li>
+				<def>HumanlikeAdult</def>
+				<minAge>13</minAge>
+			</li>
+		</lifeStageAges>
+		<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+			<Firefighter>7</Firefighter>
+			<Patient>0</Patient>
+			<Doctor>10</Doctor>
+			<PatientBedRest>0</PatientBedRest>
+			<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+			<BasicWorker>7</BasicWorker>
+			<Warden>10</Warden>
+			<Handling>7</Handling>
+			<Cooking>7</Cooking>
+			<Hunting>7</Hunting>
+			<Construction>10</Construction>
+			<Growing>7</Growing>
+			<Mining>7</Mining>
+			<PlantCutting>7</PlantCutting>
+			<Smithing>13</Smithing>
+			<Tailoring>7</Tailoring>
+			<Art>10</Art>
+			<Crafting>7</Crafting>
+			<Hauling>3</Hauling>
+			<Cleaning>3</Cleaning>
+			<Research>13</Research>
+		</lifeStageWorkSettings>
+		<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+		<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+		<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+		<specialShadowData>
+			<volume>(0.3, 0.8, 0.4)</volume>
+			<offset>(0,0,-0.3)</offset>
+		</specialShadowData>
+		<ageGenerationCurve>
+			<points>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(5,86)</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(8.5,118)</li>  <!-- Exclude 12.5-13 years to avoid spawning pawns who are very 	close to becoming adults -->  
+				<li MayRequire="Ludeon.RimWorld.Biotech">(8.51,0)</li>  
+				<li MayRequire="Ludeon.RimWorld.Biotech">(9,0)</li>      
+				<li MayRequire="Ludeon.RimWorld.Biotech">(9.001,122)</li><!-- End exclude -->
+				<li MayRequire="Ludeon.RimWorld.Biotech">(9.999,130)</li>
+				<li>(10,0)</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(10.001,130)</li>
+				<li>(15,100)</li>
+				<li>(35,100)</li>
+				<li>(40,30)</li>
+				<li>(55,18)</li>
+				<li>(75,10)</li>
+				<li>(80,3)</li>
+				<li>(90,0)</li>
+			</points>
+		</ageGenerationCurve>
+		<hediffGiverSets>
+			<li>OrganicStandard</li>
+			<li>Human</li>
+		</hediffGiverSets>
+	</race>
+		<recipes>
+			<li>ExciseCarcinoma</li>
+			<li>AdministerMechSerumHealer</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+			<li>CureScaria</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Vasectomy</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ReverseVasectomy</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">TubalLigation</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ExtractOvum</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ExtractHemogenPack</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">BloodTransfusion</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ImplantXenogerm</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ImplantIUD</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">RemoveIUD</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">TerminatePregnancy</li>
+		</recipes>
+		<ingredient>
+			<mergeCompatibilityTags>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
+			</mergeCompatibilityTags>
+		</ingredient>
+</AlienRace.ThingDef_AlienRace>
+
+</Defs>

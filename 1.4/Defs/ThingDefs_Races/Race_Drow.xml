@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.RaceSettings>
+		<defName>Drow_Settings</defName>
+		<pawnKindSettings>
+            <alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>PF2_DrowSlave</li>
+					</kindDefs>
+					<chance>20.0</chance>
+				</li>
+            </alienslavekinds>
+            <alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>PF2_DrowRefugee</li>
+					</kindDefs>
+					<chance>20.0</chance>
+				</li>
+            </alienrefugeekinds>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_DrowColonist</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_DrowPlayerColony</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_DrowTribal</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_DrowPlayerTribe</li>
+					</factionDefs>
+				</li>
+			</startingColonists>
+            <alienwandererkinds>
+                <li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_DrowColonist</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_DrowPlayerColony</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_DrowTribal</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_DrowPlayerTribe</li> 
+					</factionDefs>
+				</li>
+            </alienwandererkinds>
+        </pawnKindSettings>
+	</AlienRace.RaceSettings>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>PF2_Drow</defName>
+    <label>drow</label>
+    <description>Dark reflections of surface elves, drow are shadowy hunters who strive to snuff out the world's light. Drow are powerful magical creatures who typically serve demons, and only their chaotic nature stops them from becoming an even greater menace. A select few forsake their race's depraved and nihilistic society to walk a heroic path.</description>
+    <alienRace>
+        <generalSettings>
+			<maleGenderProbability>0.35</maleGenderProbability>
+			<immuneToAge>true</immuneToAge>
+			<humanRecipeImport>true</humanRecipeImport>
+			<immuneToXenophobia>false</immuneToXenophobia>
+			<minAgeForAdulthood>110</minAgeForAdulthood>
+			<disallowedTraits>
+                <li>
+                    <defName>Undergrounder</defName>
+				</li>
+                <li>
+                    <defName>Tough</defName>
+				</li>
+                <li>
+                    <defName>Psychopath</defName>
+				</li>
+				<li>
+					<defName>SpeedOffset</defName>
+					<degree>-1</degree>
+				</li>
+				<li>
+					<defName>Beauty</defName>
+					<degree>-1</degree>
+				</li>
+				<li>
+					<defName>Beauty</defName>
+					<degree>-2</degree>
+				</li>
+            </disallowedTraits>
+			<alienPartGenerator>
+				<headTypes>
+					<li>Drow_Male_Average_Red_Eyes</li>
+					<li>Drow_Male_Average_White_Eyes</li>
+					<li>Drow_Female_Average_Red_Eyes</li>
+					<li>Drow_Female_Average_White_Eyes</li>
+				</headTypes>
+				<bodyTypes>
+					<li>Thin</li>
+					<li>Male</li>
+					<li>Female</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+				</bodyTypes>
+				<customDrawSize>(1.15, 1.15)</customDrawSize>
+				<customHeadDrawSize>(1.15, 1.15)</customHeadDrawSize>
+				<headOffset>(0.0, 0.08)</headOffset>
+				<getsGreyAt>600</getsGreyAt>
+				<colorChannels>
+                    <li>
+					<name>skin</name>
+					<first Class="ColorGenerator_Options">
+						<options>
+                            <li>
+                                <weight>10</weight>
+                                <only>(88, 97, 130)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(128, 142, 187)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(139, 127, 137)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(144, 143, 176)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(88, 133, 162)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(119, 173, 207)</only>
+                            </li>
+						</options>
+					</first>
+					</li>
+					<li>
+					<name>hair</name>
+					<first Class="ColorGenerator_Options">
+						<options>
+                            <li>
+                                <weight>10</weight>
+                                <only>(219, 219, 219)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(245, 245, 245)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(224, 255, 255)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(245, 245, 220)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(245, 255, 250)</only>
+                            </li>
+						</options>
+					</first>
+                    </li>
+                </colorChannels>
+				<bodyAddons>
+					<li>
+						<bodyPart>left ear</bodyPart>
+						<path>Things/Pawn/Elf/Ears/Left_Ears</path>
+						<colorChannel>skin</colorChannel>
+						<drawSize>(1.0,1.0)</drawSize>
+						<drawSizePortrait>(1.0,1.0)</drawSizePortrait>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<inFrontOfBody>true</inFrontOfBody>
+						<alignWithHead>true</alignWithHead>
+						<drawnDesiccated>false</drawnDesiccated>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+					<li>
+						<bodyPart>right ear</bodyPart>
+						<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+						<path>Things/Pawn/Elf/Ears/Right_Ears</path>
+						<colorChannel>skin</colorChannel>
+						<drawSize>(1.0,1.0)</drawSize>
+						<drawSizePortrait>(1.0,1.0)</drawSizePortrait>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<inFrontOfBody>true</inFrontOfBody>
+						<alignWithHead>true</alignWithHead>
+						<drawnDesiccated>false</drawnDesiccated>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+				</bodyAddons>
+			</alienPartGenerator>
+		</generalSettings>
+		<graphicPaths>
+			<head>Things/Pawn/Elf/DarkElf/</head>
+        </graphicPaths>
+        <styleSettings>
+			<li>
+				<key>BeardDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+        </styleSettings>
+        <thoughtSettings>
+			<cannotReceiveThoughts>
+				<li>ObservedLayingCorpse</li>
+				<li>EnvironmentDark</li>
+				<li>NeedOutdoors</li>
+				<li>DeadMansApparel</li>
+				<li>KnowGuestExecuted</li>
+				<li>KnowPrisonerDiedInnocent</li>
+				<li>AteRawFood</li>
+				<li>AteKibble</li>
+				<li>AteInsectMeatDirect</li>
+				<li>AteInsectMeatAsIngredient</li>
+				<li>AteWithoutTable</li>
+				<li>SleptOnGround</li>
+				<li>SoakingWet</li>
+				<li>KnowPrisonerSold</li>
+				<li>KnowGuestOrganHarvested</li>
+				<li>KnowColonistOrganHarvested</li>
+				<li>KnowButcheredHumanlikeCorpse</li>
+				<li>ButcheredHumanlikeCorpse</li>
+				<li>WitnessedDeathNonAlly</li>
+				<li>ColonistBanished</li>
+				<li>ColonistBanishedToDie</li>
+				<li>PrisonerBanishedToDie</li>
+				<li>ButcheredHumanlikeCorpseOpinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ObservedGibbetCage</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ObservedSkullspike</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Abhorrent_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HAR_ButcheredAlien_Know_Disapproved_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Abhorrent_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Horrible_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ButcheredHuman_Know_Disapproved_Opinion</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ExecutedGuest_Know_Abhorrent_Mood</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ObservedGibbetCage</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ObservedSkullspike</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">BlindingCeremony_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">KilledInnocentAnimal_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">KilledInnocentAnimal_Know_Abhorrent_Mood</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">KilledInnocentAnimal_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">KilledInnocentAnimal_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">KilledInnocentAnimal_Know_Horrible_Mood</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">KilledInnocentAnimal_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">KilledInnocentAnimal_Know_Disapproved</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">KilledInnocentAnimal_Know_Disapproved_Mood</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HarvestedOrgan_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HarvestedOrgan_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HarvestedOrgan_Know_Abhorrent_Mood</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HarvestedOrgan_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HarvestedOrgan_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">HarvestedOrgan_Know_Horrible_Mood</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ExecutedGuest_Know_Abhorrent_Mood</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ExecutedColonist_Know_Abhorrent_Mood</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ExecutedPrisoner_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InnocentPrisonerDied_Know_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InnocentPrisonerDied_Know_Abhorrent_Mood</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InnocentPrisonerDied_Abhorrent</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ExecutedPrisoner_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InnocentPrisonerDied_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ExecutedPrisoner_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">InnocentPrisonerDied_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ExecutedPrisonerInnocent_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ExecutedPrisonerInnocent_Know_Horrible</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ScarificationCeremony_Know_Horrible</li>
+			</cannotReceiveThoughts>
+        </thoughtSettings>
+        <compatibility>
+			<isFlesh>True</isFlesh>
+			<isSentient>True</isSentient>
+			<hasBlood>True</hasBlood>
+        </compatibility>
+    </alienRace>
+	<statBases>
+		<MarketValue>2750</MarketValue>
+		<MoveSpeed>5.4</MoveSpeed>
+		<Flammability>1.1</Flammability>
+		<ComfyTemperatureMin>-12</ComfyTemperatureMin>
+		<ComfyTemperatureMax>26</ComfyTemperatureMax>
+		<LeatherAmount>50</LeatherAmount>
+		<RoyalFavorValue>6</RoyalFavorValue>
+        <CarryingCapacity>45</CarryingCapacity>
+		<PsychicSensitivity>1.5</PsychicSensitivity>
+		<WorkSpeedGlobal>0.8</WorkSpeedGlobal>
+		<GeneralLaborSpeed>0.8</GeneralLaborSpeed>
+		<SocialImpact>1.25</SocialImpact>
+		<EatingSpeed>0.8</EatingSpeed>
+		<ToxicSensitivity>0.75</ToxicSensitivity>
+		<SuppressionPower MayRequire="Ludeon.RimWorld.Ideology">1.2</SuppressionPower>
+		<RestRateMultiplier>1.2</RestRateMultiplier>
+		<GlobalLearningFactor>1.15</GlobalLearningFactor>
+	</statBases>
+	<tools>
+		<li>
+			<label>left fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>7</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>right fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>7</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>teeth</label>
+			<capacities>
+				<li>Bite</li>
+			</capacities>
+			<power>7</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<chanceFactor>0.07</chanceFactor>
+		</li>
+		<li>
+			<label>head</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>3.8</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.2</chanceFactor>
+		</li>
+	</tools>
+	<race>
+		<leatherDef>Leather_Human</leatherDef>
+		<thinkTreeMain>Humanlike</thinkTreeMain>
+		<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+		<intelligence>Humanlike</intelligence>
+		<makesFootprints>true</makesFootprints>
+		<lifeExpectancy>600</lifeExpectancy>
+		<nameGenerator>PF2_NamerPersonDrowMale</nameGenerator>
+		<nameGeneratorFemale>PF2_NamerPersonDrowFemale</nameGeneratorFemale>
+		<useMeatFrom>Human</useMeatFrom>
+		<body>Human</body>
+		<baseBodySize>1.0</baseBodySize>
+		<baseHealthScale>0.9</baseHealthScale>
+		<foodType>OmnivoreHuman</foodType>
+		<gestationPeriodDays>38</gestationPeriodDays>
+		<meatMarketValue>1.2</meatMarketValue>
+		<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+		<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+		<litterSizeCurve>
+			<points>
+				<li>(0.5, 0)</li>
+				<li>(1, 1)</li>
+				<li>(1.01, 0.02)</li>
+				<li>(3.5, 0)</li>
+			</points>
+		</litterSizeCurve>
+		<lifeStageAges>
+			<li>
+				<def>HumanlikeBaby</def>
+				<minAge>0</minAge>
+			</li>
+			<li>
+				<def>HumanlikeChild</def>
+				<minAge>10</minAge>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<def>HumanlikePreTeenager</def>
+				<minAge>13</minAge>
+			</li>
+			<li>
+				<def>HumanlikeTeenager</def>
+				<minAge>15</minAge>
+			</li>
+			<li>
+				<def>HumanlikeAdult</def>
+				<minAge>20</minAge>
+			</li>
+		</lifeStageAges>
+		<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+			<Firefighter>7</Firefighter>
+			<Patient>0</Patient>
+			<Doctor>10</Doctor>
+			<PatientBedRest>0</PatientBedRest>
+			<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+			<BasicWorker>7</BasicWorker>
+			<Warden>10</Warden>
+			<Handling>7</Handling>
+			<Cooking>7</Cooking>
+			<Hunting>7</Hunting>
+			<Construction>10</Construction>
+			<Growing>7</Growing>
+			<Mining>7</Mining>
+			<PlantCutting>7</PlantCutting>
+			<Smithing>13</Smithing>
+			<Tailoring>7</Tailoring>
+			<Art>10</Art>
+			<Crafting>7</Crafting>
+			<Hauling>3</Hauling>
+			<Cleaning>3</Cleaning>
+			<Research>13</Research>
+		</lifeStageWorkSettings>
+		<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+		<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+		<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+		<specialShadowData>
+			<volume>(0.3, 0.8, 0.4)</volume>
+			<offset>(0,0,-0.3)</offset>
+		</specialShadowData>
+		<ageGenerationCurve>
+			<points>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(13.5,118)</li>  <!-- Exclude 12.5-13 years to avoid spawning pawns who are very 	close to becoming adults -->  
+				<li MayRequire="Ludeon.RimWorld.Biotech">(13.51,0)</li>  
+				<li MayRequire="Ludeon.RimWorld.Biotech">(14,0)</li>      
+				<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,122)</li><!-- End exclude -->
+				<li MayRequire="Ludeon.RimWorld.Biotech">(14.999,130)</li>
+				<li>(15,0)</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(15.001,130)</li>
+				<li>(20,0)</li>
+				<li>(100,100)</li>
+				<li>(150,100)</li>
+				<li>(200,30)</li>
+				<li>(350,18)</li>
+				<li>(500,10)</li>
+				<li>(600,3)</li>
+				<li>(700,0)</li>
+			</points>
+		</ageGenerationCurve>
+		<hediffGiverSets>
+			<li>OrganicStandard</li>
+			<li>Human</li>
+		</hediffGiverSets>
+	</race>
+		<recipes>
+			<li>ExciseCarcinoma</li>
+			<li>AdministerMechSerumHealer</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+			<li>CureScaria</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Vasectomy</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ReverseVasectomy</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">TubalLigation</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ExtractOvum</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ExtractHemogenPack</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">BloodTransfusion</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ImplantXenogerm</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ImplantIUD</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">RemoveIUD</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">TerminatePregnancy</li>
+		</recipes>
+</AlienRace.ThingDef_AlienRace>
+
+</Defs>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="DwarfPawnKindBase" Abstract="True">
+		<race>PF2_Dwarf</race>
+		<defaultFactionType>PF2_DwarfFaction</defaultFactionType>
+		<maxGenerationAge>350</maxGenerationAge>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<invNutrition>2.55</invNutrition>
+		<invFoodDef>Pemmican</invFoodDef>
+		<apparelTags>
+			<li>MedievalBasic</li>
+		</apparelTags>
+	</PawnKindDef>
+
+    <!-- Poverty Tier - Peasant -->
+    <PawnKindDef ParentName="DwarfPawnKindBase">
+        <defName>PF2_DwarfFaction_Peasant</defName>
+        <label>dwarf peasant</label>
+        <combatPower>35</combatPower>
+        <chemicalAddictionChance>0.10</chemicalAddictionChance>
+        <invNutrition>0</invNutrition>
+        <itemQuality>Poor</itemQuality>
+        <gearHealthRange>
+            <min>0.2</min>
+            <max>1.1</max>
+        </gearHealthRange>
+        <apparelMoney>
+            <min>50</min>
+            <max>125</max>
+        </apparelMoney>
+        <apparelTags>
+            <li>Neolithic</li>
+        </apparelTags>
+        <weaponMoney>
+            <min>90</min>
+            <max>150</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeBasic</li>
+        </weaponTags>
+        <techHediffsMoney>
+            <min>50</min>
+            <max>50</max>
+        </techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.15</techHediffsChance>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>4~12</initialResistanceRange>
+    </PawnKindDef>
+	
+	<PawnKindDef ParentName="DwarfPawnKindBase">
+		<defName>PF2_DwarfFaction_Hunter</defName>
+		<label>dwarf hunter</label>
+		<combatPower>60</combatPower>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesAdulthood>
+					<li>TribalHunter</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+        <gearHealthRange>
+            <min>0.5</min>
+            <max>1.8</max>
+        </gearHealthRange>
+        <apparelMoney>
+            <min>200</min>
+            <max>300</max>
+        </apparelMoney>
+        <weaponMoney>
+            <min>100</min>
+            <max>100</max>
+        </weaponMoney>
+		<weaponTags>
+			<li>NeolithicRangedDecent</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialWillRange>3~8</initialWillRange>
+		<initialResistanceRange>11~20</initialResistanceRange>
+	</PawnKindDef>
+	
+    <!-- Low-Tier - Merchant, fighter -->
+    <PawnKindDef ParentName="DwarfPawnKindBase">
+        <defName>PF2_DwarfFaction_Merchant</defName>
+        <label>dwarf merchant</label>
+        <combatPower>40</combatPower>
+        <trader>true</trader>
+        <isFighter>false</isFighter>
+        <gearHealthRange>
+            <min>1</min>
+            <max>1</max>
+        </gearHealthRange>
+        <apparelMoney>
+            <min>300</min>
+            <max>500</max>
+        </apparelMoney>
+        <weaponMoney>
+            <min>100</min>
+            <max>150</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeBasic</li>
+        </weaponTags>
+		<initialWillRange>2~6</initialWillRange>
+		<initialResistanceRange>6~18</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="DwarfPawnKindBase">
+        <defName>PF2_DwarfFaction_Fighter</defName>
+        <label>dwarf fighter</label>
+        <combatPower>50</combatPower>
+        <canBeSapper>true</canBeSapper>
+        <gearHealthRange>
+            <min>0.5</min>
+            <max>1.8</max>
+        </gearHealthRange>
+        <apparelMoney>
+            <min>300</min>
+            <max>500</max>
+        </apparelMoney>
+        <apparelTags>
+            <li>MedievalArmorBasic</li>
+        </apparelTags>
+        <weaponMoney>
+            <min>100</min>
+            <max>150</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+        </weaponTags>
+		<initialWillRange>2~6</initialWillRange>
+		<initialResistanceRange>6~18</initialResistanceRange>
+    </PawnKindDef>
+
+    <!-- Mid-tier - warrior, bowman -->
+    <PawnKindDef ParentName="DwarfPawnKindBase">
+        <defName>PF2_DwarfFaction_Warrior</defName>
+        <label>dwarf warrior</label>
+        <combatPower>90</combatPower>
+        <canBeSapper>true</canBeSapper>
+        <gearHealthRange>
+            <min>0.8</min>
+            <max>1.8</max>
+        </gearHealthRange>
+        <apparelMoney>
+            <min>700</min>
+            <max>1000</max>
+        </apparelMoney>
+        <apparelTags>
+            <li>MedievalMilitary</li>
+			<li>MedievalArmorDecent</li>
+        </apparelTags>
+        <weaponMoney>
+            <min>150</min>
+            <max>250</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+        </weaponTags>
+		<initialWillRange>3~8</initialWillRange>
+		<initialResistanceRange>15~28</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="DwarfPawnKindBase">
+        <defName>PF2_DwarfFaction_Bowman</defName>
+        <label>dwarf bowman</label>
+        <combatPower>80</combatPower>
+        <gearHealthRange>
+            <min>0.8</min>
+            <max>1.8</max>
+        </gearHealthRange>
+        <apparelMoney>
+            <min>500</min>
+            <max>700</max>
+        </apparelMoney>
+		<apparelTags>
+			<li>MedievalArmorDecent</li>
+		</apparelTags>
+        <weaponMoney>
+            <min>150</min>
+            <max>250</max>
+        </weaponMoney>
+        <weaponTags>
+			<li>MedievalRanged</li>
+			<li>MedievalRangedHeavy</li>
+        </weaponTags>
+		<initialWillRange>3~8</initialWillRange>
+		<initialResistanceRange>15~28</initialResistanceRange>
+    </PawnKindDef>
+
+    <!-- High-tier - champion, chief -->
+    <PawnKindDef ParentName="DwarfPawnKindBase">
+        <defName>PF2_DwarfFaction_Champion</defName>
+        <label>dwarf champion</label>
+        <combatPower>115</combatPower>
+        <apparelMoney>
+            <min>1000</min>
+            <max>1600</max>
+        </apparelMoney>
+        <apparelTags>
+			<li>MedievalMilitary</li>
+			<li>MedievalArmorDecent</li>
+			<li>MedievalArmorElite</li>
+        </apparelTags>
+        <weaponMoney>
+            <min>300</min>
+            <max>300</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+		<initialWillRange>3~8</initialWillRange>
+		<initialResistanceRange>18~30</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="DwarfPawnKindBase">
+        <defName>PF2_DwarfFaction_HighKing</defName>
+        <label>dwarf high king</label>
+        <labelFemale>dwarf high queen</labelFemale>
+        <combatPower>160</combatPower>
+        <minGenerationAge>30</minGenerationAge>
+        <maxGenerationAge>999</maxGenerationAge>
+        <itemQuality>Good</itemQuality>
+        <factionLeader>true</factionLeader>
+        <apparelMoney>
+            <min>1600</min>
+            <max>3000</max>
+        </apparelMoney>
+        <apparelTags>
+            <li>MedievalMilitary</li>
+            <li>MedievalArmorDecent</li>
+        </apparelTags>
+        <weaponMoney>
+            <min>500</min>
+            <max>700</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+		<initialWillRange>4~20</initialWillRange>
+		<initialResistanceRange>21~60</initialResistanceRange>
+    </PawnKindDef>
+
+</Defs>

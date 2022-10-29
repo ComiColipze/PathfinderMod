@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Bases -->
+
+  <HeadTypeDef ParentName="NarrowBase" Name="Tengu_HeadtypeBase" Abstract="True">
+  </HeadTypeDef>
+
+
+  <HeadTypeDef ParentName="Tengu_HeadtypeBase">
+    <defName>Tengu_Average_Normal</defName>
+	<gender>None</gender>
+    <graphicPath>Things\Pawn\Tengu\Average_Normal</graphicPath>
+  </HeadTypeDef>
+
+
+</Defs>

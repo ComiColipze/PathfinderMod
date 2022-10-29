@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>PF2_BionicBeak</defName>
+		<label>bionic beak</label>
+		<description>An advanced artificial beak. Hardened with plasteel alloy, and installed with enhanced olfactory and taste sensors, it is better than a biological beak in almost every way.</description>
+		<descriptionHyperlinks><RecipeDef>PF2_InstallBionicBeak</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+		<statBases>
+			<Mass>1.2</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="BodyPartProstheticMakeableBase">
+		<defName>PF2_SimpleProstheticBeak</defName>
+		<label>prosthetic beak</label>
+		<description>A beak prosthesis. Its complex arrangement of internal joints allows it to open and close with natural movement. It still is inferior to a real beak.</description>
+		<descriptionHyperlinks><RecipeDef>PF2_InstallSimpleProstheticBeak</RecipeDef></descriptionHyperlinks>
+		<costList>
+			<Steel>25</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>1.3</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+	
+</Defs>

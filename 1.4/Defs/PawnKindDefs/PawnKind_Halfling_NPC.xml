@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="HalflingPawnKindBase" Abstract="True">
+		<race>PF2_Halfling</race>
+		<defaultFactionType>PF2_HalflingFaction</defaultFactionType>
+		<maxGenerationAge>150</maxGenerationAge>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<invNutrition>2.55</invNutrition>
+		<invFoodDef>Pemmican</invFoodDef>
+		<apparelTags>
+			<li>MedievalBasic</li>
+		</apparelTags>
+	</PawnKindDef>
+
+    <!-- Poverty Tier - Peasant -->
+    <PawnKindDef ParentName="HalflingPawnKindBase">
+        <defName>PF2_HalflingFaction_Peasant</defName>
+        <label>halfling peasant</label>
+        <combatPower>30</combatPower>
+        <chemicalAddictionChance>0.10</chemicalAddictionChance>
+        <invNutrition>0</invNutrition>
+        <itemQuality>Poor</itemQuality>
+		<isFighter>false</isFighter>
+        <gearHealthRange>
+            <min>0.2</min>
+            <max>1.1</max>
+        </gearHealthRange>
+        <apparelMoney>
+            <min>50</min>
+            <max>125</max>
+        </apparelMoney>
+        <apparelTags>
+            <li>Neolithic</li>
+        </apparelTags>
+        <weaponMoney>
+            <min>90</min>
+            <max>150</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeBasic</li>
+        </weaponTags>
+        <techHediffsMoney>
+            <min>50</min>
+            <max>50</max>
+        </techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.15</techHediffsChance>
+		<initialWillRange>1~2</initialWillRange>
+		<initialResistanceRange>3~8</initialResistanceRange>
+    </PawnKindDef>
+	
+	<PawnKindDef ParentName="HalflingPawnKindBase">
+		<defName>PF2_HalflingFaction_Hunter</defName>
+		<label>halfling hunter</label>
+		<combatPower>60</combatPower>
+		<backstoryFiltersOverride>
+			<li>
+				<categoriesAdulthood>
+					<li>TribalHunter</li>
+				</categoriesAdulthood>
+			</li>
+		</backstoryFiltersOverride>
+        <gearHealthRange>
+            <min>0.5</min>
+            <max>1.8</max>
+        </gearHealthRange>
+        <apparelMoney>
+            <min>200</min>
+            <max>300</max>
+        </apparelMoney>
+		<apparelRequired>
+			<li>Apparel_HatHood</li>
+		</apparelRequired>
+        <weaponMoney>
+            <min>100</min>
+            <max>100</max>
+        </weaponMoney>
+		<weaponTags>
+			<li>NeolithicRangedDecent</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialWillRange>3~8</initialWillRange>
+		<initialResistanceRange>10~16</initialResistanceRange>
+	</PawnKindDef>
+
+    <!-- Low-Tier - Merchant, Squire -->
+    <PawnKindDef ParentName="HalflingPawnKindBase">
+        <defName>PF2_HalflingFaction_Merchant</defName>
+        <label>halfling merchant</label>
+        <combatPower>35</combatPower>
+        <trader>true</trader>
+        <isFighter>false</isFighter>
+        <gearHealthRange>
+            <min>1</min>
+            <max>1</max>
+        </gearHealthRange>
+        <apparelMoney>
+            <min>300</min>
+            <max>500</max>
+        </apparelMoney>
+        <weaponMoney>
+            <min>100</min>
+            <max>150</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeBasic</li>
+        </weaponTags>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>5~9</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="HalflingPawnKindBase">
+        <defName>PF2_HalflingFaction_Sidekick</defName>
+        <label>halfling sidekick</label>
+        <combatPower>45</combatPower>
+        <canBeSapper>true</canBeSapper>
+        <gearHealthRange>
+            <min>0.5</min>
+            <max>1.8</max>
+        </gearHealthRange>
+        <apparelMoney>
+            <min>300</min>
+            <max>500</max>
+        </apparelMoney>
+        <apparelTags>
+            <li>MedievalArmorBasic</li>
+        </apparelTags>
+        <weaponMoney>
+            <min>100</min>
+            <max>150</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+        </weaponTags>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>5~9</initialResistanceRange>
+    </PawnKindDef>
+
+    <!-- Mid-tier - footsoldier, bowman -->
+    <PawnKindDef ParentName="HalflingPawnKindBase">
+        <defName>PF2_HalflingFaction_Guard</defName>
+        <label>halfling guard</label>
+        <combatPower>65</combatPower>
+        <canBeSapper>true</canBeSapper>
+        <gearHealthRange>
+            <min>0.8</min>
+            <max>1.8</max>
+        </gearHealthRange>
+        <apparelMoney>
+            <min>700</min>
+            <max>1000</max>
+        </apparelMoney>
+        <apparelTags>
+            <li>MedievalMilitary</li>
+        </apparelTags>
+        <weaponMoney>
+            <min>150</min>
+            <max>150</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+        </weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="HalflingPawnKindBase">
+        <defName>PF2_HalflingFaction_Archer</defName>
+        <label>halfling archer</label>
+        <combatPower>65</combatPower>
+        <gearHealthRange>
+            <min>0.8</min>
+            <max>1.8</max>
+        </gearHealthRange>
+        <apparelMoney>
+            <min>500</min>
+            <max>700</max>
+        </apparelMoney>
+        <weaponMoney>
+            <min>150</min>
+            <max>250</max>
+        </weaponMoney>
+        <weaponTags>
+      		<li>NeolithicRangedBasic</li>
+      		<li>NeolithicRangedDecent</li>
+            <li>MedievalRanged</li>
+        </weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>14~22</initialResistanceRange>
+    </PawnKindDef>
+
+    <!-- High-tier - knight, lord -->
+    <PawnKindDef ParentName="HalflingPawnKindBase">
+        <defName>PF2_HalflingFaction_Protector</defName>
+        <label>halfling protector</label>
+        <combatPower>95</combatPower>
+        <itemQuality>Good</itemQuality>
+        <apparelMoney>
+            <min>1000</min>
+            <max>1600</max>
+        </apparelMoney>
+        <apparelTags>
+			<li>MedievalMilitary</li>
+			<li>MedievalArmorDecent</li>
+			<li>MedievalArmorElite</li>
+        </apparelTags>
+        <weaponMoney>
+            <min>300</min>
+            <max>300</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>17~25</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="HalflingPawnKindBase">
+        <defName>PF2_HalflingFaction_GreatFather</defName>
+        <label>halfling great father</label>
+        <labelFemale>halfling great mother</labelFemale>
+        <combatPower>135</combatPower>
+        <minGenerationAge>150</minGenerationAge>
+        <maxGenerationAge>999</maxGenerationAge>
+        <itemQuality>Good</itemQuality>
+        <factionLeader>true</factionLeader>
+        <apparelMoney>
+            <min>1600</min>
+            <max>3000</max>
+        </apparelMoney>
+        <apparelTags>
+			<li>MedievalApparelNoble</li>
+        </apparelTags>
+        <weaponMoney>
+            <min>500</min>
+            <max>700</max>
+        </weaponMoney>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>20~30</initialResistanceRange>
+    </PawnKindDef>
+
+</Defs>

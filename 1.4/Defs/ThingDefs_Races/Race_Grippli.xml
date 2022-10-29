@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.RaceSettings>
+		<defName>Grippli_Settings</defName>
+		<pawnKindSettings>
+            <alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>PF2_GrippliSlave</li>
+					</kindDefs>
+					<chance>20.0</chance>
+				</li>
+            </alienslavekinds>
+            <alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>PF2_GrippliRefugee</li>
+					</kindDefs>
+					<chance>20.0</chance>
+				</li>
+            </alienrefugeekinds>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_GrippliColonist</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_GrippliPlayerColony</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_GrippliTribal</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_GrippliPlayerTribe</li>
+					</factionDefs>
+				</li>
+			</startingColonists>
+            <alienwandererkinds>
+                <li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_GrippliColonist</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_GrippliPlayerColony</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_GrippliTribal</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_GrippliPlayerTribe</li> 
+					</factionDefs>
+				</li>
+            </alienwandererkinds>
+        </pawnKindSettings>
+	</AlienRace.RaceSettings>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>PF2_Grippli</defName>
+    <label>grippli</label>
+    <description>Gripplis are a shy and cautious people who generally seek to avoid being drawn into the complicated and dangerous affairs of others. Despite their outlook and small stature, gripplis often take bold and noble action when the situation demands it.</description>
+    <alienRace>
+        <generalSettings>
+			<maleGenderProbability>0.5</maleGenderProbability>
+			<immuneToAge>false</immuneToAge>
+			<humanRecipeImport>true</humanRecipeImport>
+			<immuneToXenophobia>false</immuneToXenophobia>
+			<minAgeForAdulthood>14</minAgeForAdulthood>
+			<disallowedTraits>
+                <li>
+                    <defName>Undergrounder</defName>
+				</li>
+				<li>
+					<defName>Immunity</defName>
+					<degree>-1</degree>
+				</li>
+            </disallowedTraits>
+			<alienPartGenerator>
+				<headTypes>
+					<li>Grippli_Average_Normal</li>
+				</headTypes>
+				<bodyTypes>
+					<li>Male</li>
+					<li>Female</li>
+					<li>Thin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+				</bodyTypes>
+				<colorChannels>
+                    <li>
+					<name>skin</name>
+					<first Class="ColorGenerator_Options">
+						<options>
+						<!--Green-->
+                            <li>
+                                <weight>10</weight>
+                                <only>(85, 107, 47)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+                                <only>(115, 145, 40)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+                                <only>(175, 245, 47)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+                                <only>(46, 139, 87)</only>
+                            </li>
+						<!--Blue-->
+                            <li>
+								<weight>10</weight>
+                                <only>(102, 205, 170)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+                                <only>(32, 178, 170)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+                                <only>(47, 79, 79)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+                                <only>(0, 245, 245)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+                                <only>(15, 15, 255)</only>
+                            </li>
+						<!--Purple-->
+                            <li>
+                                <weight>10</weight>
+                                <only>(123, 104, 238)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+								<only>(147, 112, 219)</only>
+                            </li>
+							<li>
+								<weight>10</weight>
+								<only>(139 , 0, 139)</only>
+                            </li>
+							<li>
+								<weight>10</weight>
+								<only>(186, 85, 211)</only>
+                            </li>
+						<!--Orange-->
+                            <li>
+                                <weight>10</weight>
+                                <only>(228, 137, 15)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+								<only>(255, 188, 0)</only>
+                            </li>
+						<!--Brown-->
+							<li>
+								<weight>10</weight>
+								<only>(115 , 77, 35)</only>
+                            </li>
+							<li>
+								<weight>10</weight>
+								<only>(145, 85, 5)</only>
+                            </li>
+						</options>
+					</first>
+					</li>
+                </colorChannels>
+			</alienPartGenerator>
+        </generalSettings>
+        <graphicPaths>
+			<head>Things/Pawn/Grippli/</head>
+			<body>Things/Pawn/Iruxi/Body/</body>
+        </graphicPaths>
+        <styleSettings>
+			<li>
+				<key>HairDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+			<li>
+				<key>BeardDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+        </styleSettings>
+        <thoughtSettings>
+			<cannotReceiveThoughts>
+				<li>EnvironmentDark</li>
+				<li>NeedOutdoors</li>
+				<li>AteRawFood</li>
+				<li>AteKibble</li>
+				<li>AteInsectMeatDirect</li>
+				<li>AteInsectMeatAsIngredient</li>
+				<li>AteWithoutTable</li>
+				<li>SleptOnGround</li>
+				<li>SoakingWet</li>
+				<li>WitnessedDeathNonAlly</li>
+				<li>ColonistBanished</li>
+			</cannotReceiveThoughts>
+        </thoughtSettings>
+        <compatibility>
+			<isFlesh>True</isFlesh>
+			<isSentient>True</isSentient>
+			<hasBlood>True</hasBlood>
+        </compatibility>
+    </alienRace>
+	<statBases>
+		<Mass>35</Mass>
+		<MarketValue>1750</MarketValue>
+		<MoveSpeed>4.0</MoveSpeed>
+		<ComfyTemperatureMin>16</ComfyTemperatureMin>
+		<ComfyTemperatureMax>26</ComfyTemperatureMax>
+		<LeatherAmount>65</LeatherAmount>
+		<RoyalFavorValue>3</RoyalFavorValue>
+		<ToxicResistance>0.25</ToxicResistance>
+        <ImmunityGainSpeed>1.2</ImmunityGainSpeed>
+	</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7.4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7.4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>7.4</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.07</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>60</lifeExpectancy>
+			<leatherDef>Leather_Lizard</leatherDef>
+			<nameGenerator>PF2_NamerPersonGrippli</nameGenerator>
+			<useMeatFrom>Human</useMeatFrom>
+			<body>Human</body>
+			<baseBodySize>0.75</baseBodySize>
+			<baseHealthScale>0.95</baseHealthScale>
+			<foodType>OmnivoreHuman</foodType>
+			<gestationPeriodDays>13</gestationPeriodDays>
+			<meatMarketValue>0.8</meatMarketValue>
+			<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.20</manhunterOnTameFailChance>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.02)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<lifeStageAges Inherit="False">
+				<li>
+					<def>HumanlikeBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>HumanlikeChild</def>
+					<minAge>1</minAge>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">
+					<def>HumanlikePreTeenager</def>
+					<minAge>3</minAge>
+				</li>
+				<li>
+					<def>HumanlikeTeenager</def>
+					<minAge>6</minAge>
+				</li>
+				<li>
+					<def>HumanlikeAdult</def>
+					<minAge>12</minAge>
+				</li>
+			</lifeStageAges>
+			<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+				<Firefighter>7</Firefighter>
+				<Patient>0</Patient>
+				<Doctor>10</Doctor>
+				<PatientBedRest>0</PatientBedRest>
+				<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+				<BasicWorker>7</BasicWorker>
+				<Warden>10</Warden>
+				<Handling>7</Handling>
+				<Cooking>7</Cooking>
+				<Hunting>7</Hunting>
+				<Construction>10</Construction>
+				<Growing>7</Growing>
+				<Mining>7</Mining>
+				<PlantCutting>7</PlantCutting>
+				<Smithing>13</Smithing>
+				<Tailoring>7</Tailoring>
+				<Art>10</Art>
+				<Crafting>7</Crafting>
+				<Hauling>3</Hauling>
+				<Cleaning>3</Cleaning>
+				<Research>13</Research>
+			</lifeStageWorkSettings>
+			<ageGenerationCurve>
+				<points>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(3,86)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(7.5,118)</li>  <!-- Exclude 12.5-13 years to avoid spawning pawns who are very 	close to becoming adults -->  
+					<li MayRequire="Ludeon.RimWorld.Biotech">(7.51,0)</li>  
+					<li MayRequire="Ludeon.RimWorld.Biotech">(7,0)</li>      
+					<li MayRequire="Ludeon.RimWorld.Biotech">(11.001,122)</li><!-- End exclude -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(11.999,130)</li>
+					<li>(12,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.001,130)</li>
+					<li>(14,100)</li>
+					<li>(35,100)</li>
+					<li>(40,30)</li>
+					<li>(45,18)</li>
+					<li>(55,10)</li>
+					<li>(60,3)</li>
+					<li>(70,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+				<li>Human</li>
+			</hediffGiverSets>
+		</race>
+		<recipes>
+			<li>ExciseCarcinoma</li>
+			<li>AdministerMechSerumHealer</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+			<li>CureScaria</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Vasectomy</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ReverseVasectomy</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">TubalLigation</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ExtractOvum</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ExtractHemogenPack</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">BloodTransfusion</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ImplantXenogerm</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ImplantIUD</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">RemoveIUD</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">TerminatePregnancy</li>
+		</recipes>
+</AlienRace.ThingDef_AlienRace>
+
+</Defs>

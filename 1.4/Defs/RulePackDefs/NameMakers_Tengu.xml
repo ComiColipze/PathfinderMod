@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>PF2_NamerPersonTenguMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[TenguList1] [TenguList7][TenguList8]</li>
+				<li>name->[TenguList1][TenguList2][TenguList3] [TenguList7][TenguList8]</li>
+				<li>name->[TenguList1][TenguList3] [TenguList7][TenguList8]</li>
+				<li>name->[TenguList1][TenguList2] [TenguList7][TenguList8]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>TenguList1</keyword>
+					<path>TenguNames/Tengu1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TenguList2</keyword>
+					<path>TenguNames/Tengu2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TenguList3</keyword>
+					<path>TenguNames/Tengu3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TenguList4</keyword>
+					<path>TenguNames/Tengu4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TenguList5</keyword>
+					<path>TenguNames/Tengu5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TenguList6</keyword>
+					<path>TenguNames/Tengu6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TenguList7</keyword>
+					<path>TenguNames/Tengu7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TenguList8</keyword>
+					<path>TenguNames/Tengu8</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerPersonTenguFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[TenguList4] [TenguList7][TenguList8]</li>
+				<li>name->[TenguList4][TenguList5][TenguList6] [TenguList7][TenguList8]</li>
+				<li>name->[TenguList4][TenguList6] [TenguList7][TenguList8]</li>
+				<li>name->[TenguList4][TenguList5] [TenguList7][TenguList8]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>TenguList1</keyword>
+					<path>TenguNames/Tengu1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TenguList2</keyword>
+					<path>TenguNames/Tengu2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TenguList3</keyword>
+					<path>TenguNames/Tengu3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TenguList4</keyword>
+					<path>TenguNames/Tengu4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TenguList5</keyword>
+					<path>TenguNames/Tengu5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TenguList6</keyword>
+					<path>TenguNames/Tengu6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TenguList7</keyword>
+					<path>TenguNames/Tengu7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TenguList8</keyword>
+					<path>TenguNames/Tengu8</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

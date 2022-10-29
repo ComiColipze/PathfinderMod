@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Bases -->
+
+  <HeadTypeDef ParentName="AverageBase" Name="Iruxi_HeadtypeBase" Abstract="True">
+  </HeadTypeDef>
+
+
+  <HeadTypeDef ParentName="Iruxi_HeadtypeBase">
+    <defName>Iruxi_Average_Normal</defName>
+	<gender>None</gender>
+    <graphicPath>Things\Pawn\Iruxi\Head\Average_Normal</graphicPath>
+  </HeadTypeDef>
+
+
+</Defs>

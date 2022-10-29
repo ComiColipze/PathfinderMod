@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Bases -->
+
+  <HeadTypeDef ParentName="NarrowBase" Name="Amurrun_HeadtypeBase" Abstract="True">
+  </HeadTypeDef>
+
+
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Male_Average_NarrowA</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Male_Average_NarrowA</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Male_Average_NarrowB</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Male_Average_NarrowB</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Male_Average_NarrowC</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Male_Average_NarrowC</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Male_Average_NarrowD</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Male_Average_NarrowD</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Male_Average_NarrowE</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Male_Average_NarrowE</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Male_Average_FluffyA</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Male_Average_FluffyA</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Male_Average_FluffyB</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Male_Average_FluffyB</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Male_Average_FluffyC</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Male_Average_FluffyC</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Male_Average_FluffyD</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Male_Average_FluffyD</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Male_Average_FluffyE</defName>
+	<gender>Male</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Male_Average_FluffyE</graphicPath>
+  </HeadTypeDef>
+  
+  
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Female_Average_NarrowA</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Female_Average_NarrowA</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Female_Average_NarrowB</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Female_Average_NarrowB</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Female_Average_NarrowC</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Female_Average_NarrowC</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Female_Average_NarrowD</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Female_Average_NarrowD</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Female_Average_NarrowE</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Female_Average_NarrowE</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Female_Average_FluffyA</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Female_Average_FluffyA</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Female_Average_FluffyB</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Female_Average_FluffyB</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Female_Average_FluffyC</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Female_Average_FluffyC</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Female_Average_FluffyD</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Female_Average_FluffyD</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Amurrun_HeadtypeBase">
+    <defName>Amurrun_Female_Average_FluffyE</defName>
+	<gender>Female</gender>
+    <graphicPath>Things\Pawn\Amurrun\Head\Female_Average_FluffyE</graphicPath>
+  </HeadTypeDef>
+</Defs>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Bases -->
+
+  <HeadTypeDef ParentName="AverageBase" Name="Goblin_HeadtypeBase" Abstract="True">
+  </HeadTypeDef>
+
+
+  <HeadTypeDef ParentName="Goblin_HeadtypeBase">
+    <defName>Goblin_Average_Normal</defName>
+	<gender>None</gender>
+    <graphicPath>Things\Pawn\Goblin\Head\Average_Normal</graphicPath>
+  </HeadTypeDef>
+
+
+</Defs>

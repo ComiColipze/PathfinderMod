@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>PF2_NamerPersonGoblinMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[GoblinList1][GoblinList2][GoblinList4]</li>
+				<li>name->[GoblinList1][GoblinList2][GoblinList3][GoblinList2]</li>
+				<li>name->[GoblinList1][GoblinList2][GoblinList3][GoblinList2][GoblinList3][GoblinList2]</li>
+				<li>name->[GoblinList1][GoblinList2][GoblinList3][GoblinList2][GoblinList4]</li>
+				<li>name->[GoblinList1][GoblinList2][GoblinList3][GoblinList2][GoblinList3][GoblinList2][GoblinList4]</li>
+				<li>name->[GoblinList2][GoblinList3][GoblinList2][GoblinList4]</li>
+				<li>name->[GoblinList2][GoblinList3][GoblinList2]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>GoblinList1</keyword>
+					<path>GoblinNames/Goblin1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList2</keyword>
+					<path>GoblinNames/Goblin2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList3</keyword>
+					<path>GoblinNames/Goblin3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList4</keyword>
+					<path>GoblinNames/Goblin4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList5</keyword>
+					<path>GoblinNames/Goblin5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList6</keyword>
+					<path>GoblinNames/Goblin6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList7</keyword>
+					<path>GoblinNames/Goblin7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList8</keyword>
+					<path>GoblinNames/Goblin8</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList9</keyword>
+					<path>GoblinNames/Goblin9</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList10</keyword>
+					<path>GoblinNames/Goblin10</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerPersonGoblinFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[GoblinList5][GoblinList6][GoblinList8]</li>
+				<li>name->[GoblinList5][GoblinList6][GoblinList7][GoblinList6][GoblinList8]</li>
+				<li>name->[GoblinList5][GoblinList6][GoblinList7][GoblinList6][GoblinList7][GoblinList6][GoblinList8]</li>
+				<li>name->[GoblinList5][GoblinList6][GoblinList7][GoblinList6][GoblinList7][GoblinList6]</li>
+				<li>name->[GoblinList5][GoblinList6][GoblinList7][GoblinList6]</li>
+				<li>name->[GoblinList6][GoblinList7][GoblinList6][GoblinList8]</li>
+				<li>name->[GoblinList6][GoblinList7][GoblinList6]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>GoblinList1</keyword>
+					<path>GoblinNames/Goblin1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList2</keyword>
+					<path>GoblinNames/Goblin2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList3</keyword>
+					<path>GoblinNames/Goblin3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList4</keyword>
+					<path>GoblinNames/Goblin4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList5</keyword>
+					<path>GoblinNames/Goblin5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList6</keyword>
+					<path>GoblinNames/Goblin6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList7</keyword>
+					<path>GoblinNames/Goblin7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList8</keyword>
+					<path>GoblinNames/Goblin8</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList9</keyword>
+					<path>GoblinNames/Goblin9</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList10</keyword>
+					<path>GoblinNames/Goblin10</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>PF2_NamerFactionGoblin</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[Color] [Goblin1][Goblin2][Goblin4] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[Goblin1][Goblin2][Goblin4] [PoliticalUnionsMedieval]</li>
+				<li>r_name->[Color] [PoliticalUnionsMedieval] of [Goblin1][Goblin2][Goblin4]</li>
+				<li>r_name->[PoliticalUnionsMedieval] of [Goblin1][Goblin2][Goblin4]</li>
+				<li>r_name->The [Color] [PoliticalUnionsMedieval] of [Goblin1][Goblin2][Goblin4]</li>
+				<li>r_name->The [PoliticalUnionsMedieval] of [Goblin1][Goblin2][Goblin4]</li>
+				<li>r_name->The United States of [Goblin1][Goblin2][Goblin4]</li>
+				<li>r_name->The United States of [Goblin1][Goblin2][Goblin3][Goblin2][Goblin4]</li>
+				<li>r_name->[Goblin1][Goblin2][Goblin3][Goblin2][Goblin4]'s Volunteers</li>
+				<li>r_name->[Goblin1][Goblin2][Goblin4]'s Volunteers</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Goblin1->GoblinNames/Goblin1</li>
+				<li>Goblin2->GoblinNames/Goblin2</li>
+				<li>Goblin3->GoblinNames/Goblin3</li>
+				<li>Goblin4->GoblinNames/Goblin4</li>
+				<li>PoliticalUnionsMedieval->PF2Factions/PoliticalUnionsMedieval</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerSettlementGoblin</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[townname_wordgen]</li>
+
+				<li>townname_wordgen(p=2)->[Goblin1][Goblin2][Goblin4] tribe</li>
+				<li>townname_wordgen(p=2)->[Goblin1][Goblin2][Goblin3][Goblin2][Goblin4] tribe</li>
+				<li>townname_wordgen(p=2)->[Goblin9] [Goblin10] tribe</li>
+				<li>townname_wordgen(p=2)->[Color] [Goblin10] tribe</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>Goblin1->GoblinNames/Goblin1</li>
+				<li>Goblin2->GoblinNames/Goblin2</li>
+				<li>Goblin3->GoblinNames/Goblin3</li>
+				<li>Goblin4->GoblinNames/Goblin4</li>
+				<li>Goblin9->GoblinNames/Goblin9</li>
+				<li>Goblin10->GoblinNames/Goblin10</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

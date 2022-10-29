@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.RaceSettings>
+		<defName>Kitsune_Settings</defName>
+		<pawnKindSettings>
+            <alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>PF2_KitsuneSlave</li>
+					</kindDefs>
+					<chance>20.0</chance>
+				</li>
+            </alienslavekinds>
+            <alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>PF2_KitsuneRefugee</li>
+					</kindDefs>
+					<chance>20.0</chance>
+				</li>
+            </alienrefugeekinds>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_KitsuneColonist</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_KitsunePlayerColony</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_KitsuneTribal</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_KitsunePlayerTribe</li>
+					</factionDefs>
+				</li>
+			</startingColonists>
+            <alienwandererkinds>
+                <li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_KitsuneColonist</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_KitsunePlayerColony</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>PF2_KitsuneTribal</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>PF2_KitsunePlayerTribe</li> 
+					</factionDefs>
+				</li>
+            </alienwandererkinds>
+        </pawnKindSettings>
+	</AlienRace.RaceSettings>
+
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>PF2_Kitsune</defName>
+    <label>kitsune</label>
+    <description>Kitsune are a charismatic and witty people with a connection to the spiritual that grantsthem many magical abilities, chiefly the power to shapechange into other forms. Whether they pass unseen among other peoples or hold their tails high, kitsune are clever observers of the societies around them.</description>
+    <alienRace>
+        <generalSettings>
+			<maleGenderProbability>0.5</maleGenderProbability>
+			<immuneToAge>false</immuneToAge>
+			<humanRecipeImport>true</humanRecipeImport>
+			<immuneToXenophobia>false</immuneToXenophobia>
+			<minAgeForAdulthood>17</minAgeForAdulthood>
+			<disallowedTraits>
+                <li>
+                    <defName>Undergrounder</defName>
+				</li>
+                <li>
+                    <defName>Tough</defName>
+				</li>
+                <li>
+                    <defName>Nimble</defName>
+				</li>
+				<li>
+					<defName>Beauty</defName>
+					<degree>-1</degree>
+				</li>
+				<li>
+					<defName>Beauty</defName>
+					<degree>-2</degree>
+				</li>
+            </disallowedTraits>
+			<alienPartGenerator>
+				<headTypes>
+					<li>Kitsune_Male_Average_Normal_A</li>
+					<li>Kitsune_Male_Average_Normal_B</li>
+					<li>Kitsune_Male_Average_Normal_C</li>
+					<li>Kitsune_Male_Average_Normal_D</li>
+					<li>Kitsune_Female_Average_Normal_A</li>
+					<li>Kitsune_Female_Average_Normal_B</li>
+					<li>Kitsune_Female_Average_Normal_C</li>
+					<li>Kitsune_Female_Average_Normal_D</li>
+				</headTypes>
+				<bodyTypes>
+					<li>Male</li>
+					<li>Female</li>
+					<li>Thin</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+				</bodyTypes>
+				<colorChannels>
+                    <li>
+					<name>skin</name>
+					<first Class="ColorGenerator_Options">
+						<options>
+						<!--Black&White-->
+                            <li>
+								<weight>10</weight>
+                                <only>(60, 60, 60)</only>
+                            </li>
+                            <li>
+                                <weight>10</weight>
+                                <only>(240, 240, 240)</only>
+                            </li>
+						<!--Other Colors-->
+                            <li>
+                                <weight>10</weight>
+                                <only>(255, 140, 0)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+								<only>(230, 85, 10)</only>
+                            </li>
+                            <li>
+								<weight>10</weight>
+								<only>(220, 150, 65)</only>
+                            </li>
+							<li>
+								<weight>10</weight>
+								<only>(145, 140, 130)</only>
+                            </li>
+						</options>
+					</first>
+					</li>
+                </colorChannels>
+				<bodyAddons>
+					<li>
+						<bodyPart>left ear</bodyPart>
+						<path>Things/Pawn/Kitsune/Ears/Left_Ear</path>
+						<colorChannel>skin</colorChannel>
+						<drawSize>(1.0,1.0)</drawSize>
+						<drawSizePortrait>(1.0,1.0)</drawSizePortrait>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<inFrontOfBody>true</inFrontOfBody>
+						<alignWithHead>true</alignWithHead>
+						<drawnDesiccated>false</drawnDesiccated>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+					<li>
+						<bodyPart>right ear</bodyPart>
+						<linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
+						<path>Things/Pawn/Kitsune/Ears/Right_Ear</path>
+						<colorChannel>skin</colorChannel>
+						<drawSize>(1.0,1.0)</drawSize>
+						<drawSizePortrait>(1.0,1.0)</drawSizePortrait>
+						<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+						<inFrontOfBody>true</inFrontOfBody>
+						<alignWithHead>true</alignWithHead>
+						<drawnDesiccated>false</drawnDesiccated>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</li>
+					<li>
+						<bodyPart>tail</bodyPart>
+						<path>Things/Pawn/Kitsune/Tails/Tails</path>
+						<inFrontOfBody>false</inFrontOfBody>
+						<drawnInBed>false</drawnInBed>
+						<drawSize>1.0</drawSize>
+						<scaleWithPawnDrawsize>false</scaleWithPawnDrawsize>
+                        <colorChannel>skin</colorChannel>
+						<defaultOffset>Center</defaultOffset>
+						<drawnDesiccated>false</drawnDesiccated>
+						<offsets>
+							<south>
+								<bodyTypes>
+									<Male>(0.0,-0.092)</Male>
+									<Female>(0.0,-0.092)</Female>
+									<Thin>(0.0,-0.092)</Thin>
+								</bodyTypes>
+							</south>
+							<north>
+								<bodyTypes>
+									<Male>(0.0,-0.305)</Male>
+									<Female>(0.0,-0.31)</Female>
+									<Thin>(0.0,-0.305)</Thin>
+								</bodyTypes>
+							</north>
+							<east>
+								<bodyTypes>
+									<Male>(0.235,-0.156)</Male>
+									<Female>(0.235,-0.156)</Female>
+									<Thin>(0.232,-0.156)</Thin>
+								</bodyTypes>
+							</east>
+						</offsets>	
+					</li>
+				</bodyAddons>
+			</alienPartGenerator>
+        </generalSettings>
+        <graphicPaths>
+			<head>Things/Pawn/Kitsune/Head/</head>
+        </graphicPaths>
+        <styleSettings>
+			<li>
+				<key>HairDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+			<li>
+				<key>BeardDef</key>
+				<value>
+					<hasStyle>false</hasStyle>
+				</value>
+			</li>
+        </styleSettings>
+        <thoughtSettings>
+			<cannotReceiveThoughts>
+				<li>EnvironmentDark</li>
+			</cannotReceiveThoughts>
+        </thoughtSettings>
+        <compatibility>
+			<isFlesh>True</isFlesh>
+			<isSentient>True</isSentient>
+			<hasBlood>True</hasBlood>
+        </compatibility>
+    </alienRace>
+	<statBases>
+		<MarketValue>1750</MarketValue>
+		<MoveSpeed>5.2</MoveSpeed>
+		<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+		<ComfyTemperatureMax>26</ComfyTemperatureMax>
+		<LeatherAmount>75</LeatherAmount>
+		<RoyalFavorValue>3</RoyalFavorValue>
+		<PsychicSensitivity>1.15</PsychicSensitivity>
+		<MiningSpeed>0.8</MiningSpeed>
+		<ConstructionSpeed>0.8</ConstructionSpeed>
+		<SmoothingSpeed>0.8</SmoothingSpeed>
+		<NegotiationAbility>1.1</NegotiationAbility>
+		<TradePriceImprovement>1.1</TradePriceImprovement>
+		<MeleeDodgeChance>15</MeleeDodgeChance>
+		<PawnTrapSpringChance>0.1</PawnTrapSpringChance>
+	</statBases>
+	<tools>
+		<li>
+			<label>left fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>7.8</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+			<label>right fist</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>7.8</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+			<surpriseAttack>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>14</amount>
+					</li>
+				</extraMeleeDamages>
+			</surpriseAttack>
+		</li>
+		<li>
+            <label>left claw</label>
+            <capacities>
+				<li>Scratch</li>
+			</capacities>
+            <power>4.2</power>
+			<cooldownTime>2</cooldownTime>
+            <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+            <surpriseAttack>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Stun</def>
+                        <amount>8</amount>
+                    </li>
+                </extraMeleeDamages>
+            </surpriseAttack>
+		</li>
+		<li>
+            <label>right claw</label>
+            <capacities>
+				<li>Scratch</li>
+			</capacities>
+            <power>4.2</power>
+			<cooldownTime>2</cooldownTime>
+            <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+            <surpriseAttack>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Stun</def>
+                        <amount>8</amount>
+                    </li>
+                </extraMeleeDamages>
+            </surpriseAttack>
+		</li>
+		<li>
+			<label>teeth</label>
+			<capacities>
+				<li>Bite</li>
+			</capacities>
+			<power>10.2</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<chanceFactor>0.07</chanceFactor>
+		</li>
+		<li>
+			<label>head</label>
+			<capacities>
+				<li>Blunt</li>
+			</capacities>
+			<power>5</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.2</chanceFactor>
+		</li>
+	</tools>
+	<race>
+		<leatherDef>Leather_Fox</leatherDef>
+		<thinkTreeMain>Humanlike</thinkTreeMain>
+		<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+		<intelligence>Humanlike</intelligence>
+		<makesFootprints>true</makesFootprints>
+		<lifeExpectancy>70</lifeExpectancy>
+		<nameGenerator>PF2_NamerPersonKitsuneMale</nameGenerator>
+		<nameGeneratorFemale>PF2_NamerPersonKitsuneFemale</nameGeneratorFemale>
+		<useMeatFrom>Human</useMeatFrom>
+		<body>PF2_Kitsune</body>
+		<baseBodySize>1.0</baseBodySize>
+		<foodType>OmnivoreHuman</foodType>
+		<gestationPeriodDays>18</gestationPeriodDays>
+		<meatMarketValue>0.8</meatMarketValue>
+		<nuzzleMtbHours>12</nuzzleMtbHours>
+		<manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+		<manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+		<litterSizeCurve>
+			<points>
+				<li>(0.5, 0)</li>
+				<li>(1, 1)</li>
+				<li>(1.01, 0.02)</li>
+				<li>(3.5, 0)</li>
+			</points>
+		</litterSizeCurve>
+		<lifeStageAges>
+			<li>
+				<def>HumanlikeBaby</def>
+				<minAge>0</minAge>
+			</li>
+			<li>
+				<def>HumanlikeChild</def>
+				<minAge>5</minAge>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+				<def>HumanlikePreTeenager</def>
+				<minAge>8</minAge>
+			</li>
+			<li>
+				<def>HumanlikeTeenager</def>
+				<minAge>13</minAge>
+			</li>
+			<li>
+				<def>HumanlikeAdult</def>
+				<minAge>15</minAge>
+			</li>
+		</lifeStageAges>
+		<lifeStageWorkSettings MayRequire="Ludeon.RimWorld.Biotech">
+			<Firefighter>7</Firefighter>
+			<Patient>0</Patient>
+			<Doctor>10</Doctor>
+			<PatientBedRest>0</PatientBedRest>
+			<Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
+			<BasicWorker>7</BasicWorker>
+			<Warden>10</Warden>
+			<Handling>7</Handling>
+			<Cooking>7</Cooking>
+			<Hunting>7</Hunting>
+			<Construction>10</Construction>
+			<Growing>7</Growing>
+			<Mining>7</Mining>
+			<PlantCutting>7</PlantCutting>
+			<Smithing>13</Smithing>
+			<Tailoring>7</Tailoring>
+			<Art>10</Art>
+			<Crafting>7</Crafting>
+			<Hauling>3</Hauling>
+			<Cleaning>3</Cleaning>
+			<Research>13</Research>
+		</lifeStageWorkSettings>
+		<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+		<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+		<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+		<specialShadowData>
+			<volume>(0.3, 0.8, 0.4)</volume>
+			<offset>(0,0,-0.3)</offset>
+		</specialShadowData>
+		<ageGenerationCurve>
+			<points>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(5,86)</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(8.5,118)</li>  <!-- Exclude 12.5-13 years to avoid spawning pawns who are very 	close to becoming adults -->  
+				<li MayRequire="Ludeon.RimWorld.Biotech">(8.51,0)</li>  
+				<li MayRequire="Ludeon.RimWorld.Biotech">(9,0)</li>      
+				<li MayRequire="Ludeon.RimWorld.Biotech">(9.001,122)</li><!-- End exclude -->
+				<li MayRequire="Ludeon.RimWorld.Biotech">(9.999,130)</li>
+				<li>(10,0)</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">(10.001,130)</li>
+				<li>(15,100)</li>
+				<li>(25,100)</li>
+				<li>(30,30)</li>
+				<li>(45,18)</li>
+				<li>(65,10)</li>
+				<li>(70,3)</li>
+				<li>(80,0)</li>
+			</points>
+		</ageGenerationCurve>
+		<hediffGiverSets>
+			<li>OrganicStandard</li>
+			<li>Human</li>
+		</hediffGiverSets>
+	</race>
+		<recipes>
+			<li>ExciseCarcinoma</li>
+			<li>AdministerMechSerumHealer</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+			<li>CureScaria</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Vasectomy</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ReverseVasectomy</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">TubalLigation</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ExtractOvum</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ExtractHemogenPack</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">BloodTransfusion</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ImplantXenogerm</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">ImplantIUD</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">RemoveIUD</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">TerminatePregnancy</li>
+		</recipes>
+</AlienRace.ThingDef_AlienRace>
+
+</Defs>

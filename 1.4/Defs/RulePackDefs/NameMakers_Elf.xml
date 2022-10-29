@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>PF2_NamerPersonElfMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[ElfList1][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList12]</li>
+				<li>name->[ElfList1][ElfList2][ElfList3][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList12]</li>
+				<li>name->[ElfList2][ElfList3][ElfList2][ElfList3][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList12]</li>
+				<li>name->[ElfList1][ElfList2][ElfList3][ElfList2][ElfList3][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList12]</li>
+				
+				<li>name->[ElfList1][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList1][ElfList2][ElfList3][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList2][ElfList3][ElfList2][ElfList3][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList1][ElfList2][ElfList3][ElfList2][ElfList3][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				
+				<li>name->[ElfList1][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList1][ElfList2][ElfList3][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList2][ElfList3][ElfList2][ElfList3][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList1][ElfList2][ElfList3][ElfList2][ElfList3][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				
+				<li>name->[ElfList1][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList12]</li>
+				<li>name->[ElfList1][ElfList2][ElfList3][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList12]</li>
+				<li>name->[ElfList2][ElfList3][ElfList2][ElfList3][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList12]</li>
+				<li>name->[ElfList1][ElfList2][ElfList3][ElfList2][ElfList3][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList12]</li>
+				
+				<li>name->[ElfList1][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList1][ElfList2][ElfList3][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList2][ElfList3][ElfList2][ElfList3][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList1][ElfList2][ElfList3][ElfList2][ElfList3][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				
+				<li>name->[ElfList1][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10]</li>
+				<li>name->[ElfList1][ElfList2][ElfList3][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10]</li>
+				<li>name->[ElfList2][ElfList3][ElfList2][ElfList3][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10]</li>
+				<li>name->[ElfList1][ElfList2][ElfList3][ElfList2][ElfList3][ElfList2][ElfList4] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10]</li>
+				
+				<li>name->[ElfMale] [ElfSurname]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>ElfList1</keyword>
+					<path>ElfNames/Elf1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList2</keyword>
+					<path>ElfNames/Elf2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList3</keyword>
+					<path>ElfNames/Elf3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList4</keyword>
+					<path>ElfNames/Elf4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList5</keyword>
+					<path>ElfNames/Elf5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList6</keyword>
+					<path>ElfNames/Elf6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList7</keyword>
+					<path>ElfNames/Elf7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList8</keyword>
+					<path>ElfNames/Elf8</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList9</keyword>
+					<path>ElfNames/Elf9</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList10</keyword>
+					<path>ElfNames/Elf10</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList11</keyword>
+					<path>ElfNames/Elf11</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList12</keyword>
+					<path>ElfNames/Elf12</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfMale</keyword>
+					<path>ElfNames/ElfMale</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfFemale</keyword>
+					<path>ElfNames/ElfFemale</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfSurname</keyword>
+					<path>ElfNames/ElfSurname</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>PF2_NamerPersonElfFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList12]</li>
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList12]</li>
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6][ElfList8] [ElfList9][ElfList10][ElfList12]</li>
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList12]</li>
+				<li>name->[ElfList6][ElfList7][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList12]</li>
+				<li>name->[ElfList6][ElfList7][ElfList6][ElfList8] [ElfList9][ElfList10][ElfList12]</li>
+				
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6][ElfList8] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList6][ElfList7][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList6][ElfList7][ElfList6][ElfList8] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6][ElfList8] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList6][ElfList7][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList6][ElfList7][ElfList6][ElfList8] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList12]</li>
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList12]</li>
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6][ElfList8] [ElfList9][ElfList10][ElfList12]</li>
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList12]</li>
+				<li>name->[ElfList6][ElfList7][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList12]</li>
+				<li>name->[ElfList6][ElfList7][ElfList6][ElfList8] [ElfList9][ElfList10][ElfList12]</li>
+				
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6][ElfList8] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList6][ElfList7][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				<li>name->[ElfList6][ElfList7][ElfList6][ElfList8] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10][ElfList12]</li>
+				
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10]</li>
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10]</li>
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6][ElfList8] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10]</li>
+				<li>name->[ElfList5][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10]</li>
+				<li>name->[ElfList6][ElfList7][ElfList6][ElfList7][ElfList6] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10]</li>
+				<li>name->[ElfList6][ElfList7][ElfList6][ElfList8] [ElfList9][ElfList10][ElfList11][ElfList10][ElfList11][ElfList10]</li>
+				
+				<li>name->[ElfFemale] [ElfSurname]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>ElfList1</keyword>
+					<path>ElfNames/Elf1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList2</keyword>
+					<path>ElfNames/Elf2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList3</keyword>
+					<path>ElfNames/Elf3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList4</keyword>
+					<path>ElfNames/Elf4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList5</keyword>
+					<path>ElfNames/Elf5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList6</keyword>
+					<path>ElfNames/Elf6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList7</keyword>
+					<path>ElfNames/Elf7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList8</keyword>
+					<path>ElfNames/Elf8</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList9</keyword>
+					<path>ElfNames/Elf9</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList10</keyword>
+					<path>ElfNames/Elf10</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList11</keyword>
+					<path>ElfNames/Elf11</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList12</keyword>
+					<path>ElfNames/Elf12</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfMale</keyword>
+					<path>ElfNames/ElfMale</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfFemale</keyword>
+					<path>ElfNames/ElfFemale</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfSurname</keyword>
+					<path>ElfNames/ElfSurname</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>
