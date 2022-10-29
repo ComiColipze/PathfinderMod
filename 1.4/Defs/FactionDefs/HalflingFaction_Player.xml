@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_HalflingPlayerColony</defName>
+		<label>Halfling Arrivals</label>
+		<description>Your own community composed of halflings.</description>
+		<basicMemberKind>PF2_HalflingColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_HalflingPlayerTribe</defName>
+		<label>Halfling Tribe</label>
+		<description>A small tribe composed of halflings.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_HalflingTribal</basicMemberKind>
+	</FactionDef>
+
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>PF2_HalflingPlayerFaction</defName>
+		<label>New Halfling Covenant</label>
+		<description>A small halfling covenant composed of halflings.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>peasant</pawnSingular>
+		<pawnsPlural>peasants</pawnsPlural>
+		<basicMemberKind>PF2_HalflingPeasant</basicMemberKind>
+		<techLevel>Medieval</techLevel>
+		<backstoryCategories>
+			<li>Tribal</li>
+		</backstoryCategories>
+		<factionIconPath>World/WorldObjects/Expanding/HalflingFaction</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>PF2_NamerFaction</factionNameMaker>
+		<settlementNameMaker>PF2_NamerSettlement</settlementNameMaker>
+		<allowedCultures><li>PF2_Chaldiran</li></allowedCultures>
+		<startingResearchTags>
+			<li>TribalStart</li>
+		</startingResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+</Defs>

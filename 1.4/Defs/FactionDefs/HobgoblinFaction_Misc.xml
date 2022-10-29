@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>PF2_HobgoblinFaction</defName>
+		<label>hobgoblin dictatorship</label>
+		<categoryTag>Tribal</categoryTag>
+		<description>This militaristic community of hobgoblins is best known for their hardlined and strict culture. Though not focused on pillaging other settlements, much like their goblin cousins, they'll not play around with their enemies. Hobgoblin culture is based into supremacy over other non-goblins and maintaining their own affairs over other nations, making them isolationist; it may be difficult to turn them into an ally!</description>
+		<pawnSingular>subject</pawnSingular>
+		<pawnsPlural>subjects</pawnsPlural>
+		<listOrderPriority>20</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
+		<colorSpectrum>
+			<li>(204, 51, 0)</li>
+			<li>(215, 150, 125)</li>
+		</colorSpectrum>
+		<fixedLeaderKinds>
+			<li>PF2_HobgoblinFaction_General</li>
+		</fixedLeaderKinds>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canStageAttacks>true</canStageAttacks>
+		<factionIconPath>World/WorldObjects/Expanding/HobgoblinFaction</factionIconPath>
+		<naturalEnemy>true</naturalEnemy>
+		<techLevel>Medieval</techLevel>
+		<factionNameMaker>PF2_NamerFactionHobgoblin</factionNameMaker>
+		<settlementNameMaker>PF2_NamerSettlementHobgoblin</settlementNameMaker>
+		<allowedCultures><li>PF2_Oprakan</li></allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<structureMemeWeights>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+			<PF2_Structure_OriginInnerSea MayRequire="Ludeon.RimWorld.Ideology">2</PF2_Structure_OriginInnerSea>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+			<Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
+			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+		</structureMemeWeights>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>90</configurationListOrderPriority>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<leaderTitle>general</leaderTitle>
+		<caravanTraderKinds>
+			<li>Caravan_Neolithic_BulkGoods</li>
+			<li>Caravan_Neolithic_WarMerchant</li>
+			<li>Caravan_Neolithic_ShamanMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Neolithic_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Neolithic_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<raidLootMaker>TribeRaidLootMaker</raidLootMaker>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(800, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, melee with ranged mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<PF2_HobgoblinFaction_Peasant>20</PF2_HobgoblinFaction_Peasant>
+					<PF2_HobgoblinFaction_Brute>40</PF2_HobgoblinFaction_Brute>
+					<PF2_HobgoblinFaction_Warrior>30</PF2_HobgoblinFaction_Warrior>
+					<PF2_HobgoblinFaction_Archer>50</PF2_HobgoblinFaction_Archer>
+					<PF2_HobgoblinFaction_Champion>20</PF2_HobgoblinFaction_Champion>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<PF2_HobgoblinFaction_Peasant>15</PF2_HobgoblinFaction_Peasant>
+					<PF2_HobgoblinFaction_Brute>40</PF2_HobgoblinFaction_Brute>
+					<PF2_HobgoblinFaction_Warrior>40</PF2_HobgoblinFaction_Warrior>
+					<PF2_HobgoblinFaction_Champion>25</PF2_HobgoblinFaction_Champion>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<PF2_HobgoblinFaction_Brute>30</PF2_HobgoblinFaction_Brute>
+					<PF2_HobgoblinFaction_Warrior>30</PF2_HobgoblinFaction_Warrior>
+					<PF2_HobgoblinFaction_Archer>40</PF2_HobgoblinFaction_Archer>
+					<PF2_HobgoblinFaction_Champion>20</PF2_HobgoblinFaction_Champion>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<PF2_HobgoblinFaction_Merchant>1</PF2_HobgoblinFaction_Merchant>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2.5</Alpaca>
+					<Elephant>2</Elephant>
+				</carriers>
+				<guards>
+					<PF2_HobgoblinFaction_Brute>30</PF2_HobgoblinFaction_Brute>
+					<PF2_HobgoblinFaction_Warrior>30</PF2_HobgoblinFaction_Warrior>
+					<PF2_HobgoblinFaction_Archer>40</PF2_HobgoblinFaction_Archer>
+					<PF2_HobgoblinFaction_Champion>10</PF2_HobgoblinFaction_Champion>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<PF2_HobgoblinFaction_Peasant>30</PF2_HobgoblinFaction_Peasant>
+					<PF2_HobgoblinFaction_Brute>30</PF2_HobgoblinFaction_Brute>
+					<PF2_HobgoblinFaction_Warrior>30</PF2_HobgoblinFaction_Warrior>
+					<PF2_HobgoblinFaction_Archer>50</PF2_HobgoblinFaction_Archer>
+					<PF2_HobgoblinFaction_Champion>25</PF2_HobgoblinFaction_Champion>
+					<PF2_HobgoblinFaction_General>60</PF2_HobgoblinFaction_General>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<PF2_HobgoblinFaction_Miner>1</PF2_HobgoblinFaction_Miner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<PF2_HobgoblinFaction_Hunter>1</PF2_HobgoblinFaction_Hunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<PF2_HobgoblinFaction_Logger>1</PF2_HobgoblinFaction_Logger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<PF2_HobgoblinFaction_Farmer>1</PF2_HobgoblinFaction_Farmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	
+</Defs>

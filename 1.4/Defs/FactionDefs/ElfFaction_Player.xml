@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_ElfPlayerColony</defName>
+		<label>Elven Arrivals</label>
+		<description>Your own community composed of elves.</description>
+		<basicMemberKind>PF2_ElfColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_ElfPlayerTribe</defName>
+		<label>Elven Tribe</label>
+		<description>A small tribe composed of elves.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_ElfTribal</basicMemberKind>
+	</FactionDef>
+
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>PF2_ElfPlayerFaction</defName>
+		<label>New Elven Enclave</label>
+		<description>A small enclave composed of elves.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>liegeman</pawnSingular>
+		<pawnsPlural>liegemen</pawnsPlural>
+		<basicMemberKind>PF2_ElfLiegeman</basicMemberKind>
+		<techLevel>Medieval</techLevel>
+		<backstoryCategories>
+			<li>Tribal</li>
+			<li>Elven</li>
+		</backstoryCategories>
+		<factionIconPath>World/WorldObjects/Expanding/ElfFaction</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>PF2_NamerFaction</factionNameMaker>
+		<settlementNameMaker>PF2_NamerPersonElfMale</settlementNameMaker>
+		<allowedCultures><li>PF2_Kyonan</li></allowedCultures>
+		<startingResearchTags>
+			<li>TribalStart</li>
+			<li>MedievalStart</li>
+		</startingResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+</Defs>

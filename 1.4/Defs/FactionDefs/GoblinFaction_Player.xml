@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_GoblinPlayerColony</defName>
+		<label>Goblin Arrivals</label>
+		<description>Your own community composed of goblins.</description>
+		<basicMemberKind>PF2_GoblinColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_GoblinPlayerTribe</defName>
+		<label>Goblin Tribe</label>
+		<description>A small tribe composed of goblins.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_GoblinTribal</basicMemberKind>	
+	</FactionDef>
+
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>PF2_GoblinPlayerFaction</defName>
+		<label>New Goblin Union</label>
+		<description>A small union composed of goblins.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>raider</pawnSingular>
+		<pawnsPlural>raiders</pawnsPlural>
+		<basicMemberKind>PF2_GoblinRaider</basicMemberKind>
+		<techLevel>Neolithic</techLevel>
+		<backstoryCategories>
+			<li>Tribal</li>
+		</backstoryCategories>
+		<factionIconPath>World/WorldObjects/Expanding/GoblinFaction</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>PF2_NamerFactionGoblin</factionNameMaker>
+		<settlementNameMaker>PF2_NamerSettlementGoblin</settlementNameMaker>
+		<allowedCultures><li>PF2_Goblin</li></allowedCultures>
+		<startingResearchTags>
+			<li>TribalStart</li>
+		</startingResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+
+</Defs>

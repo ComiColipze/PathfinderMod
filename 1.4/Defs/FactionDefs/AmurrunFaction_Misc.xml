@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>PF2_AmurrunFaction</defName>
+		<label>amurrun union</label>
+		<categoryTag>Tribal</categoryTag>
+		<description>These disparate amurrun city-states and independent guilds founded an alliance for an ideal, being it strategically asserting regional influence, conducting commerce with other nations, or defending the whole world from a calamitous turn.\n\nWhile their population are concentrated in these city-states, it is extremely common for amurruns to travel beyond their borders, or leaving their homeland entirely, making them less prone to pillaging other factions—but they won't think a second time to defend their lands from foreing incursions.\n\nThey also are the most profitable factions in the Rim.</description>
+		<pawnSingular>traveler</pawnSingular>
+		<pawnsPlural>travelers</pawnsPlural>
+		<listOrderPriority>20</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
+		<colorSpectrum>
+			<li>(189, 183, 107)</li>
+			<li>(240, 230, 140)</li>
+		</colorSpectrum>
+		<fixedLeaderKinds>
+			<li>PF2_AmurrunFaction_ElectedCouncilor</li>
+		</fixedLeaderKinds>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canStageAttacks>true</canStageAttacks>
+		<factionIconPath>World/WorldObjects/Expanding/AmurrunFaction</factionIconPath>
+		<techLevel>Medieval</techLevel>
+		<factionNameMaker>PF2_NamerFactionAmurrun</factionNameMaker>
+		<settlementNameMaker>PF2_NamerSettlementAmurrun</settlementNameMaker>
+		<allowedCultures><li>Corunan</li></allowedCultures>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Acceptable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Honorable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Required</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_RespectedIfGuilty</li>
+		</disallowedPrecepts>
+		<structureMemeWeights>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+			<PF2_Structure_OriginInnerSea MayRequire="Ludeon.RimWorld.Ideology">2</PF2_Structure_OriginInnerSea>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+			<Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
+			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+		</structureMemeWeights>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>90</configurationListOrderPriority>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<leaderTitle>elected councilor</leaderTitle>
+		<caravanTraderKinds>
+			<li>Caravan_Neolithic_BulkGoods</li>
+			<li>Caravan_Neolithic_WarMerchant</li>
+			<li>Caravan_Neolithic_ShamanMerchant</li>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_Exotic</li>
+			<li>Caravan_Outlander_PirateMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Neolithic_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Neolithic_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<raidLootMaker>TribeRaidLootMaker</raidLootMaker>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(800, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, melee with ranged mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<PF2_AmurrunFaction_Fighter>40</PF2_AmurrunFaction_Fighter>
+					<PF2_AmurrunFaction_Warrior>30</PF2_AmurrunFaction_Warrior>
+					<PF2_AmurrunFaction_Bowman>50</PF2_AmurrunFaction_Bowman>
+					<PF2_AmurrunFaction_Champion>20</PF2_AmurrunFaction_Champion>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, melee only -->
+				<kindDef>Combat</kindDef>
+				<commonality>60</commonality>
+				<options>
+					<PF2_AmurrunFaction_Fighter>40</PF2_AmurrunFaction_Fighter>
+					<PF2_AmurrunFaction_Warrior>40</PF2_AmurrunFaction_Warrior>
+					<PF2_AmurrunFaction_Champion>25</PF2_AmurrunFaction_Champion>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<options>
+					<PF2_AmurrunFaction_Bowman>60</PF2_AmurrunFaction_Bowman>
+					<PF2_AmurrunFaction_Hunter>40</PF2_AmurrunFaction_Hunter>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<PF2_AmurrunFaction_Peasant>20</PF2_AmurrunFaction_Peasant>
+					<PF2_AmurrunFaction_Fighter>30</PF2_AmurrunFaction_Fighter>
+					<PF2_AmurrunFaction_Warrior>30</PF2_AmurrunFaction_Warrior>
+					<PF2_AmurrunFaction_Bowman>40</PF2_AmurrunFaction_Bowman>
+					<PF2_AmurrunFaction_Champion>20</PF2_AmurrunFaction_Champion>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<PF2_AmurrunFaction_Merchant>5</PF2_AmurrunFaction_Merchant>
+				</traders>
+				<carriers>
+					<Muffalo>8</Muffalo>
+					<Dromedary>7</Dromedary>
+					<Alpaca>4.5</Alpaca>
+					<Elephant>4</Elephant>
+				</carriers>
+				<guards>
+					<PF2_AmurrunFaction_Fighter>30</PF2_AmurrunFaction_Fighter>
+					<PF2_AmurrunFaction_Warrior>30</PF2_AmurrunFaction_Warrior>
+					<PF2_AmurrunFaction_Bowman>40</PF2_AmurrunFaction_Bowman>
+					<PF2_AmurrunFaction_Champion>10</PF2_AmurrunFaction_Champion>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<PF2_AmurrunFaction_Peasant>30</PF2_AmurrunFaction_Peasant>
+					<PF2_AmurrunFaction_Fighter>30</PF2_AmurrunFaction_Fighter>
+					<PF2_AmurrunFaction_Warrior>30</PF2_AmurrunFaction_Warrior>
+					<PF2_AmurrunFaction_Bowman>50</PF2_AmurrunFaction_Bowman>
+					<PF2_AmurrunFaction_Champion>25</PF2_AmurrunFaction_Champion>
+					<PF2_AmurrunFaction_ElectedCouncilor>60</PF2_AmurrunFaction_ElectedCouncilor>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>2</commonality>
+				<options>
+					<PF2_AmurrunFaction_Miner>5</PF2_AmurrunFaction_Miner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<PF2_AmurrunFaction_Hunter>1</PF2_AmurrunFaction_Hunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<PF2_AmurrunFaction_Logger>1</PF2_AmurrunFaction_Logger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<PF2_AmurrunFaction_Farmer>1</PF2_AmurrunFaction_Farmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	
+</Defs>

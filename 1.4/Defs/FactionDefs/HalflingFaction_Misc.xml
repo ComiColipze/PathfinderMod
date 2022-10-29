@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>PF2_HalflingFaction</defName>
+		<label>halfling covenant</label>
+		<categoryTag>Medieval</categoryTag>
+		<description>This simple nation is the homeland of various halfling settlements and villages. A simple people themselves, the halfling covenant frowns violence and prefers to stabilish alliances with other peoples, even ones considered "savage" like the goblins and orcs. Their reticence for war also makes them not prone to raiding other factions.</description>
+		<pawnSingular>peasant</pawnSingular>
+		<pawnsPlural>peasants</pawnsPlural>
+		<listOrderPriority>20</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+		<colorSpectrum>
+			<li>(153, 135, 104)</li>
+			<li>(173, 195, 168)</li>
+		</colorSpectrum>
+		<fixedLeaderKinds>
+			<li>PF2_HalflingFaction_GreatFather</li>
+		</fixedLeaderKinds>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canStageAttacks>false</canStageAttacks>
+		<factionIconPath>World/WorldObjects/Expanding/HalflingFaction</factionIconPath>
+		<techLevel>Medieval</techLevel>
+		<factionNameMaker>PF2_NamerFaction</factionNameMaker>
+		<settlementNameMaker>PF2_NamerSettlement</settlementNameMaker>
+		<allowedCultures><li>PF2_Chaldiran</li></allowedCultures>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_Xenophobia</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Acceptable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Honorable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Required</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_RespectedIfGuilty</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_DontCare</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Disapproved</li>
+		</disallowedPrecepts>
+		<structureMemeWeights>
+			<Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+			<Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+			<PF2_Structure_OriginInnerSea MayRequire="Ludeon.RimWorld.Ideology">2</PF2_Structure_OriginInnerSea>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+			<Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Animist>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+			<Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+			<Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+			<Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
+			<Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+		</structureMemeWeights>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>90</configurationListOrderPriority>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<leaderTitle>great father</leaderTitle>
+		<caravanTraderKinds>
+			<li>Caravan_Neolithic_BulkGoods</li>
+			<li>Caravan_Neolithic_WarMerchant</li>
+			<li>Caravan_Neolithic_ShamanMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Neolithic_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Neolithic_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<raidLootMaker>TribeRaidLootMaker</raidLootMaker>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(800, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<!-- Normal fights, melee with ranged mix-ins -->
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<PF2_HalflingFaction_Peasant>20</PF2_HalflingFaction_Peasant>
+					<PF2_HalflingFaction_Sidekick>40</PF2_HalflingFaction_Sidekick>
+					<PF2_HalflingFaction_Guard>30</PF2_HalflingFaction_Guard>
+					<PF2_HalflingFaction_Archer>50</PF2_HalflingFaction_Archer>
+					<PF2_HalflingFaction_Protector>20</PF2_HalflingFaction_Protector>
+				</options>
+			</li>
+			<li>
+				<!-- Normal fights, ranged only -->
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<options>
+					<PF2_HalflingFaction_Archer>100</PF2_HalflingFaction_Archer>
+				</options>
+			</li>
+			<li>
+				<!-- Peaceful -->
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<PF2_HalflingFaction_Sidekick>30</PF2_HalflingFaction_Sidekick>
+					<PF2_HalflingFaction_Guard>30</PF2_HalflingFaction_Guard>
+					<PF2_HalflingFaction_Archer>40</PF2_HalflingFaction_Archer>
+					<PF2_HalflingFaction_Protector>20</PF2_HalflingFaction_Protector>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<PF2_HalflingFaction_Merchant>1</PF2_HalflingFaction_Merchant>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2.5</Alpaca>
+					<Elephant>2</Elephant>
+				</carriers>
+				<guards>
+					<PF2_HalflingFaction_Sidekick>30</PF2_HalflingFaction_Sidekick>
+					<PF2_HalflingFaction_Guard>30</PF2_HalflingFaction_Guard>
+					<PF2_HalflingFaction_Archer>40</PF2_HalflingFaction_Archer>
+					<PF2_HalflingFaction_Protector>10</PF2_HalflingFaction_Protector>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<PF2_HalflingFaction_Peasant>30</PF2_HalflingFaction_Peasant>
+					<PF2_HalflingFaction_Sidekick>30</PF2_HalflingFaction_Sidekick>
+					<PF2_HalflingFaction_Guard>30</PF2_HalflingFaction_Guard>
+					<PF2_HalflingFaction_Archer>50</PF2_HalflingFaction_Archer>
+					<PF2_HalflingFaction_Protector>25</PF2_HalflingFaction_Protector>
+					<PF2_HalflingFaction_GreatFather>60</PF2_HalflingFaction_GreatFather>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Miners</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<PF2_HalflingFaction_Miner>1</PF2_HalflingFaction_Miner>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Hunters</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<PF2_HalflingFaction_Hunter>1</PF2_HalflingFaction_Hunter>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Loggers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<PF2_HalflingFaction_Logger>1</PF2_HalflingFaction_Logger>
+				</options>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
+				<kindDef>Farmers</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<PF2_HalflingFaction_Farmer>1</PF2_HalflingFaction_Farmer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<modExtensions>
+			<li Class="VFECore.FactionDefExtension">			
+				<startingGoodwillByFactionDefs>
+					<PF2_HalflingPlayerFaction>100</PF2_HalflingPlayerFaction>
+					<PF2_HalflingPlayerColony>100</PF2_HalflingPlayerColony>
+					<PF2_HalflingPlayerTribe>100</PF2_HalflingPlayerTribe>
+				</startingGoodwillByFactionDefs>			
+			</li>
+		</modExtensions>
+	</FactionDef>
+	
+</Defs>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_AmurrunPlayerColony</defName>
+		<label>Amurrun Arrivals</label>
+		<description>Your own community composed of amurruns.</description>
+		<basicMemberKind>PF2_AmurrunColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_AmurrunPlayerTribe</defName>
+		<label>Amurrun Tribe</label>
+		<description>A small tribe composed of amurruns.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_AmurrunTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

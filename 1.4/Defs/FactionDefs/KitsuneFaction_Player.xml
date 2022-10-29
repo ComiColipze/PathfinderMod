@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PF2_ColonyBase">
+		<defName>PF2_KitsunePlayerColony</defName>
+		<label>Kitsune Arrivals</label>
+		<description>Your own community composed of kitsunes.</description>
+		<basicMemberKind>PF2_KitsuneColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="PF2_TribeBase">
+		<defName>PF2_KitsunePlayerTribe</defName>
+		<label>Kitsune Tribe</label>
+		<description>A small tribe composed of kitsunes.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>PF2_KitsuneTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>
